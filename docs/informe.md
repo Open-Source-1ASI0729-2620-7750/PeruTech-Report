@@ -339,7 +339,7 @@ El proceso de Lean UX adoptado por PeruTech busca validar de forma rápida y con
 
 #### 1.2.2.4. Lean UX Canvas
 
-[Contenido]
+<img src="/assets/lean-ux-canvas.png" alt="UPC Logo" width="150"/>
 
 ## 1.3. Segmentos objetivo
 
