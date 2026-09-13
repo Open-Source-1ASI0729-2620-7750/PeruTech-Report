@@ -343,7 +343,15 @@ El proceso de Lean UX adoptado por PeruTech busca validar de forma rápida y con
 
 ## 1.3. Segmentos objetivo
 
-[Contenido]
+### 1. Consumidores Finales (Compradores Planificadores)
+Este grupo está integrado principalmente por personas de 20 a 50 años que residen en zonas urbanas y pertenecen a los niveles socioeconómicos B y C. Debido a que representan la mayor parte del gasto en alimentos del hogar, su comportamiento de compra se ha vuelto más cauteloso, repartiendo sus compras entre distintas tiendas para cuidar el presupuesto (Kantar Worldpanel, 2025). Ante el incremento en el costo de vida, estos compradores prefieren planificar sus compras con anticipación. Esto genera la necesidad de contar con soluciones digitales sencillas que eliminen la duda sobre dónde comprar más barato, permitiéndoles organizar su lista de forma eficiente para proteger su dinero (BCRP, 2025).
+
+### 2. Establecimientos de Retail (Supermercados y Tiendas de Conveniencia)
+Este segmento abarca a los comercios del sector minorista moderno, organizados en dos formatos principales que compiten diariamente por atraer clientes:
+*   **Tiendas de Proximidad:** Cadenas de conveniencia (Tambo, Oxxo) y tiendas de descuento (Mass), enfocadas en compras rápidas, de paso o para cubrir emergencias del día.
+*   **Supermercados de Mayor Tamaño:** Establecimientos (Plaza Vea, Metro, Tottus) orientados a compras semanales o mensuales de mayor volumen, donde compiten mediante marcas propias y ofertas especiales por paquete (KPMG, 2025).
+
+Para ambos formatos funciona como un canal directo de atracción de público: ayuda a que las tiendas de conveniencia vendan más rápido sus ofertas del día y a que los supermercados muestren su competitividad en compras grandes, asegurando que más clientes crucen sus puertas.
 
 ---
 
