@@ -256,15 +256,86 @@ El proceso de Lean UX adoptado por PeruTech busca validar de forma rápida y con
 
 #### 1.2.2.1. Lean UX Problem Statements
 
-[Contenido]
+> **The current state of** retail shopping and local store management in Lima Metropolitan Area **has focused mainly on** individual supermarket discounts, traditional physical price browsing, and isolated mobile delivery apps that prioritize home delivery fees over local store foot traffic.  
+> **What existing products/services fail to address is** the lack of a unified system that calculates the true total cost of a shopping trip—combining real-time store prices, multi-stop routing efficiency, and transit expenses—while giving local managers an agile channel to clear overstocked inventory.  
+> **Our product/service will address this gap by** providing a collaborative web platform that processes store prices, inventory updates, transportation costs, and user budget limits to generate the most efficient multi-store shopping route, while offering store managers a simple tool to announce local discounts.  
+> **Our initial focus will be** budget-conscious shoppers (students and young adults in Lima) and branch managers of proximity/convenience retail stores.  
+> **We’ll know we are successful when we see** budget-conscious shoppers regularly completing multi-store purchases using our generated routes and store managers actively updating local discount offers.
 
 #### 1.2.2.2. Lean UX Assumptions
 
-[Contenido]
+##### Assumptions Worksheet
+*   **¿Quién es el usuario?**
+    El sistema atiende a dos grupos: compradores (jefes de hogar, estudiantes y jóvenes independientes) que quieren hacer rendir mejor su dinero, y administradores de tiendas de conveniencia o supermercados que necesitan mover su inventario local más rápido.
+*   **¿Dónde encaja nuestro producto en su trabajo o vida?**
+    Para las personas, entra en su rutina cuando preparan la lista del supermercado y cuando salen a hacer las compras. Para el encargado de tienda, se integra en sus labores diarias para dar salida a productos con alto stock.
+*   **¿Qué problemas resuelve nuestro producto?**
+    Elimina la incertidumbre sobre dónde encontrar los precios más bajos y evita viajes innecesarios. A los comercios les resuelve la falta de llegada digital directa hacia los clientes que caminan por su zona.
+*   **¿Cuándo y cómo es usado el producto?**
+    El cliente lo abre en casa para cotizar su lista y en la calle para guiarse de tienda en tienda. El comercio lo utiliza durante el día para publicar ofertas exprés y revisar la llegada de clientes.
+*   **¿Qué características son importantes?**
+    La comparación instantánea de precios, la sugerencia de rutas que no se pasen del presupuesto tope, la opción de que la comunidad confirme los costos reales y un panel sencillo de control para los comercios.
+*   **¿Cómo debe verse nuestro producto y cómo comportarse?**
+    Debe ser una plataforma limpia, moderna y muy rápida para usar en el teléfono. La vista para tiendas debe mostrar gráficos claros y datos útiles para tomar decisiones de venta sin complicaciones.
+
+##### Business Assumptions
+1.  **Creemos que nuestros usuarios necesitan** un servicio digital que evalúe si el dinero que se ahorra en una oferta justifica el gasto y tiempo de ir hasta esa tienda.
+2.  **Estas necesidades se pueden satisfacer mediante** una plataforma web que calcule el costo total de la lista de compras y muestre el recorrido más económico según el medio de transporte del usuario.
+3.  **Nuestros usuarios primarios son** personas que administran los gastos de su hogar y encargados de locales comerciales en áreas urbanas concurridas.
+4.  **El valor principal para el usuario es** pagar menos por su compra total y tardar menos tiempo en la calle; para las tiendas, es atraer clientes de su entorno a través de ofertas puntuales.
+5.  **Generaremos ingresos a través de** planes de suscripción para comercios que deseen promocionar sus productos de forma destacada y acceder a reportes de búsqueda en su zona.
+6.  **Nuestra competencia principal incluye** la búsqueda presencial tradicional, los encartes digitales de una sola marca y los servicios de reparto a domicilio que cobran tarifas adicionales.
+7.  **Nuestra ventaja competitiva radica en** calcular el costo real acumulado (precio de productos más costo de viaje) combinando distintas tiendas en un solo itinerario.
+8.  **El mayor riesgo del producto es** que las oficinas centrales de las cadenas limiten la libertad de los administradores locales para ajustar precios en la plataforma.
+9.  **Mitigaremos este riesgo** demostrando con métricas simples cómo las promociones locales aumentan las ventas y reducen la pérdida de productos en el local.
+
+##### Business Outcome Assumptions
+1.  Conseguir que el 70% de los usuarios registrados realice al menos una compra siguiendo la ruta recomendada durante su primer mes.
+2.  Lograr que más del 40% de los usuarios activos sigan utilizando la plataforma de manera continua mes a mes.
+3.  Demostrar un ahorro efectivo promedio de al menos 15% en el gasto de la canasta de compras de los usuarios.
+4.  Lograr que 6 de cada 10 tiendas participantes confirmen un aumento en la visita de clientes atraídos por las ofertas publicadas.
+
+##### User Assumptions
+1.  **¿Quién es el usuario?** Hombres y mujeres de 18 a 50 años que realizan compras periódicas, y gestores de tiendas minoristas.
+2.  **¿Dónde encaja el producto?** Antes de salir a comprar y durante el recorrido por las tiendas.
+3.  **¿Qué problema resuelve?** Ayuda a elegir la mejor combinación de tiendas sin salirse del presupuesto disponible.
+4.  **¿Cuándo y cómo se usa?** Se consulta 1 o 2 veces por semana al momento de planificar las compras habituales.
+
+##### User Outcome and Benefit Assumptions
+1.  El comprador sabrá exactamente cuánto va a gastar antes de salir de su casa.
+2.  El usuario caminará o viajará solo lo necesario, evitando vueltas innecesarias en la ciudad.
+3.  La tienda logrará vender más rápido los productos con fecha próxima de vencimiento o sobrestock.
+
+##### Feature Assumptions
+1.  **Comparador de Canasta Integral:** Creemos que permitir al usuario armar su lista completa y cruzarla entre varias tiendas mostrará claramente dónde conviene comprar.
+2.  **Calculador de Ruta con Límite de Gasto:** Creemos que sugerir itinerarios respetando el presupuesto máximo fijado evitará sorpresas al momento de pagar.
+3.  **Validación de Precios por Usuarios:** Creemos que permitir que los mismos compradores confirmen si el precio del estante es correcto mantendrá la información confiable.
+4.  **Panel de Ofertas para Comercio:** Creemos que dar una herramienta rápida a los comercios para publicar promociones temporales aumentará el ingreso de personas a sus locales.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
+*   **Hypothesis Statement 1 (basado en Feature Assumption 1: Comparador de Canasta Integral):**
+    *   **We believe we will achieve** a 70% rate of active users completing at least one guided purchase in their first month and a overall platform user retention above 40%
+    *   **If** families and young adults managing a tight budget
+    *   **Attain** an accurate, pre-calculated total cost of their entire shopping list before leaving home
+    *   **With** a comprehensive multi-store basket comparison engine (**Comparador de Canasta Integral**).
 
-[Contenido]
+*   **Hypothesis Statement 2 (basado en Feature Assumption 2: Calculador de Ruta con Límite de Gasto):**
+    *   **We believe we will achieve** an average reduction of 25% in the time users spend completing multi-store purchases
+    *   **If** urban shoppers looking to maximize both their time and money
+    *   **Attain** optimized shopping itineraries that strictly respect their maximum budget and transportation choices
+    *   **With** an interactive route calculator with budget caps (**Calculador de Ruta con Límite de Gasto**).
+
+*   **Hypothesis Statement 3 (basado en Feature Assumption 3: Validador de Precios por Usuarios):**
+    *   **We believe we will achieve** an 80% price verification accuracy rate between reported shelf prices and actual checkout counter costs
+    *   **If** active members of the shopping community
+    *   **Attain** high trust in platform data accuracy and recognition for contributing real-time updates
+    *   **With** a crowd-sourced price reporting and verification system (**Validador de Precios por Usuarios**).
+
+*   **Hypothesis Statement 4 (basado en Feature Assumption 4: Panel de Ofertas para Comercio):**
+    *   **We believe we will achieve** a 20% drop in food waste/expiration and a 60% rate of partner stores reporting increased foot traffic
+    *   **If** local retail store managers dealing with overstocked inventory
+    *   **Attain** immediate local visibility for time-sensitive discounts to draw nearby shoppers into their physical stores
+    *   **With** a fast-publishing promotion dashboard for store managers (**Panel de Ofertas para Comercio**).
 
 #### 1.2.2.4. Lean UX Canvas
 
