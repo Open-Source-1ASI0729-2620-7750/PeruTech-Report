@@ -2,43 +2,67 @@
 
 <img src="/assets/upc-logo.png" alt="UPC Logo" width="150"/>
 
-# Universidad Peruana de Ciencias Aplicadas
+Universidad Peruana de Ciencias Aplicadas
 
-## Facultad de Ingeniería
+Carrera de Ingeniería de Software
 
-## Programa Académico de Ingeniería de Software
+### **1ASI0729**
+### **Desarrollo de Aplicaciones Open Source**
 
-**Ciclo:** 2026-20  
+NRC
 
-**Código del curso:** 1ASI0729
+**7750**
 
-**Curso:** Open Source  
+### **Informe del Trabajo Final**
 
-**NRC:** 7750 
+Docente
 
-**Docente del curso:** Efraín Ricardo Bautista Ubillús 
+**Bautista Ubillús, Efrain Ricardo**
 
----
+Equipo
 
-# Informe de Trabajo Final
+**PeruTech** 
 
-**Nombre de la Startup:** PeruTech
+Proyecto
 
-**Nombre del producto:** [NOMBRE DEL PRODUCTO]
+**[NOMBRE DEL PRODUCTO]** 
 
----
+#### **Integrantes**
 
-## Integrantes
+<table border="0" style="border-collapse: collapse; border: none;">
+  <tr style="border: none; font-weight: bold;">
+    <td style="padding-right: 40px; border: none; padding-bottom: 5px;">Código</td>
+    <td style="border: none; padding-bottom: 5px;">Apellidos y Nombres</td>
+  </tr>
+  <tr style="border: none;">
+    <td style="padding-right: 40px; border: none;">u20241c101</td>
+    <td style="border: none;">Capillo Lema, Mía Valentina</td>
+  </tr>
+  <tr style="border: none;">
+    <td style="padding-right: 40px; border: none;">[Código]</td>
+    <td style="border: none;">[Apellidos y Nombres]</td>
+  </tr>
+  <tr style="border: none;">
+    <td style="padding-right: 40px; border: none;">[Código]</td>
+    <td style="border: none;">[Apellidos y Nombres]</td>
+  </tr>
+  <tr style="border: none;">
+    <td style="padding-right: 40px; border: none;">[Código]</td>
+    <td style="border: none;">[Apellidos y Nombres]</td>
+  </tr>
+  <tr style="border: none;">
+    <td style="padding-right: 40px; border: none;">[Código]</td>
+    <td style="border: none;">[Apellidos y Nombres]</td>
+  </tr>
+  <tr style="border: none;">
+    <td style="padding-right: 40px; border: none;">[Código]</td>
+    <td style="border: none;">[Apellidos y Nombres]</td>
+  </tr>
+</table>
 
-| Código | Apellidos | Nombres |
-|--------|-----------|---------|
-| u20241c101  | Capillo Lema | Mía Valentina |
-| [Código] | [Apellidos] | [Nombres] |
-| [Código] | [Apellidos] | [Nombres] |
+**Período 202620**
 
----
-
-*Septiembre, 2026*
+**Septiembre 2026**
 
 </div>
 
