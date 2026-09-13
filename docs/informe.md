@@ -222,11 +222,20 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 ### 1.1.1. Descripción de la Startup
 
-[Contenido]
+PeruTech es un equipo de innovación tecnológica integrado por estudiantes de la carrera de Ingeniería de Software. La organización se enfoca en crear soluciones digitales para resolver problemas urbanos cotidianos, principalmente aquellos ligados a la planificación financiera del hogar y la movilidad en la ciudad.
+
+Nuestro proyecto principal nace como una respuesta directa a las dificultades económicas que enfrentan las familias en Lima por el aumento constante de precios. La plataforma busca dar transparencia al mercado minorista, combinando la comparación de precios de productos esenciales con la optimización de rutas de desplazamiento. De esta forma, ayudamos a los consumidores a tomar decisiones de compra más eficientes, ahorrando dinero y tiempo en cada viaje.
+
+*   **Misión:** Apoyar a los hogares de Lima en el control y optimización de su gasto mensual mediante una herramienta digital intuitiva que identifique los precios más bajos y organice los recorridos de compra más convenientes.
+*   **Visión:** Consolidarnos como la plataforma digital líder en compras inteligentes en el Perú, reconocidos por brindar un impacto positivo real en el presupuesto de nuestros usuarios y por nuestra facilidad de uso.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-[Contenido]
+<img src="/assets/foto-Mia.png" width="350" >
+
+Mi nombre es Mía Valentina.
+Poseo experiencia en en el lenguaje C++ y Python, lo que me permite contribuir en el desarrollo de soluciones eficientes. Además, tengo habilidades en la recopilación y análisis de información, lo cual es fundamental para identificar áreas de mejora y optimizar procesos. También tengo conocimientos sobre estructuras de datos, que me permiten organizar y gestionar información de manera efectiva. Mi enfoque se centra en generar soluciones innovadoras y prácticas que aporten valor a los proyectos en los que participo.
+
 
 ## 1.2. Solution Profile
 
