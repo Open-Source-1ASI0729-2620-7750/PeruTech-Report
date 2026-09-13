@@ -240,12 +240,19 @@ Poseo experiencia en en el lenguaje C++ y Python, lo que me permite contribuir e
 ## 1.2. Solution Profile
 
 ### 1.2.1. Antecedentes y problemática
-
-[Contenido]
+*   **Who? (¿Quién?):**
+    *   *Consumidores:* Estudiantes, jóvenes profesionales y responsables del abastecimiento en hogares de Lima Metropolitana que cuentan con un presupuesto ajustado y buscan optimizar su tiempo libre.
+    *   *Comerciantes:* Administradores y encargados de tiendas de conveniencia (Tambo, Oxxo, Listo) y cadenas de supermercados o discounters (Mass, Plaza Vea, Metro) que necesitan promocionar su inventario local, evitar la merma de productos y atraer más clientes a sus locales físicos.
+*   **What? (¿Qué?):** La falta de información clara sobre precios y la ineficiencia al planificar los recorridos de compra en el comercio minorista. Actualmente existe una diferencia marcada entre los precios publicados en internet y los costos reales en los estantes de las tiendas. A esto se suma que las personas no tienen una forma sencilla de comparar el costo total de su lista entre varios comercios cercanos. Esta desconexión genera gastos dobles: se paga más por los productos y se gasta dinero y tiempo extra en desplazamientos mal organizados para intentar conseguir ofertas (BCRP, 2025; INEI, 2026).
+*   **Where? (¿Dónde?):** El problema se concentra en distritos y zonas urbanas de Lima con alta presencia comercial, donde existen múltiples tiendas a pocas cuadras de distancia. La solución está dirigida a personas con acceso a teléfonos inteligentes y a administradores de locales que quieren mejorar la visibilidad de su tienda en su zona cercana.
+*   **When? (¿Cuándo?):** Ocurre cada vez que las familias organizan sus compras de la semana o cuando necesitan reponer productos de manera rápida. La situación se vuelve crítica durante los fines de semana o en días de promociones especiales, cuando el inventario cambia rápido y las ofertas varían sin previo aviso.
+*   **Why? (¿Por qué?):** Principalmente porque los sistemas de información de los grandes comercios son rígidos y no actualizan los precios de cada local en tiempo real para el cliente cercano. Esto hace que el comprador pierda tiempo buscando ofertas que ya no existen, mientras que la tienda pierde clientes potenciales por no comunicar a tiempo sus rebajas o liquidaciones.
+*   **How? (¿Cómo?):** Los usuarios utilizarán la solución en dos momentos: en casa para organizar su lista según su presupuesto, y en la calle para seguir la ruta de compras paso a paso. Por su parte, los administradores de tienda la usarán desde sus computadoras para actualizar precios de productos por vencer y revisar métricas de visitas. La difusión se hará mediante redes sociales, alianzas con comercios y códigos QR en tiendas físicas.
+*   **How much? (¿Cuánto?):** Esta dificultad para ahorrar se da en un contexto donde el costo de la canasta alimentaria mantiene una tendencia al alza en Lima Metropolitana (INEI, 2026). Por esta razón, el 41% de los consumidores prioriza activamente la búsqueda de descuentos (Kantar Worldpanel, 2025). Además, desplazarse entre varias tiendas sin un orden planificado puede incrementar hasta en un 20% los costos de transporte del hogar, un gasto que se puede corregir mediante algoritmos de ruteo eficiente (Sabagh Nejad & Fazekas, 2022).
 
 ### 1.2.2. Lean UX Process
 
-[Contenido]
+El proceso de Lean UX adoptado por PeruTech busca validar de forma rápida y continua el valor de la plataforma. A través de la iteración constante entre el entendimiento de las necesidades de usuarios y comerciantes, la formulación de supuestos estratégicos y el planteamiento de hipótesis medibles, aseguramos el desarrollo de un producto mínimo viable centrado en resolver ineficiencias reales de tiempo y presupuesto.
 
 #### 1.2.2.1. Lean UX Problem Statements
 
