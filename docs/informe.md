@@ -29,36 +29,44 @@ Proyecto
 
 #### **Integrantes**
 
-<table border="0" style="border-collapse: collapse; border: none;">
-  <tr style="border: none; font-weight: bold;">
-    <td style="padding-right: 40px; border: none; padding-bottom: 5px;">Código</td>
-    <td style="border: none; padding-bottom: 5px;">Apellidos y Nombres</td>
-  </tr>
-  <tr style="border: none;">
-    <td style="padding-right: 40px; border: none;">u20241c101</td>
-    <td style="border: none;">Capillo Lema, Mía Valentina</td>
-  </tr>
-  <tr style="border: none;">
-    <td style="padding-right: 40px; border: none;">[Código]</td>
-    <td style="border: none;">[Apellidos y Nombres]</td>
-  </tr>
-  <tr style="border: none;">
-    <td style="padding-right: 40px; border: none;">[Código]</td>
-    <td style="border: none;">[Apellidos y Nombres]</td>
-  </tr>
-  <tr style="border: none;">
-    <td style="padding-right: 40px; border: none;">[Código]</td>
-    <td style="border: none;">[Apellidos y Nombres]</td>
-  </tr>
-  <tr style="border: none;">
-    <td style="padding-right: 40px; border: none;">[Código]</td>
-    <td style="border: none;">[Apellidos y Nombres]</td>
-  </tr>
-  <tr style="border: none;">
-    <td style="padding-right: 40px; border: none;">[Código]</td>
-    <td style="border: none;">[Apellidos y Nombres]</td>
-  </tr>
+</div>
+
+<div align="center">
+<table align="center" style="all: unset;">
+<tr style="background: none !important; border: none !important;">
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;"><strong>Código</strong></td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;"><strong>Apellidos y Nombres</strong></td>
+</tr>
+<tr style="background: none !important; border: none !important;">
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">u20241c101</td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Capillo Lema, Mía Valentina</td>
+</tr>
+<tr style="background: none !important; border: none !important;">
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">[Código]</td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">[Apellidos y Nombres]</td>
+</tr>
+<tr style="background: none !important; border: none !important;">
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">[Código]</td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">[Apellidos y Nombres]</td>
+</tr>
+<tr style="background: none !important; border: none !important;">
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">[Código]</td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">[Apellidos y Nombres]</td>
+</tr>
+<tr style="background: none !important; border: none !important;">
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">[Código]</td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">[Apellidos y Nombres]</td>
+</tr>
+<tr style="background: none !important; border: none !important;">
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">[Código]</td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">[Apellidos y Nombres]</td>
+</tr>
 </table>
+</div>
+
+<div align="center">
+
+<br>
 
 **Período 202620**
 
