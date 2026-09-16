@@ -480,7 +480,7 @@ Se presentan las herramientas seleccionadas para las fases de gestión, diseño,
 
 | Herramienta / Tecnología | Propósito | Enlace / Ruta de Acceso |
 | :--- | :--- | :--- |
-| **Visual Studio Code / WebStorm** | IDEs para la maquetación, desarrollo y estructuración del sitio web. | [https://code.visualstudio.com](https://code.visualstudio.com) |
+| **WebStorm** | IDEs para la maquetación, desarrollo y estructuración del sitio web. | [https://www.jetbrains.com/es-es/webstorm/](https://www.jetbrains.com/es-es/webstorm/) |
 | **HTML5** | Lenguaje de marcado semántico para la estructuración de la Landing Page. | [https://developer.mozilla.org](https://developer.mozilla.org) |
 | **CSS3 / Tailwind CSS** | Hojas de estilo y framework de utilidades CSS para el diseño adaptable (Responsive Design). | [https://tailwindcss.com](https://tailwindcss.com) |
 | **JavaScript** | Lenguaje de programación para la interactividad de la página y cambio de idioma. | [https://developer.mozilla.org](https://developer.mozilla.org) |
