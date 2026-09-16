@@ -791,24 +791,29 @@ Como resultado consolidado del proceso, se estructuró el mapa integral del pais
 
 ### 2.4.5. Ubiquitous Language
 
-En esta sección se define el *Ubiquitous Language* (Lenguaje Ubicuo) para el dominio de PeruTech, siguiendo los principios establecidos por Eric Evans en *Domain-Driven Design*. Este glosario establece un vocabulario formal y riguroso compartido entre el equipo de desarrollo, los usuarios y los interesados del negocio, eliminando ambigüedades. Se incluyen estrictamente términos y conceptos del dominio del comercio minorista, abastecimiento doméstico y movilidad urbana, prescindiendo de tecnicismos informáticos o de arquitectura de software.
+En esta sección se define el *Ubiquitous Language* (Lenguaje Ubicuo) para el dominio de PeruTech, siguiendo los principios de modelado estratégico de *Domain-Driven Design* (DDD) formulados por Eric Evans. Este glosario formal unifica el vocabulario compartido entre los desarrolladores, los expertos del dominio y los usuarios finales (consumidores y comerciantes), eliminando ambigüedades operativas. Se enfoca estrictamente en términos de la dinámica comercial minorista, abastecimiento presencial y movilidad urbana:
 
-* **Basic Basket (Canasta Básica):** Conjunto esencial de bienes y alimentos de primera necesidad requeridos para el sustento cotidiano de una persona o unidad familiar en un periodo determinado.
-* **Crowdsourced Verification (Verificación Colaborativa):** Proceso mediante el cual la comunidad de compradores confirma, actualiza o reporta la vigencia de los precios y la disponibilidad física de artículos observados directamente en las tiendas.
-* **Family Pantry (Despensa Familiar):** Inventario doméstico de alimentos y artículos de higiene almacenados en el hogar, cuya reposición periódica y control de caducidad están a cargo del administrador familiar.
-* **Multi-stop Route (Ruta Multiparada):** Itinerario secuencial de desplazamiento físico que conecta el hogar del comprador con múltiples puntos de venta (mercados de abastos y supermercados) ordenados estratégicamente.
-* **Net Savings (Ahorro Neto):** Diferencia económica positiva resultante de restar los costos totales de transporte (combustible, pasajes o tarifas de traslado) del ahorro monetario bruto obtenido por la dispersión de precios de los productos adquiridos.
-* **Optimal Purchase Stop (Punto Óptimo de Compra):** Establecimiento comercial sugerido dentro de la planificación de compra por presentar la mejor relación entre cercanía geográfica, disponibilidad de stock y menor precio unitario.
-* **Pantry Stockout (Agotamiento de Despensa):** Estado en el que una categoría de producto esencial en el hogar llega a nivel cero, generando la necesidad inmediata de compra y reposición.
-* **Price Discrepancy (Discrepancia de Precio):** Diferencia identificada entre el valor de venta exhibido públicamente en anaquel o lista referencial y el monto final facturado en la caja registradora.
-* **Price Dispersion (Dispersión de Precios):** Variación de precios de un mismo artículo estándar entre diferentes establecimientos comerciales ubicados dentro de un mismo radio geográfico o distrito.
-* **Purchase Budget (Presupuesto de Compra):** Techo financiero o cantidad máxima de dinero asignada por el comprador o jefe de hogar para solventar una jornada específica de abastecimiento.
-* **Purchase Item (Artículo de Compra):** Bien específico categorizado por marca, presentación, unidad de medida y peso que forma parte de la lista de necesidades del usuario.
-* **Retail Store (Comercio Minorista):** Establecimiento comercial físico (como supermercados, tiendas de descuento o puestos de mercado de abastos) dedicado a la venta directa de bienes de consumo al cliente final.
-* **Shared Shopping List (Lista de Compras Compartida):** Registro estructurado y colaborativo de artículos requeridos donde convergen las necesidades de aprovisionamiento de los distintos miembros de una vivienda.
-* **Substituted Good (Bien Sustituto):** Producto alternativo de calidad y características análogas que un comprador elige cuando el artículo principal excede su presupuesto habitual o no cuenta con inventario en tienda.
-* **Transit Overhead (Sobrecosto de Desplazamiento):** Pérdida de tiempo y gasto adicional de dinero incurrido por el consumidor al realizar trayectos ineficientes o quedar atrapado en la congestión vehicular durante su compra.
-* **Unit Price (Precio Unitario):** Costo por unidad estándar de medida (kilogramo, litro, unidad) que permite al consumidor comparar de forma equitativa artículos con diferentes volúmenes de empaque.
+* **Affiliated Store (Tienda Afiliada):** Establecimiento comercial físico (bodega, minimarket o puesto de abastos) cuyos datos registrales han sido formalmente validados para exhibir su catálogo y ofertas en la plataforma.
+* **Affiliation Request (Solicitud de Afiliación):** Trámite inicial mediante el cual un comerciante minorista registra los datos de su negocio y su identificación fiscal para integrarse a la red del sistema.
+* **Basic Basket (Canasta Básica):** Conjunto estructurado de bienes y alimentos de primera necesidad requeridos para el consumo periódico de una persona o grupo familiar.
+* **Crowdsourced Verification (Verificación Colaborativa):** Mecanismo mediante el cual la comunidad de compradores confirma, actualiza o reporta la vigencia de los precios y el stock físico observado en góndola.
+* **Multi-stop Route (Ruta Multiparada):** Itinerario secuencial de desplazamiento físico que conecta el punto de origen del comprador con múltiples locales comerciales optimizados geográficamente.
+* **Net Savings (Ahorro Neto):** Diferencia económica positiva resultante de deducir el gasto logístico de transporte (pasajes o combustible) del ahorro monetario bruto obtenido por la dispersión de precios en góndola.
+* **Optimal Purchase Stop (Punto Óptimo de Compra):** Establecimiento comercial sugerido por el sistema al ofrecer el mejor balance entre proximidad geográfica, disponibilidad de artículos y menor precio de canasta.
+* **Price Discrepancy (Discrepancia de Precio):** Desfase identificado entre el precio de venta publicado digitalmente o exhibido en anaquel y el importe real cobrado en la caja registradora.
+* **Price Dispersion (Dispersión de Precios):** Variación del precio de venta de un mismo producto idéntico entre distintos establecimientos comerciales de una misma zona o distrito.
+* **Product Catalog (Catálogo de Productos):** Conjunto indexado de artículos y bienes de consumo masivo clasificados por marca, categoría y presentación estándar.
+* **Purchase Budget (Presupuesto de Compra):** Techo financiero monetario definido por el consumidor antes de salir a comprar para controlar su nivel de gasto.
+* **Purchase Item (Artículo de Compra):** Bien individual definido por nombre, marca, formato y unidad de medida que integra la lista de compras del usuario.
+* **Retail Store (Comercio Minorista):** Punto de venta físico dedicado a la comercialización directa de bienes de consumo al comprador presencial.
+* **Shopping List (Lista de Compras):** Registro organizado de los artículos que el consumidor planifica adquirir durante su jornada de compra.
+* **Store Administrator (Administrador de Tienda):** Propietario o encargado formal del establecimiento comercial responsable de la publicación de precios, control de promociones y gestión del perfil del local.
+* **Store Offer (Oferta de Tienda):** Reducción temporal de precio o promoción especial publicada por un comercio afiliado para incentivar la afluencia de compradores locales.
+* **Substituted Good (Bien Sustituto):** Producto de características o valor nutricional equivalente que el comprador selecciona como alternativa cuando el artículo preferente no tiene stock o excede su presupuesto.
+* **SUNAT Verification (Validación SUNAT):** Verificación del estado del Registro Único de Contribuyentes (RUC) y la condición fiscal activa del comercio antes de habilitar su visibilidad pública.
+* **Transit Overhead (Sobrecosto de Desplazamiento):** Demora temporal y gasto adicional de movilidad en los que incurre un comprador debido al tráfico urbano o a la lejanía entre tiendas.
+* **Unit Price (Precio Unitario):** Costo por unidad estándar de medida (kilogramo, litro, paquete) que permite comparar con equidad el valor real de productos con diferentes tamaños de empaque.
+
 
 # Capítulo III: Requirements Specification
 
