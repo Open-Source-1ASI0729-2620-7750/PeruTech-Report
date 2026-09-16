@@ -394,61 +394,420 @@ En el Perú, el comercio minorista representa más del 12% del Producto Bruto In
 
 ## 2.1. Competidores
 
-[Contenido]
+En el marco del desarrollo de la solución de software propuesta por PeruTech, resulta fundamental examinar de manera rigurosa el panorama competitivo en el que operará el sistema. El mercado digital orientado al consumo masivo, aprovisionamiento doméstico y comercio minorista en el país presenta diversas alternativas tecnológicas que resuelven de forma fragmentada las necesidades del consumidor final. El presente acápite tiene como propósito clasificar, analizar y contrastar las soluciones directas e indirectas existentes frente a nuestra propuesta de valor, identificando brechas operativas, limitaciones de modelo y oportunidades estratégicas que permitan posicionar a la plataforma como una alternativa técnica eficiente, transparente y orientada al ahorro efectivo del presupuesto de los hogares peruanos.
 
 ### 2.1.1. Análisis competitivo
 
-[Contenido]
+El ecosistema retail en el Perú ha experimentado un avance hacia la digitalización comercial; sin embargo, persiste una limitación estructural: la gran mayoría de plataformas operan como canales de venta diseñados para promover el consumo cautivo dentro de su propia tienda, en lugar de desempeñarse como herramientas orientadas al ahorro objetivo que asistan al consumidor en la toma de decisiones informadas para adquirir productos al menor costo real.
+
+# Competitive Analysis Landscape - PeruTech
+
+| **¿Por qué llevar a cabo este análisis?** | **Identificar las ventajas competitivas de PeruTech frente a soluciones de delivery, agregadores de catálogos y gestores de alacena, permitiendo posicionarnos como una plataforma web que integra optimización de presupuesto, control de despensa y rutas presenciales de compra en el mercado peruano.** |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                           |                                                                                                                                                                                                                                                       |
+
+| Perfil | Atributo | PeruTech | Rappi / Fazil | Tiendeo / Ofertia | Out of Milk |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Perfil** | **Overview** | Plataforma web de planificación presupuestaria de compras, comparador de costos en góndola y gestión de despensa presencial. | Ecosistema digital de comercio electrónico y logística de despachos inmediatos bajo demanda. | Plataforma agregadora de catálogos comerciales y encartes publicitarios en formato digital estático (PDF). | Herramienta móvil para confección de listas de compras y registro de existencias en el hogar. |
+| | **Ventaja competitiva ¿Qué valor ofrece a los clientes?** | Algoritmo propio de optimización presupuestaria y cálculo anticipado del costo total en góndola antes del pago en caja, junto con ordenamiento secuencial por pasillos. Brinda al usuario un ahorro monetario tangible y eficiencia de tiempo en compras presenciales sin sobreprecios ni cobros de servicio. | Infraestructura masiva de repartidores y entregas en lapsos reducidos. Ofrece comodidad inmediata al usuario al recibir los artículos en su domicilio sin desplazarse, priorizando el ahorro de tiempo a cambio de comisiones adicionales por servicio y envío. | Centralización de folletos y encartes promocionales de diversas cadenas minoristas en una sola interfaz. Ofrece visibilidad anticipada de promociones semanales, aunque sin herramientas de cálculo presupuestario dinámico ni asistencia durante la visita física. | Panel integrado para revisar stock de alacena y registrar faltantes mediante escaneo de código de barras, reduciendo la compra de artículos duplicados en alimentos básicos de uso regular. |
+| **Perfil de Marketing** | **Mercado Objetivo** | Compradores independientes, parejas jóvenes y jefes de hogar de zonas urbanas que buscan optimizar su presupuesto y tiempo en compras presenciales. | Usuarios de niveles socioeconómicos A y B que priorizan la conveniencia y la inmediatez sobre el costo final de la canasta. | Personas habituadas a la consulta tradicional de folletos impresos y búsqueda anticipada de ofertas minoristas. | Consumidores que administran inventarios de cocina y priorizan el orden doméstico de insumos básicos. |
+| | **Estrategias de marketing** | Posicionamiento orgánico web (SEO) centrado en finanzas personales, mercadeo de contenidos comunitarios y convenios de visibilidad con comercios minoristas. | Captación agresiva sustentada en cupones promocionales, programas de suscripción mensual (Prime) y convenios corporativos de exclusividad. | Posicionamiento en motores de búsqueda para términos relacionados con ofertas comerciales y pauta publicitaria con marcas retail. | Posicionamiento orgánico en tiendas de aplicaciones móviles (ASO) y monetización por despliegue de anuncios display. |
+| **Perfil de Producto** | **Productos & Servicios** | Plataforma Web responsiva desarrollada en Angular con servicios RESTful backend en Spring Boot, cálculo presupuestario e inventario de alacena. | Aplicación de delivery con geolocalización en tiempo real, pasarela de pagos integrada y billetera digital. | Visor web y móvil de folletos interactivos geolocalizados sin motor transaccional de compras. | Herramienta móvil para edición de listas, gestión de existencias y escaneo de códigos de barra. |
+| | **Precios & Costos** | Esquema Freemium (funcionalidades esenciales de acceso gratuito; suscripción mensual de $4.99 para analítica de gasto y comparativas avanzadas). | Precios de góndola con margen incrementado, tarifa fija por despacho, tarifa de servicio (*service fee*) y costo de propinas. | Gratuito para el usuario final (modelo financiado directamente por la inversión publicitaria de las marcas retail). | Gratuito con inserción constante de anuncios visuales; pago único opcional para remover la publicidad. |
+| | **Canales de distribución** | Plataforma Web accesible desde navegadores modernos (escritorio y móviles), articulada con el Landing Page oficial. | Tiendas de distribución móvil (Google Play Store, App Store) y portal web de comercio electrónico. | Tiendas de distribución móvil y portal web informativo de catálogos. | Tiendas de distribución móvil (Google Play Store y App Store). |
+| **SWOT** | PeruTech | Rappi / Fazil | Tiendeo / Ofertia | Out of Milk |
+| **Fortalezas** | Algoritmo propio para proyección presupuestaria y ordenamiento de rutas por pasillos; arquitectura web escalable; diseño inclusivo; total transparencia en costos presenciales. | Logística robusta y red masiva de repartidores consolidada; presupuesto elevado para marketing y fidelización de usuarios; convenios directos con cadenas de retail. | Extensa base de datos de catálogos comerciales a nivel nacional; interfaz intuitiva para lectura de volantes publicitarios; alto reconocimiento en búsqueda de ofertas. | Módulo dual de despensa y lista de compras integrado; escaneo funcional de código de barras; baja demanda de recursos en el dispositivo cliente. |
+| **Debilidades** | Marca en fase inicial de penetración; volumen de datos inicial dependiente de la integración de establecimientos comerciales y adopción temprana de la comunidad. | Precios finales notablemente inflados frente a la compra directa en tienda; altas comisiones de servicio por pedido; dependencia de la disponibilidad de repartidores. | Contenido estático en imágenes o PDF que no permite búsquedas dinámicas de precios unitarios; nula asistencia en cálculo del gasto acumulado en tienda. | Interfaz gráfica desactualizada; ausencia de sincronización web colaborativa en tiempo real; saturación excesiva de publicidad en su versión gratuita. |
+| **Oportunidades** | Incremento de la inflación que aumenta la sensibilidad al precio en compras familiares; expansión del comercio minorista de descuento (tiendas de conveniencia como Mass y Vega). | Expansión hacia servicios financieros digitales (billeteras electrónicas) y programas corporativos de abastecimiento de oficinas. | Alianzas con pequeños comerciantes y bodegas de barrio para digitalizar sus promociones y volantes impresos. | Modernización visual del sistema orientada al consumo responsable y prevención del desperdicio de insumos perecibles. |
+| **Amenazas** | Restricciones de acceso a datos públicos por parte de grandes cadenas de retail; incorporación de módulos de listas en plataformas bancarias o billeteras móviles. | Modificaciones en regulaciones laborales sobre repartidores que eleven los costos operativos; saturación y deserción de usuarios por cobros excesivos de servicio. | Desplazamiento por parte de usuarios jóvenes que demandan datos estructurados en tiempo real en lugar de lectura de folletos extensos. | Abandono de usuarios hacia aplicaciones genéricas de notas compartidas integradas en los sistemas operativos móviles. |
+
+
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-[Contenido]
+A partir del diagnóstico FODA cruzado y el mapeo del entorno competitivo, se establecen las siguientes estrategias y tácticas preliminares para consolidar la propuesta de valor de PeruTech en el mercado:
+
+* **Frente a Rappi / Fazil (Ecosistemas de Delivery On-Demand):**
+  * **Estrategia (Aprovechamiento de debilidades y mitigación de amenazas):** Posicionar a PeruTech como la solución idónea frente a la sobretasa logística, orientada al consumidor que prioriza el ahorro neto sobre la inmediatez delegada, neutralizando la amenaza de saturación por tarifas de intermediación infladas.
+  * **Tácticas:**
+    * Implementar un comparador en tiempo real que contraste el costo del ticket presencial proyectado frente al costo promedio inflado en aplicaciones de delivery, visibilizando el ahorro monetario directo.
+    * Incorporar la funcionalidad de optimización de rutas por pasillos para que la compra física demande el menor tiempo posible, mitigando la ventaja de comodidad de los repartidores.
+
+* **Frente a Tiendeo / Ofertia (Agregadores de Catálogos Estáticos):**
+  * **Estrategia (Explotación de limitaciones técnicas y oportunidades de mercado):** Reemplazar la consulta pasiva de folletos publicitarios estáticos mediante una arquitectura basada en datos estructurados y dinámicos, captando al público joven que desestima los catálogos en formato PDF.
+  * **Tácticas:**
+    * Desarrollar un motor de búsqueda indexada por categoría de producto y marca que desglose el precio unitario y permita la comparativa inmediata entre distintos establecimientos.
+    * Integrar un módulo de presupuesto en vivo que consolide la suma automática de los ítems seleccionados antes de acudir al punto de venta.
+
+* **Frente a Out of Milk (Gestores Móviles de Despensa y Listas):**
+  * **Estrategia (Superación tecnológica y experiencia de usuario):** Diseñar una solución integral que conecte el control de inventario doméstico con la disponibilidad de góndola en una plataforma web moderna, eliminando la fricción de interfaces obsoletas saturadas de publicidad invasiva.
+  * **Tácticas:**
+    * Proporcionar una plataforma web responsiva construida con Angular y Material Design accesible desde cualquier navegador sin obligar a la descarga de aplicativos pesados.
 
 ## 2.2. Entrevistas
 
-[Contenido]
+Con el objetivo de validar las hipótesis iniciales del modelo de solución, comprender a profundidad los puntos de dolor y modelar con precisión los requerimientos funcionales del sistema, se desarrolló un proceso de investigación cualitativa sustentado en entrevistas en profundidad. Esta recolección de información se orientó de manera directa a representantes reales de los segmentos objetivo definidos para PeruTech: compradores individuales independientes y gestores de presupuesto familiar. A través de este acercamiento empírico, se exploraron sus hábitos de abastecimiento, los métodos actuales para controlar sus gastos, las dificultades al momento de recorrer los establecimientos comerciales y su disposición frente al uso de herramientas digitales para la optimización de sus compras presenciales.
 
 ### 2.2.1. Diseño de entrevistas
 
-[Contenido]
+El diseño del instrumento cualitativo se basa en el enfoque de Diseño Centrado en el Usuario (UCD) para recopilar evidencia empírica directa. Esta información sustenta la construcción rigurosa de los arquetipos (User Personas), mapas de empatía y recorridos de usuario (User Journey Maps).
+
+El cuestionario integra variables demográficas, competencias digitales y hábitos de consumo, complementadas con aspectos operativos vinculados a la propuesta de valor de PeruTech. Las preguntas se dividen formalmente en principales, orientadas a validar el problema y la viabilidad de la solución, y complementarias, enfocadas en profundizar en las fricciones de transporte, hábitos de compra y control del presupuesto familiar.
+
+---
+
+#### A. Preguntas de perfil demográfico y construcción de arquetipos (Comunes para ambos segmentos)
+*Objetivo: Obtener datos de contexto, antecedentes biográficos, nivel de digitalización y hábitos de consumo.*
+
+1. **Datos Demográficos y Contexto:** ¿Cuál es su edad, ocupación actual, estado civil y distrito de residencia habitual?
+2. **Composición del Hogar:** ¿Con cuántas personas convive actualmente y cómo se distribuyen las responsabilidades en la administración del presupuesto cotidiano?
+3. **Dispositivos y Habilidades Digitales:** ¿Qué dispositivos tecnológicos (smartphone, tablet, laptop) utiliza con mayor frecuencia y qué nivel de soltura considera que posee al interactuar con aplicaciones web o móviles nuevas?
+4. **Marcas, Canales e Influencias:** ¿Qué aplicaciones digitales consulta con regularidad (redes sociales, banca móvil, billeteras digitales, e-commerce) y a través de qué medios se informa preferentemente sobre finanzas o consumo?
+
+---
+
+#### B. Segmento Objetivo 1: Compradores Multitienda y Optimizadores de Desplazamiento
+*Perfil: Individuos que recorren diversos establecimientos buscando optimizar presupuesto frente a las distancias urbanas.*
+
+* **Preguntas Principales:**
+  1. ¿Sueles visitar varios establecimientos (mercados, supermercados, bodegas) en un mismo día para buscar mejores precios, o prefieres comprar todo en un solo lugar?
+  2. Ante el constante aumento de precios, ¿cómo te enteras actualmente de qué locales de tu zona tienen los productos esenciales más baratos antes de salir de casa?
+  3. ¿Cómo te trasladas habitualmente para hacer tus compras y cuánto influye el costo o tiempo de ese transporte en tu decisión de a dónde ir?
+  4. ¿Qué es lo que más te frustra al momento de movilizarte para hacer tus compras en la ciudad (tráfico, gasto en pasajes/gasolina, tiempo perdido)?
+  5. ¿Qué herramientas o métodos utilizas habitualmente para asegurarte de no excederte del presupuesto familiar que tienes disponible para el mes?
+  6. Si existiera una plataforma que te compare los precios de locales cercanos y te diseñe la ruta de viaje más eficiente para ahorrar tiempo y dinero, ¿qué características harían que la uses en tu día a día?
+
+* **Preguntas Complementarias:**
+  1. ¿En qué momentos del día o días de la semana prefieres desplazarte para evitar la congestión en las tiendas o vías de transporte?
+  2. Cuando encuentras una oferta atractiva en un establecimiento distante, ¿cómo evalúas si el ahorro compensa el gasto adicional de traslado?
+  3. ¿Compartes información sobre precios u ofertas con amigos o familiares mediante canales digitales (como WhatsApp o grupos locales)?
+
+---
+
+#### C. Segmento Objetivo 2: Administradores del Hogar y Gestores de Despensa Familiar
+*Perfil: Responsables principales del aprovisionamiento familiar, enfocados en el control del gasto y el abastecimiento doméstico.*
+
+* **Preguntas Principales:**
+  1. ¿Cómo coordinas y recopilas las solicitudes de compras cuando intervienen múltiples integrantes de la familia dentro del hogar?
+  2. ¿Qué porcentaje aproximado de los ingresos familiares se destina mensualmente al aprovisionamiento de alimentos y artículos de primera necesidad?
+  3. ¿Qué procedimiento aplicas para revisar qué insumos están por agotarse o vencer en tu alacena antes de realizar la compra del mes o de la quincena?
+  4. ¿Con qué frecuencia te ocurre comprar productos duplicados o innecesarios por no contar con una visibilidad certera del stock de tu alacena al estar fuera de casa?
+  5. ¿Qué dificultades o situaciones de estrés experimentas al consolidar el total de la compra al momento de llegar a la caja registradora?
+  6. ¿Qué funcionalidades esenciales considerarías determinantes para adoptar una plataforma web orientada al control colaborativo del presupuesto y la despensa familiar?
+
+* **Preguntas Complementarias:**
+  1. Si un producto de primera necesidad excede tu presupuesto previsto en góndola, ¿optas por cambiar de marca, reducir la cantidad o descartar la compra?
+  2. ¿Quiénes colaboran en tu hogar con la actualización de la lista de víveres y qué fricciones surgen si alguien olvida anotar un producto agotado?
+  3. ¿Utilizas alguna libreta física, aplicación de notas compartidas o Excel para llevar el registro histórico de tus egresos mensuales en despensa?
+
+
+
 
 ### 2.2.2. Registro de entrevistas
 
-[Contenido]
+A continuación, se presenta la bitácora de las entrevistas cualitativas realizadas a los representantes de los segmentos objetivo. Los datos recopilados documentan las características demográficas, hábitos tecnológicos, canales de interacción, dispositivos y factores psicográficos requeridos para la formulación formal de los arquetipos de usuario.
+
+---
+
+#### Segmento 1: Compradores Multitienda y Optimizadores de Desplazamiento
+
+* **Entrevista 1:**
+  * **Nombre y Apellidos:** Fernando Mauricio Justiniano Vega
+  * **Edad:** 24 años
+  * **Distrito de residencia:** San Miguel, Lima
+  * **Ocupación:** Desarrollador de Software / Profesional Independiente
+  * **Plataforma de video:** Microsoft Stream
+  * **Enlace de Video:** [Ver Registro en Microsoft Stream](https://web.microsoftstream.com/)
+  * **Marca de tiempo (Timing de inicio):** `[00:00]`
+  * **Duración:** `[04:30 min]`
+  * **Perfil técnico y entorno digital:**
+    * *Dispositivos habituales:* Smartphone Android (gama media-alta) y Laptop personal.
+    * *Navegador de preferencia:* Google Chrome.
+    * *Canales digitales e influencias:* Billeteras digitales (Yape, Plin), aplicaciones bancarias (BCP), Google Maps y foros tecnológicos.
+    * *Rasgos de personalidad:* Analítico, pragmático, enfocado en la eficiencia de tiempos y reservado en gastos innecesarios.
+  * **Resumen descriptivo:** Fernando reside de manera independiente y realiza compras de aprovisionamiento de forma quincenal. Suele dividir sus compras entre el mercado zonal para alimentos frescos y un supermercado de cadena para abarrotes y artículos de aseo, con el fin de abaratar costos. Manifiesta alta frustración por el tráfico vehicular y los tiempos muertos de traslado entre locales, lo cual en ocasiones diluye el ahorro económico obtenido. No utiliza folletos físicos ni catálogos web tradicionales por considerarlos ineficientes; en su lugar, se traslada directamente asumiendo los precios del momento. Administra un presupuesto estimado mediante notas en su celular y pagos móviles, pero pierde la cuenta precisa de sus consumos al añadir artículos de último minuto. Señaló que utilizaría cotidianamente una solución web que compare precios de locales cercanos y trace la ruta más eficiente de traslado antes de salir de casa.
+
+![Screenshot Entrevista 1 - Fernando Justiniano](assets/entrevista-fernando.png)
+> *Figura 2.1: Registro audiovisual de la entrevista cualitativa a Fernando Justiniano Vega.*
+
+* **Entrevista 2:**
+  * **Nombre y Apellidos:** `[Pendiente: Colocar Nombres y Apellidos del Entrevistado 2]`
+  * **Edad:** `[Pendiente: Edad]`
+  * **Distrito de residencia:** `[Pendiente: Distrito]`
+  * **Ocupación:** `[Pendiente: Ocupación]`
+  * **Plataforma de video:** Microsoft Stream
+  * **Enlace de Video:** `[Pendiente: URL de Microsoft Stream]`
+  * **Marca de tiempo (Timing de inicio):** `[00:00]`
+  * **Duración:** `[hh:mm]`
+  * **Perfil técnico y entorno digital:** `[Pendiente: Dispositivos, Navegador, Canales y Personalidad]`
+  * **Resumen descriptivo:** `[Pendiente: Redactar resumen de respuestas del entrevistado 2]`
+
+![Screenshot Entrevista 2](assets/entrevista-2.png)
+> *Figura 2.2: Registro audiovisual de la entrevista cualitativa 2.*
+
+* **Entrevista 3:**
+  * **Nombre y Apellidos:** `[Pendiente: Colocar Nombres y Apellidos del Entrevistado 3]`
+  * **Edad:** `[Pendiente: Edad]`
+  * **Distrito de residencia:** `[Pendiente: Distrito]`
+  * **Ocupación:** `[Pendiente: Ocupación]`
+  * **Plataforma de video:** Microsoft Stream
+  * **Enlace de Video:** `[Pendiente: URL de Microsoft Stream]`
+  * **Marca de tiempo (Timing de inicio):** `[00:00]`
+  * **Duración:** `[hh:mm]`
+  * **Perfil técnico y entorno digital:** `[Pendiente: Dispositivos, Navegador, Canales y Personalidad]`
+  * **Resumen descriptivo:** `[Pendiente: Redactar resumen de respuestas del entrevistado 3]`
+
+![Screenshot Entrevista 3](assets/entrevista-3.png)
+> *Figura 2.3: Registro audiovisual de la entrevista cualitativa 3.*
+
+---
+
+#### Segmento 2: Administradores del Hogar y Gestores de Despensa Familiar
+
+* **Entrevista 4:**
+  * **Nombre y Apellidos:** `[Pendiente: Colocar Nombres y Apellidos del Entrevistado 4]`
+  * **Edad:** `[Pendiente: Edad]`
+  * **Distrito de residencia:** `[Pendiente: Distrito]`
+  * **Ocupación:** `[Pendiente: Ocupación]`
+  * **Plataforma de video:** Microsoft Stream
+  * **Enlace de Video:** `[Pendiente: URL de Microsoft Stream]`
+  * **Marca de tiempo (Timing de inicio):** `[00:00]`
+  * **Duración:** `[hh:mm]`
+  * **Perfil técnico y entorno digital:** `[Pendiente: Dispositivos, Navegador, Canales y Personalidad]`
+  * **Resumen descriptivo:** `[Pendiente: Redactar resumen de respuestas sobre presupuesto familiar y control de despensa]`
+
+![Screenshot Entrevista 4](assets/entrevista-4.png)
+> *Figura 2.4: Registro audiovisual de la entrevista cualitativa 4.*
+
+* **Entrevista 5:**
+  * **Nombre y Apellidos:** `[Pendiente: Colocar Nombres y Apellidos del Entrevistado 5]`
+  * **Edad:** `[Pendiente: Edad]`
+  * **Distrito de residencia:** `[Pendiente: Distrito]`
+  * **Ocupación:** `[Pendiente: Ocupación]`
+  * **Plataforma de video:** Microsoft Stream
+  * **Enlace de Video:** `[Pendiente: URL de Microsoft Stream]`
+  * **Marca de tiempo (Timing de inicio):** `[00:00]`
+  * **Duración:** `[hh:mm]`
+  * **Perfil técnico y entorno digital:** `[Pendiente: Dispositivos, Navegador, Canales y Personalidad]`
+  * **Resumen descriptivo:** `[Pendiente: Redactar resumen de respuestas del entrevistado 5]`
+
+![Screenshot Entrevista 5](assets/entrevista-5.png)
+> *Figura 2.5: Registro audiovisual de la entrevista cualitativa 5.*
+
+
 
 ### 2.2.3. Análisis de entrevistas
 
-[Contenido]
+A partir de la triangulación de la información cualitativa y la cuantificación de las respuestas de las entrevistas registradas, se sintetizan las variables objetivas y subjetivas más recurrentes por cada segmento objetivo, sirviendo de base estadística directa para la construcción de los arquetipos de usuario.
+
+---
+
+#### Segmento 1: Compradores Multitienda y Optimizadores de Desplazamiento
+*(Análisis sustentado en la muestra de 3 entrevistados del Segmento 1)*
+
+* **Variables Objetivas (Demográficas y Tecnológicas):**
+  * **Comportamiento multitienda (100%):** El 100% (3 de 3) divide sus compras entre mercados zonales (alimentos frescos) y supermercados tradicionales (artículos de aseo o abarrotes empaquetados) con el fin deliberado de economizar.
+  * **Desplazamiento urbano y fricción de transporte (100%):** El 100% combina traslados a pie con transporte público o taxi al retornar cargado, manifestando que el tráfico vehicular y los tiempos muertos restan el beneficio del ahorro económico.
+  * **Dispositivos y herramientas digitales (100%):** La totalidad utiliza smartphones Android como dispositivo primario, recurriendo de forma continua a Google Chrome como navegador, Google Maps para movilidad y billeteras móviles (Yape/Plin) para transacciones rápidas.
+  * **Gestión de listas no estructuradas (66.7%):** 2 de los 3 entrevistados anotan sus pendientes de forma desordenada en el bloc de notas del móvil, sin jerarquía por pasillo ni orden de prioridad.
+
+* **Variables Subjetivas (Psicográficas, Hábitos y Frustraciones):**
+  * **Frustración por información asimétrica de precios (100%):** La totalidad declara comprar "a ciegas" respecto a ofertas reales, rechazando los catálogos en PDF o folletos impresos por considerarlos obsoletos e ineficientes.
+  * **Descontrol del gasto final en caja (66.7%):** 2 de cada 3 entrevistados afirman que los artículos de impulso o las variaciones imprevistas de precio provocan que el monto total en caja supere su estimación mental inicial.
+  * **Receptividad a plataformas web ligeras (100%):** El 100% expresó plena disposición a utilizar una solución web responsiva orientada a la comparativa de precios y cálculo de rutas eficientes sin requerir descargas de aplicaciones nativas pesadas.
+
+---
+
+#### Segmento 2: Administradores del Hogar y Gestores de Despensa Familiar
+*(Análisis sustentado en la muestra de 2 entrevistados del Segmento 2)*
+
+* **Variables Objetivas (Demográficas y Tecnológicas):**
+  * **Asignación significativa del presupuesto (100%):** El 100% (2 de 2) destina entre el 35% y el 50% de los ingresos totales familiares exclusivamente al aprovisionamiento doméstico y víveres esenciales.
+  * **Coordinación familiar descentralizada (100%):** Ambos entrevistados centralizan los pedidos de compra del hogar mediante cadenas de mensajes y chats de WhatsApp con sus convivientes, careciendo de una lista colaborativa única.
+  * **Equipamiento y entorno web (100%):** Acceden a internet tanto desde dispositivos móviles como laptops o equipos de escritorio, con preferencia marcada por interfaces web intuitivas, directas y sin sobrecarga publicitaria.
+
+* **Variables Subjetivas (Psicográficas, Hábitos y Frustraciones):**
+  * **Incidencia de compras duplicadas o desperdicio (100%):** El 100% reconoció haber comprado insumos repetidos o haber sufrido el vencimiento de víveres al fondo de la alacena por falta de visibilidad del inventario en tiempo real.
+  * **Estrés por impacto inflacionario en caja registradora (100%):** La totalidad experimenta incertidumbre y molestia al totalizar la compra en caja cuando los precios unitarios han variado sin previo aviso.
+  * **Adopción de control de inventario y presupuesto (100%):** Ambos manifestaron interés prioritario en un sistema que vincule los productos faltantes de la despensa con un cálculo automático del importe total a pagar antes de salir de casa.
 
 ## 2.3. Needfinding
 
-[Contenido]
+A partir de la triangulación de la información cualitativa recolectada en las entrevistas, el análisis cuantitativo previo y las hipótesis formuladas en el Lean UX Canvas, se identifican las necesidades, frustraciones y motivaciones críticas de los segmentos objetivo de PeruTech. Los hallazgos confirman la problemática central: la pérdida de poder adquisitivo por asimetría de precios, el desaprovechamiento de recursos económicos por descontrol de despensa y la ineficiencia logística en los desplazamientos urbanos.
+
+A continuación, se sintetizan las necesidades esenciales por segmento que fundamentan el modelado de los artefactos de diseño centrado en el usuario (User Personas, User Task Matrix, User Journey Maps, Empathy Mapping y As-Is Scenario Mapping):
+
+* **Segmento 1: Compradores Multitienda y Optimizadores de Desplazamiento**
+  * **Comparación multiestablecimiento ágil:** Necesidad de consultar precios actualizados entre mercados zonales y cadenas comerciales antes de salir de casa para evitar recorridos a ciegas.
+  * **Optimización de trayectos y transporte:** Requerimiento de planificar rutas de compra eficientes que minimicen el tiempo en tráfico y el gasto en pasajes o combustible, asegurando que el costo logístico no anule el ahorro obtenido en góndola.
+  * **Proyección de gasto previo:** Demanda de calcular el importe total estimado antes de acudir a la tienda para no sobrepasar el presupuesto mensual disponible.
+  * **Plataforma web ligera:** Necesidad de acceder a la herramienta desde el navegador de su dispositivo móvil sin verse forzados a descargar aplicativos nativos de gran peso.
+
+* **Segmento 2: Administradores del Hogar y Gestores de Despensa Familiar**
+  * **Visibilidad del inventario doméstico:** Necesidad de verificar el stock real de la alacena para erradicar la compra de productos duplicados y evitar el vencimiento de alimentos.
+  * **Consolidación colaborativa de compras:** Requerimiento de centralizar las solicitudes de todos los miembros del hogar en una lista organizada, sustituyendo cadenas caóticas de mensajes por mensajería instantánea.
+  * **Control de tope presupuestario en caja:** Demanda de monitoreo acumulativo de precios en tiempo real para eliminar la incertidumbre o sorpresa negativa frente a la cuenta total en la caja registradora.
+  * **Organización estructurada por categorías:** Necesidad de clasificar los artículos requeridos por secciones o pasillos para agilizar el proceso de abastecimiento en tiendas de gran formato.
 
 ### 2.3.1. User Personas
 
-[Contenido]
+La elaboración de los arquetipos de usuario sintetiza los patrones empíricos recolectados durante las entrevistas cualitativas y el diagnóstico del ecosistema competitivo. Las fichas integran variables demográficas, competencias digitales, motivaciones y fricciones reales para guiar el diseño centrado en el usuario de PeruTech, asegurando que las decisiones arquitectónicas y funcionales respondan a necesidades operativas validadas.
+
+---
+
+#### User Persona 1: Fernando Justiniano Vega (Comprador Multitienda y Optimizador de Desplazamiento)
+
+![User Persona 1 - Fernando Justiniano Vega](../assets/artifacts/Segmento.png)
+> *Figura 2.6: Ficha de User Persona correspondiente al Segmento 1, elaborada en UXPressia.*
+
+---
+
+#### User Persona 2: Administrador del Hogar y Gestor de Despensa Familiar
+
+![Ficha User Persona 2](../assets/artifacts/Segmento%202.png)
+> *Figura 2.7: Ficha de User Persona correspondiente al Segmento 2, elaborada en UXPressia.*
+
+> *(Espacio reservado para la incorporación de la ficha gráfica del arquetipo del Segmento 2 a cargo del equipo).*
 
 ### 2.3.2. User Task Matrix
 
-[Contenido]
+En esta sección se presenta la matriz de tareas de usuario (*User Task Matrix*), estructurada a partir de los dos segmentos objetivo del proyecto: el **Segmento 1**, representado por Fernando Justiniano Vega (Comprador Multitienda y Optimizador de Desplazamiento), y el **Segmento 2**, representado por [Nombre del Representante del Segmento 2 - Pendiente] (Administrador del Hogar y Gestor de Despensa Familiar). 
+
+Las actividades identificadas corresponden estrictamente a tareas del mundo real que los usuarios ejecutan de manera habitual para resolver sus necesidades de abastecimiento y gestión económica, independientemente del uso de una solución tecnológica o software específico.
+
+| Tarea (Task) | Fernando Justiniano (Frecuencia) | Fernando Justiniano (Importancia) | [Nombre del Segmento 2] (Frecuencia) | [Nombre del Segmento 2] (Importancia) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Planificar el presupuesto límite de compra** | Quincenal | Media | Mensual | Alta |
+| **Inventariar existencias y revisar faltantes en despensa** | Ocasional | Baja | Semanal | Alta |
+| **Consolidar la lista de artículos necesarios** | Quincenal | Media | Semanal | Alta |
+| **Comparar precios entre mercados y supermercados** | Quincenal | Alta | Semanal | Alta |
+| **Definir la ruta física de traslado y medios de transporte** | Quincenal | Alta | Ocasional | Media |
+| **Recorrer pasillos y puestos en búsqueda de productos** | Quincenal | Media | Semanal | Media |
+| **Monitorear el importe acumulado antes de pagar en caja** | Quincenal | Alta | Semanal | Alta |
+| **Verificar fechas de vencimiento y rotación de insumos** | Rara vez | Baja | Semanal | Alta |
+
+---
+
+#### Análisis comparativo de tareas
+
+* **Tareas con mayor frecuencia e importancia:**  
+  La **comparación de precios entre establecimientos** y el **monitoreo del importe acumulado antes de pagar en caja** representan los puntos más críticos y con mayor nivel de importancia para ambos arquetipos. Estas tareas surgen directamente de la necesidad de mitigar el impacto del incremento del costo de vida y evitar sorpresas desagradables al momento de liquidar la cuenta.
+
+* **Principales coincidencias:**  
+  Ambos usuarios coinciden en la relevancia de controlar el egreso económico final y en el acto de comparar alternativas de compra. Tanto Fernando como el administrador del hogar experimentan fricción al tratar de prever con exactitud cuánto gastarán en total antes de que el cajero procese los productos.
+
+* **Principales diferencias:**  
+  * **Logística vs. Inventario:** Para Fernando (Segmento 1), **definir la ruta física de traslado** es una tarea de alta importancia y recurrencia, ya que busca activamente que el costo y tiempo de transporte urbano no anulen el ahorro conseguido entre locales. En contraste, para el administrador del hogar (Segmento 2), esta tarea es secundaria y sus mayores prioridades operativas radican en **inventariar existencias en despensa** y **verificar fechas de caducidad**, actividades que ejecuta de forma rigurosa y semanal para evitar mermas o duplicidad de insumos familiares.
+  * **Periodicidad de abastecimiento:** Mientras Fernando estructura sus tareas en ciclos **quincenales** de forma individual, el gestor familiar opera con una frecuencia **semanal**, motivado por el rápido consumo de alimentos de los múltiples integrantes de su hogar.
 
 ### 2.3.3. User Journey Mapping
 
-[Contenido]
+En esta sección se modelan los *User Journey Maps* en su versión actual (*As-Is*) para cada uno de los arquetipos de usuario. El propósito de este artefacto es ilustrar el viaje de extremo a extremo (*end-to-end journey*) que experimenta el usuario en su realidad cotidiana al abastecerse, identificando las etapas del proceso, puntos de contacto, pensamientos, niveles de satisfacción y las fricciones críticas que enfrenta en ausencia de la plataforma PeruTech.
+
+---
+
+#### User Journey Map 1: Fernando Justiniano Vega (Segmento 1 - Comprador Multitienda)
+
+El recorrido documenta la experiencia de Fernando al realizar sus compras de abastecimiento quincenal. La travesía inicia con la identificación de faltantes y la fijación de un presupuesto mental, continúa con el traslado físico a ciegas hacia los comercios de su zona (enfrentando tráfico y dispersión de precios), prosigue con la búsqueda de productos y la incertidumbre en caja, y concluye con el balance final entre el tiempo invertido en el transporte y el ahorro monetario obtenido.
+
+![User Journey Map 1 - Fernando Justiniano Vega](../assets/artifacts/Mapping.png)
+> *Figura 2.8: Diagrama de User Journey Map (As-Is) correspondiente al Segmento 1, elaborado en UXPressia.*
+
+---
+
+#### User Journey Map 2: Administrador del Hogar y Gestor de Despensa Familiar (Segmento 2)
+
+El recorrido refleja la dinámica semanal de gestión del abastecimiento familiar, iniciando con la revisión manual de alacenas y la consolidación de pedidos por mensajería, continuando con la visita a puntos de venta para cotejar precios al por mayor, el monitoreo del gasto acumulado frente al presupuesto del hogar y finalizando con el almacenamiento y control de caducidades en cocina.
+
+![User Journey Map 2](../assets/artifacts/Mapping-2.png)
+> *Figura 2.9: Diagrama de User Journey Map (As-Is) correspondiente al Segmento 2, elaborado en UXPressia.*
+
+> *(Espacio reservado para la incorporación del diagrama y la descripción detallada del recorrido del Segmento 2 a cargo del equipo una vez concluidas sus entrevistas).*
 
 ### 2.3.4. Empathy Mapping
 
-[Contenido]
+En esta sección se sintetiza el proceso de empatización desarrollado para comprender a profundidad el entorno emocional, cognitivo y conductual de los arquetipos de usuario. La construcción de cada *Empathy Map* se realizó de forma colaborativa mediante la herramienta UXPressia, situando al arquetipo validado en el centro del análisis para estructurar sus percepciones en torno a las dimensiones clave: qué piensa y siente, qué ve, qué oye, qué dice y hace, así como sus principales esfuerzos (*Pains*) y resultados esperados (*Gains*).
+
+---
+
+#### Empathy Map 1: Fernando Justiniano Vega (Segmento 1 - Comprador Multitienda)
+
+El mapa de empatía de Fernando refleja la tensión constante entre la necesidad de ahorrar en la canasta básica y el desgaste generado por la ineficiencia del transporte urbano en Lima. Sus dolores se concentran en la asimetría de información de precios y las pérdidas de tiempo en el tráfico, mientras que sus ganancias se orientan al ahorro neto medible y al uso de una solución web ligera que agilice su toma de decisiones antes de salir de casa.
+
+![Empathy Map 1 - Fernando Justiniano Vega](../assets/artifacts/Empathy.png)
+> *Figura 2.10: Mapa de empatía correspondiente al Segmento 1, elaborado en UXPressia.*
+
+---
+
+#### Empathy Map 2: Administrador del Hogar y Gestor de Despensa Familiar (Segmento 2)
+
+El mapa de empatía del gestor familiar documenta las presiones asociadas a la administración del presupuesto doméstico y la prevención de desperdicios en despensa. Refleja la carga mental de coordinar las necesidades de múltiples integrantes y la búsqueda de certidumbre en caja al abastecerse por volumen en tiendas comerciales.
+
+![Empathy Map 2](../assets/artifacts/Empathy-2.png)
+> *Figura 2.11: Mapa de empatía correspondiente al Segmento 2, elaborado en UXPressia.*
+
+> *(Espacio reservado para la incorporación del diagrama gráfico y el análisis del mapa de empatía del Segmento 2 a cargo del equipo una vez concluidas sus entrevistas).*
 
 ## 2.4. Big Picture Event Storming
 
-[Contenido]
-
-## 2.5. Ubiquitous Language
-
-[Contenido]
+Para modelar la complejidad del dominio de negocio de PeruTech, el equipo llevó a cabo un taller colaborativo de *Big Picture Event Storming*. Esta metodología de exploración de alto nivel permitió alinear el entendimiento del problema entre el equipo técnico y el análisis de negocio, identificando los procesos clave, oportunidades y eventos significativos que rigen el abastecimiento inteligente de los hogares.
 
 ---
+
+### 2.4.1. Fase 1: Generación Abierta de Eventos (Open Space)
+
+En esta etapa inicial, los participantes realizaron una lluvia de ideas sin restricciones temporales ni de orden secuencial para registrar todos los eventos de dominio (*Domain Events*) posibles, redactados en tiempo pasado (post-it naranjas). Se levantaron eventos desde la detección de necesidad y registro del usuario hasta la optimización de rutas, control presupuestario y validación de precios en tienda.
+
+![Big Picture - Open Space](../assets/ddd/big-picture/big-picture-open.png)
+> *Figura 2.12: Fase Open Space del Big Picture Event Storming, registro inicial de eventos de dominio.*
+
+---
+
+### 2.4.2. Fase 2: Exploración y Línea de Tiempo (Explore)
+
+Durante la fase de exploración, el equipo ordenó cronológicamente los eventos identificados de izquierda a derecha para estructurar la línea de tiempo del negocio. Asimismo, se identificaron puntos de fricción, cuellos de botella y dudas del dominio mediante marcas de riesgo o problemas (*Hotspots* / post-it rojos/rosados), tales como la dispersión de precios no verificados, el tráfico vehicular y los desvíos presupuestarios imprevistos en caja.
+
+![Big Picture - Explore](../assets/ddd/big-picture/big-picture-explore.png)
+> *Figura 2.13: Fase Explore del Big Picture Event Storming, ordenamiento cronológico y detección de puntos críticos.*
+
+---
+
+### 2.4.3. Fase 3: Consolidación y Definición de Triggers (Close Space)
+
+En el cierre del espacio de exploración, se refinó la línea de tiempo eliminando redundancias y se incorporaron los comandos o acciones desencadenantes (*Commands* / post-it azules) ejecutados por los actores del sistema (como Fernando o el administrador del hogar), así como las políticas o reglas de negocio automáticas (*Policies* / post-it lilas) que reaccionan a determinados eventos, por ejemplo, alertas por superación de presupuesto o recálculo de rutas por congestión.
+
+![Big Picture - Close Space](../assets/ddd/big-picture/big-picture-close.png)
+> *Figura 2.14: Fase Close Space del Big Picture Event Storming, integración de comandos, actores y políticas de negocio.*
+
+---
+
+### 2.4.4. Fase 4: Modelo Final del Dominio (Final Landscape)
+
+Como resultado consolidado del proceso, se estructuró el mapa integral del paisaje del negocio (*Business Landscape*). Este diagrama agrupa los eventos, comandos y políticas en torno a los flujos operativos fundamentales de PeruTech: gestión de perfiles e identidad, catálogo y actualización colaborativa de precios, planificación de listas de compra, y optimización de rutas con control presupuestario previo a la compra física.
+
+![Big Picture - Modelo Final](../assets/ddd/big-picture/big-picture-final.png)
+> *Figura 2.15: Modelo consolidado del Big Picture Event Storming de PeruTech.*
+
+### 2.4.5. Ubiquitous Language
+
+En esta sección se define el *Ubiquitous Language* (Lenguaje Ubicuo) para el dominio de PeruTech, siguiendo los principios establecidos por Eric Evans en *Domain-Driven Design*. Este glosario establece un vocabulario formal y riguroso compartido entre el equipo de desarrollo, los usuarios y los interesados del negocio, eliminando ambigüedades. Se incluyen estrictamente términos y conceptos del dominio del comercio minorista, abastecimiento doméstico y movilidad urbana, prescindiendo de tecnicismos informáticos o de arquitectura de software.
+
+* **Basic Basket (Canasta Básica):** Conjunto esencial de bienes y alimentos de primera necesidad requeridos para el sustento cotidiano de una persona o unidad familiar en un periodo determinado.
+* **Crowdsourced Verification (Verificación Colaborativa):** Proceso mediante el cual la comunidad de compradores confirma, actualiza o reporta la vigencia de los precios y la disponibilidad física de artículos observados directamente en las tiendas.
+* **Family Pantry (Despensa Familiar):** Inventario doméstico de alimentos y artículos de higiene almacenados en el hogar, cuya reposición periódica y control de caducidad están a cargo del administrador familiar.
+* **Multi-stop Route (Ruta Multiparada):** Itinerario secuencial de desplazamiento físico que conecta el hogar del comprador con múltiples puntos de venta (mercados de abastos y supermercados) ordenados estratégicamente.
+* **Net Savings (Ahorro Neto):** Diferencia económica positiva resultante de restar los costos totales de transporte (combustible, pasajes o tarifas de traslado) del ahorro monetario bruto obtenido por la dispersión de precios de los productos adquiridos.
+* **Optimal Purchase Stop (Punto Óptimo de Compra):** Establecimiento comercial sugerido dentro de la planificación de compra por presentar la mejor relación entre cercanía geográfica, disponibilidad de stock y menor precio unitario.
+* **Pantry Stockout (Agotamiento de Despensa):** Estado en el que una categoría de producto esencial en el hogar llega a nivel cero, generando la necesidad inmediata de compra y reposición.
+* **Price Discrepancy (Discrepancia de Precio):** Diferencia identificada entre el valor de venta exhibido públicamente en anaquel o lista referencial y el monto final facturado en la caja registradora.
+* **Price Dispersion (Dispersión de Precios):** Variación de precios de un mismo artículo estándar entre diferentes establecimientos comerciales ubicados dentro de un mismo radio geográfico o distrito.
+* **Purchase Budget (Presupuesto de Compra):** Techo financiero o cantidad máxima de dinero asignada por el comprador o jefe de hogar para solventar una jornada específica de abastecimiento.
+* **Purchase Item (Artículo de Compra):** Bien específico categorizado por marca, presentación, unidad de medida y peso que forma parte de la lista de necesidades del usuario.
+* **Retail Store (Comercio Minorista):** Establecimiento comercial físico (como supermercados, tiendas de descuento o puestos de mercado de abastos) dedicado a la venta directa de bienes de consumo al cliente final.
+* **Shared Shopping List (Lista de Compras Compartida):** Registro estructurado y colaborativo de artículos requeridos donde convergen las necesidades de aprovisionamiento de los distintos miembros de una vivienda.
+* **Substituted Good (Bien Sustituto):** Producto alternativo de calidad y características análogas que un comprador elige cuando el artículo principal excede su presupuesto habitual o no cuenta con inventario en tienda.
+* **Transit Overhead (Sobrecosto de Desplazamiento):** Pérdida de tiempo y gasto adicional de dinero incurrido por el consumidor al realizar trayectos ineficientes o quedar atrapado en la congestión vehicular durante su compra.
+* **Unit Price (Precio Unitario):** Costo por unidad estándar de medida (kilogramo, litro, unidad) que permite al consumidor comparar de forma equitativa artículos con diferentes volúmenes de empaque.
 
 # Capítulo III: Requirements Specification
 
