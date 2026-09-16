@@ -467,8 +467,11 @@ Este grupo está integrado por padres, madres o responsables de la economía dom
 | US50 | Pantry Stock: Consumo Histórico | Como administrador del hogar, quiero ver gráficos de mis gastos e inventario de los últimos 3 meses para evaluar el ahorro del hogar. | E1: Dado que el usuario accede al área de reportes, cuando selecciona el periodo trimestral, entonces el sistema genera el gráfico comparando su límite contra el gasto real. <br/><br/> E2: Dado que no existen registros de compras en el periodo seleccionado, cuando se intenta cargar el gráfico, entonces la app despliega el mensaje "No hay datos registrados para este trimestre". | EP03 |
 
 ## 3.2. Impact Mapping
+### Segmento #1 : Comprador Independiente
+<img src="/assets/Impact-Map-Carlos-Milla-Comprador-Independiente.png" width=850 />
 
-[Contenido]
+### Segmento #2 : Administrador del Hogar
+<img src="/assets/Impact-Map-Maria-Salvador-Administrador-del-Hogar.png" width=850 />
 
 ## 3.3. Product Backlog
 
