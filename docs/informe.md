@@ -535,11 +535,31 @@ Para garantizar la claridad del historial, los mensajes de commit emplean el est
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
-[Contenido]
+Se establecen guías de estilo para preservar la legibilidad y coherencia técnica en los archivos de la Landing Page y el informe:
+
+* **Idioma de Código**: Nomenclatura en **inglés** para etiquetas, clases, IDs, variables JavaScript y nombres de archivos/carpetas.
+* **HTML5**: Estructuración semántica pura (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`). Identación uniforme de 2 espacios.
+* **CSS3 / Tailwind CSS**: Uso de nombres de clases personalizadas bajo convención `kebab-case` (`hero-container`, `btn-primary`). Priorización de clases de utilidad para asegurar el diseño adaptativo.
+* **JavaScript**: Formato `camelCase` para variables y funciones (`toggleLanguage`, `submitContactForm`). Uso exclusivo de `const` y `let`.
+* **Markdown**: Uso de sintaxis estándar para encabezados, tablas estructuradas y resaltado de texto en la redacción del reporte técnico.
+
+---
 
 ### 5.1.4. Software Deployment Configuration
 
-[Contenido]
+El sitio web de la Landing Page se despliega mediante el servicio **GitHub Pages**, utilizando la infraestructura nativa de GitHub para servir archivos estáticos directamente desde el repositorio del proyecto.
+
+| Componente | Plataforma Hosting | Estrategia de Despliegue | URL Oficial |
+| :--- | :--- | :--- | :--- |
+| **Landing Page** | GitHub Pages | Despliegue automático desde la rama `main` | `https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Landing-Page` |
+
+#### Flujo de Configuración en GitHub Pages:
+1. **Habilitación del Servicio**: Activación de GitHub Pages desde el apartado de ajustes (*Settings > Pages*) en el repositorio `PeruTech-Landing-Page`.
+2. **Selección de Fuente (Source Branch)**: Configuración de la rama `main` y la carpeta raíz (`/root`) como la fuente oficial de publicación.
+3. **Automatización e Integración**: Configuración del pipeline automático de GitHub Actions para procesar e implementar los cambios de forma continua tras cada merge aprobado.
+4. **Seguridad**: Configuración del protocolo seguro de transferencia HTTPS obligatorio proporcionado por GitHub.
+
+---
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
