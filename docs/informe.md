@@ -507,7 +507,31 @@ Se presentan las herramientas seleccionadas para las fases de gestión, diseño,
 
 ### 5.1.2. Source Code Management
 
-[Contenido]
+El código fuente del proyecto se administra centralizadamente en la organización oficial de **GitHub**. El desarrollo se distribuye en repositorios independientes para mantener el aislamiento entre la documentación técnica y el artefacto web, aplicando la estrategia **GitFlow Workflow**:
+
+**Repositorios Oficiales del Proyecto**
+
+| Componente / Producto | Nombre del Repositorio | Enlace Remoto |
+| :--- | :--- | :--- |
+| **Organización Oficial** | Open Source - 1ASI0729-2620-7750 | [https://github.com/Open-Source-1ASI0729-2620-7750](https://github.com/Open-Source-1ASI0729-2620-7750) |
+| **Documentación Técnica (Reporte)** | `PeruTech-Report` | [https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Report](https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Report) |
+| **Landing Page** | `PeruTech-Landing-Page` | [https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Landing-Page](https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Landing-Page) |
+
+#### Modelo de Ramificación (GitFlow)
+
+El desarrollo en los repositorios se organiza mediante dos ramas principales permanentes:
+* `main`: Contiene exclusivamente versiones estables, probadas y publicadas en producción.
+* `develop`: Sirve como línea base para la integración de nuevas funcionalidades y secciones.
+
+Adicionalmente, se utilizan ramas temporales según el tipo de trabajo:
+* `feature/<nombre-tarea>`: Para la construcción de secciones específicas de la Landing Page o capítulos del reporte (ej. `feature/hero-section`, `feature/chapter-5`).
+* `fix/<descripcion-corta>`: Para la corrección de errores de maquetación o redacción.
+
+#### Política de Commits
+
+Para garantizar la claridad del historial, los mensajes de commit emplean el estándar de **Conventional Commits**: `<tipo>(ámbito-opcional): descripción` (ejemplos: `feat(landing): add contact form markup`, `docs(report): update section 5.1 tables`).
+
+---
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
