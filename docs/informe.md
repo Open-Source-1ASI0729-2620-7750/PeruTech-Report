@@ -452,11 +452,58 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 ## 5.1. Software Configuration Management
 
-[Contenido]
+Se detallan a continuación los entornos, herramientas y normas operativas encargados de asegurar la calidad, consistencia y trazabilidad de los artefactos desarrollados.
 
 ### 5.1.1. Software Development Environment Configuration
 
-[Contenido]
+Se presentan las herramientas seleccionadas para las fases de gestión, diseño, desarrollo web, documentación y despliegue del producto.
+
+**Project Management**
+
+| Herramienta | Uso Principal | Enlace / Ruta de Acceso |
+| :--- | :--- | :--- |
+| **Trello** | Gestión ágil de tareas, seguimiento del Sprint Backlog e historias de usuario mediante tableros Kanban. | [https://trello.com](https://trello.com) |
+
+<br>
+
+**Requirements & UX/UI Design**
+
+| Herramienta | Uso Principal | Enlace / Ruta de Acceso |
+| :--- | :--- | :--- |
+| **UXPressia** | Elaboración de artefactos de diseño centrado en el usuario (User Personas, Empathy Maps, Journey Maps). | [https://uxpressia.com](https://uxpressia.com) |
+| **Miro** | Diagramación y modelado colaborativo del dominio del problema. | [https://miro.com](https://miro.com) |
+| **Figma** | Diseños de wireframes, mockups de alta fidelidad y prototipo interactivo de la Landing Page. | [https://figma.com](https://figma.com) |
+
+<br>
+
+**Software Development (Web & Landing Page)**
+
+| Herramienta / Tecnología | Propósito | Enlace / Ruta de Acceso |
+| :--- | :--- | :--- |
+| **Visual Studio Code / WebStorm** | IDEs para la maquetación, desarrollo y estructuración del sitio web. | [https://code.visualstudio.com](https://code.visualstudio.com) |
+| **HTML5** | Lenguaje de marcado semántico para la estructuración de la Landing Page. | [https://developer.mozilla.org](https://developer.mozilla.org) |
+| **CSS3 / Tailwind CSS** | Hojas de estilo y framework de utilidades CSS para el diseño adaptable (Responsive Design). | [https://tailwindcss.com](https://tailwindcss.com) |
+| **JavaScript** | Lenguaje de programación para la interactividad de la página y cambio de idioma. | [https://developer.mozilla.org](https://developer.mozilla.org) |
+
+<br>
+
+**Software Deployment & Hosting**
+
+| Herramienta / Plataforma | Propósito | Enlace / Ruta de Acceso |
+| :--- | :--- | :--- |
+| **GitHub Pages** | Hosting e integración continua nativa para la publicación y alojamiento del sitio web de la Landing Page. | [https://pages.github.com](https://pages.github.com) |
+
+<br>
+
+**Software Documentation & Version Control**
+
+| Herramienta / Recurso | Propósito | Enlace / Ruta de Acceso |
+| :--- | :--- | :--- |
+| **Markdown** | Lenguaje de marcado ligero para la redacción estandarizada del informe y documentación técnica. | [https://www.markdownguide.org](https://www.markdownguide.org) |
+| **Git / GitHub** | Sistema de control de versiones distribuido y servidor de repositorios remotos. | [https://github.com](https://github.com) |
+| **GitFlow / Conventional Commits** | Metodología de ramificación y estándar para mensajes de confirmación de código. | [https://www.conventionalcommits.org](https://www.conventionalcommits.org) |
+
+---
 
 ### 5.1.2. Source Code Management
 
