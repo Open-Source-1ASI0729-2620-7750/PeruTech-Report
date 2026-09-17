@@ -882,15 +882,71 @@ El sistema de etiquetado utiliza términos breves, claros y estrictamente unific
 
 ### 4.2.3. SEO Tags and Meta Tags
 
-[Contenido]
+##### **Sitio Web Estático — Landing Page**
+
+| Meta / Etiqueta | Valor propuesto |
+| --- | --- |
+| **`<title>`** | `PeruTech \| Ahorra en tu Canasta Básica con Rutas Multiparada y Precios Reales` |
+| **`<meta name="description">`** | `Planifica tu Lista Compartida, respeta tu Presupuesto de Compra y optimiza tus recorridos con Rutas Multiparadas. Compara precios reales con PeruTech.` |
+| **`<meta name="keywords">`** | `PeruTech, canasta basica, presupuesto de compra, ruta multiparada, ahorro neto, punto optimo de compra, comercio minorista, dispersion de precios, Peru` |
+| **`<meta name="author">`** | `PeruTech Team` |
+| **Complementos** | Canonical `<link rel="canonical" href="https://www.perutech.pe/">`y Open Graph (`og:title`, `og:description`, `og:image`). |
+
+##### **Aplicación Web — Portal Merchant (Inicio / Dashboard)**
+
+| Meta / Etiqueta | Valor propuesto |
+| --- | --- |
+| **`<title>`** | `PeruTech Merchant \| Gestión de Catálogo, Ofertas y Reportes de Tráfico` |
+| **`<meta name="description">`** | `Administra tu inventario, publica Ofertas Relámpago y consulta métricas de Venta Perdida en tiempo real para compradores de PeruTech.` |
+| **`<meta name="keywords">`** | `PeruTech Merchant, comercio minorista, ofertas relampago, precio unitario, reporte de trafico, venta perdida, reputacion comercio` |
+| **`<meta name="author">`** | `PeruTech Team` |
+
+##### **ASO (App Store & Google Play)**
+
+* **App Buyer — "PeruTech":**
+  * **Título:** `PeruTech — Compras y Ahorro Neto`
+  * **Subtítulo:** `Canasta básica, presupuesto y rutas`
+  * **Keywords:** `compras, canasta basica, presupuesto, ruta multiparada, ahorro neto, supermercado, peru, gondola, perutech`
+  * **Descripción corta:** `Gestiona tu Canasta Básica, respeta tu Presupuesto y recorre la mejor Ruta Multiparada. Compara precios reales y maximiza tu Ahorro Neto con PeruTech.`
+
+* **App Merchant — "PeruTech Tiendas":**
+  * **Título:** `PeruTech Tiendas`
+  * **Subtítulo:** `Catálogo y ofertas en vivo`
+  * **Keywords:** `retail, comercio minorista, catalogo, ofertas relampago, precio unitario, merchant, sede, perutech`
+  * **Descripción corta:** `Gestiona tu inventario, publica Ofertas Relámpago y mantén tus precios actualizados para la comunidad de compradores de PeruTech.`
 
 ### 4.2.4. Searching Systems
 
-[Contenido]
+El sistema de búsqueda permite una localización eficiente de bienes dentro de catálogos extensos y paneles de administración.
+
+##### **Opciones y Alcance de Búsqueda**
+
+| Contexto / App | Objeto de búsqueda | Tipo de Entrada | Alcance y Filtros |
+| --- | --- | --- | --- |
+| **Buyer — Catálogo** | Artículos de Compra por nombre, marca o presentación | Campo global + auto-sugerencias | Pestañas "En esta tienda" / "En todas". Filtros por Precio Unitario, Categoría de Despensa y Bienes Sustitutos. |
+| **Buyer — Comercios** | Comercio Minorista por sede o mercado de abastos | Barra de búsqueda integrada en mapa/lista | Filtro por distancia, Insignia de Confianza y horario de atención. |
+| **Buyer — Mi Lista** | Ítems agregados a la Lista Compartida | Filtro local en tiempo real | Filtrado rápido de texto por categoría de producto. |
+| **Merchant — Backoffice** | Artículos, SKUs, Ofertas Relámpago activas | Tabla de datos con filtros combinados | Filtro por estado de stock, Discrepancia de Precio reportada y vigencia. |
+
+##### **Comportamiento e Interfaz de Búsqueda**
+* **Sugerencias Dinámicas:** Despliegue de resultados emergentes a partir de los 2 caracteres ingresados (`>= 2 chars`).
+* **Visualización de Resultados:** Tarjetas con Precio Unitario destacado, indicación del Punto Óptimo de Compra y opción para añadir directamente a la Lista Compartida.
 
 ### 4.2.5. Navigation Systems
 
-[Contenido]
+Estructura de desplazamiento y recorrido del usuario en las diferentes plataformas de **PeruTech**.
+
+##### **Mapa de Navegación y Estructuras**
+
+* **Landing Page (Web Estática):** Barra superior fija con desplazamientos suaves (*anchor links*) a `#producto`, `#como-funciona`, `#descargar` y `#contacto`.
+* **App Buyer (Móvil):** Navegación primaria mediante **Tab Bar inferior** (*Inicio*, *Canasta / Lista*, *Ruta Multiparada*, *Perfil*). Flujos secundarios en *stack modal* (Sugerencia de Bien Sustituto, Reportar Discrepancia) y asistente para planificación del Presupuesto y Ruta Multiparada.
+* **Portal Merchant (Web/App):** Menú lateral persistente (*Sidebar*) con acceso a *Panel de Métricas* (Tráfico y Venta Perdida), *Catálogo*, *Ofertas Relámpago*, *Reportes de Reputación* y *Configuración de Sede*.
+
+| Superficie | Técnica de Navegación |
+| --- | --- |
+| **Landing Web** | Header fijo, scroll suave, CTAs de conversión repetidos tras bloques clave y footer legal. |
+| **App Buyer** | Tabs inferiores persistentes, navegación por stack modal, asistente secuencial de Ruta Multiparada y *deep linking* desde notificaciones de ofertas relámpago. |
+|
 
 ## 4.3. Landing Page UI Design
 
