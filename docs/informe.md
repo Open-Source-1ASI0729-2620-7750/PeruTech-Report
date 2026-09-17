@@ -793,6 +793,9 @@ En esta sección, el equipo establece las bases para contar con un repositorio c
 
 Estas guías establecen la identidad visual base para todos los productos digitales del ecosistema **PeruTech**.
 
+### 4.1.1. General Style Guidelines
+
+
 #### **A. Branding & Tono de Comunicación**
 * **Tono:** El lenguaje será **Entusiasta y Sereno**. Se busca que el usuario se sienta motivado por la innovación y el ahorro inteligente, pero con la tranquilidad de que la información presentada es confiable y veraz.
 * **Lenguaje:** Se utilizará un estilo **Formal/Casual**, directo y fácil de entender tanto para familias como para jóvenes profesionales y comercios aliados.
@@ -814,10 +817,6 @@ Se ha seleccionado una paleta moderna, equilibrada y tecnológica que evoca conf
 
 #### **D. Espaciado y Rejilla (Spacing & Grid)**
 * Se aplicará un sistema de rejilla basado en **8dp (8pt grid)** para mantener consistencia en márgenes, *paddings* y alineación de componentes UI en todas las pantallas.
-
-### 4.1.1. General Style Guidelines
-
-[Contenido]
 
 ### 4.1.2. Web Style Guidelines
 
