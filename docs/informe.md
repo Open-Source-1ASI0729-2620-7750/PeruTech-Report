@@ -241,8 +241,8 @@ Poseo experiencia en en el lenguaje C++ y Python, lo que me permite contribuir e
 
 ### 1.2.1. Antecedentes y problemática
 *   **Who? (¿Quién?):**
-    *   *Compradores Independientes:* Jóvenes universitarios, profesionales y adultos independientes (18 a 30 años) con presupuesto acotado y disponibilidad de tiempo reducida que realizan compras frecuentes de menor volumen en establecimientos de cercanía.
-    *   *Administradores del Hogar Familiar:* Padres, madres o encargados del presupuesto doméstico (30 a 55 años) que gestionan listas de compra complejas y de alto volumen (semanales o mensuales) para sus familias y buscan maximizar el ahorro acumulado.
+    *   *Consumidores:* Estudiantes, jóvenes profesionales y responsables del abastecimiento en hogares de Lima Metropolitana que cuentan con un presupuesto ajustado y buscan optimizar su tiempo libre.
+    *   *Comerciantes:* Administradores y encargados de tiendas de conveniencia (Tambo, Oxxo, Listo) y cadenas de supermercados o discounters (Mass, Plaza Vea, Metro) que necesitan promocionar su inventario local, evitar la merma de productos y atraer más clientes a sus locales físicos.
 *   **What? (¿Qué?):** La falta de información clara sobre precios y la ineficiencia al planificar los recorridos de compra en el comercio minorista. Actualmente existe una diferencia marcada entre los precios publicados en internet y los costos reales en los estantes de las tiendas. A esto se suma que las personas no tienen una forma sencilla de comparar el costo total de su lista entre varios comercios cercanos. Esta desconexión genera gastos dobles: se paga más por los productos y se gasta dinero y tiempo extra en desplazamientos mal organizados para intentar conseguir ofertas (BCRP, 2025; INEI, 2026).
 *   **Where? (¿Dónde?):** El problema se concentra en distritos y zonas urbanas de Lima con alta presencia comercial, donde existen múltiples tiendas a pocas cuadras de distancia. La solución está dirigida a personas con acceso a teléfonos inteligentes y a administradores de locales que quieren mejorar la visibilidad de su tienda en su zona cercana.
 *   **When? (¿Cuándo?):** Ocurre cada vez que las familias organizan sus compras de la semana o cuando necesitan reponer productos de manera rápida. La situación se vuelve crítica durante los fines de semana o en días de promociones especiales, cuando el inventario cambia rápido y las ofertas varían sin previo aviso.
@@ -256,17 +256,17 @@ El proceso de Lean UX adoptado por PeruTech busca validar de forma rápida y con
 
 #### 1.2.2.1. Lean UX Problem Statements
 
-> **The current state of** retail shopping and grocery planning in Lima Metropolitan Area **has focused mainly on** isolated supermarket discounts, traditional physical price browsing, and delivery apps that charge high service fees without optimizing multi-store routes.  
-> **What existing products/services fail to address is** the lack of a unified system that calculates the true total cost of a shopping trip—combining real-time store prices, multi-stop routing efficiency, and transit expenses—to help shoppers make cost-effective decisions.  
-> **Our product/service will address this gap by** providing a collaborative web platform, **SmartCart**, that processes store prices, inventory updates, transportation costs, and user budget limits to generate the most efficient multi-store shopping route.  
-> **Our initial focus will be** independent young buyers and family household managers in Lima Metropolitan Area.  
-> **We’ll know we are successful when we see** independent buyers and household managers regularly completing multi-store purchases using our generated routes and verified price data.
+> **The current state of** retail shopping and local store management in Lima Metropolitan Area **has focused mainly on** individual supermarket discounts, traditional physical price browsing, and isolated mobile delivery apps that prioritize home delivery fees over local store foot traffic.  
+> **What existing products/services fail to address is** the lack of a unified system that calculates the true total cost of a shopping trip—combining real-time store prices, multi-stop routing efficiency, and transit expenses—while giving local managers an agile channel to clear overstocked inventory.  
+> **Our product/service will address this gap by** providing a collaborative web platform that processes store prices, inventory updates, transportation costs, and user budget limits to generate the most efficient multi-store shopping route, while offering store managers a simple tool to announce local discounts.  
+> **Our initial focus will be** budget-conscious shoppers (students and young adults in Lima) and branch managers of proximity/convenience retail stores.  
+> **We’ll know we are successful when we see** budget-conscious shoppers regularly completing multi-store purchases using our generated routes and store managers actively updating local discount offers.
 
 #### 1.2.2.2. Lean UX Assumptions
 
 ##### Assumptions Worksheet
 *   **¿Quién es el usuario?**
-    El sistema atiende a dos perfiles de compradores urbanos: **Compradores Independientes** (jóvenes y profesionales que buscan rapidez y ofertas de cercanía) y **Administradores del Hogar Familiar** (gestores del presupuesto doméstico que planifican compras de mayor volumen).
+    El sistema atiende a dos grupos: compradores (jefes de hogar, estudiantes y jóvenes independientes) que quieren hacer rendir mejor su dinero, y administradores de tiendas de conveniencia o supermercados que necesitan mover su inventario local más rápido.
 *   **¿Dónde encaja nuestro producto en su trabajo o vida?**
     Para las personas, entra en su rutina cuando preparan la lista del supermercado y cuando salen a hacer las compras. Para el encargado de tienda, se integra en sus labores diarias para dar salida a productos con alto stock.
 *   **¿Qué problemas resuelve nuestro producto?**
@@ -296,7 +296,7 @@ El proceso de Lean UX adoptado por PeruTech busca validar de forma rápida y con
 4.  Lograr que 6 de cada 10 tiendas participantes confirmen un aumento en la visita de clientes atraídos por las ofertas publicadas.
 
 ##### User Assumptions
-1.  **¿Quién es el usuario?** Compradores independientes (18 a 30 años) y administradores del hogar familiar (30 a 55 años) pertenecientes a los niveles socioeconómicos B y C.
+1.  **¿Quién es el usuario?** Hombres y mujeres de 18 a 50 años que realizan compras periódicas, y gestores de tiendas minoristas.
 2.  **¿Dónde encaja el producto?** Antes de salir a comprar y durante el recorrido por las tiendas.
 3.  **¿Qué problema resuelve?** Ayuda a elegir la mejor combinación de tiendas sin salirse del presupuesto disponible.
 4.  **¿Cuándo y cómo se usa?** Se consulta 1 o 2 veces por semana al momento de planificar las compras habituales.
@@ -314,27 +314,27 @@ El proceso de Lean UX adoptado por PeruTech busca validar de forma rápida y con
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 *   **Hypothesis Statement 1 (basado en Feature Assumption 1: Comparador de Canasta Integral):**
-    *   **We believe we will achieve** a 15% reduction in overall monthly grocery spending and a platform user retention rate above 40%
-    *   **If** family household managers handling high-volume shopping lists
-    *   **Attain** an accurate, pre-calculated total cost of their entire basket across multiple nearby stores
+    *   **We believe we will achieve** a 70% rate of active users completing at least one guided purchase in their first month and a overall platform user retention above 40%
+    *   **If** families and young adults managing a tight budget
+    *   **Attain** an accurate, pre-calculated total cost of their entire shopping list before leaving home
     *   **With** a comprehensive multi-store basket comparison engine (**Comparador de Canasta Integral**).
 
 *   **Hypothesis Statement 2 (basado en Feature Assumption 2: Calculador de Ruta con Límite de Gasto):**
-    *   **We believe we will achieve** an average reduction of 25% in total shopping trip duration
-    *   **If** independent young buyers with limited free time and mobility preferences
-    *   **Attain** optimized multi-stop shopping itineraries that strictly respect their maximum budget limit and travel mode
+    *   **We believe we will achieve** an average reduction of 25% in the time users spend completing multi-store purchases
+    *   **If** urban shoppers looking to maximize both their time and money
+    *   **Attain** optimized shopping itineraries that strictly respect their maximum budget and transportation choices
     *   **With** an interactive route calculator with budget caps (**Calculador de Ruta con Límite de Gasto**).
 
 *   **Hypothesis Statement 3 (basado en Feature Assumption 3: Validador de Precios por Usuarios):**
     *   **We believe we will achieve** an 80% price verification accuracy rate between reported shelf prices and actual checkout counter costs
-    *   **If** active users from both independent and household manager segments
-    *   **Attain** high trust in platform data accuracy and recognition for contributing real-time price reports
+    *   **If** active members of the shopping community
+    *   **Attain** high trust in platform data accuracy and recognition for contributing real-time updates
     *   **With** a crowd-sourced price reporting and verification system (**Validador de Precios por Usuarios**).
 
 *   **Hypothesis Statement 4 (basado en Feature Assumption 4: Panel de Ofertas para Comercio):**
-    *   **We believe we will achieve** a 20% increase in store foot traffic from nearby buyers looking for immediate discounts
-    *   **If** independent buyers seeking short-term deals and promotions
-    *   **Attain** real-time visibility of local store offers within their immediate geographic perimeter
+    *   **We believe we will achieve** a 20% drop in food waste/expiration and a 60% rate of partner stores reporting increased foot traffic
+    *   **If** local retail store managers dealing with overstocked inventory
+    *   **Attain** immediate local visibility for time-sensitive discounts to draw nearby shoppers into their physical stores
     *   **With** a fast-publishing promotion dashboard for store managers (**Panel de Ofertas para Comercio**).
 
 #### 1.2.2.4. Lean UX Canvas
@@ -342,11 +342,16 @@ El proceso de Lean UX adoptado por PeruTech busca validar de forma rápida y con
 <img src="/assets/lean-ux-canvas.png" alt="UPC Logo" width="150"/>
 
 ## 1.3. Segmentos objetivo
-### 1. Compradores Independientes
-Este segmento comprende a jóvenes universitarios, jóvenes profesionales y adultos solteros (de 18 a 30 años) pertenecientes a los niveles socioeconómicos B y C que viven solos o comparten vivienda. Se caracterizan por realizar compras de volumen bajo o medio de manera frecuente y por contar con un tiempo limitado para el abastecimiento. Sus decisiones de compra están fuertemente guiadas por la conveniencia geográfica, el aprovechamiento de descuentos inmediatos y la optimización de sus traslados, desplazándose principalmente a pie o mediante transporte público. Para este grupo, la plataforma resuelve la falta de tiempo y la incertidumbre de precios en establecimientos de proximidad.
 
-### 2. Administradores del Hogar Familiar
-Este grupo está integrado por padres, madres o responsables de la economía doméstica (de 30 a 55 años) en hogares de los niveles socioeconómicos B y C. Su perfil se distingue por gestionar canastas de compra complejas y de volumen elevado (semanales o mensuales), donde pequeñas variaciones de costo unitario representan un impacto significativo en el presupuesto familiar. Tienen una alta disposición a planificar sus recorridos con anticipación y a visitar más de un establecimiento si el ahorro neto justificara el desplazamiento. Para este segmento, la plataforma actúa como una herramienta de control financiero y eficiencia logística.
+### 1. Consumidores Finales (Compradores Planificadores)
+Este grupo está integrado principalmente por personas de 20 a 50 años que residen en zonas urbanas y pertenecen a los niveles socioeconómicos B y C. Debido a que representan la mayor parte del gasto en alimentos del hogar, su comportamiento de compra se ha vuelto más cauteloso, repartiendo sus compras entre distintas tiendas para cuidar el presupuesto (Kantar Worldpanel, 2025). Ante el incremento en el costo de vida, estos compradores prefieren planificar sus compras con anticipación. Esto genera la necesidad de contar con soluciones digitales sencillas que eliminen la duda sobre dónde comprar más barato, permitiéndoles organizar su lista de forma eficiente para proteger su dinero (BCRP, 2025).
+
+### 2. Establecimientos de Retail (Supermercados y Tiendas de Conveniencia)
+Este segmento abarca a los comercios del sector minorista moderno, organizados en dos formatos principales que compiten diariamente por atraer clientes:
+*   **Tiendas de Proximidad:** Cadenas de conveniencia (Tambo, Oxxo) y tiendas de descuento (Mass), enfocadas en compras rápidas, de paso o para cubrir emergencias del día.
+*   **Supermercados de Mayor Tamaño:** Establecimientos (Plaza Vea, Metro, Tottus) orientados a compras semanales o mensuales de mayor volumen, donde compiten mediante marcas propias y ofertas especiales por paquete (KPMG, 2025).
+
+Para ambos formatos funciona como un canal directo de atracción de público: ayuda a que las tiendas de conveniencia vendan más rápido sus ofertas del día y a que los supermercados muestren su competitividad en compras grandes, asegurando que más clientes crucen sus puertas.
 
 ---
 
