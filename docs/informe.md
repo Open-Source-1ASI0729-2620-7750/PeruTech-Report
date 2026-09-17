@@ -461,12 +461,12 @@ Asimismo, los criterios de aceptación se definen bajo la sintaxis formal de Ghe
 
 ## 3.2. Impact Mapping
 ### Segmento #1 : Comprador Independiente
-<img src="/assets/Impact-Map-Carlos-Milla-Comprador-Independiente.png" width=850 />
+<img src="/assets/Impact-Map Fernando-Justiniano-(Comprador-multitienda).png" width=850 />
 
 ### Segmento #2 : Administrador del Hogar
-<img src="/assets/Impact-Map-Maria-Salvador-Administrador-del-Hogar.png" width=850 />
+<img src="/assets/Impact-Map-Maria-Salvador-(Comerciante-Minorista).png" width=850 />
 
-## 3.3. Product Backlog
+## 3.3. Product Backlog     
 |#Orden | User Story Id | Título | Descripcion | Story Points (1 / 2 / 3 / 5 / 8)|
 |---|---|---|---|---|
 |1 | US01 | Landing: Propuesta de valor | Como visitante, quiero ver cómo la plataforma optimiza el gasto y la ruta para ahorrar dinero y tiempo. | 2|
