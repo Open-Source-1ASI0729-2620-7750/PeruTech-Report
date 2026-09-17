@@ -489,20 +489,32 @@ A continuación, se presenta la bitácora de las entrevistas cualitativas realiz
 ![Screenshot Entrevista 1 - Fernando Justiniano](assets/entrevista-fernando.png)
 > *Figura 2.1: Registro audiovisual de la entrevista cualitativa a Fernando Justiniano Vega.*
 
-* **Entrevista 2:**
-  * **Nombre y Apellidos:** `[Pendiente: Colocar Nombres y Apellidos del Entrevistado 2]`
-  * **Edad:** `[Pendiente: Edad]`
-  * **Distrito de residencia:** `[Pendiente: Distrito]`
-  * **Ocupación:** `[Pendiente: Ocupación]`
-  * **Plataforma de video:** Microsoft Stream
-  * **Enlace de Video:** `[Pendiente: URL de Microsoft Stream]`
-  * **Marca de tiempo (Timing de inicio):** `[00:00]`
-  * **Duración:** `[hh:mm]`
-  * **Perfil técnico y entorno digital:** `[Pendiente: Dispositivos, Navegador, Canales y Personalidad]`
-  * **Resumen descriptivo:** `[Pendiente: Redactar resumen de respuestas del entrevistado 2]`
+- **Entrevista 2:**
+  - **Nombre y Apellidos:** Laura Gamarra
+  - **Edad:** 23 años
+  - **Distrito de residencia:** Ate
+  - **Ocupación:** Coordinadora General de una empresa familiar de transporte de carga a nivel nacional
+  - **Grado de instrucción:** Estudiante universitaria de noveno ciclo de Negocios Internacionales
+  - **Plataforma de video:** Microsoft Stream
+  - **Enlace de Video:** [Ver entrevista](https://1drv.ms/v/c/33e54e659b0ea103/IQA5hhx1fJT0Q7aLNoTW3LBlAaVE9gRm6ooCZK9alOX3WCY?e=hjJT6B)
+  - **Marca de tiempo (Timing de inicio):** `00:00`
+  - **Duración:** `08:23 min`
+  - **Perfil técnico y entorno digital:**
+    - *Dispositivos habituales:* Smartphone y laptop.
+    - *Canales digitales e influencias:* Instagram, TikTok, Yape, banca móvil, PedidosYa y aplicaciones de tiendas por departamento como Falabella y Ripley.
+    - *Hábitos digitales relacionados con compras:* Consulta precios y disponibilidad de productos mediante Internet antes de desplazarse a los establecimientos.
+    - *Rasgos inferidos a partir de la entrevista:* Planificada, sensible al precio y orientada a optimizar tanto el presupuesto como el costo de desplazamiento.
 
-![Screenshot Entrevista 2](assets/entrevista-2.png)
-> *Figura 2.2: Registro audiovisual de la entrevista cualitativa 2.*
+  - **Resumen descriptivo:** Laura, de 23 años, se encarga habitualmente de realizar las compras de su hogar. Antes de realizar una compra consulta precios en Internet y compara distintos establecimientos para identificar dónde puede adquirir los productos que necesita a menor costo. No suele visitar varios locales durante un mismo día; distribuye sus compras en diferentes días dependiendo de los precios y de la disponibilidad de los productos.
+Además del precio directo de los productos, considera los beneficios asociados a sus tarjetas bancarias, tales como promociones y descuentos disponibles en determinados establecimientos o días de la semana. Para trasladarse habitualmente utiliza Uber, por lo que la distancia y el costo del transporte influyen de manera directa en su decisión de compra.
+Uno de sus principales puntos de frustración es el tráfico y el costo de movilidad. Cuando no cuenta con promociones o descuentos en el servicio de transporte, puede incluso postergar una compra debido al aumento del costo total del desplazamiento.
+Para controlar sus gastos establece un presupuesto aproximado de S/600 a S/700. Antes de comprar revisa qué productos necesita y consulta sus precios en la web. Cuando el monto total supera el presupuesto disponible, prioriza las compras urgentes y posterga otros productos para el siguiente mes.
+Frente a una plataforma de comparación de precios y optimización de rutas, manifestó interés en identificar establecimientos cercanos que ofrezcan precios convenientes. También propuso considerar los descuentos y beneficios asociados a tarjetas bancarias y días específicos de promoción, permitiendo generar una planificación semanal de compras.
+Laura prefiere realizar sus compras durante días laborables y aproximadamente entre las 11:00 a. m. y las 4:00 p. m., evitando los horarios de mayor congestión. Cuando encuentra una oferta en un establecimiento distante, evalúa el costo del transporte de ida y vuelta y considera qué otros productos podría adquirir en el mismo lugar para determinar si el desplazamiento realmente resulta conveniente. Asimismo, comparte regularmente información sobre precios y promociones con familiares.
+
+![Screenshot Entrevista 2](../assets/entrevista-laura.png)
+
+> *Figura 2.2: Registro audiovisual de la entrevista cualitativa a Laura Gamarra, representante del Segmento 1.*
 
 * **Entrevista 3:**
   * **Nombre y Apellidos:** `[Pendiente: Colocar Nombres y Apellidos del Entrevistado 3]`
