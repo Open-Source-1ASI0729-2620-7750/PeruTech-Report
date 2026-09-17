@@ -787,9 +787,33 @@ En esta sección se define el *Ubiquitous Language* (Lenguaje Ubicuo) para el do
 
 # Capítulo IV: Product Design
 
+En esta sección, el equipo establece las bases para contar con un repositorio central y organizado de recursos visuales y estructurales de uso común. El objetivo principal es garantizar una presentación consistente, sólida y enfocada en todos los productos digitales de **PeruTech**, facilitando la colaboración entre diseñadores y desarrolladores mediante el uso estandarizado de activos, fuentes, estilos y criterios de arquitectura de la información.
+
 ## 4.1. Style Guidelines
 
-[Contenido]
+Estas guías establecen la identidad visual base para todos los productos digitales del ecosistema **PeruTech**.
+
+#### **A. Branding & Tono de Comunicación**
+* **Tono:** El lenguaje será **Entusiasta y Sereno**. Se busca que el usuario se sienta motivado por la innovación y el ahorro inteligente, pero con la tranquilidad de que la información presentada es confiable y veraz.
+* **Lenguaje:** Se utilizará un estilo **Formal/Casual**, directo y fácil de entender tanto para familias como para jóvenes profesionales y comercios aliados.
+
+#### **B. Paleta de Colores (Colors)**
+Se ha seleccionado una paleta moderna, equilibrada y tecnológica que evoca confianza, claridad y dinamismo:
+
+| Uso | Nombre del Color | Hexadecimal | Representación / Aplicación |
+| :--- | :--- | :--- | :--- |
+| **Primario** | Negro Azabache | `#000000` | Sólido y profesional. Utilizado en encabezados, botones principales y contraste de textos de alta jerarquía. |
+| **Secundario** | Turquesa Tecnológico | `#00ACAC` | Frescura, agilidad e innovación. Destacado en llamados a la acción, estados activos y acentos de interfaz. |
+| **Acento / Fondo Suave** | Gris Claro Nieve | `#DFDEDC` | Limpieza visual. Se utiliza para fondos de tarjetas, contenedores secundarios y fondos de sección. |
+| **Neutro Medio** | Gris Medio | `#A6A7A2` | Elementos secundarios, bordes, estados desactivados y divisores. |
+| **Texto / Contraste** | Antracita Oscuro | `#464545` | Utilizado en el cuerpo de texto principal para optimizar la legibilidad y reducir la fatiga visual. |
+
+#### **C. Tipografía (Typography)**
+* **Títulos y Encabezados:** *Montserrat* (Bold / Semi-Bold) - Proporciona un aspecto moderno, profesional y estructurado.
+* **Cuerpo de Texto y UI:** *Roboto* (Regular / Medium) - Sigue los estándares de legibilidad para interfaces digitales móviles y web.
+
+#### **D. Espaciado y Rejilla (Spacing & Grid)**
+* Se aplicará un sistema de rejilla basado en **8dp (8pt grid)** para mantener consistencia en márgenes, *paddings* y alineación de componentes UI en todas las pantallas.
 
 ### 4.1.1. General Style Guidelines
 
