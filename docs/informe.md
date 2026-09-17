@@ -824,15 +824,61 @@ Se ha seleccionado una paleta moderna, equilibrada y tecnológica que evoca conf
 
 ## 4.2. Information Architecture
 
-[Contenido]
+En esta sección se documentan las decisiones y criterios de organización de contenido en las **plataformas web** y en las **aplicaciones móviles** de **PeruTech**, optimizando los sistemas de **organización, etiquetado, búsqueda y navegación**.
 
 ### 4.2.1. Organization Systems
 
-[Contenido]
+Se distingue entre la **organización visual** (layout y jerarquía en pantalla) y los **esquemas de categorización** (criterios lógicos de agrupación).
+
+##### **Organización Visual**
+
+| Tipo | Cuándo se usa en PeruTech | Ejemplos concretos |
+| --- | --- | --- |
+| **Jerárquica** | Cuando un bloque comunica importancia relativa priorizando información clave. | **Landing:** Hero con propuesta de valor → beneficios → prueba social → CTA.<br>**Merchant Web:** Panel con KPIs principales arriba (Tráfico Mensual, Venta Perdida) y detalle operacional debajo. |
+| **Secuencial (paso a paso)** | Flujos guiados que requieren un orden fijo de ejecución. | **Buyer:** Asistente "Configurar Canasta Básica / Lista → Ajustar Presupuesto → Generar Ruta Multiparada → Confirmar Punto Óptimo de Compra".<br>**Post-compra:** "Confirmar Visita → Ver Ahorro Neto → Calificar Comercio / Reseña → Reportar Discrepancia de Precio". |
+| **Matricial** | Contenidos multidimensionales que admiten múltiples filtros y comparaciones. | **Buyer:** Grilla de Artículos de Compra (*Categoría × Precio Unitario × Comercio Minorista*).<br>**Merchant:** Tablero de inventario (*Artículo × Estado de stock × Vigencia de Oferta Relámpago*). |
+
+##### **Esquemas de Categorización**
+
+| Esquema | Cuándo se usa | Ejemplos en el producto |
+| --- | --- | --- |
+| **Alfabético** | Listados extensos de orden explícito. | Listados de Artículos de Compra en el catálogo Merchant y ordenación A–Z en búsquedas. |
+| **Cronológico** | Información ordenada por temporalidad. | Historial de Rutas Multiparada finalizadas y registro histórico de actualización de precios u ofertas relámpago. |
+| **Por Tema (Tópico)** | Categorización por dominios del supermercado o módulos de ayuda. | Navegación de productos por categoría de Despensa Familiar (Abarrotes, Limpieza, etc.) y secciones FAQ. |
+| **Por Audiencia** | Separación según el rol del usuario. | Diferenciación clara entre flujos de **Buyer (Consumidor / Jefe de Hogar)** y **Merchant (Comerciante)**. |
+
+##### **Resumen por Superficie**
+
+| Superficie | Organización visual | Esquemas de categorización |
+| --- | --- | --- |
+| **Landing Web** | Jerárquica | Por tema y por audiencia (CTA Buyer vs. Merchant) |
+| **App Buyer (Móvil)** | Secuencial en flujos clave; matricial en catálogo | Tópico (categorías de Despensa), cronológico (historial de rutas), alfabético |
+| **Portal Merchant (Web/App)** | Jerárquica en paneles; matricial en tablas de datos | Alfabético, por estado de stock / oferta y cronológico (reportes) |
 
 ### 4.2.2. Labeling Systems
 
-[Contenido]
+El sistema de etiquetado utiliza términos breves, claros y estrictamente unificados.
+
+##### **Etiquetas Principales y Asociaciones**
+
+| Etiqueta (UI) | Entidad / Asociación (Ubiquitous Language) | Regla de Brevedad y Claridad |
+| --- | --- | --- |
+| **Canasta Básica** | `Basic Basket` | Módulo de configuración de necesidades esenciales de abastecimiento. |
+| **Lista Compartida** | `Shared Shopping List` | Registro estructurado y colaborativo del hogar. |
+| **Presupuesto** | `Purchase Budget` | Techo financiero asignado para la jornada de compra. |
+| **Ruta Multiparada** | `Multi-stop Route` | Itinerario optimizado que conecta el hogar con múltiples comercios. |
+| **Punto Óptimo** | `Optimal Purchase Stop` | Establecimiento sugerido por mejor relación cercanía/precio/stock. |
+| **Comercios** | `Retail Store` | Puntos de venta físicos (supermercados y mercados de abastos). |
+| **Ahorro Neto** | `Net Savings` | Diferencia económica positiva considerando el sobrecosto de desplazamiento. |
+| **Bien Sustituto** | `Substituted Good` | Sugerencia alternativa ante falta de stock o exceso de presupuesto. |
+| **Discrepancia** | `Price Discrepancy` / `Error de precio` | Reporte colaborativo de diferencias entre góndola y caja. |
+| **Confianza** | `TrustProfile` / Insignia de Confianza | Score y nivel de fiabilidad del comercio asignado por la comunidad. |
+| **Catálogo / Ofertas** | Módulos de gestión Merchant | Administración de inventario inicial y Ofertas Relámpago. |
+| **Reportes** | Tráfico Mensual y Venta Perdida | Métricas clave de rendimiento para el Comerciante. |
+
+##### **Microcopy y Mensajes del Sistema**
+* **Validaciones:** Frases directas y comprensibles (*"Ingresa un presupuesto mayor a S/ 0"*, *"Selecciona al menos un Punto Óptimo de Compra"*).
+* **Estados de Carga:** Verbos indicativos directos (*"Calculando Ruta Multiparada optimizada..."*, *"Verificando Discrepancia de Precio..."*, *"Guardando cambios..."*).
 
 ### 4.2.3. SEO Tags and Meta Tags
 
