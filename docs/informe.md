@@ -946,7 +946,7 @@ Estructura de desplazamiento y recorrido del usuario en las diferentes plataform
 | --- | --- |
 | **Landing Web** | Header fijo, scroll suave, CTAs de conversión repetidos tras bloques clave y footer legal. |
 | **App Buyer** | Tabs inferiores persistentes, navegación por stack modal, asistente secuencial de Ruta Multiparada y *deep linking* desde notificaciones de ofertas relámpago. |
-|
+| **Merchant Web/App** | Sidebar persistente, indicador de sede activa en header, breadcrumbs navegables y tablas paginadas para catálogos extensos. |
 
 ## 4.3. Landing Page UI Design
 
