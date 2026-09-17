@@ -241,8 +241,8 @@ Poseo experiencia en en el lenguaje C++ y Python, lo que me permite contribuir e
 
 ### 1.2.1. Antecedentes y problemática
 *   **Who? (¿Quién?):**
-    *   *Consumidores:* Estudiantes, jóvenes profesionales y responsables del abastecimiento en hogares de Lima Metropolitana que cuentan con un presupuesto ajustado y buscan optimizar su tiempo libre.
-    *   *Comerciantes:* Administradores y encargados de tiendas de conveniencia (Tambo, Oxxo, Listo) y cadenas de supermercados o discounters (Mass, Plaza Vea, Metro) que necesitan promocionar su inventario local, evitar la merma de productos y atraer más clientes a sus locales físicos.
+    *   *Compradores:* Estudiantes, jóvenes profesionales y responsables del abastecimiento en hogares de Lima Metropolitana que cuentan con un presupuesto ajustado y buscan optimizar su tiempo libre.
+    *   *Comerciantes:* Administradores y encargados de tiendas de conveniencia y cadenas de supermercados o discounters que necesitan promocionar su inventario local, evitar la merma de productos y atraer más clientes a sus locales físicos.
 *   **What? (¿Qué?):** La falta de información clara sobre precios y la ineficiencia al planificar los recorridos de compra en el comercio minorista. Actualmente existe una diferencia marcada entre los precios publicados en internet y los costos reales en los estantes de las tiendas. A esto se suma que las personas no tienen una forma sencilla de comparar el costo total de su lista entre varios comercios cercanos. Esta desconexión genera gastos dobles: se paga más por los productos y se gasta dinero y tiempo extra en desplazamientos mal organizados para intentar conseguir ofertas (BCRP, 2025; INEI, 2026).
 *   **Where? (¿Dónde?):** El problema se concentra en distritos y zonas urbanas de Lima con alta presencia comercial, donde existen múltiples tiendas a pocas cuadras de distancia. La solución está dirigida a personas con acceso a teléfonos inteligentes y a administradores de locales que quieren mejorar la visibilidad de su tienda en su zona cercana.
 *   **When? (¿Cuándo?):** Ocurre cada vez que las familias organizan sus compras de la semana o cuando necesitan reponer productos de manera rápida. La situación se vuelve crítica durante los fines de semana o en días de promociones especiales, cuando el inventario cambia rápido y las ofertas varían sin previo aviso.
@@ -266,7 +266,7 @@ El proceso de Lean UX adoptado por PeruTech busca validar de forma rápida y con
 
 ##### Assumptions Worksheet
 *   **¿Quién es el usuario?**
-    El sistema atiende a dos grupos: compradores (jefes de hogar, estudiantes y jóvenes independientes) que quieren hacer rendir mejor su dinero, y administradores de tiendas de conveniencia o supermercados que necesitan mover su inventario local más rápido.
+    El sistema atiende a dos grupos: compradores (Compradores Multitienda y Optimizadores de Desplazamiento) que quieren hacer rendir mejor su dinero, y administradores de tiendas de conveniencia o supermercados que necesitan mover su inventario local más rápido.
 *   **¿Dónde encaja nuestro producto en su trabajo o vida?**
     Para las personas, entra en su rutina cuando preparan la lista del supermercado y cuando salen a hacer las compras. Para el encargado de tienda, se integra en sus labores diarias para dar salida a productos con alto stock.
 *   **¿Qué problemas resuelve nuestro producto?**
@@ -343,13 +343,13 @@ El proceso de Lean UX adoptado por PeruTech busca validar de forma rápida y con
 
 ## 1.3. Segmentos objetivo
 
-### 1. Consumidores Finales (Compradores Planificadores)
+### 1. Compradores Multitienda y Optimizadores de Desplazamiento 
 Este grupo está integrado principalmente por personas de 20 a 50 años que residen en zonas urbanas y pertenecen a los niveles socioeconómicos B y C. Debido a que representan la mayor parte del gasto en alimentos del hogar, su comportamiento de compra se ha vuelto más cauteloso, repartiendo sus compras entre distintas tiendas para cuidar el presupuesto (Kantar Worldpanel, 2025). Ante el incremento en el costo de vida, estos compradores prefieren planificar sus compras con anticipación. Esto genera la necesidad de contar con soluciones digitales sencillas que eliminen la duda sobre dónde comprar más barato, permitiéndoles organizar su lista de forma eficiente para proteger su dinero (BCRP, 2025).
 
-### 2. Establecimientos de Retail (Supermercados y Tiendas de Conveniencia)
+### 2. Comerciantes Minoristas y Administradores de Tiendas Locales
 Este segmento abarca a los comercios del sector minorista moderno, organizados en dos formatos principales que compiten diariamente por atraer clientes:
-*   **Tiendas de Proximidad:** Cadenas de conveniencia (Tambo, Oxxo) y tiendas de descuento (Mass), enfocadas en compras rápidas, de paso o para cubrir emergencias del día.
-*   **Supermercados de Mayor Tamaño:** Establecimientos (Plaza Vea, Metro, Tottus) orientados a compras semanales o mensuales de mayor volumen, donde compiten mediante marcas propias y ofertas especiales por paquete (KPMG, 2025).
+*   **Tiendas de Proximidad:** Cadenas de conveniencia y tiendas de descuento, enfocadas en compras rápidas, de paso o para cubrir emergencias del día.
+*   **Supermercados de Mayor Tamaño:** Establecimientos orientados a compras semanales o mensuales de mayor volumen, donde compiten mediante marcas propias y ofertas especiales por paquete (KPMG, 2025).
 
 Para ambos formatos funciona como un canal directo de atracción de público: ayuda a que las tiendas de conveniencia vendan más rápido sus ofertas del día y a que los supermercados muestren su competitividad en compras grandes, asegurando que más clientes crucen sus puertas.
 
