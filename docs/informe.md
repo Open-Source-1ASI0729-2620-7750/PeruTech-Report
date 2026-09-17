@@ -452,11 +452,11 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 ## 5.1. Software Configuration Management
 
-Se detallan a continuación los entornos, herramientas y normas operativas encargados de asegurar la calidad, consistencia y trazabilidad de los artefactos desarrollados.
+Se detallan a continuación los entornos, herramientas y normas operativas encargados de asegurar la calidad, consistencia y trazabilidad de los artefactos desarrollados durante el ciclo de vida del proyecto.
 
 ### 5.1.1. Software Development Environment Configuration
 
-Se presentan las herramientas seleccionadas para las fases de gestión, diseño, desarrollo web, documentación y despliegue del producto.
+Se presentan los entornos y herramientas seleccionadas para las fases de gestión, diseño, desarrollo web, documentación y despliegue del producto.
 
 **Project Management**
 
@@ -470,20 +470,22 @@ Se presentan las herramientas seleccionadas para las fases de gestión, diseño,
 
 | Herramienta | Uso Principal | Enlace / Ruta de Acceso |
 | :--- | :--- | :--- |
-| **UXPressia** | Elaboración de artefactos de diseño centrado en el usuario (User Personas, Empathy Maps, Journey Maps). | [https://uxpressia.com](https://uxpressia.com) |
-| **Miro** | Diagramación y modelado colaborativo del dominio del problema. | [https://miro.com](https://miro.com) |
-| **Figma** | Diseños de wireframes, mockups de alta fidelidad y prototipo interactivo de la Landing Page. | [https://figma.com](https://figma.com) |
+| **UXPressia** | Elaboración de artefactos de diseño centrado en el usuario (User Personas, Empathy Maps, Journey Maps e Impact Maps). | [https://uxpressia.com](https://uxpressia.com) |
+| **Lucidchart / Miro** | Diagramación y modelado colaborativo del dominio del problema y arquitectura C4 Model. | [https://lucidchart.com](https://lucidchart.com) |
+| **Figma** | Diseño de wireframes, mockups de alta fidelidad y prototipos interactivos de la Landing Page y Web Application. | [https://figma.com](https://figma.com) |
 
 <br>
 
-**Software Development (Web & Landing Page)**
+**Software Development (Web & Services)**
 
 | Herramienta / Tecnología | Propósito | Enlace / Ruta de Acceso |
 | :--- | :--- | :--- |
-| **WebStorm** | IDEs para la maquetación, desarrollo y estructuración del sitio web. | [https://www.jetbrains.com/es-es/webstorm/](https://www.jetbrains.com/es-es/webstorm/) |
-| **HTML5** | Lenguaje de marcado semántico para la estructuración de la Landing Page. | [https://developer.mozilla.org](https://developer.mozilla.org) |
-| **CSS3 / Tailwind CSS** | Hojas de estilo y framework de utilidades CSS para el diseño adaptable (Responsive Design). | [https://tailwindcss.com](https://tailwindcss.com) |
-| **JavaScript** | Lenguaje de programación para la interactividad de la página y cambio de idioma. | [https://developer.mozilla.org](https://developer.mozilla.org) |
+| **WebStorm / VS Code** | Entorno de desarrollo para maquetación web, estilos y scripts frontend. | [https://www.jetbrains.com/webstorm/](https://www.jetbrains.com/webstorm/) |
+| **IntelliJ IDEA Ultimate** | Entorno de desarrollo para la implementación del RESTful API en Java y Spring Boot. | [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/) |
+| **HTML5 & CSS3** | Lenguajes base para la estructuración y estilización semántica y accesible (a11y) del sitio web. | [https://developer.mozilla.org](https://developer.mozilla.org) |
+| **JavaScript & TypeScript** | Lenguajes para la lógica del cliente y la interactividad del Landing Page y componentes Angular. | [https://www.typescriptlang.org](https://www.typescriptlang.org) |
+| **Angular** | Marco de trabajo frontend para la construcción de la aplicación web de gestión comercial. | [https://angular.io](https://angular.io) |
+| **Java & Spring Boot** | Lenguaje y marco de trabajo backend para la persistencia y servicios RESTful con Spring Data JPA. | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot) |
 
 <br>
 
@@ -491,7 +493,7 @@ Se presentan las herramientas seleccionadas para las fases de gestión, diseño,
 
 | Herramienta / Plataforma | Propósito | Enlace / Ruta de Acceso |
 | :--- | :--- | :--- |
-| **GitHub Pages** | Hosting e integración continua nativa para la publicación y alojamiento del sitio web de la Landing Page. | [https://pages.github.com](https://pages.github.com) |
+| **GitHub Pages** | Alojamiento e integración continua nativa para el despliegue del sitio web estático de la Landing Page. | [https://pages.github.com](https://pages.github.com) |
 
 <br>
 
@@ -499,15 +501,15 @@ Se presentan las herramientas seleccionadas para las fases de gestión, diseño,
 
 | Herramienta / Recurso | Propósito | Enlace / Ruta de Acceso |
 | :--- | :--- | :--- |
-| **Markdown** | Lenguaje de marcado ligero para la redacción estandarizada del informe y documentación técnica. | [https://www.markdownguide.org](https://www.markdownguide.org) |
-| **Git / GitHub** | Sistema de control de versiones distribuido y servidor de repositorios remotos. | [https://github.com](https://github.com) |
-| **GitFlow / Conventional Commits** | Metodología de ramificación y estándar para mensajes de confirmación de código. | [https://www.conventionalcommits.org](https://www.conventionalcommits.org) |
+| **Markdown** | Formato estructurado para la elaboración colaborativa del informe y especificaciones técnicas. | [https://www.markdownguide.org](https://www.markdownguide.org) |
+| **Git & GitHub** | Sistema de control de versiones distribuido y servidor centralizado de repositorios bajo la organización del equipo. | [https://github.com](https://github.com) |
+| **GitFlow & Conventional Commits** | Flujo de trabajo de ramificación estructurada y convención estándar para mensajes de confirmación. | [https://www.conventionalcommits.org](https://www.conventionalcommits.org) |
 
 ---
 
 ### 5.1.2. Source Code Management
 
-El código fuente del proyecto se administra centralizadamente en la organización oficial de **GitHub**. El desarrollo se distribuye en repositorios independientes para mantener el aislamiento entre la documentación técnica y el artefacto web, aplicando la estrategia **GitFlow Workflow**:
+El código fuente del proyecto se administra centralizadamente en la organización oficial de **GitHub**. El desarrollo se organiza en repositorios independientes para mantener el desacoplamiento entre la documentación técnica, la experiencia web y los servicios de backend, aplicando **GitFlow Workflow**:
 
 **Repositorios Oficiales del Proyecto**
 
@@ -519,67 +521,122 @@ El código fuente del proyecto se administra centralizadamente en la organizaci�
 
 #### Modelo de Ramificación (GitFlow)
 
-El desarrollo en los repositorios se organiza mediante dos ramas principales permanentes:
-* `main`: Contiene exclusivamente versiones estables, probadas y publicadas en producción.
-* `develop`: Sirve como línea base para la integración de nuevas funcionalidades y secciones.
+El desarrollo en los repositorios se estructura mediante dos ramas principales permanentes:
+* `main`: Contiene exclusivamente versiones estables, aprobadas y publicadas en producción.
+* `develop`: Sirve como rama base para la integración continua de nuevas funcionalidades y secciones.
 
-Adicionalmente, se utilizan ramas temporales según el tipo de trabajo:
-* `feature/<nombre-tarea>`: Para la construcción de secciones específicas de la Landing Page o capítulos del reporte (ej. `feature/hero-section`, `feature/chapter-5`).
-* `fix/<descripcion-corta>`: Para la corrección de errores de maquetación o redacción.
+Adicionalmente, se utilizan ramas de soporte bajo las siguientes convenciones:
+* `feature/<nombre-funcionalidad>`: Ramas derivadas de `develop` para la construcción de secciones específicas o capítulos de documentación (ej. `feature/landing-hero`, `feature/chapter-5-content`).
+* `release/vX.X.X`: Ramas para la estabilización y preparación de entregas formales, aplicando el estándar **Semantic Versioning 2.0.0** (ej. `release/v1.0.0`).
+* `hotfix/<descripcion-correccion>`: Ramas directas desde `main` para correcciones críticas no planificadas en producción.
 
 #### Política de Commits
 
-Para garantizar la claridad del historial, los mensajes de commit emplean el estándar de **Conventional Commits**: `<tipo>(ámbito-opcional): descripción` (ejemplos: `feat(landing): add contact form markup`, `docs(report): update section 5.1 tables`).
+Para garantizar la legibilidad y trazabilidad del historial, los mensajes de commit emplean la especificación de **Conventional Commits**: `<tipo>(ámbito-opcional): descripción en imperativo y minúsculas` (ejemplos: `feat(landing): implement responsive navigation bar`, `docs(report): update chapter 5 environment tables`).
 
 ---
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
-Se establecen guías de estilo para preservar la legibilidad y coherencia técnica en los archivos de la Landing Page y el informe:
+Se establecen guías de estilo oficiales para asegurar la consistencia, legibilidad y mantenibilidad técnica en todos los componentes del sistema:
 
-* **Idioma de Código**: Nomenclatura en **inglés** para etiquetas, clases, IDs, variables JavaScript y nombres de archivos/carpetas.
-* **HTML5**: Estructuración semántica pura (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`). Identación uniforme de 2 espacios.
-* **CSS3 / Tailwind CSS**: Uso de nombres de clases personalizadas bajo convención `kebab-case` (`hero-container`, `btn-primary`). Priorización de clases de utilidad para asegurar el diseño adaptativo.
-* **JavaScript**: Formato `camelCase` para variables y funciones (`toggleLanguage`, `submitContactForm`). Uso exclusivo de `const` y `let`.
-* **Markdown**: Uso de sintaxis estándar para encabezados, tablas estructuradas y resaltado de texto en la redacción del reporte técnico.
+* **Idioma de Código**: Nomenclatura estrictamente en **idioma inglés** para identificadores, clases, interfaces, variables, comentarios y rutas de archivos.
+* **HTML5**: Estructuración semántica (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`), validación de accesibilidad con atributos ARIA (`a11y`), e identación uniforme de 2 espacios.
+* **CSS3**: Nomenclatura `kebab-case` para clases personalizadas (`hero-container`, `btn-primary`), organización modular y aplicación de principios de diseño responsivo.
+* **JavaScript & TypeScript**: Convención `camelCase` para variables y funciones (`toggleLanguage`, `submitContactForm`), `PascalCase` para clases e interfaces (`UserProfile`, `MerchantService`). Se siguen las directrices de la *Google TypeScript Style Guide*.
+* **Java & Spring Boot**: Adopción estricta de la *Google Java Style Guide*. Nombres de clases en `PascalCase`, métodos en `camelCase`, constantes en `UPPER_SNAKE_CASE` y paquetes en minúsculas coherentes con la arquitectura orientada al dominio (DDD).
+* **Markdown**: Sintaxis estándar para encabezados, tablas y enlaces según la especificación *The Markdown Guide*.
 
 ---
 
 ### 5.1.4. Software Deployment Configuration
 
-El sitio web de la Landing Page se despliega mediante el servicio **GitHub Pages**, utilizando la infraestructura nativa de GitHub para servir archivos estáticos directamente desde el repositorio del proyecto.
+El sitio web de la Landing Page se despliega mediante el servicio **GitHub Pages**, aprovechando la infraestructura nativa de GitHub para servir archivos estáticos directamente desde el repositorio del proyecto.
 
 | Componente | Plataforma Hosting | Estrategia de Despliegue | URL Oficial |
 | :--- | :--- | :--- | :--- |
-| **Landing Page** | GitHub Pages | Despliegue automático desde la rama `main` | `https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Landing-Page` |
+| **Landing Page** | GitHub Pages | Despliegue automatizado desde la rama `main` | `https://open-source-1asi0729-2620-7750.github.io/PeruTech-Landing-Page/` |
 
 #### Flujo de Configuración en GitHub Pages:
-1. **Habilitación del Servicio**: Activación de GitHub Pages desde el apartado de ajustes (*Settings > Pages*) en el repositorio `PeruTech-Landing-Page`.
-2. **Selección de Fuente (Source Branch)**: Configuración de la rama `main` y la carpeta raíz (`/root`) como la fuente oficial de publicación.
-3. **Automatización e Integración**: Configuración del pipeline automático de GitHub Actions para procesar e implementar los cambios de forma continua tras cada merge aprobado.
-4. **Seguridad**: Configuración del protocolo seguro de transferencia HTTPS obligatorio proporcionado por GitHub.
-
----
+1. **Habilitación del Servicio**: Acceso a la configuración del repositorio (*Settings > Pages*) en `PeruTech-Landing-Page`.
+2. **Selección de Rama Fuente (Source)**: Definición de la rama `main` y directorio `/root` como origen del despliegue público.
+3. **Automatización del Despliegue**: Integración mediante GitHub Actions para compilar y publicar automáticamente los cambios tras cada merge confirmado.
+4. **Configuración de Seguridad**: Habilitación forzada del protocolo criptográfico seguro HTTPS para proteger la navegación de los visitantes.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
-[Contenido]
+En esta sección se detalla y evidencia el proceso de planificación, implementación, control de calidad y despliegue continuo de los artefactos del sistema (sitio web de la Landing Page, servicios de backend y aplicaciones cliente) a lo largo de los diferentes ciclos iterativos de desarrollo. La ejecución del proyecto sigue el marco de trabajo Scrum, estructurando el avance por sprints independientes en función del Product Backlog definido en el Capítulo III.
+
+---
 
 ### 5.2.1. Sprint 1
 
-[Contenido]
+El Sprint 1 comprende el ciclo inicial de desarrollo del proyecto enfocado en establecer las bases arquitectónicas, configurar los entornos colaborativos y desplegar en producción el sitio web de la Landing Page responsivo y accesible, orientado a captar el interés tanto del Comprador Independiente como del Comerciante Minorista.
 
 #### 5.2.1.1. Sprint Planning 1
 
-[Contenido]
+| Campo | Descripción |
+| :--- | :--- |
+| **Sprint #** | Sprint 1 |
+| **Sprint Planning Background** | Sesión de planificación inicial para definir el alcance técnico del primer entregable (AV1), establecer la velocidad estimada del equipo y seleccionar las historias del Product Backlog correspondientes al despliegue de la Landing Page y la infraestructura de control de versiones. |
+| **Date** | 2026-09-02 |
+| **Time** | 07:00 PM (GMT -5) |
+| **Location** | Modalidad remota síncrona vía Google Meet |
+| **Prepared By** | Equipo de Desarrollo PeruTech |
+| **Attendees (to planning meeting)** | Integrantes del equipo de desarrollo PeruTech |
+| **Sprint 0 Review Summary** | Al tratarse de la iteración inicial del ciclo académico, no existe una revisión formal de un sprint previo. Se toma como insumo el conjunto de requisitos del Capítulo III y los artefactos de diseño UX/UI. |
+| **Sprint 0 Retrospective Summary** | Se consolidaron los hallazgos del Needfinding y se validaron los wireframes de baja fidelidad. Se determinó priorizar una arquitectura web modular con HTML5 semántico, CSS3 adaptable y JavaScript para garantizar tiempos de carga reducidos en GitHub Pages. |
+| **Sprint Goal & User Stories** | **Sprint 1 Goal:** Implementar, documentar y desplegar en producción el sitio web estático de la Landing Page para PeruTech mediante GitHub Pages, cumpliendo con criterios de diseño adaptativo (responsive design), accesibilidad semántica y captura de clientes potenciales para ambos segmentos de usuarios.<br><br>**User Stories Seleccionadas:**<br>• **US01:** Landing: Propuesta de valor (5 SP)<br>• **US02:** Landing: Segmentos objetivo (5 SP)<br>• **US03:** Landing: Red de comercios aliados (3 SP)<br>• **US04:** Landing: Registro de interés (5 SP)<br>• **US05:** Landing: Preguntas frecuentes y soporte (3 SP) |
+| **Sprint 1 Velocity** | 21 Story Points |
+| **Sum of Story Points** | 21 Story Points |
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
-[Contenido]
+En la siguiente tabla se distribuyen las responsabilidades de liderazgo y colaboración de los integrantes del equipo para el Sprint 1, organizadas por áreas de trabajo técnico y metodológico orientadas al despliegue de la Landing Page y la configuración del entorno:
+
+| Aspecto / Área de Trabajo | Líder (Aspect Leader) | Colaboradores |
+| :--- | :--- | :--- |
+| **Software Configuration Management & GitFlow** | Kevin Patrick Pardo Chumpitazi | [Nombre del Integrante 2], [Nombre del Integrante 3] |
+| **UI/UX Design & Semantic Prototyping** | [Nombre del Integrante 2] | Kevin Patrick Pardo Chumpitazi, [Nombre del Integrante 4] |
+| **Frontend Web Development (Landing Page Structure & Style)** | [Nombre del Integrante 3] | [Nombre del Integrante 4], [Nombre del Integrante 5] |
+| **Responsive Design & Accessibility (a11y)** | [Nombre del Integrante 4] | Kevin Patrick Pardo Chumpitazi, [Nombre del Integrante 3] |
+| **Hosting, Continuous Deployment (CI/CD) & QA Review** | [Nombre del Integrante 5] | [Nombre del Integrante 2], Kevin Patrick Pardo Chumpitazi |
+
 
 #### 5.2.1.3. Sprint Backlog 1
 
-[Contenido]
+El Sprint Backlog 1 consolida el conjunto de User Stories priorizadas para la fase inicial del proyecto PeruTech, enfocada en la construcción, optimización semántica y despliegue continuo de la Landing Page estática en GitHub Pages.
+
+Para la administración operativa del ciclo de desarrollo se utilizó Trello como herramienta formal de gestión visual mediante un tablero Kanban. Dicho tablero permitió desglosar cada historia de usuario en tareas técnicas específicas, asignar responsables directos y controlar la transición de los ítems a través de los estados del flujo de trabajo (*To Do*, *Doing* y *Done*), asegurando el cumplimiento riguroso de los criterios de aceptación antes de la liberación final.
+
+<div align="center">
+  <img src="../assets/sprint-1/Trello.png" alt="Sprint Backlog 1 en Trello" style="width: 85%;">
+  <p><em>Figura 5.1: Estado final de las tareas del Sprint 1 en el tablero Kanban de Trello.</em></p>
+</div>
+
+<br>
+
+**Desglose Detallado del Sprint Backlog 1:**
+
+| User Story Id | Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status (To-do/In-Process/To-Review/Done) |
+| :---: | :--- | :---: | :--- | :--- | :---: | :--- | :---: |
+| **US01** | Landing: Propuesta de valor | T01 | Maquetación Hero Section | Maquetación semántica del contenedor principal y titulares de valor con HTML5. | 3 | Kevin Patrick Pardo Chumpitazi | Done |
+| **US01** | Landing: Propuesta de valor | T02 | Estilización diferencial | Aplicación de hojas de estilo CSS3 para evidenciar la optimización de compras y tiempos. | 2 | Kevin Patrick Pardo Chumpitazi | Done |
+| **US01** | Landing: Propuesta de valor | T03 | Diseño Mobile-First | Implementación de media queries para adaptación visual en dispositivos móviles. | 3 | Kevin Patrick Pardo Chumpitazi | Done |
+| **US02** | Landing: Segmentos objetivo | T04 | Tarjetas informativas | Estructuración modular de los perfiles Comprador Independiente y Comerciante. | 3 | [Nombre del Integrante 2] | Done |
+| **US02** | Landing: Segmentos objetivo | T05 | Llamados a la acción (CTA) | Configuración de enlaces hacia los flujos de registro respectivos de cada segmento. | 2 | [Nombre del Integrante 2] | Done |
+| **US02** | Landing: Segmentos objetivo | T06 | Accesibilidad y contraste | Validación de contrastes de color y jerarquía visual conforme a estándares WCAG 2.1. | 2 | [Nombre del Integrante 3] | Done |
+| **US03** | Landing: Red de aliados | T07 | Módulo de cobertura | Maquetación del bloque interactivo de sectores urbanos y comercios minoristas. | 2 | [Nombre del Integrante 3] | Done |
+| **US03** | Landing: Red de aliados | T08 | Optimización gráfica | Incorporación y compresión de logotipos vectoriales en formato SVG. | 2 | [Nombre del Integrante 4] | Done |
+| **US04** | Landing: Registro de interés | T09 | Formulario de suscripción | Creación de campos semánticos para captura de correo electrónico de visitantes. | 2 | [Nombre del Integrante 4] | Done |
+| **US04** | Landing: Registro de interés | T10 | Validación de sintaxis | Script en JavaScript con expresiones regulares (RegEx) para comprobación de correo. | 3 | Kevin Patrick Pardo Chumpitazi | Done |
+| **US04** | Landing: Registro de interés | T11 | Notificación accesible | Implementación del mensaje interactivo de confirmación tras envío exitoso. | 2 | [Nombre del Integrante 5] | Done |
+| **US05** | Landing: FAQ y soporte | T12 | Acordeón informativo | Estructuración semántica de preguntas frecuentes con elementos nativos HTML5. | 2 | [Nombre del Integrante 5] | Done |
+| **US05** | Landing: FAQ y soporte | T13 | Lógica de colapso interactivo | Desarrollo de funciones JavaScript para apertura y cierre accesible de tópicos. | 2 | Kevin Patrick Pardo Chumpitazi | Done |
+| **US05** | Landing: FAQ y soporte | T14 | Formulario de contacto | Integración del canal de comunicación directa para consultas de soporte. | 2 | [Nombre del Integrante 2] | Done |
+| **TS01** | Despliegue en GitHub Pages | T15 | Inicialización GitFlow | Configuración del repositorio `PeruTech-Landing-Page` y esquema de ramas. | 2 | Kevin Patrick Pardo Chumpitazi | Done |
+| **TS01** | Despliegue en GitHub Pages | T16 | Pipeline de despliegue | Configuración de la acción automática para compilación y hosting en GitHub Pages. | 1 | Kevin Patrick Pardo Chumpitazi | Done |
+| **TS01** | Despliegue en GitHub Pages | T17 | Auditoría Lighthouse | Comprobación de métricas de rendimiento y SEO superando el 90% de puntaje. | 2 | [Nombre del Integrante 3] | Done |
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
