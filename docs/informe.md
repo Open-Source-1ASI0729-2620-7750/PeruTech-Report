@@ -467,60 +467,58 @@ Asimismo, los criterios de aceptación se definen bajo la sintaxis formal de Ghe
 <img src="/assets/Impact-Map-Maria-Salvador-(Comerciante-Minorista).png" width=850 />
 
 ## 3.3. Product Backlog     
-|#Orden | User Story Id | Título | Descripcion | Story Points (1 / 2 / 3 / 5 / 8)|
+| # Orden | User Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
 |---|---|---|---|---|
-|1 | US01 | Landing: Propuesta de valor | Como visitante, quiero ver cómo la plataforma optimiza el gasto y la ruta para ahorrar dinero y tiempo. | 2|
-|2 | US04 | Landing: Registro de Interés | Como visitante, quiero dejar mi correo para recibir notificaciones del lanzamiento. | 2|
-|3 | US05 | Registro: Cuenta Personal | Como comprador independiente, quiero crear una cuenta usando mi correo para guardar mis rutas peatonales habituales. | 3|
-|4 | US06 | Registro: Shared Household | Como administrador del hogar, quiero vincular mi cuenta con otros miembros de mi familia para coordinar las compras de la casa. | 5|
-|5 | US08 | Login de Sistema | Como comprador independiente, quiero iniciar sesión de forma rápida para acceder a mis listas y presupuesto guardado. | 2|
-|6 | US37 | Seguridad: Sesión Persistente | Como comprador independiente, quiero mantener mi sesión iniciada para acceder rápido a mi lista al estar en la tienda. | 3|
-|7 | US43 | UX: Manejo de Errores | Como comprador independiente, quiero ver mensajes claros si pierdo la conexión a internet para saber cómo reintentar mi búsqueda. | 2|
-|8 | US47 | Privacidad: Control de Ubicación | Como comprador independiente, quiero activar o desactivar la ubicación en segundo plano para controlar mi privacidad y consumo de batería. | 2|
-|9 | US09 | Pantry Stock: Agregar Ítem | Como administrador del hogar, quiero registrar productos en la despensa familiar para controlar el inventario de la casa. | 3|
-|10 | US11 | Pantry Stock: Producto Agotado | Como administrador del hogar, quiero marcar un producto como agotado para reponerlo en la siguiente compra familiar. | 2|
-|11 | US44 | Despensa: Sincronización en Tiempo Real | Como administrador del hogar, quiero que las actualizaciones de la despensa se reflejen al instante en los teléfonos de mi familia para no duplicar compras. | 5|
-|12 | US13 | Shopping List: Creación Básica | Como comprador independiente, quiero crear listas de compras rápidas para organizar mis faltantes de la semana. | 2|
-|13 | US14 | Shopping List: Desde Despensa | Como administrador del hogar, quiero que los ítems agotados de la despensa pasen automáticamente a la lista familiar. | 3|
-|14 | US15 | Budget Limit: Configuración | Como comprador independiente, quiero fijar un límite presupuestario quincenal para no gastar de más en mis compras de volumen bajo. | 2|
-|15 | US17 | Budget Limit: Alerta de Exceso | Como comprador independiente, quiero recibir una alerta cuando el total de mi lista supere el presupuesto fijado. | 3|
-|16 | US39 | Lista de Compras: Sincronización Automática | Como comprador independiente, quiero que mis cambios en la lista se guarden automáticamente en la nube para no perder mis productos. | 5|
-|17 | US48 | Shopping List: Modo Offline | Como administrador del hogar, quiero poder tachar e ingresar productos en mi lista aunque no tenga señal dentro del supermercado. | 5|
-|18 | US18 | Price Benchmark: Búsqueda Rápida | Como comprador independiente, quiero buscar un artículo específico para saber al instante en qué tienda cercana está más barato. | 3|
-|19 | US19 | Price Benchmark: Comparador Integral | Como administrador del hogar, quiero comparar mi canasta familiar completa entre varios supermercados para encontrar el menor costo total. | 8|
-|20 | US22 | Price Benchmark: Filtro por Radio | Como comprador independiente, quiero filtrar precios dentro de un radio caminable para no alejarme demasiado de mi zona. | 3|
-|21 | US23 | Rutas: Optimización Peatonal | Como comprador independiente, quiero obtener la ruta a pie más corta entre bodegas y supermercados para optimizar mis traslados. | 8|
-|22 | US24 | Rutas: Optimización Vehicular | Como administrador del hogar, quiero una ruta en auto eficiente que conecte múltiples comercios para concretar la compra familiar. | 8|
-|23 | US26 | Shopping Run: Modo Compra | Como administrador del hogar, quiero activar el modo de compra interactivo para ir tachando los productos en el carrito de supermercado. | 5|
-|24 | US27 | Shopping Run: Consolidación de Gasto | Como comprador independiente, quiero finalizar la jornada de compra para restar el monto gastado de mi presupuesto disponible. | 3|
-|25 | US02 | Landing: Segmentos Objetivo | Como visitante, quiero identificar si la plataforma está diseñada para mis necesidades de compra. | 1|
-|26 | US03 | Landing: Comercios Aliados | Como visitante, quiero ver qué cadenas y bodegas están registradas para saber si mis tiendas cercanas participan. | 1|
-|27 | US07 | Registro: Selección de Tiendas Favoritas | Como comprador independiente, quiero guardar mis bodegas y tiendas de conveniencia habituales para recibir alertas de sus promociones. | 3|
-|28 | US10 | Pantry Stock: Lector de Códigos | Como administrador del hogar, quiero escanear el código de barras de los productos comprados para ingresarlos rápidamente a la despensa. | 5|
-|29 | US12 | Pantry Stock: Alerta de Caducidad | Como administrador del hogar, quiero recibir alertas sobre productos próximos a vencer para evitar el desperdicio de alimentos en casa. | 3|
-|30 | US16 | Shopping List: Compras Recurrentes | Como administrador del hogar, quiero guardar mi canasta mensual como plantilla para no reescribir la lista compleja cada mes. | 3|
-|31 | US20 | Price Benchmark: Historial de Precios | Como administrador del hogar, quiero ver el historial de precios de un producto para verificar si la oferta del supermercado es real. | 5|
-|32 | US21 | Price Benchmark: Marcas Sustitutas | Como comprador independiente, quiero recibir sugerencias de marcas equivalentes más económicas para reducir el total de mi compra diaria. | 5|
-|33 | US25 | Aisle Routing: Orden de Pasillos | Como comprador independiente, quiero que mi lista se ordene por pasillos del local para realizar mi compra en el menor tiempo posible. | 5|
-|34 | US29 | Crowdsourcing: Reportar Error | Como comprador independiente, quiero reportar si el precio en la góndola no coincide con el de la app para ayudar a la comunidad. | 3|
-|35 | US31 | Crowdsourcing: Votación de Precios | Como comprador independiente, quiero confirmar los precios reportados por otros usuarios para mantener la plataforma actualizada. | 3|
-|36 | US33 | Exploración: Descuentos de Proximidad | Como comprador independiente, quiero ver los productos en liquidación en comercios cercanos para aprovechar promociones relámpago. | 3|
-|37 | US34 | Notificaciones: Ofertas Flash | Como comprador independiente, quiero recibir alertas inmediatas sobre ofertas relámpago en tiendas cercanas para comprar con mayor descuento. | 5|
-|38 | US35 | Filtros: Disponibilidad de Stock | Como administrador del hogar, quiero verificar que las tiendas de mi ruta tengan stock disponible para no hacer viajes en vano. | 3|
-|39 | US38 | Exploración: Carga Fluida | Como administrador del hogar, quiero navegar de forma fluida por el catálogo extenso para armar la lista familiar sin interrupciones. | 5|
-|40 | US41 | Notificaciones: Bajada de Precios | Como comprador independiente, quiero recibir alertas cuando un producto de mi lista baje de precio en un comercio cercano. | 5|
-|41 | US46 | Rutas: Tiempos de Traslado | Como comprador independiente, quiero ver la distancia y tiempo estimado a pie versus transporte público para elegir el medio de viaje. | 3|
-|42 | US49 | Price Benchmark: Exportar a WhatsApp | Como comprador independiente, quiero exportar mi lista optimizada a WhatsApp para compartirla con mi compañero de departamento. | 3|
-|43 | US50 | Pantry Stock: Consumo Histórico | Como administrador del hogar, quiero ver gráficos de mis gastos e inventario de los últimos 3 meses para evaluar el ahorro del hogar. | 5|
-|44 | US28 | Rutas: Recálculo en Vivo | Como administrador del hogar, quiero recalcular la ruta si encuentro una tienda cerrada para no perder tiempo en el recorrido vehicular. | 8|
-|45 | US30 | Crowdsourcing: Subir Evidencia | Como comprador independiente, quiero subir una foto del precio en etiqueta para validar mis reportes de la comunidad. | 5|
-|46 | US32 | Crowdsourcing: Gamificación | Como comprador independiente, quiero acumular puntos y medallas por mis aportes para obtener reconocimiento en la plataforma. | 5|
-|47 | US36 | Alertas: Inconsistencia de Datos | Como comprador independiente, quiero ver si un precio reportado tiene advertencia de imprecisión antes de trasladarme a la tienda. | 3|
-|48 | US40 | Rutas: Alerta de Tráfico | Como administrador del hogar, quiero recibir alertas de tráfico en mi ruta vehicular para cambiar el orden de las tiendas. | 5|
-|49 | US42 | Comunidad: Mis Reportes | Como comprador independiente, quiero consultar el historial de mis aportes comunitarios para saber cuáles fueron aprobados. | 2|
-|50 | US45 | Tendencias: Lo Más Buscado en la Zona | Como administrador del hogar, quiero ver los productos más buscados con descuento en mi distrito para aprovechar las tendencias de ahorro local. | 5|
-[Contenido]
-
+| 1 | US01 | Landing: Propuesta de valor | Como visitante, quiero ver cómo la plataforma optimiza el gasto y la ruta para ahorrar dinero y tiempo. | 1 |
+| 2 | US02 | Landing: Segmentos Objetivo | Como visitante, quiero identificar si la plataforma está diseñada para mis necesidades de compra. | 1 |
+| 3 | US03 | Landing: Comercios Aliados | Como visitante, quiero ver qué cadenas y bodegas están registradas para saber si mis tiendas cercanas participan. | 1 |
+| 4 | US04 | Landing: Registro de Interés | Como visitante, quiero dejar mi correo para recibir notificaciones del lanzamiento. | 2 |
+| 5 | US05 | Registro: Cuenta Personal | Como comprador independiente, quiero crear una cuenta usando mi correo para guardar mis rutas peatonales habituales. | 3 |
+| 6 | US06 | Registro: Shared Household | Como administrador del hogar, quiero vincular mi cuenta con otros miembros de mi familia para coordinar las compras de la casa. | 5 |
+| 7 | US07 | Registro: Selección de Tiendas Favoritas | Como comprador independiente, quiero guardar mis bodegas y tiendas de conveniencia habituales para recibir alertas de sus promociones. | 2 |
+| 8 | US08 | Login de Sistema | Como comprador independiente, quiero iniciar sesión de forma rápida para acceder a mis listas y presupuesto guardado. | 2 |
+| 9 | US09 | Pantry Stock: Agregar Ítem | Como administrador del hogar, quiero registrar productos en la despensa familiar para controlar el inventario de la casa. | 3 |
+| 10 | US10 | Pantry Stock: Lector de Códigos | Como administrador del hogar, quiero escanear el código de barras de los productos comprados para ingresarlos rápidamente a la despensa. | 5 |
+| 11 | US11 | Pantry Stock: Producto Agotado | Como administrador del hogar, quiero marcar un producto como agotado para reponerlo en la siguiente compra familiar. | 2 |
+| 12 | US12 | Pantry Stock: Alerta de Caducidad | Como administrador del hogar, quiero recibir alertas sobre productos próximos a vencer para evitar el desperdicio de alimentos en casa. | 3 |
+| 13 | US13 | Shopping List: Creación Básica | Como comprador independiente, quiero crear listas de compras rápidas para organizar mis faltantes de la semana. | 2 |
+| 14 | US14 | Shopping List: Desde Despensa | Como administrador del hogar, quiero que los ítems agotados de la despensa pasen automáticamente a la lista familiar. | 3 |
+| 15 | US15 | Budget Limit: Configuración | Como comprador independiente, quiero fijar un límite presupuestario quincenal para no gastar de más en mis compras de volumen bajo. | 2 |
+| 16 | US16 | Shopping List: Compras Recurrentes | Como administrador del hogar, quiero guardar mi canasta mensual como plantilla para no reescribir la lista compleja cada mes. | 3 |
+| 17 | US17 | Budget Limit: Alerta de Exceso | Como comprador independiente, quiero recibir una alerta cuando el total de mi lista supere el presupuesto fijado. | 3 |
+| 18 | US18 | Price Benchmark: Búsqueda Rápida | Como comprador independiente, quiero buscar un artículo específico para saber al instante en qué tienda cercana está más barato. | 3 |
+| 19 | US19 | Price Benchmark: Comparador Integral | Como administrador del hogar, quiero comparar mi canasta familiar completa entre varios supermercados para encontrar el menor costo total. | 8 |
+| 20 | US20 | Price Benchmark: Historial de Precios | Como administrador del hogar, quiero ver el historial de precios de un producto para verificar si la oferta del supermercado es real. | 5 |
+| 21 | US21 | Price Benchmark: Marcas Sustitutas | Como comprador independiente, quiero recibir sugerencias de marcas equivalentes más económicas para reducir el total de mi compra diaria. | 5 |
+| 22 | US22 | Price Benchmark: Filtro por Radio | Como comprador independiente, quiero filtrar precios dentro de un radio caminable para no alejarme demasiado de mi zona. | 3 |
+| 23 | US23 | Rutas: Optimización Peatonal | Como comprador independiente, quiero obtener la ruta a pie más corta entre bodegas y supermercados para optimizar mis traslados. | 8 |
+| 24 | US24 | Rutas: Optimización Vehicular | Como administrador del hogar, quiero una ruta en auto eficiente que conecte múltiples comercios para concretar la compra familiar. | 8 |
+| 25 | US25 | Aisle Routing: Orden de Pasillos | Como comprador independiente, quiero que mi lista se ordene por pasillos del local para realizar mi compra en el menor tiempo posible. | 5 |
+| 26 | US26 | Shopping Run: Modo Compra | Como administrador del hogar, quiero activar el modo de compra interactivo para ir tachando los productos en el carrito de supermercado. | 5 |
+| 27 | US27 | Shopping Run: Consolidación de Gasto | Como comprador independiente, quiero finalizar la jornada de compra para restar el monto gastado de mi presupuesto disponible. | 3 |
+| 28 | US28 | Rutas: Recálculo en Vivo | Como administrador del hogar, quiero recalcular la ruta si encuentro una tienda cerrada para no perder tiempo en el recorrido vehicular. | 8 |
+| 29 | US29 | Crowdsourcing: Reportar Error | Como comprador independiente, quiero reportar si el precio en la góndola no coincide con el de la app para ayudar a la comunidad. | 3 |
+| 30 | US30 | Crowdsourcing: Subir Evidencia | Como comprador independiente, quiero subir una foto del precio en etiqueta para validar mis reportes de la comunidad. | 5 |
+| 31 | US31 | Crowdsourcing: Votación de Precios | Como comprador independiente, quiero confirmar los precios reportados por otros usuarios para mantener la plataforma actualizada. | 3 |
+| 32 | US32 | Crowdsourcing: Gamificación | Como comprador independiente, quiero acumular puntos y medallas por mis aportes para obtener reconocimiento en la plataforma. | 5 |
+| 33 | US33 | Exploración: Descuentos de Proximidad | Como comprador independiente, quiero ver los productos en liquidación en comercios cercanos para aprovechar promociones relámpago. | 3 |
+| 34 | US34 | Notificaciones: Ofertas Flash | Como comprador independiente, quiero recibir alertas inmediatas sobre ofertas relámpago en tiendas cercanas para comprar con mayor descuento. | 5 |
+| 35 | US35 | Filtros: Disponibilidad de Stock | Como administrador del hogar, quiero verificar que las tiendas de mi ruta tengan stock disponible para no hacer viajes en vano. | 3 |
+| 36 | US36 | Alertas: Inconsistencia de Datos | Como comprador independiente, quiero ver si un precio reportado tiene advertencia de imprecisión antes de trasladarme a la tienda. | 3 |
+| 37 | US37 | Seguridad: Sesión Persistente | Como comprador independiente, quiero mantener mi sesión iniciada para acceder rápido a mi lista al estar en la tienda. | 3 |
+| 38 | US38 | Exploración: Carga Fluida | Como administrador del hogar, quiero navegar de forma fluida por el catálogo extenso para armar la lista familiar sin interrupciones. | 5 |
+| 39 | US39 | Lista de Compras: Sincronización Automática | Como comprador independiente, quiero que mis cambios en la lista se guarden automáticamente en la nube para no perder mis productos. | 5 |
+| 40 | US40 | Rutas: Alerta de Tráfico | Como administrador del hogar, quiero recibir alertas de tráfico en mi ruta vehicular para cambiar el orden de las tiendas. | 5 |
+| 41 | US41 | Notificaciones: Bajada de Precios | Como comprador independiente, quiero recibir alertas cuando un producto de mi lista baje de precio en un comercio cercano. | 5 |
+| 42 | US42 | Comunidad: Mis Reportes | Como comprador independiente, quiero consultar el historial de mis aportes comunitarios para saber cuáles fueron aprobados. | 2 |
+| 43 | US43 | UX: Manejo de Errores | Como comprador independiente, quiero ver mensajes claros si pierdo la conexión a internet para saber cómo reintentar mi búsqueda. | 2 |
+| 44 | US44 | Despensa: Sincronización en Tiempo Real | Como administrador del hogar, quiero que las actualizaciones de la despensa se reflejen al instante en los teléfonos de mi familia para no duplicar compras. | 5 |
+| 45 | US45 | Tendencias: Lo Más Buscado en la Zona | Como administrador del hogar, quiero ver los productos más buscados con descuento en mi distrito para aprovechar las tendencias de ahorro local. | 5 |
+| 46 | US46 | Rutas: Tiempos de Traslado | Como comprador independiente, quiero ver la distancia y tiempo estimado a pie versus transporte público para elegir el medio de viaje. | 3 |
+| 47 | US47 | Privacidad: Control de Ubicación | Como comprador independiente, quiero activar o desactivar la ubicación en segundo plano para controlar mi privacidad y consumo de batería. | 2 |
+| 48 | US48 | Shopping List: Modo Offline | Como administrador del hogar, quiero poder tachar e ingresar productos en mi lista aunque no tenga señal dentro del supermercado. | 5 |
+| 49 | US49 | Price Benchmark: Exportar a WhatsApp | Como comprador independiente, quiero exportar mi lista optimizada a WhatsApp para compartirla con mi compañero de departamento. | 3 |
+| 50 | US50 | Pantry Stock: Consumo Histórico | Como administrador del hogar, quiero ver gráficos de mis gastos e inventario de los últimos 3 meses para evaluar el ahorro del hogar. | 5 |
 ---
 
 # Capítulo IV: Product Design
