@@ -533,6 +533,7 @@ En esta sección se define el *Ubiquitous Language* (Lenguaje Ubicuo) para el do
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
+---
 
 [Contenido]
 
