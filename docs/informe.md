@@ -289,6 +289,7 @@ Proyecto
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
+---
 
 En esta sección se especifican los requisitos funcionales y técnicos de la plataforma **Preciazo** (desarrollada por **PeruTech**) mediante Epics, User Stories y Technical Stories, derivados de los hallazgos cualitativos del proceso de Needfinding, las entrevistas a usuarios y el modelado del dominio de negocio. La redacción sigue el enfoque de diseño centrado en el usuario, estructurando cada descripción bajo el estándar formal de rol, necesidad y beneficio (*"Como [rol], deseo [necesidad] para [beneficio]"*).
 
