@@ -1137,7 +1137,43 @@ Pantalla que muestra la información institucional del establecimiento afiliado,
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
-[Contenido]
+A continuación, se presentan los diagramas de User Flow para la aplicación web y móvil basados en las pantallas de alta fidelidad.
+
+---
+
+#### Segmento 1: Comprador
+
+##### Diagrama 1: Flujo de Búsqueda y Comparativa de Precios por Supermercado
+* **Goal:** 1. Comparar precios de la canasta entre supermercados cercanos.
+* **Descripción:** El usuario inicia en la pantalla de portada navegando por el buscador o categorías, gestiona su lista de compras activa en Modo Normal para evaluar sugerencias de ahorro y accede al cuadro comparativo para analizar los costos totales y productos disponibles por establecimiento.
+
+![Diagrama 1 - Búsqueda y Comparativa de Precios](/assets/userflow/diagrama1.png)
+
+---
+
+##### Diagrama 2: Flujo de Ejecución de Compra y Ruta Optimizada
+* **Goal:** 2. Guiar el recorrido de compra físico y optimizar el itinerario inter-tiendas.
+* **Descripción:** El usuario selecciona una lista guardada o plantilla, activa el generador de rutas para visualizar el itinerario con paradas y tiempos de traslado, e inicia el Modo Compra en el establecimiento para marcar los ítems en su carrito en tiempo real.
+
+![Diagrama 2 - Ejecución de Compra y Ruta Optimizada](/assets/userflow/diagrama2.png)
+
+---
+
+#### Segmento 2: Comerciante
+
+##### Diagrama 3: Flujo de Gestión Comercial y Monitoreo Analítico
+* **Goal:** 3. Analizar métricas de rendimiento y administrar el catálogo del establecimiento.
+* **Descripción:** El comerciante ingresa a su panel de analítica para evaluar tendencias e impresiones de su local, navega al catálogo para actualizar precios e inventarios y gestiona la información fiscal y los horarios de atención de la tienda.
+
+![Diagrama 3 - Gestión Comercial y Monitoreo Analítico](/assets/userflow/diagrama3.png)
+
+---
+
+##### Diagrama 4: Flujo de Publicación de Promociones Temporales
+* **Goal:** 4. Crear y gestionar ofertas con tiempo de vigencia determinado.
+* **Descripción:** El comerciante evalúa los productos desde su catálogo de precios e ingresa al módulo de ofertas para configurar promociones especiales, definir descuentos y establecer la vigencia temporal de la campaña.
+
+![Diagrama 4 - Publicación de Promociones Temporales](/assets/userflow/diagrama4.png)
 
 ## 4.5. Web Applications Prototyping
 
