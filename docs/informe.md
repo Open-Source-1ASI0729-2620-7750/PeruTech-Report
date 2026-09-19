@@ -207,6 +207,21 @@ Proyecto
 
 # Student Outcome
 
+El curso contribuye al cumplimiento del Student Outcome ABET:
+
+**ABET – EAC - Student Outcome 3**
+
+**Criterio:**  
+
+*Capacidad de comunicarse efectivamente con un rango de audiencias. En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 3.*
+
+| Criterio específico | Acciones realizadas | Conclusiones |
+|---------------------|---------------------|--------------|
+| **Comunica oralmente con efectividad a diferentes rangos de audiencia.** | [Descripción de acciones realizadas] <br> **AV1** <br> [Evidencia] | [Conclusiones] |
+| **Comunica por escrito con efectividad a diferentes rangos de audiencia.** | [Descripción de acciones realizadas] <br> **AV1** <br> [Evidencia] | [Conclusiones] |
+
+---
+
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
@@ -215,13 +230,14 @@ Proyecto
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
+
 ## 1.2. Solution Profile
 
 ### 1.2.1. Antecedentes y problemática
 
 ### 1.2.2. Lean UX Process
 
-#### 1.2.2.1. Lean UX Problem Statement
+#### 1.2.2.1. Lean UX Problem Statements
 
 #### 1.2.2.2. Lean UX Assumptions
 
@@ -229,7 +245,6 @@ Proyecto
 
 #### 1.2.2.4. Lean UX Canvas
 
-## 1.3. Segmentos objetivo
 
 # Capítulo II: Requirements Elicitation & Analysis
 
@@ -282,8 +297,6 @@ El ecosistema retail en el Perú ha experimentado un avance hacia la digitalizac
 | **Amenazas** | | Restricciones de acceso a datos públicos por parte de grandes cadenas de retail; incorporación de módulos de listas en plataformas bancarias o billeteras móviles. | Modificaciones en regulaciones laborales sobre repartidores que eleven los costos operativos; saturación y deserción de usuarios por cobros excesivos de servicio. | Desplazamiento por parte de usuarios jóvenes que demandan datos estructurados en tiempo real en lugar de lectura de folletos extensos. | Abandono de usuarios hacia aplicaciones genéricas de notas compartidas integradas en los sistemas operativos móviles. |
 
 
-
-
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
 A partir del diagnóstico FODA cruzado y el mapeo del entorno competitivo, la startup **PeruTech** define las siguientes estrategias y tácticas preliminares para consolidar la propuesta de valor de **Preciazo** frente a las fortalezas y debilidades de los competidores, capitalizando las oportunidades del mercado y mitigando amenazas del entorno:
@@ -308,13 +321,6 @@ A partir del diagnóstico FODA cruzado y el mapeo del entorno competitivo, la st
     * Diseñar una plataforma web responsiva con arquitectura *Mobile-First*, liviana y accesible desde cualquier navegador moderno, evitando descargas obligatorias de apps pesadas.
     * Integrar listas de compra interactivas que vinculen automáticamente cada ítem con las ofertas y liquidaciones geolocalizadas más cercanas.
     * Implementar un entorno limpio y libre de anuncios display obstructivos, priorizando la agilidad de consulta y la claridad visual en la interfaz.
-
-
-## 2.2. Entrevistas
-
-Con el propósito de validar las hipótesis planteadas en la etapa de Lean UX, identificar los puntos de fricción (*pain points*) y definir los requerimientos funcionales de la plataforma web **Preciazo**, el equipo de **PeruTech** implementó un proceso de investigación cualitativa mediante entrevistas en profundidad semiestructuradas. Este levantamiento de información se aplicó a representantes reales de los dos segmentos objetivo del proyecto: **Compradores Independientes** (estudiantes universitarios, profesionales independientes y responsables del abastecimiento del hogar) y **Comerciantes Minoristas** (dueños o administradores de bodegas, minimarkets y tiendas de conveniencia).
-
-A través de estas sesiones se exploraron patrones de consumo, hábitos de planificación presupuestaria, mecanismos de comparación de precios, rutas de traslado presencial, así como los canales de visibilidad comercial y dificultades de rotación de inventario que enfrentan los pequeños negocios de barrio.
 
 ### 2.2.1. Diseño de entrevistas
 
@@ -380,22 +386,20 @@ A continuación, se presenta la bitácora de las entrevistas cualitativas realiz
 #### Segmento 1: Compradores Multitienda y Optimizadores de Desplazamiento
 
 * **Entrevista 1:**
-  * **Segmento Objetivo:** Compradores Independientes
   * **Nombre y Apellidos:** Fernando Mauricio Justiniano Vega
   * **Edad:** 24 años
   * **Distrito de residencia:** San Miguel, Lima
   * **Ocupación:** Desarrollador de Software / Profesional Independiente
-  * **Plataforma de video:** YouTube
-  * **Enlace de Video:** [Ver Registro de Entrevista en YouTube](https://www.youtube.com/watch?v=YNkyKD2sAro)
+  * **Plataforma de video:** Microsoft Stream
+  * **Enlace de Video:** [Ver Registro en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221a525_upc_edu_pe/IQALn1WCs-n2RKG7i-4XYYVKAYtnp2Uw9sig9WHpe8BqaZc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=K0Fd6F)
   * **Marca de tiempo (Timing de inicio):** `[00:00]`
-  * **Duración total:** `06:05 min`
+  * **Duración:** `[04:30 min]`
   * **Perfil técnico y entorno digital:**
     * *Dispositivos habituales:* Smartphone Android (gama media-alta) y Laptop personal.
     * *Navegador de preferencia:* Google Chrome.
     * *Canales digitales e influencias:* Billeteras digitales (Yape, Plin), aplicaciones bancarias (BCP), Google Maps y foros tecnológicos.
     * *Rasgos de personalidad:* Analítico, pragmático, enfocado en la eficiencia de tiempos y reservado en gastos innecesarios.
- * **Resumen descriptivo:** Fernando reside de manera independiente y realiza compras de aprovisionamiento de forma quincenal. Suele dividir sus compras entre el mercado zonal para alimentos frescos y un supermercado de cadena para abarrotes y artículos de aseo, con el fin de abaratar costos. Manifiesta alta frustración por el tráfico vehicular y los tiempos muertos de traslado entre locales, lo cual en ocasiones diluye el ahorro económico obtenido. No utiliza folletos físicos ni catálogos web tradicionales por considerarlos ineficientes; en su lugar, se traslada directamente asumiendo los precios del momento. Administra un presupuesto estimado mediante notas en su celular y pagos móviles, pero pierde la cuenta precisa de sus consumos al añadir artículos de último minuto. Señaló que utilizaría cotidianamente una solución web como Preciazo que compare precios de locales cercanos y trace la ruta más eficiente de traslado antes de salir de casa.
- 
+  * **Resumen descriptivo:** Fernando reside de manera independiente y realiza compras de aprovisionamiento de forma quincenal. Suele dividir sus compras entre el mercado zonal para alimentos frescos y un supermercado de cadena para abarrotes y artículos de aseo, con el fin de abaratar costos. Manifiesta alta frustración por el tráfico vehicular y los tiempos muertos de traslado entre locales, lo cual en ocasiones diluye el ahorro económico obtenido. No utiliza folletos físicos ni catálogos web tradicionales por considerarlos ineficientes; en su lugar, se traslada directamente asumiendo los precios del momento. Administra un presupuesto estimado mediante notas en su celular y pagos móviles, pero pierde la cuenta precisa de sus consumos al añadir artículos de último minuto. Señaló que utilizaría cotidianamente una solución web que compare precios de locales cercanos y trace la ruta más eficiente de traslado antes de salir de casa.
   * **Nota sobre el registro audiovisual:** Durante la sesión, el participante solicitó mantener la cámara desactivada por motivos personales y de privacidad visual, autorizando únicamente el registro de audio para fines académicos de investigación cualitativa.
 
 ![Screenshot Entrevista 1 - Fernando Justiniano](../assets/Entrevista1.png)
@@ -535,8 +539,7 @@ Los hallazgos empíricos confirman la problemática central abordada: la reducci
   * **Tracción y atracción al local físico:** Necesidad de que el establecimiento se integre en los mapas de compras y rutas de optimización de los vecinos, incrementando el tráfico peatonal presencial hacia el punto de venta.
 
 ---
-
-
+  
 ### 2.3.1. User Personas
 
 La elaboración de los arquetipos de usuario sintetiza los patrones empíricos recolectados durante las entrevistas cualitativas y el diagnóstico del ecosistema competitivo. Las fichas integran variables demográficas, competencias digitales, motivaciones y fricciones reales para guiar el diseño centrado en el usuario de **PeruTech**, asegurando que las decisiones arquitectónicas y funcionales de la plataforma **Preciazo** respondan a necesidades operativas validadas.
@@ -592,7 +595,6 @@ A partir de la matriz de tareas consolidada, se identifican patrones clave de co
   * **Movilidad vs. Localidad:** Mientras la *planificación de trayectos físicos de desplazamiento* es una tarea de alta importancia para Fernando (debido al impacto de los pasajes y el tráfico de Lima), para Daniel es prácticamente irrelevante en su día a día comercial al estar fijo en su local de atención.
   * **Visibilidad y Difusión:** Tareas como la *comunicación de promociones en carteles* y la *búsqueda de alternativas para atraer compradores* son exclusivas del comerciante minorista, quien asume el rol activo de captar el flujo peatonal frente a la competencia de grandes cadenas.
 
-
 ### 2.3.3. User Journey Mapping
 
 En esta sección se modelan los *User Journey Maps* en su versión actual (*As-Is*) para cada uno de los arquetipos de usuario. El propósito de este artefacto es ilustrar el viaje de extremo a extremo (*end-to-end journey*) que experimenta cada actor en su realidad cotidiana —el comprador al abastecerse y el comerciante al gestionar y comercializar sus productos—, identificando las etapas del proceso, puntos de contacto, pensamientos, niveles de satisfacción y las fricciones críticas que enfrentan en ausencia de la plataforma PeruTech.
@@ -614,7 +616,7 @@ El recorrido documenta la jornada típica de Daniel en la administración de su 
 
 ![User Journey Map 2 - Daniel Stalin Palomino Murga](../assets/artifacts/Mapping2.png)
 > *Figura 2.9: Diagrama de User Journey Map correspondiente al Segmento 2, elaborado en UXPressia.*
-
+ 
 ### 2.3.4. Empathy Mapping
 
 En esta sección se sintetiza el proceso de empatización desarrollado para comprender a profundidad el entorno emocional, cognitivo y conductual de los arquetipos de usuario. La construcción de cada *Empathy Map* se estructuró situando a cada arquetipo en el centro del análisis para desglosar sus percepciones en torno a las dimensiones clave: qué piensa y siente, qué ve, qué oye, qué dice y hace, así como sus principales esfuerzos (*Pains*) y resultados esperados (*Gains*).
@@ -640,41 +642,31 @@ El mapa de empatía de Daniel documenta las presiones comerciales y operativas v
 
 ## 2.4. Big Picture Event Storming
 
-Para modelar la complejidad del dominio de negocio y asegurar un entendimiento compartido entre la visión de negocio y la arquitectura de software, el equipo de **PeruTech** llevó a cabo un taller colaborativo de *Big Picture Event Storming*. La sesión se desarrolló utilizando un lienzo virtual en Miro/Mural, donde intervinieron los integrantes del equipo asumiendo roles de análisis de dominio, diseño de experiencia de usuario e ingeniería de software.
-
-El objetivo central consistió en plasmar de forma visual y de alto nivel todos los eventos significativos, dependencias temporales, puntos de fricción (*Hotspots*) y disparadores que rigen los procesos de la plataforma **Preciazo**: desde la detección de necesidad y planificación de la canasta por parte del **Comprador Independiente**, hasta la administración, publicación de promociones y rotación de inventario por parte del **Comerciante Minorista**.
-
-A lo largo del taller se aplicó la codificación estándar por colores de la técnica:
-* **Eventos de dominio (*Domain Events* - Post-it Naranja):** Hechos inmutables que ocurren en el negocio, formulados estrictamente en tiempo pasado verbal.
-* **Puntos críticos o dudas (*Hotspots* - Post-it Rojo/Fucsia):** Cuellos de botella, riesgos operativos, fricciones de usuario o incertidumbres de negocio.
-* **Comandos (*Commands* - Post-it Azul):** Acciones e intenciones detonadas por los usuarios o sistemas externos.
-* **Actores / Usuarios (*Users* - Post-it Amarillo pequeño):** Roles humanos que ejecutan los comandos (Comprador o Comerciante).
-* **Políticas reactivas (*Policies* - Post-it Lila):** Reglas del tipo *"Siempre que ocurra el evento X, ejecutar el comando Y"*.
-* **Sistemas externos (*External Systems* - Post-it Rosa):** Servicios de mapas, pasarelas de pago y proveedores externos.
+Para modelar la complejidad del dominio de negocio de PeruTech, el equipo llevó a cabo un taller colaborativo de *Big Picture Event Storming*. Esta metodología de exploración de alto nivel permitió alinear el entendimiento del problema entre el equipo técnico y el análisis de negocio, identificando los procesos clave, oportunidades y eventos significativos que rigen tanto el abastecimiento inteligente del consumidor como la visibilidad comercial de los establecimientos minoristas afiliados.
 
 ---
 
 ### 2.4.1. Fase 1: Generación Abierta de Eventos (Open Space)
 
-En esta etapa inicial, los integrantes del equipo realizaron una lluvia de ideas abierta y divergente, registrando todos los eventos de dominio posibles sin imponer restricciones de orden cronológico. Los eventos se redactaron en tiempo pasado y cubrieron todo el ciclo operativo: identificación de faltantes en la alacena, registro del comercio, actualización de precios en mostrador, cálculo de rutas, comparación de tickets y verificación presencial de góndola.
+En esta etapa inicial, los participantes realizaron una lluvia de ideas sin restricciones temporales ni de orden secuencial para registrar todos los eventos de dominio (*Domain Events*) posibles, redactados en tiempo pasado (post-it naranjas). Se levantaron eventos desde la detección de necesidad y registro del usuario hasta la optimización de rutas, control presupuestario, publicación de ofertas y validación de precios en los locales comerciales.
 
 ![Big Picture - Open Space](../assets/ddd/big-picture/big-picture-open.png)
-> *Figura 2.12: Fase Open Space del Big Picture Event Storming, registro inicial y divergente de eventos de dominio.*
+> *Figura 2.12: Fase Open Space del Big Picture Event Storming, registro inicial de eventos de dominio.*
 
 ---
 
 ### 2.4.2. Fase 2: Exploración y Línea de Tiempo (Explore)
 
-En la fase de exploración se procedió a ordenar los eventos cronológicamente sobre una línea temporal orientada de izquierda a derecha. Durante este ordenamiento se identificaron ramificaciones, caminos alternativos y puntos de fricción severos mediante *Hotspots*. Entre los principales problemas detectados destacan la discordancia entre precios de góndola y precios en caja, el impacto de la congestión vehicular limeña en el gasto de transporte, la falta de tiempo del bodeguero para actualizar inventarios complejos y el riesgo de abandono del carrito por desvíos presupuestarios imprevistos.
+Durante la fase de exploración, el equipo ordenó cronológicamente los eventos identificados de izquierda a derecha para estructurar la línea de tiempo del negocio. Asimismo, se identificaron puntos de fricción, cuellos de botella y dudas del dominio mediante marcas de riesgo o problemas (*Hotspots* / post-it rojos/rosados), tales como la dispersión de precios no verificados, el tráfico vehicular, el estancamiento de stock en locales y los desvíos presupuestarios imprevistos en caja.
 
 ![Big Picture - Explore](../assets/ddd/big-picture/big-picture-explore.png)
-> *Figura 2.13: Fase Explore del Big Picture Event Storming, ordenamiento cronológico e identificación de Hotspots.*
+> *Figura 2.13: Fase Explore del Big Picture Event Storming, ordenamiento cronológico y detección de puntos críticos.*
 
 ---
 
 ### 2.4.3. Fase 3: Consolidación y Definición de Triggers (Close Space)
 
-En el cierre del espacio de exploración, se refinó la línea temporal eliminando redundancias y asociando a cada evento su comando desencadenante (*Command*), el actor responsable y las reglas de negocio automáticas (*Policies*). Se estructuraron reacciones clave del sistema como: alertas automáticas ante sobrecostos presupuestarios, sugerencias de rutas alternativas en caso de alta congestión y notificaciones de artículos agotados enviadas a la consola del bodeguero.
+En el cierre del espacio de exploración, se refinó la línea de tiempo eliminando redundancias y se incorporaron los comandos o acciones desencadenantes (*Commands* / post-it azules) ejecutados por los actores del sistema (el comprador independiente o el comerciante minorista), así como las políticas o reglas de negocio automáticas (*Policies* / post-it lilas) que reaccionan a determinados eventos, por ejemplo, alertas por superación de presupuesto, notificaciones de nuevas promociones zonales o recálculo de rutas por congestión.
 
 ![Big Picture - Close Space](../assets/ddd/big-picture/big-picture-close.png)
 > *Figura 2.14: Fase Close Space del Big Picture Event Storming, integración de comandos, actores y políticas de negocio.*
@@ -683,42 +675,35 @@ En el cierre del espacio de exploración, se refinó la línea temporal eliminan
 
 ### 2.4.4. Fase 4: Modelo Final del Dominio (Final Landscape)
 
-Como consolidación final del taller, se organizó el mapa integral del paisaje del negocio (*Business Landscape*). En este artefacto se estructuraron con claridad los límites y flujos centrales que componen Preciazo:
-1. **Gestión de Identidad y Perfiles:** Registro y autenticación segura de compradores y comercios barriales.
-2. **Catálogo y Precios:** Publicación y actualización ágil de precios de góndola y liquidaciones del día.
-3. **Planificación Presupuestaria:** Armado interactivo de listas de compras y cálculo anticipado del ticket total.
-4. **Optimización de Rutas y Movilidad:** Algoritmo de trazado de itinerarios multitienda que pondera distancias, pasajes y tiempo invertido.
-5. **Validación Comunitaria:** Retroalimentación colaborativa en tiempo real sobre la exactitud de precios y existencias físicas.
+Como resultado consolidado del proceso, se estructuró el mapa integral del paisaje del negocio (*Business Landscape*). Este diagrama agrupa los eventos, comandos y políticas en torno a los flujos operativos fundamentales de PeruTech: gestión de perfiles e identidad (consumidores y comercios), catálogo y actualización de precios/ofertas, planificación de listas de compra, y optimización de rutas de traslado con control presupuestario previo a la compra física.
 
 ![Big Picture - Modelo Final](../assets/ddd/big-picture/big-picture-final.png)
-> *Figura 2.15: Modelo consolidado del Big Picture Event Storming de la plataforma Preciazo.*
+> *Figura 2.15: Modelo consolidado del Big Picture Event Storming de PeruTech.*
 
 ### 2.4.5. Ubiquitous Language
 
-En esta sección se define el *Ubiquitous Language* (Lenguaje Ubicuo) para el dominio de negocio de **PeruTech** y su producto **Preciazo**, siguiendo los principios de modelado estratégico de *Domain-Driven Design* (DDD) formulados por Eric Evans. Este glosario formal unifica el vocabulario compartido entre los desarrolladores, los expertos del dominio y los usuarios finales (compradores independientes y comerciantes minoristas), eliminando ambigüedades operativas y asegurando que las reglas del negocio se reflejen sin distorsión en el sistema. 
+En esta sección se define el *Ubiquitous Language* (Lenguaje Ubicuo) para el dominio de PeruTech, siguiendo los principios de modelado estratégico de *Domain-Driven Design* (DDD) formulados por Eric Evans. Este glosario formal unifica el vocabulario compartido entre los desarrolladores, los expertos del dominio y los usuarios finales (consumidores y comerciantes), eliminando ambigüedades operativas. Se enfoca estrictamente en términos de la dinámica comercial minorista, abastecimiento presencial y movilidad urbana:
 
-El glosario contiene exclusivamente términos del dominio comercial minorista, abastecimiento presencial y movilidad urbana:
-
-* **Affiliated Store (Tienda Afiliada):** Establecimiento comercial físico (bodega, minimarket o puesto de abastos) cuyos datos registrales han sido formalmente validados para exhibir su catálogo y promociones vigentes en la plataforma.
-* **Affiliation Request (Solicitud de Afiliación):** Trámite inicial mediante el cual un comerciante minorista registra los datos de su negocio e identificación fiscal para integrarse a la red comercial del sistema.
-* **Basic Basket (Canasta Básica):** Conjunto estructurado de bienes y alimentos de primera necesidad requeridos para el aprovisionamiento periódico de una persona o grupo familiar.
-* **Crowdsourced Verification (Verificación Colaborativa):** Mecanismo mediante el cual la comunidad de compradores confirma, actualiza o reporta la vigencia de los precios y el stock físico observado directamente en góndola.
-* **Multi-stop Route (Ruta Multiparada):** Itinerario secuencial de desplazamiento físico que conecta el punto de partida del comprador con múltiples locales comerciales seleccionados por conveniencia geográfica y presupuestaria.
-* **Net Savings (Ahorro Neto):** Diferencia económica positiva resultante de deducir el gasto logístico de transporte (pasajes, combustible o taxis de aplicativo) del ahorro monetario bruto obtenido por la dispersión de precios de los productos.
-* **Optimal Purchase Stop (Punto Óptimo de Compra):** Establecimiento comercial sugerido por el sistema al ofrecer el mejor balance entre proximidad geográfica, disponibilidad de artículos y menor costo acumulado de la canasta.
-* **Price Discrepancy (Discrepancia de Precio):** Desfase identificado entre el precio de venta publicado digitalmente o exhibido en anaquel y el importe real exigido en la caja registradora del establecimiento.
+* **Affiliated Store (Tienda Afiliada):** Establecimiento comercial físico (bodega, minimarket o puesto de abastos) cuyos datos registrales han sido formalmente validados para exhibir su catálogo y ofertas en la plataforma.
+* **Affiliation Request (Solicitud de Afiliación):** Trámite inicial mediante el cual un comerciante minorista registra los datos de su negocio y su identificación fiscal para integrarse a la red del sistema.
+* **Basic Basket (Canasta Básica):** Conjunto estructurado de bienes y alimentos de primera necesidad requeridos para el consumo periódico de una persona o grupo familiar.
+* **Crowdsourced Verification (Verificación Colaborativa):** Mecanismo mediante el cual la comunidad de compradores confirma, actualiza o reporta la vigencia de los precios y el stock físico observado en góndola.
+* **Multi-stop Route (Ruta Multiparada):** Itinerario secuencial de desplazamiento físico que conecta el punto de origen del comprador con múltiples locales comerciales optimizados geográficamente.
+* **Net Savings (Ahorro Neto):** Diferencia económica positiva resultante de deducir el gasto logístico de transporte (pasajes o combustible) del ahorro monetario bruto obtenido por la dispersión de precios en góndola.
+* **Optimal Purchase Stop (Punto Óptimo de Compra):** Establecimiento comercial sugerido por el sistema al ofrecer el mejor balance entre proximidad geográfica, disponibilidad de artículos y menor precio de canasta.
+* **Price Discrepancy (Discrepancia de Precio):** Desfase identificado entre el precio de venta publicado digitalmente o exhibido en anaquel y el importe real cobrado en la caja registradora.
 * **Price Dispersion (Dispersión de Precios):** Variación del precio de venta de un mismo producto idéntico entre distintos establecimientos comerciales de una misma zona o distrito.
-* **Product Catalog (Catálogo de Productos):** Conjunto indexado de artículos y bienes de consumo masivo clasificados por marca, categoría comercial y presentación estándar.
-* **Purchase Budget (Presupuesto de Compra):** Techo financiero monetario definido por el consumidor antes de iniciar su jornada de aprovisionamiento para controlar su nivel de gasto.
-* **Purchase Item (Artículo de Compra):** Bien individual especificado por nombre, marca, formato y unidad de medida que integra la lista de compras del usuario.
-* **Retail Store (Comercio Minorista):** Punto de venta físico dedicado a la comercialización directa de bienes de consumo masivo al comprador presencial de barrio.
-* **Shopping List (Lista de Compras):** Registro organizado de los artículos y cantidades que el consumidor planifica adquirir durante su jornada de aprovisionamiento.
-* **Store Administrator (Administrador de Tienda):** Propietario o encargado formal del establecimiento comercial responsable de la publicación de precios, control de promociones y administración del local.
-* **Store Offer (Oferta de Tienda):** Reducción temporal de precio o promoción especial publicada por un comercio para acelerar la rotación de inventario e incentivar la afluencia de compradores locales.
-* **Substituted Good (Bien Sustituto):** Producto de características o valor funcional equivalente que el comprador selecciona como reemplazo cuando el artículo preferente no tiene existencias o excede su presupuesto.
-* **SUNAT Verification (Validación SUNAT):** Verificación del estado del Registro Único de Contribuyentes (RUC) y la condición fiscal activa del comercio antes de habilitar su visibilidad pública en la red.
-* **Transit Overhead (Sobrecosto de Desplazamiento):** Demora temporal y gasto adicional de movilidad en los que incurre un comprador debido a la congestión vehicular urbana o a la lejanía física entre establecimientos.
-* **Unit Price (Precio Unitario):** Costo por unidad estándar de medida (kilogramo, litro, gramo, unidad) que permite comparar con equidad el valor real de productos con diferentes tamaños de empaque.
+* **Product Catalog (Catálogo de Productos):** Conjunto indexado de artículos y bienes de consumo masivo clasificados por marca, categoría y presentación estándar.
+* **Purchase Budget (Presupuesto de Compra):** Techo financiero monetario definido por el consumidor antes de salir a comprar para controlar su nivel de gasto.
+* **Purchase Item (Artículo de Compra):** Bien individual definido por nombre, marca, formato y unidad de medida que integra la lista de compras del usuario.
+* **Retail Store (Comercio Minorista):** Punto de venta físico dedicado a la comercialización directa de bienes de consumo al comprador presencial.
+* **Shopping List (Lista de Compras):** Registro organizado de los artículos que el consumidor planifica adquirir durante su jornada de compra.
+* **Store Administrator (Administrador de Tienda):** Propietario o encargado formal del establecimiento comercial responsable de la publicación de precios, control de promociones y gestión del perfil del local.
+* **Store Offer (Oferta de Tienda):** Reducción temporal de precio o promoción especial publicada por un comercio afiliado para incentivar la afluencia de compradores locales.
+* **Substituted Good (Bien Sustituto):** Producto de características o valor nutricional equivalente que el comprador selecciona como alternativa cuando el artículo preferente no tiene stock o excede su presupuesto.
+* **SUNAT Verification (Validación SUNAT):** Verificación del estado del Registro Único de Contribuyentes (RUC) y la condición fiscal activa del comercio antes de habilitar su visibilidad pública.
+* **Transit Overhead (Sobrecosto de Desplazamiento):** Demora temporal y gasto adicional de movilidad en los que incurre un comprador debido al tráfico urbano o a la lejanía entre tiendas.
+* **Unit Price (Precio Unitario):** Costo por unidad estándar de medida (kilogramo, litro, paquete) que permite comparar con equidad el valor real de productos con diferentes tamaños de empaque.
 
 
 # Capítulo III: Requirements Specification
