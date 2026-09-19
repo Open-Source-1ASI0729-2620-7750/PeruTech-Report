@@ -1,0 +1,54 @@
+@startuml PeruTech_C4_Components_Backend
+
+!include <C4/C4_Component>
+
+LAYOUT_LEFT_RIGHT()
+
+title PeruTech - REST API Components
+
+Container(web, "Angular Web Application", "Angular, TypeScript, Angular Material", "Responsive role-based web client.")
+System_Ext(routing, "Mapping & Routing Service", "Provides geolocation and optimized routes.")
+System_Ext(ruc, "RUC Verification Service", "Validates merchant fiscal information.")
+ContainerDb(database, "Relational Database", "Relational Database", "Persists operational data.")
+
+Container_Boundary(api, "PeruTech REST API") {
+    Component(rest, "REST/API Layer", "Spring Web / REST Controllers", "Translates HTTP requests into application use cases and returns API responses.")
+    Component(identity, "Identity and Access", "Application and domain components", "Authenticates users and enforces Buyer and Merchant authorization rules.")
+    Component(shopping, "Shopping Planning", "Application and domain components", "Manages shared shopping lists, purchase items, budgets and purchase progress.")
+    Component(catalog, "Catalog and Pricing", "Application and domain components", "Manages products, unit prices, availability and comparison data.")
+    Component(route, "Route Planning", "Application and domain components", "Builds multi-stop routes and calculates net savings considering transit overhead.")
+    Component(merchant, "Merchant Management", "Application and domain components", "Manages retail stores, catalog, inventory, offers and merchant operations.")
+    Component(verification, "Community Price Verification", "Application and domain components", "Registers price observations, discrepancies and community confirmations.")
+    Component(analytics, "Analytics and Engagement", "Application and domain components", "Consolidates merchant traffic, lost sales and engagement metrics.")
+    Component(persistence, "Persistence Adapter", "Spring Data JPA", "Maps domain objects to relational data and coordinates repository access.")
+    Component(mapping, "Mapping & Routing Adapter", "HTTP client", "Adapts the external mapping and routing contract to Route Planning.")
+    Component(rucAdapter, "RUC Verification Adapter", "HTTP client", "Adapts the external RUC verification contract to Merchant Management.")
+}
+
+Rel(web, rest, "Invokes application endpoints", "HTTPS / JSON")
+Rel(rest, identity, "Dispatches identity use cases")
+Rel(rest, shopping, "Dispatches shopping use cases")
+Rel(rest, catalog, "Dispatches catalog and pricing use cases")
+Rel(rest, route, "Dispatches route use cases")
+Rel(rest, merchant, "Dispatches merchant use cases")
+Rel(rest, verification, "Dispatches verification use cases")
+Rel(rest, analytics, "Dispatches analytics use cases")
+Rel(identity, persistence, "Uses repositories")
+Rel(shopping, catalog, "Resolves product and price information")
+Rel(shopping, persistence, "Uses repositories")
+Rel(catalog, persistence, "Uses repositories")
+Rel(route, catalog, "Reads availability and price information")
+Rel(route, mapping, "Requests optimized routes")
+Rel(route, persistence, "Uses repositories")
+Rel(merchant, rucAdapter, "Validates fiscal information")
+Rel(merchant, persistence, "Uses repositories")
+Rel(verification, catalog, "Updates trusted price information")
+Rel(verification, persistence, "Uses repositories")
+Rel(analytics, persistence, "Reads metrics and events")
+Rel(persistence, database, "Reads and writes", "SQL")
+Rel(mapping, routing, "Requests geolocation and routes", "HTTPS / REST API")
+Rel(rucAdapter, ruc, "Requests fiscal validation", "HTTPS / REST API")
+
+SHOW_LEGEND()
+
+@enduml

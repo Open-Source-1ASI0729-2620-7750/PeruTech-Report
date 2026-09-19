@@ -1,0 +1,29 @@
+@startuml PeruTech_C4_Context
+
+!include <C4/C4_Context>
+
+LAYOUT_LEFT_RIGHT()
+
+title PeruTech - Software Architecture Context Diagram
+
+Person(buyer, "Buyer", "User who plans purchases, compares store prices, manages shopping lists and budgets, generates optimized routes and reports price discrepancies.")
+
+Person(merchant, "Merchant", "Store administrator who manages store information, catalog, prices, product availability, inventory, offers and business metrics.")
+
+System(perutech, "PeruTech", "Responsive web platform that helps buyers optimize purchasing decisions and enables merchants to manage their stores, products, prices, stock and promotions.")
+
+System_Ext(routing, "Mapping & Routing Service", "External service that provides geolocation, distances, travel times and optimized route information.")
+
+System_Ext(ruc, "RUC Verification Service", "External service used to validate merchant fiscal information during store affiliation.")
+
+Rel(buyer, perutech, "Plans purchases, compares prices, generates routes and reports prices", "HTTPS")
+
+Rel(merchant, perutech, "Manages store information, catalog, inventory, prices, offers and metrics", "HTTPS")
+
+Rel(perutech, routing, "Requests geolocation, distances, travel times and routes", "HTTPS / REST API")
+
+Rel(perutech, ruc, "Requests merchant fiscal validation", "HTTPS / REST API")
+
+SHOW_LEGEND()
+
+@enduml
