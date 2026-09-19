@@ -988,7 +988,25 @@ En esta sección se presenta el mockup de alta fidelidad con la identidad de la 
 
 ## 4.6. Domain-Driven Software Architecture
 
-[Contenido]
+La arquitectura de PeruTech se diseña siguiendo principios de Domain-Driven Design (DDD), tomando como punto de partida los resultados obtenidos en el Big Picture Event Storming desarrollado durante la etapa de Requirements Elicitation & Analysis.
+
+El análisis del dominio permitió identificar los principales procesos asociados a los dos segmentos objetivo de la solución: los compradores que buscan optimizar el costo y desplazamiento de sus compras, y los comerciantes minoristas que requieren administrar la información de sus establecimientos, precios, disponibilidad y promociones.
+
+A partir del refinamiento de los eventos, comandos, reglas y conceptos identificados previamente, el dominio de PeruTech se organiza en Bounded Contexts con responsabilidades claramente delimitadas. Esta separación permite reducir el acoplamiento entre capacidades de negocio y facilita posteriormente la implementación modular del Frontend Web Application y de los RESTful Web Services.
+
+Los Bounded Contexts identificados para PeruTech son:
+
+| Bounded Context | Responsabilidad principal |
+|---|---|
+| Identity and Access | Gestionar autenticación, identidad, roles y autorización de compradores y comerciantes. |
+| Shopping Planning | Gestionar listas de compra, cantidades, presupuesto y progreso de la jornada de compra. |
+| Catalog and Pricing | Gestionar productos, precios, disponibilidad y comparación entre establecimientos. |
+| Route Planning | Calcular y optimizar rutas de compra entre múltiples establecimientos considerando localización y desplazamiento. |
+| Merchant Management | Gestionar afiliación de comercios, información del establecimiento, catálogo local, inventario y promociones. |
+| Community Price Verification | Gestionar discrepancias, reportes y confirmaciones comunitarias sobre precios observados. |
+| Analytics and Engagement | Consolidar métricas de interacción y rendimiento relevantes para los comerciantes y generar información de seguimiento. |
+
+Estos contextos se comunican mediante contratos explícitos, evitando que un módulo modifique directamente las reglas internas de otro contexto.
 
 ### 4.6.1. Design-Level Event Storming
 
