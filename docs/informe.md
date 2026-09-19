@@ -599,7 +599,7 @@ Laura prefiere realizar sus compras durante días laborables y aproximadamente e
 - **Resumen descriptivo:** El entrevistado es propietario o administrador de un establecimiento comercial ubicado en Santa Anita. Para comunicar sus promociones utiliza principalmente WhatsApp y carteles en la entrada de su tienda. Actualiza los precios de sus productos según el aumento de precios de los proveedores de mercancía y administra su inventario mediante el uso de un cuadernillo donde anota datos importantes. Señala que sus principales dificultades para atraer clientes son la competencia eleveada en la zona, los escasos medios para promocionar su negocio y que depende de clientes fijos. Respecto a la plataforma propuesta, manifestó que le gustaria actualizar sus precios rapidamente desde cualquier dispositivo, publicar ofertas y recibir avisos cuando los productos se agoten, destacando la importancia de que la herramienta sea intuitiva y no tenga costos elevados. Finalmente, explicó que los principales motivos por los que pierde ventas son falta de inventario y que sus clientes encuentrar un precio más bajo en otras tiendas, además actualmente administra su negocio utilizando unicamente un cuadernillo fisico.
   `
 
-![Screenshot Entrevista 4](assets/entrevista-4.png)
+![Screenshot Entrevista 4](/assets/entrevista-4.png)
 > *Figura 2.4: Registro audiovisual de la entrevista cualitativa 4.*
 
 * **Entrevista 5:**
