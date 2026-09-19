@@ -1,0 +1,77 @@
+@startuml PeruTech_Catalog_Pricing_Classes
+
+title PeruTech - Catalog and Pricing Class Diagram
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+
+interface CatalogRepository {
+    +findProduct(id: UUID): Product
+    +findStoreProduct(storeId: UUID, productId: UUID): StoreProduct
+}
+
+interface PriceComparisonPolicy {
+    +selectBestOffer(offers: List<StoreProduct>): StoreProduct
+}
+
+class CatalogPricingService {
+    +search(criteria: SearchCriteria): List<Product>
+    +compare(productId: UUID, storeIds: List<UUID>): List<StoreProduct>
+    +selectOptimalStop(offers: List<StoreProduct>): StoreProduct
+}
+
+class Product {
+    -id: UUID
+    -name: String
+    -brand: String
+    -category: String
+    -unit: String
+    +isSubstituteFor(other: Product): Boolean
+    +matches(criteria: SearchCriteria): Boolean
+}
+
+class RetailStoreRef {
+    -storeId: UUID
+    +identifies(storeId: UUID): Boolean
+}
+
+class StoreProduct {
+    -id: UUID
+    -unitPrice: Money
+    -stockStatus: StockStatus
+    -updatedAt: DateTime
+    +changeUnitPrice(price: Money): void
+    +updateStock(status: StockStatus): void
+    +isAvailable(): Boolean
+    +priceAt(moment: DateTime): Money
+}
+
+class SearchCriteria {
+    -text: String
+    -category: String
+    -maximumUnitPrice: Money
+    +matches(product: Product): Boolean
+}
+
+class Money {
+    -amount: Decimal
+    -currency: String
+    +isLessThan(other: Money): Boolean
+}
+
+enum StockStatus {
+    AVAILABLE
+    LOW
+    OUT_OF_STOCK
+}
+
+CatalogPricingService ..> CatalogRepository : reads catalog
+CatalogPricingService ..> PriceComparisonPolicy : compares offers
+RetailStoreRef "1" ..> "0..*" StoreProduct : identifies offers from
+StoreProduct "*" --> "1" Product : references
+CatalogPricingService ..> Product : searches
+CatalogPricingService ..> StoreProduct : compares
+StoreProduct "1" --> "1" Money : has current price
+
+@enduml

@@ -1,0 +1,116 @@
+@startuml PeruTech_Community_Price_Verification_Classes
+
+title PeruTech - Community Price Verification Class Diagram
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+
+interface PriceVerificationRepository {
+    +findDiscrepancy(id: UUID): PriceDiscrepancy
+    +save(discrepancy: PriceDiscrepancy): void
+}
+
+interface VerificationPolicy {
+    +canConfirm(user: UserRef, discrepancy: PriceDiscrepancy): Boolean
+    +resolve(discrepancy: PriceDiscrepancy): VerificationDecision
+}
+
+class PriceVerificationService {
+    +report(reporter: UserRef, item: StoreProductRef, expected: Money, observed: Money): PriceDiscrepancy
+    +confirm(user: UserRef, discrepancy: PriceDiscrepancy): void
+    +resolve(discrepancy: PriceDiscrepancy): void
+}
+
+class PriceObservation {
+    -id: UUID
+    -observedPrice: Money
+    -observedAt: DateTime
+    -source: ObservationSource
+    +isRecentAt(moment: DateTime): Boolean
+    +supports(discrepancy: PriceDiscrepancy): Boolean
+}
+
+class PriceDiscrepancy {
+    -id: UUID
+    -expectedPrice: Money
+    -observedPrice: Money
+    -status: DiscrepancyStatus
+    +addObservation(observation: PriceObservation): void
+    +confirm(user: UserRef): void
+    +resolve(): void
+    +isConfirmed(): Boolean
+}
+
+class VerificationConfirmation {
+    -id: UUID
+    -createdAt: DateTime
+    +isValidFor(user: UserRef): Boolean
+}
+
+class TrustProfile {
+    -score: Decimal
+    -level: TrustLevel
+    +recordConfirmation(): void
+    +recordRejectedReport(): void
+    +recalculate(): void
+}
+
+class UserRef {
+    -userId: UUID
+    +identifies(userId: UUID): Boolean
+}
+
+class StoreProductRef {
+    -storeProductId: UUID
+    +identifies(storeProductId: UUID): Boolean
+}
+
+class Money {
+    -amount: Decimal
+    -currency: String
+    +isDifferentFrom(other: Money): Boolean
+}
+
+enum ObservationSource {
+    MERCHANT
+    COMMUNITY
+}
+
+enum DiscrepancyStatus {
+    OPEN
+    CONFIRMED
+    RESOLVED
+}
+
+enum TrustLevel {
+    NEW
+    TRUSTED
+    VERIFIED
+}
+
+enum VerificationDecision {
+    ACCEPT
+    REJECT
+    REVIEW
+}
+
+PriceVerificationService ..> PriceVerificationRepository : persists
+PriceVerificationService ..> VerificationPolicy : evaluates
+UserRef "1" --> "0..*" PriceDiscrepancy : reports
+PriceDiscrepancy "*" --> "1" StoreProductRef : concerns
+PriceDiscrepancy "1" *-- "1..*" PriceObservation : supported by
+PriceDiscrepancy "1" *-- "0..*" VerificationConfirmation : receives
+UserRef "1" --> "0..*" VerificationConfirmation : creates
+UserRef "1" --> "1" TrustProfile : has local trust state
+
+note right of UserRef
+  Reference to Identity and Access.
+end note
+
+note right of StoreProductRef
+  Reference to Catalog and Pricing
+  or Merchant Management data.
+end note
+
+@enduml

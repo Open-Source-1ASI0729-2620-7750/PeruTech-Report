@@ -1,0 +1,94 @@
+@startuml PeruTech_Merchant_Management_Classes
+
+title PeruTech - Merchant Management Class Diagram
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+
+interface MerchantRepository {
+    +findByTaxId(taxId: String): MerchantProfile
+    +save(profile: MerchantProfile): void
+}
+
+interface RucVerificationGateway {
+    +verify(taxId: String): VerificationResult
+}
+
+class MerchantManagementService {
+    +affiliate(profile: MerchantProfile): void
+    +registerStore(profile: MerchantProfile, store: RetailStore): void
+    +publishPromotion(storeProduct: StoreProduct, promotion: Promotion): void
+}
+
+class MerchantProfile {
+    -id: UUID
+    -taxId: String
+    -verificationStatus: VerificationStatus
+    +submitForVerification(): void
+    +confirmVerification(): void
+    +canOperate(): Boolean
+}
+
+class RetailStore {
+    -id: UUID
+    -name: String
+    -address: String
+    +updateInformation(address: String): void
+    +addInventoryItem(item: InventoryItem): void
+    +publish(promotion: Promotion): void
+}
+
+class InventoryItem {
+    -id: UUID
+    -stock: Decimal
+    -unitPrice: Money
+    +increaseStock(quantity: Decimal): void
+    +decreaseStock(quantity: Decimal): void
+    +updatePrice(price: Money): void
+    +isAvailable(): Boolean
+}
+
+class StoreProduct {
+    -productId: UUID
+    -name: String
+    +changeCatalogData(name: String): void
+}
+
+class Promotion {
+    -id: UUID
+    -description: String
+    -startsAt: DateTime
+    -endsAt: DateTime
+    +activate(): void
+    +expire(at: DateTime): void
+    +isActiveAt(moment: DateTime): Boolean
+}
+
+class Money {
+    -amount: Decimal
+    -currency: String
+    +isPositive(): Boolean
+}
+
+class VerificationResult {
+    -verified: Boolean
+    -legalName: String
+    +isSuccessful(): Boolean
+}
+
+enum VerificationStatus {
+    PENDING
+    VERIFIED
+    REJECTED
+}
+
+MerchantManagementService ..> MerchantRepository : persists
+MerchantManagementService ..> RucVerificationGateway : verifies tax id
+MerchantProfile "1" *-- "1..*" RetailStore : manages
+RetailStore "1" *-- "0..*" InventoryItem : holds
+InventoryItem "*" --> "1" StoreProduct : represents
+StoreProduct "1" o-- "0..*" Promotion : has
+InventoryItem "1" --> "1" Money : priced at
+
+@enduml

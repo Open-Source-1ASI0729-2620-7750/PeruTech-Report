@@ -1,0 +1,93 @@
+@startuml PeruTech_Route_Planning_Classes
+
+title PeruTech - Route Planning Class Diagram
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+
+interface RoutingGateway {
+    +optimize(stops: List<GeoPoint>): RouteEstimate
+}
+
+interface RouteOptimizationPolicy {
+    +selectOrder(stops: List<RouteStop>): List<RouteStop>
+}
+
+class RoutePlanningService {
+    +generate(plan: ShoppingPlanRef, candidates: List<StoreCandidate>): MultiStopRoute
+    +recalculate(route: MultiStopRoute): void
+    +confirm(route: MultiStopRoute): void
+}
+
+class MultiStopRoute {
+    -id: UUID
+    -status: RouteStatus
+    -distance: Decimal
+    -estimatedDuration: Duration
+    -netSavings: Money
+    +addStop(store: StoreCandidate): RouteStop
+    +removeStop(stopId: UUID): void
+    +reorderStops(order: List<UUID>): void
+    +calculateNetSavings(grossSavings: Money, transitCost: Money): Money
+    +confirm(): void
+}
+
+class RouteStop {
+    -sequence: Integer
+    -estimatedArrival: DateTime
+    +changeSequence(sequence: Integer): void
+    +setEstimatedArrival(moment: DateTime): void
+}
+
+class GeoPoint {
+    -latitude: Decimal
+    -longitude: Decimal
+    +distanceTo(other: GeoPoint): Decimal
+}
+
+class RouteEstimate {
+    -distance: Decimal
+    -duration: Duration
+    +isFeasible(): Boolean
+}
+
+class ShoppingPlanRef {
+    -shoppingListId: UUID
+    +matches(listId: UUID): Boolean
+}
+
+class ProductRequirement {
+    -productId: UUID
+    -quantity: Decimal
+    +requires(productId: UUID): Boolean
+}
+
+class StoreCandidate {
+    -storeId: UUID
+    -location: GeoPoint
+    +isWithin(radius: Decimal): Boolean
+}
+
+class Money {
+    -amount: Decimal
+    -currency: String
+    +subtract(other: Money): Money
+}
+
+enum RouteStatus {
+    DRAFT
+    OPTIMIZED
+    CONFIRMED
+}
+
+RoutePlanningService ..> RoutingGateway : requests estimate
+RoutePlanningService ..> RouteOptimizationPolicy : orders stops
+ShoppingPlanRef "1" --> "0..1" MultiStopRoute : plans
+MultiStopRoute "1" *-- "1..*" RouteStop : contains
+RouteStop "*" --> "1" StoreCandidate : visits
+ShoppingPlanRef "1" --> "1..*" ProductRequirement : requires
+StoreCandidate "1" --> "1" GeoPoint : located at
+MultiStopRoute "1" --> "1" Money : reports net savings
+
+@enduml
