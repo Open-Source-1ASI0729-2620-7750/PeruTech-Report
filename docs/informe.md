@@ -219,9 +219,10 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 *Capacidad de comunicarse efectivamente con un rango de audiencias. En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 3.*
 
 | Criterio específico | Acciones realizadas | Conclusiones |
-|---------------------|---------------------|--------------|
-| **Comunica oralmente con efectividad a diferentes rangos de audiencia.** | Capillo Lema, Mía Valentina <br> **AV1** <br> Entrevisté a los usuarios del Segmento 1 adaptando mis preguntas a un lenguaje sencillo, y presenté las ideas clave de mi trabajo de forma clara y directa. | [Conclusiones] |
-| **Comunica por escrito con efectividad a diferentes rangos de audiencia.** | Capillo Lema, Mía Valentina <br> **AV1** <br> Redacté el resumen de las entrevistas, estructuré la documentación técnica con diagramas de Wireflow y User Flow, y usé mensajes de Git claros para coordinar el avance del repositorio. | [Conclusiones] |
+|---------------------|----------------------|--------------|
+| **Comunica oralmente con efectividad a diferentes rangos de audiencia.** | Capillo Lema, Mía Valentina <br> **AV1** <br> Entrevisté a los usuarios del Segmento 1 adaptando mis preguntas a un lenguaje sencillo, y presenté las ideas clave de mi trabajo de forma clara y directa. <br><br> Casós Torre, Miguel André <br> **AV1** <br> Participé en la discusión y explicación de decisiones relacionadas con el diseño y la arquitectura de Preciazo, comunicando al equipo los criterios utilizados para organizar los Bounded Contexts y representar la solución mediante diagramas técnicos. | Durante AV1, el equipo fortaleció su capacidad para comunicar ideas y decisiones del proyecto de manera clara, adaptando la explicación según el contexto y la audiencia. |
+| **Comunica por escrito con efectividad a diferentes rangos de audiencia.** | Capillo Lema, Mía Valentina <br> **AV1** <br> Redacté el resumen de las entrevistas, estructuré la documentación técnica con diagramas de Wireflow y User Flow, y usé mensajes de Git claros para coordinar el avance del repositorio. <br><br> Casós Torre, Miguel André <br> **AV1** <br> Participé en la elaboración y revisión de documentación técnica del proyecto, incluyendo Domain-Driven Design, arquitectura C4, diagramas de clases y diseño de base de datos, procurando mantener una redacción clara y coherente entre los artefactos. | Durante AV1, el equipo aplicó comunicación escrita para documentar requisitos, decisiones de diseño y arquitectura, manteniendo consistencia entre el informe y los artefactos técnicos desarrollados. |
+
 
 ---
 
