@@ -968,7 +968,62 @@ En esta sección se presenta el mockup de alta fidelidad con la identidad de la 
 
 ### 4.4.1. Web Applications Wireframes
 
-[Contenido]
+A continuación, se presentan las pantallas de wireframe de baja fidelidad de la aplicación **PeruTech**. El diseño contempla tanto la experiencia del usuario final (comprador) como el panel de gestión orientado a comercios afiliados.
+
+#### 1. Pantalla de Inicio (Home)
+Pantalla principal de la aplicación que integra el buscador global por productos o tiendas, accesos rápidos a la creación de listas, ofertas destacadas en la zona del usuario y el listado de tiendas cercanas con sus respectivas distancias.
+
+![Pantalla de Inicio](/assets/wireframe-app/portada.png)
+
+---
+
+#### 2. Vista de Lista Activa - Modo Normal
+Permite visualizar la lista de compras actual con el control de presupuesto. Incluye sugerencias inteligentes de sustitutos más económicos para maximizar el ahorro y la opción de agregar o eliminar productos.
+
+![Lista Activa - Modo Normal](/assets/wireframe-app/lista-modo-normal.png)
+
+---
+
+#### 3. Módulo de Comparativa de Precios
+Cuadro comparativo interactivo que permite analizar el costo total de la lista activa en distintos supermercados según el radio de distancia seleccionado. Destaca la mejor opción económica y permite reportar inconsistencias en tiendas.
+
+![Comparativa de Precios](/assets/wireframe-app/comparar.png)
+
+---
+
+#### 4. Generador de Ruta de Compra Optimizada
+Mapeo iterativo y sugerencia de itinerario para compras en múltiples establecimientos. Desglosa los tiempos de traslado, el ahorro estimado y el detalle de ítems a adquirir en cada parada.
+
+![Ruta Optimizada](/assets/wireframe-app/ruta.png)
+
+---
+
+#### 5. Panel de Analítica para Comercios
+Dashboard principal orientado al comerciante o tienda aliada. Presenta métricas relevantes sobre impresiones en rutas, vistas de productos, consultas de ofertas y un gráfico de tendencias de tráfico mensual.
+
+![Panel de Analítica para Comercios](/assets/wireframe-app/tienda-panel.png)
+
+---
+
+#### 6. Gestión de Catálogo de Precios (Comercios)
+Interfaz de administración donde el comercio puede activar, desactivar y actualizar el listado de precios de sus productos e importar inventarios.
+
+![Catálogo de Precios](/assets/wireframe-app/tienda-catalogo.png)
+
+---
+
+#### 7. Módulo de Ofertas y Promociones (Comercios)
+Sección diseñada para que los establecimientos publiquen promociones temporales, establezcan precios de oferta con contador de vigencia y gestionen sus campañas activas.
+
+![Módulo de Ofertas](/assets/wireframe-app/tienda-oferta.png)
+
+---
+
+#### 8. Perfil e Información de la Tienda
+Pantalla que muestra la información institucional del establecimiento afiliado, incluyendo RUC, dirección fiscal, teléfono de contacto y la configuración de sus horarios de atención al público.
+
+![Información del Establecimiento](/assets/wireframe-app/tienda-mi-tienda.png)
+
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
