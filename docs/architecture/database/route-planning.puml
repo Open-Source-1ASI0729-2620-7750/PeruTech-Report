@@ -1,0 +1,41 @@
+@startuml PeruTech_DB_Route_Planning
+
+title PeruTech - Route Planning Database Diagram
+
+hide circle
+skinparam linetype ortho
+
+entity routes {
+    * id : UUID <<PK>>
+    --
+    shopping_list_id : UUID <<REF>>
+    distance : DECIMAL
+    estimated_duration : INTEGER
+    transit_cost : DECIMAL
+    net_savings : DECIMAL
+    status : VARCHAR
+}
+
+entity route_stops {
+    * id : UUID <<PK>>
+    --
+    route_id : UUID <<FK>>
+    store_id : UUID <<REF>>
+    sequence : INTEGER
+    estimated_arrival : TIMESTAMP
+}
+
+routes ||--o{ route_stops
+
+note right of route_stops
+  UNIQUE(route_id, sequence)
+  store_id belongs to
+  Merchant Management.
+end note
+
+note right of routes
+  shopping_list_id belongs to
+  Shopping Planning.
+end note
+
+@enduml

@@ -1,0 +1,295 @@
+@startuml PeruTech_Database_Overview
+
+title PeruTech - Database Overview
+
+hide circle
+skinparam linetype ortho
+skinparam shadowing false
+
+entity users {
+    * id : UUID <<PK>>
+    --
+    email : VARCHAR <<UQ>>
+    status : VARCHAR
+}
+
+entity roles {
+    * id : UUID <<PK>>
+    --
+    name : VARCHAR <<UQ>>
+}
+
+entity permissions {
+    * id : UUID <<PK>>
+    --
+    resource : VARCHAR
+    action : VARCHAR
+}
+
+entity user_roles {
+    * user_id : UUID <<PK, FK>>
+    * role_id : UUID <<PK, FK>>
+}
+
+entity role_permissions {
+    * role_id : UUID <<PK, FK>>
+    * permission_id : UUID <<PK, FK>>
+}
+
+entity auth_sessions {
+    * id : UUID <<PK>>
+    --
+    user_id : UUID <<FK>>
+    issued_at : TIMESTAMP
+    expires_at : TIMESTAMP
+    revoked : BOOLEAN
+}
+
+entity merchant_profiles {
+    * id : UUID <<PK>>
+    --
+    user_id : UUID <<FK>>
+    tax_id : VARCHAR <<UQ>>
+    verification_status : VARCHAR
+}
+
+entity retail_stores {
+    * id : UUID <<PK>>
+    --
+    merchant_profile_id : UUID <<FK>>
+    name : VARCHAR
+    address : VARCHAR
+    latitude : DECIMAL
+    longitude : DECIMAL
+    trust_score : DECIMAL
+}
+
+entity products {
+    * id : UUID <<PK>>
+    --
+    name : VARCHAR
+    brand : VARCHAR
+    category : VARCHAR
+    unit : VARCHAR
+}
+
+entity inventory_items {
+    * id : UUID <<PK>>
+    --
+    store_id : UUID <<FK>>
+    product_id : UUID
+    stock : DECIMAL
+    unit_price : DECIMAL
+    stock_status : VARCHAR
+}
+
+entity catalog_entries {
+    * id : UUID <<PK>>
+    --
+    store_id : UUID <<FK>>
+    product_id : UUID <<FK>>
+    unit_price : DECIMAL
+    stock_status : VARCHAR
+    updated_at : TIMESTAMP
+}
+
+entity price_snapshots {
+    * id : UUID <<PK>>
+    --
+    catalog_entry_id : UUID <<FK>>
+    unit_price : DECIMAL
+    captured_at : TIMESTAMP
+}
+
+entity shopping_lists {
+    * id : UUID <<PK>>
+    --
+    owner_id : UUID <<FK>>
+    name : VARCHAR
+    status : VARCHAR
+}
+
+entity shopping_list_members {
+    * shopping_list_id : UUID <<PK, FK>>
+    * user_id : UUID <<PK, FK>>
+    --
+    member_role : VARCHAR
+}
+
+entity shopping_list_items {
+    * id : UUID <<PK>>
+    --
+    shopping_list_id : UUID <<FK>>
+    product_id : UUID <<FK>>
+    quantity : DECIMAL
+    purchased : BOOLEAN
+}
+
+entity purchase_budgets {
+    * id : UUID <<PK>>
+    --
+    shopping_list_id : UUID <<FK>>
+    amount : DECIMAL
+    status : VARCHAR
+}
+
+entity routes {
+    * id : UUID <<PK>>
+    --
+    shopping_list_id : UUID <<FK>>
+    distance : DECIMAL
+    estimated_duration : INTEGER
+    net_savings : DECIMAL
+}
+
+entity route_stops {
+    * id : UUID <<PK>>
+    --
+    route_id : UUID <<FK>>
+    store_id : UUID <<FK>>
+    sequence : INTEGER
+}
+
+entity promotions {
+    * id : UUID <<PK>>
+    --
+    inventory_item_id : UUID <<FK>>
+    starts_at : TIMESTAMP
+    ends_at : TIMESTAMP
+}
+
+entity price_observations {
+    * id : UUID <<PK>>
+    --
+    catalog_entry_id : UUID <<FK>>
+    discrepancy_id : UUID <<FK>>
+    observer_id : UUID <<FK>>
+    observed_price : DECIMAL
+    observed_at : TIMESTAMP
+}
+
+entity price_discrepancies {
+    * id : UUID <<PK>>
+    --
+    catalog_entry_id : UUID <<FK>>
+    reporter_id : UUID <<FK>>
+    expected_price : DECIMAL
+    observed_price : DECIMAL
+    status : VARCHAR
+}
+
+entity verification_confirmations {
+    * id : UUID <<PK>>
+    --
+    discrepancy_id : UUID <<FK>>
+    confirmer_id : UUID <<FK>>
+    created_at : TIMESTAMP
+}
+
+entity trust_profiles {
+    * id : UUID <<PK>>
+    --
+    user_id : UUID <<FK, UQ>>
+    score : DECIMAL
+    level : VARCHAR
+}
+
+entity analytics_events {
+    * id : UUID <<PK>>
+    --
+    subject_id : UUID
+    event_type : VARCHAR
+    occurred_at : TIMESTAMP
+    metadata : JSON
+}
+
+entity merchant_metrics {
+    * id : UUID <<PK>>
+    --
+    store_id : UUID <<FK>>
+    period_from : TIMESTAMP
+    period_to : TIMESTAMP
+    monthly_traffic : INTEGER
+    lost_sales : DECIMAL
+    engagement_score : DECIMAL
+}
+
+entity merchant_reports {
+    * id : UUID <<PK>>
+    --
+    store_id : UUID <<FK>>
+    report_type : VARCHAR
+    period_from : TIMESTAMP
+    period_to : TIMESTAMP
+    generated_at : TIMESTAMP
+}
+
+users ||--o{ user_roles
+roles ||--o{ user_roles
+roles ||--o{ role_permissions
+permissions ||--o{ role_permissions
+users ||--o{ auth_sessions
+users ||--o| merchant_profiles
+merchant_profiles ||--o{ retail_stores
+retail_stores ||--o{ inventory_items
+products ||--o{ inventory_items
+retail_stores ||--o{ catalog_entries
+products ||--o{ catalog_entries
+catalog_entries ||--o{ price_snapshots
+users ||--o{ shopping_lists
+shopping_lists ||--o{ shopping_list_members
+shopping_lists ||--o{ shopping_list_items
+products ||--o{ shopping_list_items
+shopping_lists ||--o{ purchase_budgets
+shopping_lists ||--o{ routes
+routes ||--o{ route_stops
+inventory_items ||--o{ promotions
+catalog_entries ||--o{ price_observations
+price_discrepancies ||--o{ price_observations
+users ||--o{ price_observations
+catalog_entries ||--o{ price_discrepancies
+users ||--o{ price_discrepancies
+price_discrepancies ||--o{ verification_confirmations
+users ||--o{ verification_confirmations
+users ||--o| trust_profiles
+retail_stores ||--o{ merchant_metrics
+retail_stores ||--o{ merchant_reports
+
+note right of merchant_profiles
+  One merchant profile per user.
+  UNIQUE(user_id)
+end note
+
+note right of permissions
+  UNIQUE(resource, action)
+end note
+
+note right of catalog_entries
+  UNIQUE(store_id, product_id)
+end note
+
+note right of shopping_list_members
+  user_id belongs to
+  Identity and Access.
+end note
+
+note right of inventory_items
+  product_id belongs to
+  Catalog and Pricing.
+end note
+
+note right of purchase_budgets
+  At most one ACTIVE budget
+  per shopping list.
+end note
+
+note right of route_stops
+  UNIQUE(route_id, sequence)
+end note
+
+note right of analytics_events
+  subject_id is a polymorphic reference
+  to an event subject in another context.
+end note
+
+@enduml

@@ -1,0 +1,54 @@
+@startuml PeruTech_DB_Merchant_Management
+
+title PeruTech - Merchant Management Database Diagram
+
+hide circle
+skinparam linetype ortho
+
+entity merchant_profiles {
+    * id : UUID <<PK>>
+    --
+    user_id : UUID <<REF>>
+    tax_id : VARCHAR <<UQ>>
+    verification_status : VARCHAR
+}
+
+entity retail_stores {
+    * id : UUID <<PK>>
+    --
+    merchant_profile_id : UUID <<FK>>
+    name : VARCHAR
+    address : VARCHAR
+    latitude : DECIMAL
+    longitude : DECIMAL
+}
+
+entity inventory_items {
+    * id : UUID <<PK>>
+    --
+    store_id : UUID <<FK>>
+    product_id : UUID <<REF>>
+    stock : DECIMAL
+    unit_price : DECIMAL
+    stock_status : VARCHAR
+}
+
+entity promotions {
+    * id : UUID <<PK>>
+    --
+    inventory_item_id : UUID <<FK>>
+    description : VARCHAR
+    starts_at : TIMESTAMP
+    ends_at : TIMESTAMP
+}
+
+merchant_profiles ||--o{ retail_stores
+retail_stores ||--o{ inventory_items
+inventory_items ||--o{ promotions
+
+note right of inventory_items
+  product_id belongs to
+  Catalog and Pricing.
+end note
+
+@enduml
