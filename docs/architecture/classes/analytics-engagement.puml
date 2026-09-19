@@ -1,0 +1,83 @@
+@startuml PeruTech_Analytics_Engagement_Classes
+
+title PeruTech - Analytics and Engagement Class Diagram
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+
+interface AnalyticsEventStore {
+    +append(event: MetricEvent): void
+    +findBetween(from: DateTime, to: DateTime): List<MetricEvent>
+}
+
+interface MetricsCalculator {
+    +calculate(events: List<MetricEvent>): MerchantMetrics
+}
+
+class AnalyticsService {
+    +record(event: MetricEvent): void
+    +generateMetrics(period: ReportingPeriod): MerchantMetrics
+    +generateReport(period: ReportingPeriod, type: ReportType): MerchantReport
+}
+
+class MetricEvent {
+    -id: UUID
+    -type: MetricEventType
+    -occurredAt: DateTime
+    -subjectId: UUID
+    +isWithin(period: ReportingPeriod): Boolean
+}
+
+class MerchantMetrics {
+    -period: ReportingPeriod
+    -monthlyTraffic: Integer
+    -lostSales: Money
+    -engagementScore: Decimal
+    +recordVisit(): void
+    +recordLostSale(value: Money): void
+    +calculateEngagement(): Decimal
+}
+
+class MerchantReport {
+    -id: UUID
+    -type: ReportType
+    -generatedAt: DateTime
+    +summarize(metrics: MerchantMetrics): String
+    +isFor(type: ReportType): Boolean
+}
+
+class ReportingPeriod {
+    -from: DateTime
+    -to: DateTime
+    +contains(moment: DateTime): Boolean
+}
+
+class Money {
+    -amount: Decimal
+    -currency: String
+    +add(other: Money): Money
+}
+
+enum MetricEventType {
+    STORE_VISIT
+    PRODUCT_VIEW
+    PRICE_COMPARISON
+    LOST_SALE
+    OFFER_INTERACTION
+}
+
+enum ReportType {
+    MONTHLY_TRAFFIC
+    LOST_SALES
+    ENGAGEMENT
+}
+
+AnalyticsService ..> AnalyticsEventStore : persists events
+AnalyticsService ..> MetricsCalculator : calculates metrics
+MerchantMetrics "1" --> "1" ReportingPeriod : covers
+MerchantMetrics "1" --> "1" Money : totals lost sales
+MerchantReport "*" --> "1" MerchantMetrics : summarizes
+MetricEvent "*" --> "1" ReportingPeriod : belongs to
+
+@enduml

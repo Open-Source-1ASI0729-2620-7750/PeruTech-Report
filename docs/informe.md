@@ -739,13 +739,36 @@ El glosario contiene exclusivamente términos del dominio comercial minorista, a
 
 # Capítulo IV: Product Design
 
+En esta sección, el equipo establece las bases para contar con un repositorio central y organizado de recursos visuales y estructurales de uso común. El objetivo principal es garantizar una presentación consistente, sólida y enfocada en todos los productos digitales de **PeruTech**, facilitando la colaboración entre diseñadores y desarrolladores mediante el uso estandarizado de activos, fuentes, estilos y criterios de arquitectura de la información.
+
 ## 4.1. Style Guidelines
 
-[Contenido]
+Estas guías establecen la identidad visual base para todos los productos digitales del ecosistema **PeruTech**.
 
 ### 4.1.1. General Style Guidelines
 
-[Contenido]
+
+#### **A. Branding & Tono de Comunicación**
+* **Tono:** El lenguaje será **Entusiasta y Sereno**. Se busca que el usuario se sienta motivado por la innovación y el ahorro inteligente, pero con la tranquilidad de que la información presentada es confiable y veraz.
+* **Lenguaje:** Se utilizará un estilo **Formal/Casual**, directo y fácil de entender tanto para familias como para jóvenes profesionales y comercios aliados.
+
+#### **B. Paleta de Colores (Colors)**
+Se ha seleccionado una paleta moderna, equilibrada y tecnológica que evoca confianza, claridad y dinamismo:
+
+| Uso | Nombre del Color | Hexadecimal | Representación / Aplicación |
+| :--- | :--- | :--- | :--- |
+| **Primario** | Negro Azabache | `#000000` | Sólido y profesional. Utilizado en encabezados, botones principales y contraste de textos de alta jerarquía. |
+| **Secundario** | Turquesa Tecnológico | `#00ACAC` | Frescura, agilidad e innovación. Destacado en llamados a la acción, estados activos y acentos de interfaz. |
+| **Acento / Fondo Suave** | Gris Claro Nieve | `#DFDEDC` | Limpieza visual. Se utiliza para fondos de tarjetas, contenedores secundarios y fondos de sección. |
+| **Neutro Medio** | Gris Medio | `#A6A7A2` | Elementos secundarios, bordes, estados desactivados y divisores. |
+| **Texto / Contraste** | Antracita Oscuro | `#464545` | Utilizado en el cuerpo de texto principal para optimizar la legibilidad y reducir la fatiga visual. |
+
+#### **C. Tipografía (Typography)**
+* **Títulos y Encabezados:** *Montserrat* (Bold / Semi-Bold) - Proporciona un aspecto moderno, profesional y estructurado.
+* **Cuerpo de Texto y UI:** *Roboto* (Regular / Medium) - Sigue los estándares de legibilidad para interfaces digitales móviles y web.
+
+#### **D. Espaciado y Rejilla (Spacing & Grid)**
+* Se aplicará un sistema de rejilla basado en **8dp (8pt grid)** para mantener consistencia en márgenes, *paddings* y alineación de componentes UI en todas las pantallas.
 
 ### 4.1.2. Web Style Guidelines
 
@@ -753,99 +776,630 @@ El glosario contiene exclusivamente términos del dominio comercial minorista, a
 
 ## 4.2. Information Architecture
 
-[Contenido]
+En esta sección se documentan las decisiones y criterios de organización de contenido en las **plataformas web** y en las **aplicaciones móviles** de **PeruTech**, optimizando los sistemas de **organización, etiquetado, búsqueda y navegación**.
 
 ### 4.2.1. Organization Systems
 
-[Contenido]
+Se distingue entre la **organización visual** (layout y jerarquía en pantalla) y los **esquemas de categorización** (criterios lógicos de agrupación).
+
+##### **Organización Visual**
+
+| Tipo | Cuándo se usa en PeruTech | Ejemplos concretos |
+| --- | --- | --- |
+| **Jerárquica** | Cuando un bloque comunica importancia relativa priorizando información clave. | **Landing:** Hero con propuesta de valor → beneficios → prueba social → CTA.<br>**Merchant Web:** Panel con KPIs principales arriba (Tráfico Mensual, Venta Perdida) y detalle operacional debajo. |
+| **Secuencial (paso a paso)** | Flujos guiados que requieren un orden fijo de ejecución. | **Buyer:** Asistente "Configurar Canasta Básica / Lista → Ajustar Presupuesto → Generar Ruta Multiparada → Confirmar Punto Óptimo de Compra".<br>**Post-compra:** "Confirmar Visita → Ver Ahorro Neto → Calificar Comercio / Reseña → Reportar Discrepancia de Precio". |
+| **Matricial** | Contenidos multidimensionales que admiten múltiples filtros y comparaciones. | **Buyer:** Grilla de Artículos de Compra (*Categoría × Precio Unitario × Comercio Minorista*).<br>**Merchant:** Tablero de inventario (*Artículo × Estado de stock × Vigencia de Oferta Relámpago*). |
+
+##### **Esquemas de Categorización**
+
+| Esquema | Cuándo se usa | Ejemplos en el producto |
+| --- | --- | --- |
+| **Alfabético** | Listados extensos de orden explícito. | Listados de Artículos de Compra en el catálogo Merchant y ordenación A–Z en búsquedas. |
+| **Cronológico** | Información ordenada por temporalidad. | Historial de Rutas Multiparada finalizadas y registro histórico de actualización de precios u ofertas relámpago. |
+| **Por Tema (Tópico)** | Categorización por dominios del supermercado o módulos de ayuda. | Navegación de productos por categoría de Despensa Familiar (Abarrotes, Limpieza, etc.) y secciones FAQ. |
+| **Por Audiencia** | Separación según el rol del usuario. | Diferenciación clara entre flujos de **Buyer (Consumidor / Jefe de Hogar)** y **Merchant (Comerciante)**. |
+
+##### **Resumen por Superficie**
+
+| Superficie | Organización visual | Esquemas de categorización |
+| --- | --- | --- |
+| **Landing Web** | Jerárquica | Por tema y por audiencia (CTA Buyer vs. Merchant) |
+| **App Buyer (Móvil)** | Secuencial en flujos clave; matricial en catálogo | Tópico (categorías de Despensa), cronológico (historial de rutas), alfabético |
+| **Portal Merchant (Web/App)** | Jerárquica en paneles; matricial en tablas de datos | Alfabético, por estado de stock / oferta y cronológico (reportes) |
 
 ### 4.2.2. Labeling Systems
 
-[Contenido]
+El sistema de etiquetado utiliza términos breves, claros y estrictamente unificados.
+
+##### **Etiquetas Principales y Asociaciones**
+
+| Etiqueta (UI) | Entidad / Asociación (Ubiquitous Language) | Regla de Brevedad y Claridad |
+| --- | --- | --- |
+| **Canasta Básica** | `Basic Basket` | Módulo de configuración de necesidades esenciales de abastecimiento. |
+| **Lista Compartida** | `Shared Shopping List` | Registro estructurado y colaborativo del hogar. |
+| **Presupuesto** | `Purchase Budget` | Techo financiero asignado para la jornada de compra. |
+| **Ruta Multiparada** | `Multi-stop Route` | Itinerario optimizado que conecta el hogar con múltiples comercios. |
+| **Punto Óptimo** | `Optimal Purchase Stop` | Establecimiento sugerido por mejor relación cercanía/precio/stock. |
+| **Comercios** | `Retail Store` | Puntos de venta físicos (supermercados y mercados de abastos). |
+| **Ahorro Neto** | `Net Savings` | Diferencia económica positiva considerando el sobrecosto de desplazamiento. |
+| **Bien Sustituto** | `Substituted Good` | Sugerencia alternativa ante falta de stock o exceso de presupuesto. |
+| **Discrepancia** | `Price Discrepancy` / `Error de precio` | Reporte colaborativo de diferencias entre góndola y caja. |
+| **Confianza** | `TrustProfile` / Insignia de Confianza | Score y nivel de fiabilidad del comercio asignado por la comunidad. |
+| **Catálogo / Ofertas** | Módulos de gestión Merchant | Administración de inventario inicial y Ofertas Relámpago. |
+| **Reportes** | Tráfico Mensual y Venta Perdida | Métricas clave de rendimiento para el Comerciante. |
+
+##### **Microcopy y Mensajes del Sistema**
+* **Validaciones:** Frases directas y comprensibles (*"Ingresa un presupuesto mayor a S/ 0"*, *"Selecciona al menos un Punto Óptimo de Compra"*).
+* **Estados de Carga:** Verbos indicativos directos (*"Calculando Ruta Multiparada optimizada..."*, *"Verificando Discrepancia de Precio..."*, *"Guardando cambios..."*).
 
 ### 4.2.3. SEO Tags and Meta Tags
 
-[Contenido]
+##### **Sitio Web Estático — Landing Page**
+
+| Meta / Etiqueta | Valor propuesto |
+| --- | --- |
+| **`<title>`** | `PeruTech \| Ahorra en tu Canasta Básica con Rutas Multiparada y Precios Reales` |
+| **`<meta name="description">`** | `Planifica tu Lista Compartida, respeta tu Presupuesto de Compra y optimiza tus recorridos con Rutas Multiparadas. Compara precios reales con PeruTech.` |
+| **`<meta name="keywords">`** | `PeruTech, canasta basica, presupuesto de compra, ruta multiparada, ahorro neto, punto optimo de compra, comercio minorista, dispersion de precios, Peru` |
+| **`<meta name="author">`** | `PeruTech Team` |
+| **Complementos** | Canonical `<link rel="canonical" href="https://www.perutech.pe/">`y Open Graph (`og:title`, `og:description`, `og:image`). |
+
+##### **Aplicación Web — Portal Merchant (Inicio / Dashboard)**
+
+| Meta / Etiqueta | Valor propuesto |
+| --- | --- |
+| **`<title>`** | `PeruTech Merchant \| Gestión de Catálogo, Ofertas y Reportes de Tráfico` |
+| **`<meta name="description">`** | `Administra tu inventario, publica Ofertas Relámpago y consulta métricas de Venta Perdida en tiempo real para compradores de PeruTech.` |
+| **`<meta name="keywords">`** | `PeruTech Merchant, comercio minorista, ofertas relampago, precio unitario, reporte de trafico, venta perdida, reputacion comercio` |
+| **`<meta name="author">`** | `PeruTech Team` |
+
+##### **ASO (App Store & Google Play)**
+
+* **App Buyer — "PeruTech":**
+  * **Título:** `PeruTech — Compras y Ahorro Neto`
+  * **Subtítulo:** `Canasta básica, presupuesto y rutas`
+  * **Keywords:** `compras, canasta basica, presupuesto, ruta multiparada, ahorro neto, supermercado, peru, gondola, perutech`
+  * **Descripción corta:** `Gestiona tu Canasta Básica, respeta tu Presupuesto y recorre la mejor Ruta Multiparada. Compara precios reales y maximiza tu Ahorro Neto con PeruTech.`
+
+* **App Merchant — "PeruTech Tiendas":**
+  * **Título:** `PeruTech Tiendas`
+  * **Subtítulo:** `Catálogo y ofertas en vivo`
+  * **Keywords:** `retail, comercio minorista, catalogo, ofertas relampago, precio unitario, merchant, sede, perutech`
+  * **Descripción corta:** `Gestiona tu inventario, publica Ofertas Relámpago y mantén tus precios actualizados para la comunidad de compradores de PeruTech.`
 
 ### 4.2.4. Searching Systems
 
-[Contenido]
+El sistema de búsqueda permite una localización eficiente de bienes dentro de catálogos extensos y paneles de administración.
+
+##### **Opciones y Alcance de Búsqueda**
+
+| Contexto / App | Objeto de búsqueda | Tipo de Entrada | Alcance y Filtros |
+| --- | --- | --- | --- |
+| **Buyer — Catálogo** | Artículos de Compra por nombre, marca o presentación | Campo global + auto-sugerencias | Pestañas "En esta tienda" / "En todas". Filtros por Precio Unitario, Categoría de Despensa y Bienes Sustitutos. |
+| **Buyer — Comercios** | Comercio Minorista por sede o mercado de abastos | Barra de búsqueda integrada en mapa/lista | Filtro por distancia, Insignia de Confianza y horario de atención. |
+| **Buyer — Mi Lista** | Ítems agregados a la Lista Compartida | Filtro local en tiempo real | Filtrado rápido de texto por categoría de producto. |
+| **Merchant — Backoffice** | Artículos, SKUs, Ofertas Relámpago activas | Tabla de datos con filtros combinados | Filtro por estado de stock, Discrepancia de Precio reportada y vigencia. |
+
+##### **Comportamiento e Interfaz de Búsqueda**
+* **Sugerencias Dinámicas:** Despliegue de resultados emergentes a partir de los 2 caracteres ingresados (`>= 2 chars`).
+* **Visualización de Resultados:** Tarjetas con Precio Unitario destacado, indicación del Punto Óptimo de Compra y opción para añadir directamente a la Lista Compartida.
 
 ### 4.2.5. Navigation Systems
 
-[Contenido]
+Estructura de desplazamiento y recorrido del usuario en las diferentes plataformas de **PeruTech**.
+
+##### **Mapa de Navegación y Estructuras**
+
+* **Landing Page (Web Estática):** Barra superior fija con desplazamientos suaves (*anchor links*) a `#producto`, `#como-funciona`, `#descargar` y `#contacto`.
+* **App Buyer (Móvil):** Navegación primaria mediante **Tab Bar inferior** (*Inicio*, *Canasta / Lista*, *Ruta Multiparada*, *Perfil*). Flujos secundarios en *stack modal* (Sugerencia de Bien Sustituto, Reportar Discrepancia) y asistente para planificación del Presupuesto y Ruta Multiparada.
+* **Portal Merchant (Web/App):** Menú lateral persistente (*Sidebar*) con acceso a *Panel de Métricas* (Tráfico y Venta Perdida), *Catálogo*, *Ofertas Relámpago*, *Reportes de Reputación* y *Configuración de Sede*.
+
+| Superficie | Técnica de Navegación |
+| --- | --- |
+| **Landing Web** | Header fijo, scroll suave, CTAs de conversión repetidos tras bloques clave y footer legal. |
+| **App Buyer** | Tabs inferiores persistentes, navegación por stack modal, asistente secuencial de Ruta Multiparada y *deep linking* desde notificaciones de ofertas relámpago. |
+| **Merchant Web/App** | Sidebar persistente, indicador de sede activa en header, breadcrumbs navegables y tablas paginadas para catálogos extensos. |
 
 ## 4.3. Landing Page UI Design
 
-[Contenido]
-
 ### 4.3.1. Landing Page Wireframe
 
-[Contenido]
+A continuación se presentan los wireframes de baja fidelidad representando la estructura y jerarquía visual.
+
+![wireframe-landing](/assets/designs/landing/wireframe-landing.png)
 
 ### 4.3.2. Landing Page Mock-up
 
-[Contenido]
+En esta sección se presenta el mockup de alta fidelidad con la identidad de la marca plasmada.
+
+![mockup-landing](/assets/designs/landing/mockup-landing.png)
 
 ## 4.4. Web Applications UX/UI Design
 
-[Contenido]
-
 ### 4.4.1. Web Applications Wireframes
 
-[Contenido]
+A continuación, se presentan las pantallas de wireframe de baja fidelidad de la aplicación **PeruTech**. El diseño contempla tanto la experiencia del usuario final (comprador) como el panel de gestión orientado a comercios afiliados.
+
+#### 1. Pantalla de Inicio (Home)
+Pantalla principal de la aplicación que integra el buscador global por productos o tiendas, accesos rápidos a la creación de listas, ofertas destacadas en la zona del usuario y el listado de tiendas cercanas con sus respectivas distancias.
+
+![Pantalla de Inicio](/assets/wireframe-app/portada.png)
+
+---
+
+#### 2. Vista de Lista Activa - Modo Normal
+Permite visualizar la lista de compras actual con el control de presupuesto. Incluye sugerencias inteligentes de sustitutos más económicos para maximizar el ahorro y la opción de agregar o eliminar productos.
+
+![Lista Activa - Modo Normal](/assets/wireframe-app/lista-modo-normal.png)
+
+---
+
+#### 3. Módulo de Comparativa de Precios
+Cuadro comparativo interactivo que permite analizar el costo total de la lista activa en distintos supermercados según el radio de distancia seleccionado. Destaca la mejor opción económica y permite reportar inconsistencias en tiendas.
+
+![Comparativa de Precios](/assets/wireframe-app/comparar.png)
+
+---
+
+#### 4. Generador de Ruta de Compra Optimizada
+Mapeo iterativo y sugerencia de itinerario para compras en múltiples establecimientos. Desglosa los tiempos de traslado, el ahorro estimado y el detalle de ítems a adquirir en cada parada.
+
+![Ruta Optimizada](/assets/wireframe-app/ruta.png)
+
+---
+
+#### 5. Panel de Analítica para Comercios
+Dashboard principal orientado al comerciante o tienda aliada. Presenta métricas relevantes sobre impresiones en rutas, vistas de productos, consultas de ofertas y un gráfico de tendencias de tráfico mensual.
+
+![Panel de Analítica para Comercios](/assets/wireframe-app/tienda-panel.png)
+
+---
+
+#### 6. Gestión de Catálogo de Precios (Comercios)
+Interfaz de administración donde el comercio puede activar, desactivar y actualizar el listado de precios de sus productos e importar inventarios.
+
+![Catálogo de Precios](/assets/wireframe-app/tienda-catalogo.png)
+
+---
+
+#### 7. Módulo de Ofertas y Promociones (Comercios)
+Sección diseñada para que los establecimientos publiquen promociones temporales, establezcan precios de oferta con contador de vigencia y gestionen sus campañas activas.
+
+![Módulo de Ofertas](/assets/wireframe-app/tienda-oferta.png)
+
+---
+
+#### 8. Perfil e Información de la Tienda
+Pantalla que muestra la información institucional del establecimiento afiliado, incluyendo RUC, dirección fiscal, teléfono de contacto y la configuración de sus horarios de atención al público.
+
+![Información del Establecimiento](/assets/wireframe-app/tienda-mi-tienda.png)
+
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
-[Contenido]
+A continuación, se presentan los diagramas de Wireflow estructurados por segmento de usuario. Cada flujo define el objetivo de la interacción y la visualización del recorrido mediante su respectivo diagrama.
+
+---
+
+#### Segmento 1: Comprador
+
+##### Diagrama 1: Búsqueda y Comparativa de Precios
+* **Goal:** 1. Comparar precios de la canasta entre supermercados cercanos.
+* **Descripción:** El usuario busca productos, revisa su lista de compras activa en Modo Normal para ajustar sugerencias de ahorro y accede al módulo comparativo para evaluar los costos totales por tienda.
+
+![Diagrama 1 - Búsqueda y Comparativa de Precios](/assets/wireflow/diagrama1.png)
+
+---
+
+##### Diagrama 2: Ejecución de Compra y Ruta Optimizada
+* **Goal:** 2. Guiar el recorrido de compra físico y optimizar el itinerario.
+* **Descripción:** El usuario selecciona una lista guardada, genera la ruta de compra optimizada entre tiendas e inicia el Modo Compra al llegar al establecimiento para marcar los productos en tiempo real.
+
+![Diagrama 2 - Ejecución de Compra y Ruta Optimizada](/assets/wireflow/diagrama2.png)
+
+---
+
+#### Segmento 2: Comerciante
+
+##### Diagrama 3: Gestión Comercial y Monitoreo
+* **Goal:** 3. Analizar métricas de rendimiento y administrar el catálogo.
+* **Descripción:** El comerciante ingresa a su panel principal para analizar impresiones y tendencias, navega al catálogo para actualizar inventario o precios y gestiona la información fiscal del local.
+
+![Diagrama 3 - Gestión Comercial y Monitoreo](/assets/wireflow/diagrama3.png)
+
+---
+
+##### Diagrama 4: Publicación de Promociones Temporales
+* **Goal:** 4. Crear y gestionar ofertas con tiempo limitado.
+* **Descripción:** El comerciante selecciona productos desde su catálogo e ingresa al módulo de ofertas para configurar descuentos especiales y establecer la vigencia de la promoción.
+
+![Diagrama 4 - Publicación de Promociones Temporales](/assets/wireflow/diagrama4.png)
 
 ### 4.4.3. Web Applications Mock-ups
 
-[Contenido]
+A continuación, se presentan las pantallas que componen el prototipo de alta fidelidad de la aplicación **PeruTech**. El diseño contempla tanto la experiencia del usuario final (comprador) como el panel de gestión orientado a comercios afiliados.
+
+#### 1. Pantalla de Inicio (Home)
+Pantalla principal de la aplicación que integra el buscador global por productos o tiendas, accesos rápidos a la creación de listas, ofertas destacadas en la zona del usuario y el listado de tiendas cercanas con sus respectivas distancias.
+
+![Pantalla de Inicio](/assets/mockups-app/portada.png)
+
+---
+
+#### 2. Vista de Lista Activa - Modo Normal
+Permite visualizar la lista de compras actual con el control de presupuesto. Incluye sugerencias inteligentes de sustitutos más económicos para maximizar el ahorro y la opción de agregar o eliminar productos.
+
+![Lista Activa - Modo Normal](/assets/mockups-app/lista-modo-normal.png)
+
+---
+
+#### 3. Vista de Lista Activa - Modo Compra
+Optimizada para usarse dentro del establecimiento físico, permitiendo al usuario marcar los productos mediante *checkboxes* a medida que los coloca en el carrito y calcular el subtotal en tiempo real.
+
+![Lista Activa - Modo Compra](/assets/mockups-app/lista-modo-compra.png)
+
+---
+
+#### 4. Gestión de Listas Guardadas
+Sección destinada a la administración de plantillas personalizadas y listas reutilizables para compras recurrentes (p. ej., Desayuno Semanal o Limpieza del Hogar).
+
+![Listas Guardadas](/assets/mockups-app/lista-guardado.png)
+
+---
+
+#### 5. Módulo de Comparativa de Precios
+Cuadro comparativo interactivo que permite analizar el costo total de la lista activa en distintos supermercados según el radio de distancia seleccionado. Destaca la mejor opción económica y permite reportar inconsistencias en tiendas.
+
+![Comparativa de Precios](/assets/mockups-app/comparar.png)
+
+---
+
+#### 6. Generador de Ruta de Compra Optimizada
+Mapeo iterativo y sugerencia de itinerario para compras en múltiples establecimientos. Desglosa los tiempos de traslado, el ahorro estimado y el detalle de ítems a adquirir en cada parada.
+
+![Ruta Optimizada](/assets/mockups-app/ruta.png)
+
+---
+
+#### 7. Panel de Analítica para Comercios
+Dashboard principal orientado al comerciante o tienda aliada. Presenta métricas relevantes sobre impresiones en rutas, vistas de productos, consultas de ofertas y un gráfico de tendencias de tráfico mensual.
+
+![Panel de Analítica para Comercios](/assets/mockups-app/tienda-panel.png)
+
+---
+
+#### 8. Gestión de Catálogo de Precios (Comercios)
+Interfaz de administración donde el comercio puede activar, desactivar y actualizar el listado de precios de sus productos e importar inventarios.
+
+![Catálogo de Precios](/assets/mockups-app/tienda-catalogo.png)
+
+---
+
+#### 9. Módulo de Ofertas y Promociones (Comercios)
+Sección diseñada para que los establecimientos publiquen promociones temporales, establezcan precios de oferta con contador de vigencia y gestionen sus campañas activas.
+
+![Módulo de Ofertas](/assets/mockups-app/tienda-oferta.png)
+
+---
+
+#### 10. Perfil e Información de la Tienda
+Pantalla que muestra la información institucional del establecimiento afiliado, incluyendo RUC, dirección fiscal, teléfono de contacto y la configuración de sus horarios de atención al público.
+
+![Información del Establecimiento](/assets/mockups-app/tienda-mi-tienda.png)
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
-[Contenido]
+A continuación, se presentan los diagramas de User Flow para la aplicación web y móvil basados en las pantallas de alta fidelidad.
+
+---
+
+#### Segmento 1: Comprador
+
+##### Diagrama 1: Flujo de Búsqueda y Comparativa de Precios por Supermercado
+* **Goal:** 1. Comparar precios de la canasta entre supermercados cercanos.
+* **Descripción:** El usuario inicia en la pantalla de portada navegando por el buscador o categorías, gestiona su lista de compras activa en Modo Normal para evaluar sugerencias de ahorro y accede al cuadro comparativo para analizar los costos totales y productos disponibles por establecimiento.
+
+![Diagrama 1 - Búsqueda y Comparativa de Precios](/assets/userflow/diagrama1.png)
+
+---
+
+##### Diagrama 2: Flujo de Ejecución de Compra y Ruta Optimizada
+* **Goal:** 2. Guiar el recorrido de compra físico y optimizar el itinerario inter-tiendas.
+* **Descripción:** El usuario selecciona una lista guardada o plantilla, activa el generador de rutas para visualizar el itinerario con paradas y tiempos de traslado, e inicia el Modo Compra en el establecimiento para marcar los ítems en su carrito en tiempo real.
+
+![Diagrama 2 - Ejecución de Compra y Ruta Optimizada](/assets/userflow/diagrama2.png)
+
+---
+
+#### Segmento 2: Comerciante
+
+##### Diagrama 3: Flujo de Gestión Comercial y Monitoreo Analítico
+* **Goal:** 3. Analizar métricas de rendimiento y administrar el catálogo del establecimiento.
+* **Descripción:** El comerciante ingresa a su panel de analítica para evaluar tendencias e impresiones de su local, navega al catálogo para actualizar precios e inventarios y gestiona la información fiscal y los horarios de atención de la tienda.
+
+![Diagrama 3 - Gestión Comercial y Monitoreo Analítico](/assets/userflow/diagrama3.png)
+
+---
+
+##### Diagrama 4: Flujo de Publicación de Promociones Temporales
+* **Goal:** 4. Crear y gestionar ofertas con tiempo de vigencia determinado.
+* **Descripción:** El comerciante evalúa los productos desde su catálogo de precios e ingresa al módulo de ofertas para configurar promociones especiales, definir descuentos y establecer la vigencia temporal de la campaña.
+
+![Diagrama 4 - Publicación de Promociones Temporales](/assets/userflow/diagrama4.png)
 
 ## 4.5. Web Applications Prototyping
 
-[Contenido]
+El vídeo de evidencia del prototipo plasma las interacciones que ejecutan los usuarios y las respuestas esperadas por el sistema.
+
+![captura de video-prototipo](/assets/prototipo.png)
+
+[Prototipo evidencia](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241c101_upc_edu_pe/IQCEOW9isi3LT7sIUmtoPLwAAQMF1OJDthoTqwwWszE9QvQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=cP37RQ)
 
 ## 4.6. Domain-Driven Software Architecture
 
-[Contenido]
+La arquitectura de PeruTech se diseña siguiendo principios de Domain-Driven Design (DDD), tomando como punto de partida los resultados obtenidos en el Big Picture Event Storming desarrollado durante la etapa de Requirements Elicitation & Analysis.
+
+El análisis del dominio permitió identificar los principales procesos asociados a los dos segmentos objetivo de la solución: los compradores que buscan optimizar el costo y desplazamiento de sus compras, y los comerciantes minoristas que requieren administrar la información de sus establecimientos, precios, disponibilidad y promociones.
+
+A partir del refinamiento de los eventos, comandos, reglas y conceptos identificados previamente, el dominio de PeruTech se organiza en Bounded Contexts con responsabilidades claramente delimitadas. Esta separación permite reducir el acoplamiento entre capacidades de negocio y facilita posteriormente la implementación modular del Frontend Web Application y de los RESTful Web Services.
+
+Los Bounded Contexts identificados para PeruTech son:
+
+| Bounded Context | Responsabilidad principal |
+|---|---|
+| Identity and Access | Gestionar autenticación, identidad, roles y autorización de compradores y comerciantes. |
+| Shopping Planning | Gestionar listas de compra, cantidades, presupuesto y progreso de la jornada de compra. |
+| Catalog and Pricing | Gestionar productos, precios, disponibilidad y comparación entre establecimientos. |
+| Route Planning | Calcular y optimizar rutas de compra entre múltiples establecimientos considerando localización y desplazamiento. |
+| Merchant Management | Gestionar afiliación de comercios, información del establecimiento, catálogo local, inventario y promociones. |
+| Community Price Verification | Gestionar discrepancias, reportes y confirmaciones comunitarias sobre precios observados. |
+| Analytics and Engagement | Consolidar métricas de interacción y rendimiento relevantes para los comerciantes y generar información de seguimiento. |
+
+Estos contextos se comunican mediante contratos explícitos, evitando que un módulo modifique directamente las reglas internas de otro contexto.
+
 
 ### 4.6.1. Design-Level Event Storming
 
-[Contenido]
+Para profundizar el modelo obtenido durante el Big Picture Event Storming se realizó un Design-Level Event Storming orientado a analizar con mayor detalle los principales flujos de negocio de PeruTech.
+
+El proceso de refinamiento comenzó identificando las acciones realizadas por los actores Buyer y Merchant. Cada acción relevante fue representada mediante Commands y posteriormente relacionada con los Aggregates responsables de mantener las reglas y consistencia del dominio. A partir de estas acciones se identificaron los Domain Events producidos por el sistema, así como Policies que reaccionan ante dichos eventos, Queries requeridas para consultar el estado del dominio, sistemas externos y Hotspots que representan decisiones o reglas pendientes de precisar.
+
+Para facilitar la lectura del modelo se utilizó la siguiente convención visual:
+
+- **Actor:** amarillo.
+- **Command:** azul.
+- **Aggregate:** amarillo claro.
+- **Domain Event:** naranja.
+- **Policy:** violeta.
+- **Query / Read Model:** verde.
+- **External System:** rosa.
+- **Hotspot:** rojo.
+
+El resultado del proceso permitió organizar el dominio en siete Bounded Contexts: Identity and Access, Shopping Planning, Catalog and Pricing, Route Planning, Merchant Management, Community Price Verification y Analytics and Engagement.
+
+![PeruTech Design-Level Event Storming](../assets/architecture/design-level-event-storming.png)
+
 
 ### 4.6.2. Software Architecture Context Diagram
 
-[Contenido]
+![PeruTech Software Architecture Context Diagram](../assets/architecture/c4-context.png)
+
 
 ### 4.6.3. Software Architecture Container Diagrams
 
-[Contenido]
+![PeruTech Software Architecture Container Diagram](../assets/architecture/c4-container.png)
 
 ### 4.6.4. Software Architecture Components Diagrams
 
-[Contenido]
+![PeruTech Frontend Component Diagram](../assets/architecture/c4-components-frontend.png)
 
 ## 4.7. Software Object-Oriented Design
 
-[Contenido]
+En esta sección se presenta el diseño orientado a objetos de PeruTech a partir de los Bounded Contexts identificados durante el proceso de Domain-Driven Design.
+
+Con el objetivo de evitar un único modelo de clases excesivamente acoplado, el diseño se divide de acuerdo con los siete Bounded Contexts definidos previamente. Cada contexto mantiene sus propias entidades, servicios, interfaces, políticas, objetos de valor y enumeraciones, permitiendo representar de manera explícita sus responsabilidades y reglas de negocio.
+
+Asimismo, cuando un contexto necesita información perteneciente a otro dominio, se utilizan referencias locales basadas en identificadores u objetos específicos del contexto, evitando compartir directamente las entidades internas de otros Bounded Contexts. Este criterio permite conservar límites claros entre los modelos y reducir dependencias innecesarias.
+
+Los diagramas incluyen atributos y operaciones relevantes del dominio, utilizando visibilidad UML, relaciones nombradas y multiplicidades para representar las asociaciones entre los diferentes elementos.
 
 ### 4.7.1. Class Diagrams
 
-[Contenido]
+Los Class Diagrams de PeruTech se organizan por Bounded Context con el propósito de representar de forma independiente las principales estructuras y comportamientos de cada parte del dominio.
+
+#### Identity and Access
+
+El Bounded Context **Identity and Access** concentra las responsabilidades relacionadas con autenticación, sesiones, roles y autorización.
+
+La clase `User` representa la identidad principal del sistema y permite realizar operaciones como autenticarse, asignar roles, desactivar la cuenta y comprobar permisos. Las sesiones generadas se representan mediante `AuthSession`, mientras que `Role` y `Permission` modelan el esquema de autorización.
+
+Las interfaces `IdentityRepository` y `AccessPolicy` abstraen respectivamente la persistencia de identidades y las reglas utilizadas para determinar si una operación está autorizada.
+
+![Identity and Access Class Diagram](../assets/architecture/classes/identity-access.png)
+
+#### Shopping Planning
+
+El Bounded Context **Shopping Planning** administra la planificación de compras del Buyer.
+
+`ShoppingList` funciona como el elemento central del modelo y agrupa múltiples `ShoppingListItem`. Entre sus responsabilidades se encuentran agregar y eliminar ítems, marcar productos como comprados, calcular el costo estimado y completar una lista.
+
+`PurchaseBudget` representa el presupuesto asociado a la planificación y encapsula operaciones como reservar o liberar importes y comprobar si un determinado gasto puede ser asumido. El objeto `Money` encapsula cantidades monetarias y sus operaciones.
+
+`ProductRequirement` permite referenciar un producto requerido sin introducir directamente el modelo interno de Catalog and Pricing dentro de este Bounded Context.
+
+![Shopping Planning Class Diagram](../assets/architecture/classes/shopping-planning.png)
+
+#### Catalog and Pricing
+
+El Bounded Context **Catalog and Pricing** modela la consulta y comparación de productos, precios y disponibilidad entre establecimientos.
+
+`Product` representa la información propia del catálogo, mientras que `StoreProduct` mantiene los datos asociados a un producto ofrecido por un establecimiento, tales como precio unitario, disponibilidad y fecha de actualización.
+
+La clase `CatalogPricingService` proporciona operaciones de búsqueda, comparación de precios y selección de ofertas. Por otro lado, `PriceComparisonPolicy` encapsula la regla utilizada para determinar la alternativa más conveniente.
+
+`RetailStoreRef` representa únicamente una referencia al establecimiento, preservando la separación respecto del modelo interno de Merchant Management.
+
+![Catalog and Pricing Class Diagram](../assets/architecture/classes/catalog-pricing.png)
+
+#### Route Planning
+
+El Bounded Context **Route Planning** representa la generación y optimización de recorridos entre múltiples establecimientos.
+
+El aggregate `MultiStopRoute` administra las diferentes paradas mediante objetos `RouteStop` y contiene las operaciones necesarias para agregar, eliminar y reordenar establecimientos, además de calcular el ahorro neto asociado a una ruta.
+
+`RoutePlanningService` coordina la generación, recálculo y confirmación de rutas, mientras que `RoutingGateway` abstrae el acceso al servicio externo de mapas y ruteo.
+
+Para mantener el aislamiento del contexto, conceptos pertenecientes a otros dominios se representan mediante elementos locales como `ShoppingPlanRef`, `ProductRequirement` y `StoreCandidate`.
+
+![Route Planning Class Diagram](../assets/architecture/classes/route-planning.png)
+
+#### Merchant Management
+
+El Bounded Context **Merchant Management** concentra las capacidades relacionadas con la afiliación y administración de establecimientos.
+
+`MerchantProfile` representa el perfil comercial y mantiene su estado de verificación. Un Merchant puede administrar uno o varios objetos `RetailStore`, los cuales contienen los elementos de inventario y promociones correspondientes.
+
+`InventoryItem` encapsula operaciones relacionadas con stock y precio, mientras que `Promotion` representa ofertas con un período de vigencia definido.
+
+La interfaz `RucVerificationGateway` abstrae la comunicación con el servicio externo utilizado para validar la información fiscal del Merchant.
+
+![Merchant Management Class Diagram](../assets/architecture/classes/merchant-management.png)
+
+#### Community Price Verification
+
+El Bounded Context **Community Price Verification** administra las observaciones y discrepancias de precios reportadas por los usuarios.
+
+`PriceDiscrepancy` representa una diferencia detectada entre un precio esperado y uno observado y puede recibir múltiples `PriceObservation` y `VerificationConfirmation`.
+
+La clase `TrustProfile` mantiene información local relacionada con la confiabilidad de las contribuciones realizadas por un usuario. Por otro lado, `VerificationPolicy` encapsula las reglas necesarias para aceptar, rechazar o solicitar revisión adicional de una discrepancia.
+
+Los objetos `UserRef` y `StoreProductRef` actúan como referencias hacia información perteneciente a otros Bounded Contexts sin introducir sus modelos internos directamente.
+
+![Community Price Verification Class Diagram](../assets/architecture/classes/community-price-verification.png)
+
+#### Analytics and Engagement
+
+El Bounded Context **Analytics and Engagement** se encarga de registrar eventos relevantes y transformarlos en métricas útiles para los comerciantes.
+
+`MetricEvent` representa interacciones como visitas a establecimientos, visualizaciones de productos, comparaciones de precios, ventas perdidas e interacciones con promociones.
+
+`AnalyticsService` registra dichos eventos y genera posteriormente objetos `MerchantMetrics` y `MerchantReport`. La interfaz `MetricsCalculator` abstrae la lógica utilizada para calcular las métricas correspondientes a un período determinado.
+
+De esta manera, el contexto mantiene separada la recopilación de eventos de la generación de información analítica destinada al Merchant.
+
+![Analytics and Engagement Class Diagram](../assets/architecture/classes/analytics-engagement.png)
+
+
+En conjunto, los Class Diagrams permiten representar la estructura interna de cada Bounded Context sin construir un único modelo global compartido. Esta separación mantiene alineado el diseño orientado a objetos con las fronteras establecidas mediante Domain-Driven Design y facilita que cada módulo evolucione manteniendo responsabilidades claramente delimitadas.
 
 ## 4.8. Database Design
 
-[Contenido]
+El diseño de base de datos de PeruTech se organiza siguiendo los límites definidos previamente mediante Domain-Driven Design. En lugar de representar el almacenamiento únicamente como un modelo relacional global, se presentan vistas específicas para cada Bounded Context con el objetivo de evidenciar qué información pertenece a cada parte del dominio.
+
+Cada diagrama identifica las entidades persistentes, sus atributos principales, claves primarias, claves foráneas, restricciones de unicidad y relaciones. Cuando un contexto necesita referenciar información perteneciente a otro Bounded Context, dicha dependencia se representa mediante identificadores marcados como referencias externas (`REF`), evitando asumir que la entidad referenciada pertenece al mismo modelo.
+
+Adicionalmente, se incluye una vista general de la base de datos que permite observar la integración global de la información persistida por PeruTech.
 
 ### 4.8.1. Database Diagrams
 
-[Contenido]
+Los Database Diagrams de PeruTech se presentan primero mediante una vista general y posteriormente mediante vistas específicas para cada Bounded Context.
+
+#### Database Overview
+
+El Database Overview muestra la estructura relacional completa propuesta para PeruTech y permite visualizar las principales relaciones entre usuarios, comerciantes, establecimientos, productos, planificación de compras, rutas, verificación comunitaria de precios y analítica.
+
+La vista global también evidencia restricciones importantes del modelo, como la unicidad de correos y roles, la relación entre usuarios y perfiles de comerciantes, la unicidad de un producto por establecimiento dentro del catálogo, la secuencia única de paradas dentro de una ruta y la asociación de métricas y reportes con establecimientos.
+
+![PeruTech Database Overview](../assets/architecture/database/database-overview.png)
+
+#### Identity and Access
+
+El modelo de persistencia de **Identity and Access** administra la información necesaria para la identificación, autorización y manejo de sesiones.
+
+La tabla `users` almacena las cuentas registradas, mientras que `roles` y `permissions` representan los mecanismos de autorización. Las tablas intermedias `user_roles` y `role_permissions` modelan las relaciones de muchos a muchos existentes entre usuarios, roles y permisos.
+
+Finalmente, `auth_sessions` registra las sesiones asociadas a cada usuario, incluyendo su fecha de emisión, expiración y estado de revocación.
+
+![Identity and Access Database Diagram](../assets/architecture/database/identity-access.png)
+
+#### Shopping Planning
+
+El Bounded Context **Shopping Planning** persiste la información relacionada con la planificación de compras.
+
+`shopping_lists` representa las listas creadas por los usuarios, mientras que `shopping_list_items` almacena los productos requeridos, cantidades, precios estimados y estado de compra.
+
+La tabla `shopping_list_members` permite relacionar otros usuarios con una lista determinada y `purchase_budgets` almacena los presupuestos asociados a cada planificación.
+
+Los identificadores de usuario son referencias hacia Identity and Access y los identificadores de producto corresponden a información administrada por Catalog and Pricing.
+
+![Shopping Planning Database Diagram](../assets/architecture/database/shopping-planning.png)
+
+#### Catalog and Pricing
+
+El modelo de **Catalog and Pricing** almacena los productos disponibles y la información necesaria para realizar comparaciones de precios.
+
+La tabla `products` contiene la información base de cada producto. `catalog_entries` representa la oferta de un producto dentro de un establecimiento determinado e incluye su precio unitario, disponibilidad y fecha de actualización.
+
+Adicionalmente, `price_snapshots` permite conservar registros históricos de precios asociados a una entrada del catálogo.
+
+La combinación entre establecimiento y producto debe ser única dentro de `catalog_entries`. El identificador del establecimiento actúa como referencia hacia Merchant Management.
+
+![Catalog and Pricing Database Diagram](../assets/architecture/database/catalog-pricing.png)
+
+#### Route Planning
+
+El Bounded Context **Route Planning** mantiene la información relacionada con las rutas calculadas para una planificación de compras.
+
+La tabla `routes` almacena los datos principales del recorrido, tales como distancia, duración estimada, costo de desplazamiento, ahorro neto y estado.
+
+Cada ruta se compone de múltiples `route_stops`, los cuales almacenan el establecimiento correspondiente, el orden dentro de la ruta y la hora estimada de llegada.
+
+La combinación entre una ruta y su número de secuencia debe ser única. `shopping_list_id` referencia información proveniente de Shopping Planning y `store_id` corresponde a establecimientos administrados por Merchant Management.
+
+![Route Planning Database Diagram](../assets/architecture/database/route-planning.png)
+
+#### Merchant Management
+
+El Bounded Context **Merchant Management** persiste la información necesaria para administrar comerciantes y establecimientos.
+
+`merchant_profiles` representa el perfil comercial y su estado de verificación fiscal. Un perfil puede administrar múltiples registros `retail_stores`, los cuales almacenan datos del establecimiento y su ubicación.
+
+`inventory_items` representa los productos gestionados dentro de cada establecimiento, incluyendo stock, precio y estado de disponibilidad.
+
+Finalmente, `promotions` registra las promociones asociadas a elementos del inventario y mantiene sus períodos de vigencia.
+
+El campo `product_id` de inventario funciona como una referencia hacia Catalog and Pricing.
+
+![Merchant Management Database Diagram](../assets/architecture/database/merchant-management.png)
+
+#### Community Price Verification
+
+El modelo de persistencia de **Community Price Verification** permite almacenar reportes y evidencias relacionadas con discrepancias de precios.
+
+`price_discrepancies` representa diferencias reportadas entre un precio esperado y uno observado. Cada discrepancia puede recibir múltiples registros `price_observations`, los cuales contienen el precio observado, fecha y origen de la observación.
+
+Asimismo, `verification_confirmations` registra las confirmaciones realizadas por otros usuarios y `trust_profiles` mantiene información relacionada con el nivel de confianza de las contribuciones realizadas por cada usuario.
+
+Las referencias hacia productos y usuarios pertenecen respectivamente a Catalog and Pricing e Identity and Access.
+
+![Community Price Verification Database Diagram](../assets/architecture/database/community-price-verification.png)
+
+#### Analytics and Engagement
+
+El Bounded Context **Analytics and Engagement** almacena eventos de interacción y los resultados analíticos generados a partir de ellos.
+
+`analytics_events` registra eventos relevantes mediante un tipo, una fecha de ocurrencia, un sujeto asociado y metadatos adicionales.
+
+A partir de estos eventos pueden generarse registros `merchant_metrics`, los cuales consolidan indicadores como tráfico mensual, ventas perdidas y engagement dentro de un período determinado.
+
+La tabla `merchant_reports` representa los reportes generados para un establecimiento, incluyendo el tipo de reporte, período analizado y fecha de generación.
+
+Los identificadores de establecimiento utilizados por métricas y reportes actúan como referencias hacia Merchant Management.
+
+![Analytics and Engagement Database Diagram](../assets/architecture/database/analytics-engagement.png)
+
+En conjunto, estos diagramas permiten mantener una visión global de la persistencia de PeruTech y, al mismo tiempo, conservar los límites definidos entre los Bounded Contexts. Las referencias externas entre contextos se representan mediante identificadores, mientras que las relaciones internas utilizan claves primarias, claves foráneas y restricciones propias de cada modelo.
+
 
 ---
 

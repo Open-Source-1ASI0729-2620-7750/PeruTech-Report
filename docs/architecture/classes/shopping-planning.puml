@@ -1,0 +1,89 @@
+@startuml PeruTech_Shopping_Planning_Classes
+
+title PeruTech - Shopping Planning Class Diagram
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+
+interface ShoppingRepository {
+    +findListById(id: UUID): ShoppingList
+    +save(list: ShoppingList): void
+}
+
+interface BudgetPolicy {
+    +canAllocate(amount: Money, budget: PurchaseBudget): Boolean
+}
+
+class ShoppingPlanningService {
+    +createList(ownerId: UUID, name: String): ShoppingList
+    +addProduct(list: ShoppingList, productId: UUID, quantity: Decimal): ShoppingListItem
+    +planBudget(list: ShoppingList, amount: Money): PurchaseBudget
+}
+
+class ShoppingList {
+    -id: UUID
+    -ownerId: UUID
+    -name: String
+    -status: ListStatus
+    +addItem(requirement: ProductRequirement, quantity: Decimal): ShoppingListItem
+    +removeItem(itemId: UUID): void
+    +markItemPurchased(itemId: UUID): void
+    +calculateEstimatedTotal(): Money
+    +assignBudget(budget: PurchaseBudget): void
+    +complete(): void
+}
+
+class ShoppingListItem {
+    -id: UUID
+    -quantity: Decimal
+    -estimatedUnitPrice: Money
+    -purchased: Boolean
+    +changeQuantity(quantity: Decimal): void
+    +updateEstimatedPrice(price: Money): void
+    +markPurchased(): void
+}
+
+class ProductRequirement {
+    -productId: UUID
+    -requestedName: String
+    +matchesProduct(productId: UUID): Boolean
+}
+
+class PurchaseBudget {
+    -id: UUID
+    -limit: Money
+    -reserved: Money
+    +reserve(amount: Money): void
+    +release(amount: Money): void
+    +canAfford(amount: Money): Boolean
+    +remaining(): Money
+}
+
+class Money {
+    -amount: Decimal
+    -currency: String
+    +add(other: Money): Money
+    +subtract(other: Money): Money
+    +isGreaterThan(other: Money): Boolean
+}
+
+enum ListStatus {
+    DRAFT
+    ACTIVE
+    COMPLETED
+}
+
+ShoppingPlanningService ..> ShoppingRepository : persists
+ShoppingPlanningService ..> BudgetPolicy : validates
+ShoppingList "1" *-- "0..*" ShoppingListItem : contains
+ShoppingListItem "*" --> "1" ProductRequirement : requests
+ShoppingList "1" --> "0..1" PurchaseBudget : controls
+ShoppingListItem "*" --> "1" Money : prices
+
+note right of ShoppingList
+  At most one active PurchaseBudget
+  may be assigned to a ShoppingList.
+end note
+
+@enduml

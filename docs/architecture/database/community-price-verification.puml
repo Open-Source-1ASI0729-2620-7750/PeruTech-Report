@@ -1,0 +1,58 @@
+@startuml PeruTech_DB_Community_Price_Verification
+
+title PeruTech - Community Price Verification Database Diagram
+
+hide circle
+skinparam linetype ortho
+
+entity price_observations {
+    * id : UUID <<PK>>
+    --
+    catalog_entry_id : UUID <<REF>>
+    discrepancy_id : UUID <<FK>>
+    observer_id : UUID <<REF>>
+    observed_price : DECIMAL
+    observed_at : TIMESTAMP
+    source : VARCHAR
+}
+
+entity price_discrepancies {
+    * id : UUID <<PK>>
+    --
+    catalog_entry_id : UUID <<REF>>
+    reporter_id : UUID <<REF>>
+    expected_price : DECIMAL
+    observed_price : DECIMAL
+    status : VARCHAR
+}
+
+entity verification_confirmations {
+    * id : UUID <<PK>>
+    --
+    discrepancy_id : UUID <<FK>>
+    confirmer_id : UUID <<REF>>
+    created_at : TIMESTAMP
+}
+
+entity trust_profiles {
+    * id : UUID <<PK>>
+    --
+    user_id : UUID <<UQ>>
+    score : DECIMAL
+    level : VARCHAR
+}
+
+price_discrepancies ||--o{ verification_confirmations
+price_discrepancies ||--o{ price_observations : supported by
+
+note right of price_observations
+  catalog_entry_id belongs to
+  Catalog and Pricing.
+end note
+
+note right of verification_confirmations
+  confirmer_id and reporter_id belong to
+  Identity and Access.
+end note
+
+@enduml

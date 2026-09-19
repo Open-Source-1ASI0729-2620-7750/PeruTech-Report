@@ -1,0 +1,73 @@
+@startuml PeruTech_Identity_Access_Classes
+
+title PeruTech - Identity and Access Class Diagram
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+
+interface IdentityRepository {
+    +findByEmail(email: String): User
+    +save(user: User): void
+}
+
+interface AccessPolicy {
+    +allows(user: User, permission: Permission): Boolean
+}
+
+class IdentityService {
+    +authenticate(email: String, credential: String): AuthSession
+    +revoke(session: AuthSession): void
+    +assignRole(user: User, role: Role): void
+}
+
+class User {
+    -id: UUID
+    -email: String
+    -status: AccountStatus
+    +authenticate(credential: String): AuthSession
+    +assignRole(role: Role): void
+    +deactivate(): void
+    +can(permission: Permission): Boolean
+}
+
+class AuthSession {
+    -id: UUID
+    -issuedAt: DateTime
+    -expiresAt: DateTime
+    -revoked: Boolean
+    +isActiveAt(moment: DateTime): Boolean
+    +revoke(): void
+}
+
+class Role {
+    -name: RoleName
+    +grant(permission: Permission): void
+    +allows(permission: Permission): Boolean
+}
+
+class Permission {
+    -resource: String
+    -action: String
+    +matches(resource: String, action: String): Boolean
+}
+
+enum AccountStatus {
+    ACTIVE
+    SUSPENDED
+    DEACTIVATED
+}
+
+enum RoleName {
+    BUYER
+    MERCHANT
+}
+
+IdentityService ..> IdentityRepository : loads and saves
+IdentityService ..> AccessPolicy : authorizes
+User "1" *-- "0..*" AuthSession : owns
+User "1" o-- "1..*" Role : has
+Role "1" o-- "1..*" Permission : grants
+IdentityService ..> User : authenticates
+
+@enduml

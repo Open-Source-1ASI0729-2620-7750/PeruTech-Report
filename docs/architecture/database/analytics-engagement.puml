@@ -1,0 +1,52 @@
+@startuml PeruTech_DB_Analytics_Engagement
+
+title PeruTech - Analytics and Engagement Database Diagram
+
+hide circle
+skinparam linetype ortho
+
+entity analytics_events {
+    * id : UUID <<PK>>
+    --
+    subject_id : UUID <<REF>>
+    event_type : VARCHAR
+    occurred_at : TIMESTAMP
+    metadata : JSON
+}
+
+entity merchant_metrics {
+    * id : UUID <<PK>>
+    --
+    store_id : UUID <<REF>>
+    period_from : TIMESTAMP
+    period_to : TIMESTAMP
+    monthly_traffic : INTEGER
+    lost_sales : DECIMAL
+    engagement_score : DECIMAL
+}
+
+entity merchant_reports {
+    * id : UUID <<PK>>
+    --
+    store_id : UUID <<REF>>
+    report_type : VARCHAR
+    period_from : TIMESTAMP
+    period_to : TIMESTAMP
+    generated_at : TIMESTAMP
+}
+
+note right of merchant_metrics
+  Derived from analytics_events
+  for a reporting period; store_id belongs
+  to Merchant Management.
+end note
+
+note right of merchant_reports
+  report_type includes:
+  MONTHLY_TRAFFIC,
+  LOST_SALES and ENGAGEMENT.
+  Reports are generated from metrics
+  and events for the same period.
+end note
+
+@enduml

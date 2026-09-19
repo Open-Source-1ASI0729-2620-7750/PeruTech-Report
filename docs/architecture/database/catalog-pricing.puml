@@ -1,0 +1,44 @@
+@startuml PeruTech_DB_Catalog_Pricing
+
+title PeruTech - Catalog and Pricing Database Diagram
+
+hide circle
+skinparam linetype ortho
+
+entity products {
+    * id : UUID <<PK>>
+    --
+    name : VARCHAR
+    brand : VARCHAR
+    category : VARCHAR
+    unit : VARCHAR
+}
+
+entity catalog_entries {
+    * id : UUID <<PK>>
+    --
+    store_id : UUID <<REF>>
+    product_id : UUID <<FK>>
+    unit_price : DECIMAL
+    stock_status : VARCHAR
+    updated_at : TIMESTAMP
+}
+
+entity price_snapshots {
+    * id : UUID <<PK>>
+    --
+    catalog_entry_id : UUID <<FK>>
+    unit_price : DECIMAL
+    captured_at : TIMESTAMP
+}
+
+products ||--o{ catalog_entries
+catalog_entries ||--o{ price_snapshots
+
+note right of catalog_entries
+  UNIQUE(store_id, product_id)
+  store_id belongs to
+  Merchant Management.
+end note
+
+@enduml

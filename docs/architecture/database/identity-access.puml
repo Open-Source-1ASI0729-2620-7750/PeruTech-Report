@@ -1,0 +1,57 @@
+@startuml PeruTech_DB_Identity_Access
+
+title PeruTech - Identity and Access Database Diagram
+
+hide circle
+skinparam linetype ortho
+
+entity users {
+    * id : UUID <<PK>>
+    --
+    email : VARCHAR <<UQ>>
+    status : VARCHAR
+}
+
+entity roles {
+    * id : UUID <<PK>>
+    --
+    name : VARCHAR <<UQ>>
+}
+
+entity permissions {
+    * id : UUID <<PK>>
+    --
+    resource : VARCHAR
+    action : VARCHAR
+}
+
+entity user_roles {
+    * user_id : UUID <<PK, FK>>
+    * role_id : UUID <<PK, FK>>
+}
+
+entity role_permissions {
+    * role_id : UUID <<PK, FK>>
+    * permission_id : UUID <<PK, FK>>
+}
+
+entity auth_sessions {
+    * id : UUID <<PK>>
+    --
+    user_id : UUID <<FK>>
+    issued_at : TIMESTAMP
+    expires_at : TIMESTAMP
+    revoked : BOOLEAN
+}
+
+users ||--o{ user_roles
+roles ||--o{ user_roles
+roles ||--o{ role_permissions
+permissions ||--o{ role_permissions
+users ||--o{ auth_sessions
+
+note right of permissions
+  UNIQUE(resource, action)
+end note
+
+@enduml

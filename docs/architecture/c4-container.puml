@@ -1,0 +1,39 @@
+@startuml PeruTech_C4_Container
+
+!include <C4/C4_Container>
+
+LAYOUT_LEFT_RIGHT()
+
+title PeruTech - Software Architecture Container Diagram
+
+Person(buyer, "Buyer", "Plans purchases, compares prices, manages shopping lists and budgets, generates routes and reports price discrepancies.")
+
+Person(merchant, "Merchant", "Manages store information, catalog, prices, availability, inventory, offers and business metrics.")
+
+System_Ext(routing, "Mapping & Routing Service", "Provides geolocation, distances, travel times and optimized routes.")
+
+System_Ext(ruc, "RUC Verification Service", "Validates merchant fiscal information during store affiliation.")
+
+System_Boundary(perutech, "PeruTech") {
+    Container(landing, "Landing Page", "HTML5, CSS3, JavaScript", "Presents the product value proposition and routes users to the appropriate PeruTech experience.")
+
+    Container(web, "Angular Web Application", "Angular, TypeScript, Angular Material", "Responsive application that exposes Buyer and Merchant functionality according to the authenticated user's role.")
+
+    Container(api, "PeruTech REST API", "Java, Spring Boot, Spring Data JPA", "Provides the application boundary for identity, shopping planning, catalog and pricing, routes, merchant management, community verification and analytics.")
+
+    ContainerDb(database, "Relational Database", "Relational Database", "Persists PeruTech operational data without assuming a specific database engine.")
+}
+
+Rel(buyer, landing, "Discovers PeruTech", "HTTPS")
+Rel(merchant, landing, "Discovers PeruTech", "HTTPS")
+Rel(buyer, web, "Uses role-specific features", "HTTPS")
+Rel(merchant, web, "Uses role-specific features", "HTTPS")
+Rel(landing, web, "Links to the responsive application", "HTTPS")
+Rel(web, api, "Invokes application use cases", "HTTPS / JSON")
+Rel(api, database, "Reads and writes operational data", "SQL")
+Rel(api, routing, "Requests geolocation, distances, travel times and routes", "HTTPS / REST API")
+Rel(api, ruc, "Requests merchant fiscal validation", "HTTPS / REST API")
+
+SHOW_LEGEND()
+
+@enduml

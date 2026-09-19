@@ -1,0 +1,62 @@
+@startuml PeruTech_DB_Shopping_Planning
+
+title PeruTech - Shopping Planning Database Diagram
+
+hide circle
+skinparam linetype ortho
+
+entity shopping_lists {
+    * id : UUID <<PK>>
+    --
+    owner_id : UUID <<REF>>
+    name : VARCHAR
+    status : VARCHAR
+    created_at : TIMESTAMP
+}
+
+entity shopping_list_members {
+    * shopping_list_id : UUID <<PK, FK>>
+    * user_id : UUID <<PK, REF>>
+    --
+    member_role : VARCHAR
+}
+
+entity shopping_list_items {
+    * id : UUID <<PK>>
+    --
+    shopping_list_id : UUID <<FK>>
+    product_id : UUID <<REF>>
+    quantity : DECIMAL
+    estimated_unit_price : DECIMAL
+    purchased : BOOLEAN
+}
+
+entity purchase_budgets {
+    * id : UUID <<PK>>
+    --
+    shopping_list_id : UUID <<FK>>
+    amount : DECIMAL
+    currency : VARCHAR
+    status : VARCHAR
+}
+
+shopping_lists ||--o{ shopping_list_members
+shopping_lists ||--o{ shopping_list_items
+shopping_lists ||--o{ purchase_budgets
+
+note right of shopping_lists
+  owner_id and member user_id belong to
+  Identity and Access.
+end note
+
+note right of shopping_list_items
+  product_id belongs to
+  Catalog and Pricing.
+end note
+
+note right of purchase_budgets
+  Business rule:
+  one ACTIVE budget per list.
+end note
+
+@enduml
