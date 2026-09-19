@@ -343,47 +343,52 @@ El proceso de Lean UX adoptado por PeruTech establece un marco de validación co
 4. **Feature Assumption 4 (Consola de Gestión y Promociones para Comerciantes):** Creemos que desarrollar una consola simplificada para el registro rápido de catálogos y promociones georreferenciadas incrementará la afluencia de clientes de proximidad hacia los comercios minoristas.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
-*   **Hypothesis Statement 1 (basado en Feature Assumption 1: Comparador de Canasta Integral):**
-    *   **We believe we will achieve** a 70% rate of active users completing at least one guided purchase in their first month and a overall platform user retention above 40%
-    *   **If** families and young adults managing a tight budget
+
+*   **Hypothesis Statement 1 (basado en Feature Assumption 1: Comparador de Canasta Multi-establecimiento):**
+    *   **We believe we will achieve** a 70% rate of active users completing at least one guided purchase in their first month and an overall platform user retention above 40%
+    *   **If** independent buyers managing a tight budget
     *   **Attain** an accurate, pre-calculated total cost of their entire shopping list before leaving home
-    *   **With** a comprehensive multi-store basket comparison engine (**Comparador de Canasta Integral**).
+    *   **With** a comprehensive multi-store basket comparison engine (**Comparador de Canasta Multi-establecimiento**).
 
-*   **Hypothesis Statement 2 (basado en Feature Assumption 2: Calculador de Ruta con Límite de Gasto):**
+*   **Hypothesis Statement 2 (basado en Feature Assumption 2: Optimizador de Rutas según Presupuesto Límite):**
     *   **We believe we will achieve** an average reduction of 25% in the time users spend completing multi-store purchases
-    *   **If** urban shoppers looking to maximize both their time and money
+    *   **If** busy urban independent buyers looking to maximize both their time and money
     *   **Attain** optimized shopping itineraries that strictly respect their maximum budget and transportation choices
-    *   **With** an interactive route calculator with budget caps (**Calculador de Ruta con Límite de Gasto**).
+    *   **With** an interactive route calculator with budget caps (**Optimizador de Rutas según Presupuesto Límite**).
 
-*   **Hypothesis Statement 3 (basado en Feature Assumption 3: Validador de Precios por Usuarios):**
+*   **Hypothesis Statement 3 (basado en Feature Assumption 3: Módulo de Verificación Colaborativa de Precios):**
     *   **We believe we will achieve** an 80% price verification accuracy rate between reported shelf prices and actual checkout counter costs
     *   **If** active members of the shopping community
     *   **Attain** high trust in platform data accuracy and recognition for contributing real-time updates
-    *   **With** a crowd-sourced price reporting and verification system (**Validador de Precios por Usuarios**).
+    *   **With** a crowd-sourced price reporting and verification system (**Módulo de Verificación Colaborativa de Precios**).
 
-*   **Hypothesis Statement 4 (basado en Feature Assumption 4: Panel de Ofertas para Comercio):**
+*   **Hypothesis Statement 4 (basado en Feature Assumption 4: Consola de Gestión y Promociones para Comerciantes):**
     *   **We believe we will achieve** a 20% drop in food waste/expiration and a 60% rate of partner stores reporting increased foot traffic
-    *   **If** local retail store managers dealing with overstocked inventory
+    *   **If** proximity retail merchants dealing with overstocked inventory
     *   **Attain** immediate local visibility for time-sensitive discounts to draw nearby shoppers into their physical stores
-    *   **With** a fast-publishing promotion dashboard for store managers (**Panel de Ofertas para Comercio**).
+    *   **With** a fast-publishing promotion dashboard for store managers (**Consola de Gestión y Promociones para Comerciantes**).
 
 #### 1.2.2.4. Lean UX Canvas
 
-<img src="/assets/lean-ux-canvas.png" alt="UPC Logo" width="150"/>
+A continuación se presenta el Lean UX Canvas sintetizado, articulando el problema de negocio, los segmentos, los beneficios esperados, las hipótesis operativas y las tácticas de aprendizaje validado para la plataforma **Preciazo**:
+
+<div align="center">
+  <img src="../assets/lean-ux-canvas.jpg" alt="Lean UX Canvas - Preciazo" width="850"/>
+</div>
+
+<br>
 
 ## 1.3. Segmentos objetivo
 
-### 1. Compradores Multitienda y Optimizadores de Desplazamiento 
-Este grupo está integrado principalmente por personas de 20 a 50 años que residen en zonas urbanas y pertenecen a los niveles socioeconómicos B y C. Debido a que representan la mayor parte del gasto en alimentos del hogar, su comportamiento de compra se ha vuelto más cauteloso, repartiendo sus compras entre distintas tiendas para cuidar el presupuesto (Kantar Worldpanel, 2025). Ante el incremento en el costo de vida, estos compradores prefieren planificar sus compras con anticipación. Esto genera la necesidad de contar con soluciones digitales sencillas que eliminen la duda sobre dónde comprar más barato, permitiéndoles organizar su lista de forma eficiente para proteger su dinero (BCRP, 2025).
+### 1. Compradores Independientes
+Este segmento comprende a estudiantes universitarios, jóvenes profesionales independientes y responsables del aprovisionamiento familiar que residen en áreas urbanas de Lima Metropolitana, concentrándose en los niveles socioeconómicos (NSE) B y C. Demográficamente, se sitúan en un rango etario de 18 a 50 años, disponen de conectividad constante mediante teléfonos inteligentes y presentan hábitos de consumo orientados a la optimización presupuestaria. 
 
-### 2. Comerciantes Minoristas y Administradores de Tiendas Locales
-Este segmento abarca a los comercios del sector minorista moderno, organizados en dos formatos principales que compiten diariamente por atraer clientes:
-*   **Tiendas de Proximidad:** Cadenas de conveniencia y tiendas de descuento, enfocadas en compras rápidas, de paso o para cubrir emergencias del día.
-*   **Supermercados de Mayor Tamaño:** Establecimientos orientados a compras semanales o mensuales de mayor volumen, donde compiten mediante marcas propias y ofertas especiales por paquete (KPMG, 2025).
+A nivel estadístico, los estratos B y C destinan entre el 35% y el 45% de sus ingresos mensuales a la adquisición de alimentos y bienes de primera necesidad (INEI, 2026). Asimismo, el 41% de los consumidores peruanos ha adoptado conductas de compra omnicanal y multitienda para mitigar la inflación de la canasta básica, dividiendo sus transacciones en distintos puntos de venta para capturar ofertas (Kantar Worldpanel, 2025). Este grupo experimenta fricciones operativas causadas por la falta de transparencia en los precios físicos y la dispersión geográfica comercial, lo que incrementa hasta en un 20% sus gastos imprevistos de transporte urbano (Sabagh Nejad & Fazekas, 2022). Requieren una herramienta accesible desde el navegador móvil que les permita contrastar costos consolidados y trazar rutas eficientes sin incurrir en desplazamientos infructuosos.
 
-Para ambos formatos funciona como un canal directo de atracción de público: ayuda a que las tiendas de conveniencia vendan más rápido sus ofertas del día y a que los supermercados muestren su competitividad en compras grandes, asegurando que más clientes crucen sus puertas.
+### 2. Comerciantes Minoristas
+Este segmento abarca a los propietarios, administradores y encargados de establecimientos comerciales de proximidad (bodegas estructuradas, minimarkets, discounters y puestos feriales) ubicados en zonas de alta densidad comercial en Lima Metropolitana. En términos de perfil operativo, gestionan inventarios de alta y mediana rotación, cuentan con equipos de cómputo básico o dispositivos móviles para la administración del local y dependen de una clientela concentrada en un radio de 500 metros a 1.5 kilómetros a la redonda.
 
----
+En el Perú, el comercio minorista representa más del 12% del Producto Bruto Interno y agrupa a miles de unidades económicas donde la merma y el estancamiento de inventario perecible suponen pérdidas operativas directas de entre el 3% y el 7% de sus ingresos brutos (BCRP, 2025). Pese a la competencia del retail moderno, cerca del 70% de estos negocios carece de plataformas digitales integradas de bajo costo para publicitar liquidaciones puntuales a compradores locales (KPMG, 2025). En consecuencia, este segmento requiere una consola digital ágil y simplificada que les permita anunciar promociones georreferenciadas en tiempo real, impulsando el flujo peatonal presencial (*foot traffic*) y dinamizando la salida de stock antes de su vencimiento.
 
 # Capítulo II: Requirements Elicitation & Analysis
 
