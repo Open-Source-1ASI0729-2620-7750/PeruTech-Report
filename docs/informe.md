@@ -42,24 +42,20 @@ Proyecto
 <td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Capillo Lema, Mía Valentina</td>
 </tr>
 <tr style="background: none !important; border: none !important;">
-<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">[Código]</td>
-<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">[Apellidos y Nombres]</td>
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U20221A525</td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Pardo Chumpitazi, Kevin Patrick</td>
 </tr>
 <tr style="background: none !important; border: none !important;">
-<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">[Código]</td>
-<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">[Apellidos y Nombres]</td>
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U20221B756</td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Becerra Durand, Sebastian Uriel</td>
 </tr>
 <tr style="background: none !important; border: none !important;">
-<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">[Código]</td>
-<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">[Apellidos y Nombres]</td>
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U20231B331</td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Miranda Romero, Sergio Luis</td>
 </tr>
 <tr style="background: none !important; border: none !important;">
-<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">[Código]</td>
-<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">[Apellidos y Nombres]</td>
-</tr>
-<tr style="background: none !important; border: none !important;">
-<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">[Código]</td>
-<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">[Apellidos y Nombres]</td>
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U202124030</td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Casos Torre, Miguel Andre</td>
 </tr>
 </table>
 </div>
@@ -78,10 +74,16 @@ Proyecto
 
 # Registro de Versiones del Informe
 
-| Versión | Fecha | Autor | Descripción de modificación |
-|--------|------|------|-----------------------------|
-| 1.0 | 06/09/2026 | Capillo Lema, Mía Valentina   | Creación inicial del informe |
-| | | | |
+| Versión | Fecha      | Autor                           | Descripción de modificación |
+|---------|------------|---------------------------------|-----------------------------|
+| 1.0     | 06/09/2026 | Capillo Lema, Mía Valentina     | Creación inicial del informe. |
+| 1.1     | 18/09/2026 | Becerra Durand, Sebastian Uriel | Incorporación del registro de entrevista al segmento de comerciantes minoristas en la sección 2.2.2. |
+| 1.2     | 18/09/2026 | Miranda Romero, Sergio Luis     | Especificación de requerimientos del Capítulo III (User Stories, Impact Mapping y Product Backlog). |
+| 1.3     | 18/09/2026 | Casós Torre, Miguel André       | Realización de entrevista, diagramas DDD y aportes al Capítulo I. |
+| 1.4     | 18/09/2026 | Capillo Lema, Mía Valentina     | Avance de secciones del Capítulo I, Style Guidelines y arquitectura. |
+| 1.5     | 19/09/2026 | Pardo Chumpitazi, Kevin Patrick | Corrección y estandarización integral del Capítulo I (Startup Profile, Solution Profile, Lean UX Process y criterios ABET). |
+| 1.6     | 19/09/2026 | Pardo Chumpitazi, Kevin Patrick | Finalización, estandarización de nomenclatura y cierre del Capítulo II (Competidores, Entrevistas, Needfinding, Event Storming y Ubiquitous Language). |
+| 1.7     | 19/09/2026 | Pardo Chumpitazi, Kevin Patrick | Revisión de consistencia, formato y enlaces técnicos en el Capítulo III. |
 
 ---
 
@@ -210,9 +212,9 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 *Capacidad de comunicarse efectivamente con un rango de audiencias. En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 3.*
 
 | Criterio específico | Acciones realizadas | Conclusiones |
-|---------------------|---------------------|--------------|
-| **Comunica oralmente con efectividad a diferentes rangos de audiencia.** | [Descripción de acciones realizadas] <br> **AV1** <br> [Evidencia] | [Conclusiones] |
-| **Comunica por escrito con efectividad a diferentes rangos de audiencia.** | [Descripción de acciones realizadas] <br> **AV1** <br> [Evidencia] | [Conclusiones] |
+|---------------------|----------------------|--------------|
+| **Comunica oralmente con efectividad a diferentes rangos de audiencia.** | Capillo Lema, Mía Valentina <br> **AV1** <br> Entrevisté a los usuarios del Segmento 1 adaptando mis preguntas a un lenguaje sencillo, y presenté las ideas clave de mi trabajo de forma clara y directa. <br><br> Pardo Chumpitazi, Kevin Patrick <br> **AV1** <br> Conduje las sesiones de alineamiento técnico para definir la arquitectura de GitFlow y el uso de Conventional Commits, transmitiendo de manera clara las directrices de control de versiones y estándares de documentación al equipo. <br><br> Becerra Durand, Sebastian Uriel <br> **AV1** <br> Conduje la entrevista cualitativa a Laura Gamarra (Entrevista 2) en el Capítulo 2, adaptando el cuestionario a un lenguaje claro y recopilando de forma directa sus hábitos de compra, sensibilidad de precios y fricciones de movilidad. <br><br> Casós Torre, Miguel André <br> **AV1** <br> Participé en la discusión y explicación de decisiones relacionadas con el diseño y la arquitectura de Preciazo, comunicando al equipo los criterios utilizados para organizar los Bounded Contexts y representar la solución mediante diagramas técnicos.<br><br> Miranda Romero, Sergio Luis <br> **AV1** <br> Participé activamente en la discusión y alineamiento en equipo sobre la presentación del proyecto, transmitiendo las ideas clave del Capítulo 3 y aportando retroalimentación para estructurar una narrativa clara y coherente para la exposición. | Durante AV1, el equipo fortaleció su capacidad para comunicar ideas y decisiones del proyecto de manera clara, adaptando la explicación según el contexto y la audiencia. |
+| **Comunica por escrito con efectividad a diferentes rangos de audiencia.** | Capillo Lema, Mía Valentina <br> **AV1** <br> Redacté el resumen de las entrevistas, estructuré la documentación técnica con diagramas de Wireflow y User Flow, y usé mensajes de Git claros para coordinar el avance del repositorio. <br><br> Pardo Chumpitazi, Kevin Patrick <br> **AV1** <br> Elaboré y estandaricé las plantillas técnicas del informe, supervisando la trazabilidad de los commits, el orden formal del Registro de Versiones y la rigurosidad conceptual entre el problema del negocio y la arquitectura propuesta. <br><br> Becerra Durand, Sebastian Uriel <br> **AV1** <br> Redacté y documenté la bitácora y resumen de la entrevista 2 en la sección 2.2.2 del Capítulo 2, estructurando las respuestas empíricas para el análisis de requerimientos del segmento de compradores. <br><br> Casós Torre, Miguel André <br> **AV1** <br> Participé en la elaboración y revisión de documentación técnica del proyecto, incluyendo Domain-Driven Design, arquitectura C4, diagramas de clases y diseño de base de datos, procurando mantener una redacción clara y coherente entre los artefactos.<br><br> Miranda Romero, Sergio Luis <br> **AV1** <br> Redacté la especificación de requisitos del Capítulo 3 (historias de usuario, Impact Mapping y Product Backlog), adaptando el lenguaje mediante el estándar Gherkin para los desarrolladores y una redacción clara orientada al negocio para los stakeholders. | Durante AV1, el equipo aplicó comunicación escrita para documentar requisitos, decisiones de diseño y arquitectura, manteniendo consistencia entre el informe y los artefactos técnicos desarrollados. |
 
 ---
 
