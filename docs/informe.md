@@ -1268,11 +1268,112 @@ En conjunto, los Class Diagrams permiten representar la estructura interna de ca
 
 ## 4.8. Database Design
 
-[Contenido]
+El diseño de base de datos de PeruTech se organiza siguiendo los límites definidos previamente mediante Domain-Driven Design. En lugar de representar el almacenamiento únicamente como un modelo relacional global, se presentan vistas específicas para cada Bounded Context con el objetivo de evidenciar qué información pertenece a cada parte del dominio.
+
+Cada diagrama identifica las entidades persistentes, sus atributos principales, claves primarias, claves foráneas, restricciones de unicidad y relaciones. Cuando un contexto necesita referenciar información perteneciente a otro Bounded Context, dicha dependencia se representa mediante identificadores marcados como referencias externas (`REF`), evitando asumir que la entidad referenciada pertenece al mismo modelo.
+
+Adicionalmente, se incluye una vista general de la base de datos que permite observar la integración global de la información persistida por PeruTech.
 
 ### 4.8.1. Database Diagrams
 
-[Contenido]
+Los Database Diagrams de PeruTech se presentan primero mediante una vista general y posteriormente mediante vistas específicas para cada Bounded Context.
+
+#### Database Overview
+
+El Database Overview muestra la estructura relacional completa propuesta para PeruTech y permite visualizar las principales relaciones entre usuarios, comerciantes, establecimientos, productos, planificación de compras, rutas, verificación comunitaria de precios y analítica.
+
+La vista global también evidencia restricciones importantes del modelo, como la unicidad de correos y roles, la relación entre usuarios y perfiles de comerciantes, la unicidad de un producto por establecimiento dentro del catálogo, la secuencia única de paradas dentro de una ruta y la asociación de métricas y reportes con establecimientos.
+
+![PeruTech Database Overview](../assets/architecture/database/database-overview.png)
+
+#### Identity and Access
+
+El modelo de persistencia de **Identity and Access** administra la información necesaria para la identificación, autorización y manejo de sesiones.
+
+La tabla `users` almacena las cuentas registradas, mientras que `roles` y `permissions` representan los mecanismos de autorización. Las tablas intermedias `user_roles` y `role_permissions` modelan las relaciones de muchos a muchos existentes entre usuarios, roles y permisos.
+
+Finalmente, `auth_sessions` registra las sesiones asociadas a cada usuario, incluyendo su fecha de emisión, expiración y estado de revocación.
+
+![Identity and Access Database Diagram](../assets/architecture/database/identity-access.png)
+
+#### Shopping Planning
+
+El Bounded Context **Shopping Planning** persiste la información relacionada con la planificación de compras.
+
+`shopping_lists` representa las listas creadas por los usuarios, mientras que `shopping_list_items` almacena los productos requeridos, cantidades, precios estimados y estado de compra.
+
+La tabla `shopping_list_members` permite relacionar otros usuarios con una lista determinada y `purchase_budgets` almacena los presupuestos asociados a cada planificación.
+
+Los identificadores de usuario son referencias hacia Identity and Access y los identificadores de producto corresponden a información administrada por Catalog and Pricing.
+
+![Shopping Planning Database Diagram](../assets/architecture/database/shopping-planning.png)
+
+#### Catalog and Pricing
+
+El modelo de **Catalog and Pricing** almacena los productos disponibles y la información necesaria para realizar comparaciones de precios.
+
+La tabla `products` contiene la información base de cada producto. `catalog_entries` representa la oferta de un producto dentro de un establecimiento determinado e incluye su precio unitario, disponibilidad y fecha de actualización.
+
+Adicionalmente, `price_snapshots` permite conservar registros históricos de precios asociados a una entrada del catálogo.
+
+La combinación entre establecimiento y producto debe ser única dentro de `catalog_entries`. El identificador del establecimiento actúa como referencia hacia Merchant Management.
+
+![Catalog and Pricing Database Diagram](../assets/architecture/database/catalog-pricing.png)
+
+#### Route Planning
+
+El Bounded Context **Route Planning** mantiene la información relacionada con las rutas calculadas para una planificación de compras.
+
+La tabla `routes` almacena los datos principales del recorrido, tales como distancia, duración estimada, costo de desplazamiento, ahorro neto y estado.
+
+Cada ruta se compone de múltiples `route_stops`, los cuales almacenan el establecimiento correspondiente, el orden dentro de la ruta y la hora estimada de llegada.
+
+La combinación entre una ruta y su número de secuencia debe ser única. `shopping_list_id` referencia información proveniente de Shopping Planning y `store_id` corresponde a establecimientos administrados por Merchant Management.
+
+![Route Planning Database Diagram](../assets/architecture/database/route-planning.png)
+
+#### Merchant Management
+
+El Bounded Context **Merchant Management** persiste la información necesaria para administrar comerciantes y establecimientos.
+
+`merchant_profiles` representa el perfil comercial y su estado de verificación fiscal. Un perfil puede administrar múltiples registros `retail_stores`, los cuales almacenan datos del establecimiento y su ubicación.
+
+`inventory_items` representa los productos gestionados dentro de cada establecimiento, incluyendo stock, precio y estado de disponibilidad.
+
+Finalmente, `promotions` registra las promociones asociadas a elementos del inventario y mantiene sus períodos de vigencia.
+
+El campo `product_id` de inventario funciona como una referencia hacia Catalog and Pricing.
+
+![Merchant Management Database Diagram](../assets/architecture/database/merchant-management.png)
+
+#### Community Price Verification
+
+El modelo de persistencia de **Community Price Verification** permite almacenar reportes y evidencias relacionadas con discrepancias de precios.
+
+`price_discrepancies` representa diferencias reportadas entre un precio esperado y uno observado. Cada discrepancia puede recibir múltiples registros `price_observations`, los cuales contienen el precio observado, fecha y origen de la observación.
+
+Asimismo, `verification_confirmations` registra las confirmaciones realizadas por otros usuarios y `trust_profiles` mantiene información relacionada con el nivel de confianza de las contribuciones realizadas por cada usuario.
+
+Las referencias hacia productos y usuarios pertenecen respectivamente a Catalog and Pricing e Identity and Access.
+
+![Community Price Verification Database Diagram](../assets/architecture/database/community-price-verification.png)
+
+#### Analytics and Engagement
+
+El Bounded Context **Analytics and Engagement** almacena eventos de interacción y los resultados analíticos generados a partir de ellos.
+
+`analytics_events` registra eventos relevantes mediante un tipo, una fecha de ocurrencia, un sujeto asociado y metadatos adicionales.
+
+A partir de estos eventos pueden generarse registros `merchant_metrics`, los cuales consolidan indicadores como tráfico mensual, ventas perdidas y engagement dentro de un período determinado.
+
+La tabla `merchant_reports` representa los reportes generados para un establecimiento, incluyendo el tipo de reporte, período analizado y fecha de generación.
+
+Los identificadores de establecimiento utilizados por métricas y reportes actúan como referencias hacia Merchant Management.
+
+![Analytics and Engagement Database Diagram](../assets/architecture/database/analytics-engagement.png)
+
+En conjunto, estos diagramas permiten mantener una visión global de la persistencia de PeruTech y, al mismo tiempo, conservar los límites definidos entre los Bounded Contexts. Las referencias externas entre contextos se representan mediante identificadores, mientras que las relaciones internas utilizan claves primarias, claves foráneas y restricciones propias de cada modelo.
+
 
 ---
 
