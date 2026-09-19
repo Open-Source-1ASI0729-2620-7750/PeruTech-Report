@@ -1034,7 +1034,7 @@ El resultado del proceso permitió organizar el dominio en siete Bounded Context
 
 ### 4.6.2. Software Architecture Context Diagram
 
-[Contenido]
+
 
 ### 4.6.3. Software Architecture Container Diagrams
 
