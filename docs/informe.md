@@ -59,8 +59,8 @@ Proyecto
 <td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Miranda Romero, Sergio Luis</td>
 </tr>
 <tr style="background: none !important; border: none !important;">
-<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">[Código]</td>
-<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">[Apellidos y Nombres]</td>
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U202124030</td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Casos Torre, Miguel Andre</td>
 </tr>
 <tr style="background: none !important; border: none !important;">
 <td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">[Código]</td>
