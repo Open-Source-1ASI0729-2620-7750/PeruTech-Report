@@ -558,18 +558,24 @@ Laura prefiere realizar sus compras durante días laborables y aproximadamente e
 > *Figura 2.2: Registro audiovisual de la entrevista cualitativa a Laura Gamarra, representante del Segmento 1.*
 
 * **Entrevista 3:**
-  * **Nombre y Apellidos:** `[Pendiente: Colocar Nombres y Apellidos del Entrevistado 3]`
-  * **Edad:** `[Pendiente: Edad]`
-  * **Distrito de residencia:** `[Pendiente: Distrito]`
-  * **Ocupación:** `[Pendiente: Ocupación]`
+  * **Nombre y Apellidos:** `Danella Palacios`
+  * **Edad:** `19`
+  * **Distrito de residencia:** `Surco`
+  * **Ocupación:** `Estudiante`
   * **Plataforma de video:** Microsoft Stream
-  * **Enlace de Video:** `[Pendiente: URL de Microsoft Stream]`
+  * **Enlace de Video:** [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241c101_upc_edu_pe/IQBeRZULw_NIRK4BLM-8WdSdAVL58Y-wToNe5CeY1_QLawc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=kw5w1B)
   * **Marca de tiempo (Timing de inicio):** `[00:00]`
-  * **Duración:** `[hh:mm]`
-  * **Perfil técnico y entorno digital:** `[Pendiente: Dispositivos, Navegador, Canales y Personalidad]`
-  * **Resumen descriptivo:** `[Pendiente: Redactar resumen de respuestas del entrevistado 3]`
+  * **Duración:** `[03:43]`
+  * **Perfil técnico y entorno digital:** 
 
-![Screenshot Entrevista 3](assets/entrevista-3.png)
+  * **Dispositivos:** Celular y Computadora/Laptop.
+  * **Navegador:** Navegador web estándar (acceso a herramientas de hoja de cálculo).
+  * **Canales:** Redes sociales (Instagram) y aplicaciones financieras/comerciales (Yape).
+  * **Personalidad:** Organizada con el presupuesto, enfocada en el ahorro mediante promociones y prioriza la eficiencia en el uso de su tiempo.
+  * **Resumen descriptivo:** 
+  Prefiere concentrar todas sus compras en un solo establecimiento en una misma salida para optimizar su tiempo. Antes de salir de casa, busca ofertas y promociones activas mediante redes sociales (Instagram) y aplicaciones financieras como Yape. Realiza sus traslados en vehículo propio; por ello, el tiempo de viaje o la distancia no representan una limitante crítica, aunque identifica la congestión vehicular (tráfico nocturno en Lima) como su principal punto de dolor. Demuestra un alto nivel de organización financiera al gestionar el presupuesto familiar a través de un formulario integrado con Excel. Respecto a la adopción de una plataforma de comparación de precios y diseño de rutas, expresa interés condicionado a que la herramienta cuente con una interfaz intuitiva, sencilla y de fácil uso para su rutina diaria.
+
+![Screenshot Entrevista 3](/assets/entrevista-3.png)
 > *Figura 2.3: Registro audiovisual de la entrevista cualitativa 3.*
 
 ---
