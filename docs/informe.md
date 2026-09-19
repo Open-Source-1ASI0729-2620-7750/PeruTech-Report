@@ -269,14 +269,14 @@ Estudiante de pregrado de la carrera de Ingeniería de Software en la Universida
 * **Carrera:** Ingeniería de Software
 
 Estudiante de Ingeniería de Software en la UPC enfocado en el ciclo de vida del desarrollo de software, desde la conceptualización técnica hasta el despliegue de componentes backend y frontend. Aplica principios de modelado de datos, consumo de APIs y estandarización de código bajo flujos de trabajo en Git y marcos de trabajo ágiles (Scrum/Kanban). Se orienta al aprendizaje continuo de nuevos stacks tecnológicos y a la optimización de procesos dentro de equipos de desarrollo.
-
+<div align="left">
+  <img src="../assets/sebastian.png" alt="Sebastian Uriel Becerra Durand" width="200">
+</div>
 
 **Miranda Romero Sergio Luis**
 * **Código de estudiante:** U20231B331
 * **Carrera:** Ingeniería de Software
-<div align="left">
-  <img src="../assets/sebastian.png" alt="Sebastian Uriel Becerra Durand" width="200">
-</div>
+
 Estudiante de pregrado de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Posee conocimientos en desarrollo de software utilizando lenguajes de programación como C++, C# y JavaScript, así como en la gestión de bases de datos relacionales y no relacionales mediante MySQL y MongoDB. Cuento con la certificación Scrum Fundamentals Certified, lo que le permite aplicar marcos de trabajo ágiles y gestionar el flujo de tareas del equipo. Aporta en el desarrollo de la solución, la estructuración de la base de datos y la organización del trabajo bajo metodologías ágiles.
 <div align="left">
   <img src="../assets/Sergio Luis Miranda Romero.jpeg" width="200">
