@@ -284,9 +284,10 @@ Estudiante de pregrado de la carrera de Ingeniería de Software en la Universida
 
 #### Miguel André Casós Torre
 
-Miguel André Casós Torre es estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Sus principales intereses se orientan al desarrollo de software, inteligencia artificial, automatización, arquitectura de software y MLOps.
+* **Código de estudiante:** U202124030
+* **Carrera:** Ingeniería de Software
 
-Dentro del proyecto PeruTech participa en actividades relacionadas con el análisis del dominio, diseño de arquitectura y elaboración de documentación técnica.
+Estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Sus principales intereses se orientan al desarrollo de software, automatización, arquitectura de software y MLOps. Sus principales intereses se orientan al desarrollo de software, automatización y MLOps. Ha trabajado con tecnologías y herramientas como Python, JavaScript/TypeScript, Git, GitHub, Docker y Power BI.
 
 <div align="left">
   <img src="../assets/fotomc.jpg" width="200">
