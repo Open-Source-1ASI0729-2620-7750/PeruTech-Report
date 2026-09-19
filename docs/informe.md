@@ -645,12 +645,10 @@ La elaboración de los arquetipos de usuario sintetiza los patrones empíricos r
 
 ---
 
-#### User Persona 2: Manuel Quispe Torres (Comerciante Minorista y Administrador de Tienda Local)
+#### User Persona 2: Daniel Stalin Palomino Murga (Comerciante Minorista y Administrador de Tienda Local)
 
-![Ficha User Persona 2](../assets/artifacts/Segmento%202.png)
+![Ficha User Persona 2](../assets/artifacts/Segmento2.png)
 > *Figura 2.7: Ficha de User Persona correspondiente al Segmento 2, elaborada en UXPressia.*
-
-> *(Espacio reservado para la incorporación de la ficha gráfica del arquetipo del Segmento 2 a cargo del equipo).*
 
 ### 2.3.2. User Task Matrix
 
