@@ -964,8 +964,6 @@ En esta sección se presenta el mockup de alta fidelidad con la identidad de la 
 
 ## 4.4. Web Applications UX/UI Design
 
-[Contenido]
-
 ### 4.4.1. Web Applications Wireframes
 
 A continuación, se presentan las pantallas de wireframe de baja fidelidad de la aplicación **PeruTech**. El diseño contempla tanto la experiencia del usuario final (comprador) como el panel de gestión orientado a comercios afiliados.
@@ -1027,7 +1025,43 @@ Pantalla que muestra la información institucional del establecimiento afiliado,
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
-[Contenido]
+A continuación, se presentan los diagramas de Wireflow estructurados por segmento de usuario. Cada flujo define el objetivo de la interacción y la visualización del recorrido mediante su respectivo diagrama.
+
+---
+
+#### Segmento 1: Comprador
+
+##### Diagrama 1: Búsqueda y Comparativa de Precios
+* **Goal:** 1. Comparar precios de la canasta entre supermercados cercanos.
+* **Descripción:** El usuario busca productos, revisa su lista de compras activa en Modo Normal para ajustar sugerencias de ahorro y accede al módulo comparativo para evaluar los costos totales por tienda.
+
+![Diagrama 1 - Búsqueda y Comparativa de Precios](/assets/wireflow/diagrama1.png)
+
+---
+
+##### Diagrama 2: Ejecución de Compra y Ruta Optimizada
+* **Goal:** 2. Guiar el recorrido de compra físico y optimizar el itinerario.
+* **Descripción:** El usuario selecciona una lista guardada, genera la ruta de compra optimizada entre tiendas e inicia el Modo Compra al llegar al establecimiento para marcar los productos en tiempo real.
+
+![Diagrama 2 - Ejecución de Compra y Ruta Optimizada](/assets/wireflow/diagrama2.png)
+
+---
+
+#### Segmento 2: Comerciante
+
+##### Diagrama 3: Gestión Comercial y Monitoreo
+* **Goal:** 3. Analizar métricas de rendimiento y administrar el catálogo.
+* **Descripción:** El comerciante ingresa a su panel principal para analizar impresiones y tendencias, navega al catálogo para actualizar inventario o precios y gestiona la información fiscal del local.
+
+![Diagrama 3 - Gestión Comercial y Monitoreo](/assets/wireflow/diagrama3.png)
+
+---
+
+##### Diagrama 4: Publicación de Promociones Temporales
+* **Goal:** 4. Crear y gestionar ofertas con tiempo limitado.
+* **Descripción:** El comerciante selecciona productos desde su catálogo e ingresa al módulo de ofertas para configurar descuentos especiales y establecer la vigencia de la promoción.
+
+![Diagrama 4 - Publicación de Promociones Temporales](/assets/wireflow/diagrama4.png)
 
 ### 4.4.3. Web Applications Mock-ups
 
