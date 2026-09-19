@@ -83,11 +83,6 @@ Proyecto
 
 # Registro de Versiones del Informe
 
-| Versión | Fecha      | Autor                           | Descripción de modificación |
-|---------|------------|---------------------------------|-----------------------------|
-| 1.0     | 06/09/2026 | Capillo Lema, Mía Valentina     | Creación inicial del informe |
-| 1.1     | 18/09/2026 | Becerra Durand, Sebastian Uriel | Incorporación del registro de entrevista al segmento de comerciantes minoristas en la sección 2.2.2. |
-|         |            |                                 | |
 
 ---
 
