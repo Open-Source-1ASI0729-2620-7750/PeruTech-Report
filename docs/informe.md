@@ -1,6 +1,11 @@
 <div align="center">
 
-<img src="/assets/upc-logo.png" alt="UPC Logo" width="150"/>
+  <img src="../assets/upc-logo.png" alt="UPC Logo" width="160" style="margin-bottom: 28px;"/>
+
+  <br>
+
+  <h3>Universidad Peruana de Ciencias Aplicadas</h3>
+  <p><strong>Carrera de Ingeniería de Software</strong></p>
 
 Universidad Peruana de Ciencias Aplicadas
 
@@ -25,7 +30,7 @@ Equipo
 
 Proyecto
 
-**[NOMBRE DEL PRODUCTO]** 
+**Preciazo** 
 
 #### **Integrantes**
 
@@ -42,8 +47,8 @@ Proyecto
 <td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Capillo Lema, Mía Valentina</td>
 </tr>
 <tr style="background: none !important; border: none !important;">
-<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">[Código]</td>
-<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">[Apellidos y Nombres]</td>
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U20221A525</td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Pardo Chumpitazi, Kevin Patrick</td>
 </tr>
 <tr style="background: none !important; border: none !important;">
 <td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">[Código]</td>
@@ -222,109 +227,120 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 ### 1.1.1. Descripción de la Startup
 
-PeruTech es un equipo de innovación tecnológica integrado por estudiantes de la carrera de Ingeniería de Software. La organización se enfoca en crear soluciones digitales para resolver problemas urbanos cotidianos, principalmente aquellos ligados a la planificación financiera del hogar y la movilidad en la ciudad.
+PeruTech es una organización de innovación tecnológica integrada por estudiantes de la carrera de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). La iniciativa se enfoca en el diseño e implementación de soluciones digitales orientadas a mitigar fricciones urbanas cotidianas, principalmente aquellas vinculadas a la planificación financiera del hogar, la dispersión de precios minoristas y la optimización de traslados en la ciudad.
 
-Nuestro proyecto principal nace como una respuesta directa a las dificultades económicas que enfrentan las familias en Lima por el aumento constante de precios. La plataforma busca dar transparencia al mercado minorista, combinando la comparación de precios de productos esenciales con la optimización de rutas de desplazamiento. De esta forma, ayudamos a los consumidores a tomar decisiones de compra más eficientes, ahorrando dinero y tiempo en cada viaje.
+El proyecto central del equipo, denominado **Preciazo**, surge como una respuesta directa a las dificultades económicas que enfrentan las familias en Lima ante la variación continua de costos en la canasta básica. La plataforma otorga transparencia al mercado minorista al articular un motor comparativo de precios de bienes esenciales con la optimización algorítmica de rutas de desplazamiento. De esta forma, Preciazo asiste a los compradores independientes en la toma de decisiones de abastecimiento eficientes —maximizando su presupuesto y reduciendo tiempos de traslado—, mientras provee a los comercios minoristas un canal estructurado de visibilidad digital para posicionar sus catálogos.
 
-*   **Misión:** Facilitar decisiones de compra más eficientes mediante información de precios, planificación de rutas y herramientas de presupuesto, al mismo tiempo que brindamos a los comercios minoristas un canal digital para aumentar la visibilidad de sus ofertas.
-*   **Visión:** Consolidarnos como una plataforma referente en el Perú para la planificación inteligente de compras y la conexión digital entre consumidores y comercios minoristas.
+*   **Misión:** Facilitar decisiones de abastecimiento eficientes mediante información verificable de precios, trazado inteligente de rutas comerciales y herramientas de presupuesto familiar, integrando en simultáneo a los comercios minoristas en un canal digital que potencie la exposición de sus ofertas locales.
+*   **Visión:** Consolidar a Preciazo como la plataforma tecnológica referente a nivel nacional en la optimización de compras cotidianas y en la conexión digital directa y dinámica entre compradores independientes y comercios minoristas.
+
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-<img src="/assets/foto-Mia.png" width="350" >
 
-Mi nombre es Mía Valentina.
-Poseo experiencia en en el lenguaje C++ y Python, lo que me permite contribuir en el desarrollo de soluciones eficientes. Además, tengo habilidades en la recopilación y análisis de información, lo cual es fundamental para identificar áreas de mejora y optimizar procesos. También tengo conocimientos sobre estructuras de datos, que me permiten organizar y gestionar información de manera efectiva. Mi enfoque se centra en generar soluciones innovadoras y prácticas que aporten valor a los proyectos en los que participo.
+<div align="left">
+  <img src="../assets/foto-Mia.png" alt="Mía Valentina Capillo Lema" width="200">
+</div>
+
+**Capillo Lema, Mía Valentina**  
+* **Código de estudiante:** U20241c101  
+* **Carrera:** Ingeniería de Software  
+
+Mi nombre es Mía Valentina. Poseo experiencia en en el lenguaje C++ y Python, lo que me permite contribuir en el desarrollo de soluciones eficientes. Además, tengo habilidades en la recopilación y análisis de información, lo cual es fundamental para identificar áreas de mejora y optimizar procesos. También tengo conocimientos sobre estructuras de datos, que me permiten organizar y gestionar información de manera efectiva. Mi enfoque se centra en generar soluciones innovadoras y prácticas que aporten valor a los proyectos en los que participo.
+
+<br>
+
+<div align="left">
+  <img src="../assets/Kevin.jpeg" alt="Kevin Patrick Pardo Chumpitazi" width="200">
+</div>
+
+**Pardo Chumpitazi, Kevin Patrick**  
+* **Código de estudiante:** U20221A525 
+* **Carrera:** Ingeniería de Software  
+
+Estudiante de pregrado de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Posee conocimientos en desarrollo de soluciones de software mediante lenguajes de programación como C#, Java, Python y TypeScript, así como en la estructuración de componentes web en Angular y servicios en Spring Boot. Cuenta con experiencia en administración de bases de datos relacionales, aplicación de flujos de trabajo colaborativos bajo GitFlow y Conventional Commits, y gestión ágil mediante tableros Kanban y marcos Scrum. En el equipo aporta liderazgo técnico en la configuración de entornos, estandarización de repositorios, control de versiones y trazabilidad en la arquitectura de software.
+
+
 
 
 ## 1.2. Solution Profile
 
 ### 1.2.1. Antecedentes y problemática
+
 *   **Who? (¿Quién?):**
-    *   *Compradores:* Estudiantes, jóvenes profesionales y responsables del abastecimiento en hogares de Lima Metropolitana que cuentan con un presupuesto ajustado y buscan optimizar su tiempo libre.
-    *   *Comerciantes:* Administradores y encargados de tiendas de conveniencia y cadenas de supermercados o discounters que necesitan promocionar su inventario local, evitar la merma de productos y atraer más clientes a sus locales físicos.
-*   **What? (¿Qué?):** La falta de información clara sobre precios y la ineficiencia al planificar los recorridos de compra en el comercio minorista. Actualmente existe una diferencia marcada entre los precios publicados en internet y los costos reales en los estantes de las tiendas. A esto se suma que las personas no tienen una forma sencilla de comparar el costo total de su lista entre varios comercios cercanos. Esta desconexión genera gastos dobles: se paga más por los productos y se gasta dinero y tiempo extra en desplazamientos mal organizados para intentar conseguir ofertas (BCRP, 2025; INEI, 2026).
-*   **Where? (¿Dónde?):** El problema se concentra en distritos y zonas urbanas de Lima con alta presencia comercial, donde existen múltiples tiendas a pocas cuadras de distancia. La solución está dirigida a personas con acceso a teléfonos inteligentes y a administradores de locales que quieren mejorar la visibilidad de su tienda en su zona cercana.
-*   **When? (¿Cuándo?):** Ocurre cada vez que las familias organizan sus compras de la semana o cuando necesitan reponer productos de manera rápida. La situación se vuelve crítica durante los fines de semana o en días de promociones especiales, cuando el inventario cambia rápido y las ofertas varían sin previo aviso.
-*   **Why? (¿Por qué?):** Principalmente porque los sistemas de información de los grandes comercios son rígidos y no actualizan los precios de cada local en tiempo real para el cliente cercano. Esto hace que el comprador pierda tiempo buscando ofertas que ya no existen, mientras que la tienda pierde clientes potenciales por no comunicar a tiempo sus rebajas o liquidaciones.
-*   **How? (¿Cómo?):** Actualmente los compradores consultan precios y promociones mediante diferentes fuentes, como sitios web, redes sociales, aplicaciones bancarias o visitas directas a establecimientos. Posteriormente deben comparar manualmente si el ahorro potencial justifica el costo y tiempo de desplazamiento. Por otro lado, los comercios minoristas utilizan canales fragmentados como carteles, redes sociales o mensajería para comunicar promociones, dificultando que compradores cercanos conozcan oportunamente sus ofertas.
-*   **How much? (¿Cuánto?):** Esta dificultad para ahorrar se da en un contexto donde el costo de la canasta alimentaria mantiene una tendencia al alza en Lima Metropolitana (INEI, 2026). Por esta razón, el 41% de los consumidores prioriza activamente la búsqueda de descuentos (Kantar Worldpanel, 2025). Además, desplazarse entre varias tiendas sin un orden planificado puede incrementar hasta en un 20% los costos de transporte del hogar, un gasto que se puede corregir mediante algoritmos de ruteo eficiente (Sabagh Nejad & Fazekas, 2022).
+    *   *Compradores Independientes:* Estudiantes, jóvenes profesionales y responsables del abastecimiento en hogares de Lima Metropolitana que disponen de un presupuesto acotado y requieren optimizar sus tiempos de traslado.
+    *   *Comerciantes Minoristas:* Propietarios, administradores y encargados de bodegas, minimarkets, tiendas de conveniencia y puestos de abasto que precisan dinamizar la rotación de su inventario, reducir la merma de productos y captar clientes presenciales en su entorno comercial local.
+*   **What? (¿Qué?):** La asimetría en el acceso a la información de precios y la ineficiencia logística en la planificación de recorridos de aprovisionamiento minorista. Actualmente existe una marcada inconsistencia entre las tarifas publicadas en canales digitales y los costos en las estanterías de las tiendas físicas, sumado a la falta de herramientas centralizadas para contrastar el costo consolidado de una lista de compras multiestablecimiento. Esta desconexión ocasiona sobrecostos financieros en los hogares e incrementos innecesarios en gastos de transporte y tiempos de traslado.
+*   **Where? (¿Dónde?):** El problema se focaliza en sectores y ejes urbanos de Lima Metropolitana con alta densidad y dispersión de establecimientos minoristas. La solución está dirigida a compradores independientes con conectividad móvil y a comerciantes minoristas interesados en maximizar su presencia georreferenciada en su zona de influencia.
+*   **When? (¿Cuándo?):** Se presenta durante la planificación periódica del aprovisionamiento familiar (semanal o quincenal) y en compras imprevistas de reposición inmediata. La situación se vuelve crítica durante los fines de semana o jornadas de ofertas zonales, periodos en los cuales el stock y las tarifas varían de manera acelerada.
+*   **Why? (¿Por qué?):** Principalmente debido a la fragmentación tecnológica del sector minorista y la rigidez de los sistemas de inventario tradicionales, los cuales impiden la difusión sincronizada de tarifas y promociones hacia el entorno cercano. En consecuencia, el comprador independiente incurre en traslados infructuosos hacia promociones desactualizadas, mientras que el comerciante minorista pierde ventas por no visibilizar oportunamente su catálogo.
+*   **How? (¿Cómo?):** Actualmente, los compradores independientes recopilan información a través de canales dispares (redes sociales, catálogos físicos o consultas presenciales), evaluando de manera manual y aproximada si el diferencial de precio compensa el traslado. En simultáneo, los comerciantes minoristas dependen de medios convencionales de difusión (pizarras físicas, carteles o mensajería cerrada), lo que limita su capacidad para comunicar ofertas de forma inmediata a los compradores locales.
+*   **How much? (¿Cuánto?):** Esta dificultad para optimizar el gasto se agrava ante la continua presión sobre los costos de la canasta alimentaria urbana. Por consiguiente, una porción significativa de las familias prioriza la localización de descuentos para equilibrar su presupuesto, mientras que desplazarse entre establecimientos dispersos sin planificación previa genera sobrecostos de hasta un 20% en transporte, impacto logístico que puede corregirse mediante algoritmos de trazado y optimización de rutas.
+
+<br>
 
 **Enunciado del problema:**  
-Los compradores urbanos de Lima Metropolitana enfrentan dificultades para identificar la alternativa de compra con menor costo total, debido a que la información sobre precios y promociones se encuentra distribuida entre diferentes canales y no considera de manera integrada el costo y tiempo de desplazamiento entre establecimientos. Paralelamente, los comerciantes minoristas disponen de canales fragmentados para comunicar precios y promociones a potenciales compradores de su entorno, reduciendo la visibilidad oportuna de sus ofertas.
+Los compradores independientes de Lima Metropolitana afrontan barreras para identificar la alternativa de aprovisionamiento de menor costo consolidado, debido a la dispersión de información tarifaria y a la ausencia de herramientas integradas que consideren los tiempos y costos de desplazamiento entre establecimientos. Paralelamente, los comerciantes minoristas carecen de canales digitales centralizados para difundir su catálogo y promociones a compradores de proximidad, lo cual limita la visibilidad oportuna de sus ofertas.
 
 **Objetivo general:**  
-Diseñar y desarrollar una solución web responsive que permita a los compradores comparar precios, planificar sus compras según un presupuesto y optimizar sus desplazamientos entre establecimientos, mientras proporciona a los comerciantes minoristas herramientas para publicar precios y promociones dirigidas a compradores cercanos.
+Diseñar, desarrollar y desplegar la plataforma web responsive **Preciazo**, permitiendo que los compradores independientes accedan instantáneamente desde el navegador de cualquier dispositivo móvil o de escritorio —sin requerir la descarga ni la instalación de un aplicativo móvil nativo— para consultar precios actualizados, consolidar presupuestos y trazar recorridos comerciales eficientes; proveyendo en simultáneo a los comerciantes minoristas una consola digital para registrar su oferta y dinamizar sus ventas locales.
 
 **Restricciones de alcance:**  
-- El alcance inicial de la solución estará limitado a Lima Metropolitana.
-- La disponibilidad y actualidad de los precios dependerá de la información proporcionada por comercios y usuarios participantes.
-- La primera versión no garantizará cobertura de todos los establecimientos minoristas de Lima.
-- El cálculo de rutas y tiempos de desplazamiento dependerá de la disponibilidad de servicios externos de geolocalización y ruteo.
-- La solución se desarrollará como una aplicación web responsive y no como una aplicación móvil nativa.
-
+* El acceso de los usuarios se realizará exclusivamente a través de navegadores web modernos mediante diseño responsive adaptativo, suprimiendo la necesidad de instalación en el almacenamiento del dispositivo.
+* El alcance geográfico operativo se circunscribe a distritos comerciales de Lima Metropolitana.
+* La exactitud de las listas de precios y la disponibilidad de productos se encuentra sujeta a la información suministrada por comerciantes inscritos y validaciones de la comunidad.
+* La versión inicial del sistema no asegura la cobertura de la totalidad del universo comercial de la ciudad.
+* La estructuración de rutas y la estimación de tiempos de viaje dependen de la disponibilidad operativa de servicios externos de geolocalización y mapas.
+* La arquitectura se centra estrictamente en tecnologías web estandarizadas (HTML5, CSS3, TypeScript), descartando el empaquetado nativo durante esta fase de lanzamiento.
 
 ### 1.2.2. Lean UX Process
 
-El proceso de Lean UX adoptado por PeruTech busca validar de forma rápida y continua el valor de la plataforma. A través de la iteración constante entre el entendimiento de las necesidades de usuarios y comerciantes, la formulación de supuestos estratégicos y el planteamiento de hipótesis medibles, aseguramos el desarrollo de un producto mínimo viable centrado en resolver ineficiencias reales de tiempo y presupuesto.
+El proceso de Lean UX adoptado por PeruTech establece un marco de validación continua y temprana de valor para la plataforma **Preciazo**. Mediante la iteración constante de los ciclos de formulación de supuestos (*Think*), diseño de artefactos e interfaces (*Make*) y comprobación empírica con métricas objetivas (*Check*), el equipo orienta el esfuerzo de desarrollo hacia la construcción de un Producto Mínimo Viable (MVP). Este enfoque permite corroborar oportunamente los requerimientos críticos de los **compradores independientes** y los **comerciantes minoristas**, minimizando riesgos técnicos y garantizando soluciones eficientes ante las fricciones de costo y desplazamiento urbano.
 
-#### 1.2.2.1. Lean UX Problem Statements
+#### 1.2.2.1. Lean UX Problem Statement
 
-> **The current state of** retail shopping and local store management in Lima Metropolitan Area **has focused mainly on** individual supermarket discounts, traditional physical price browsing, and isolated mobile delivery apps that prioritize home delivery fees over local store foot traffic.  
-> **What existing products/services fail to address is** the lack of a unified system that calculates the true total cost of a shopping trip—combining real-time store prices, multi-stop routing efficiency, and transit expenses—while giving local managers an agile channel to clear overstocked inventory.  
-> **Our product/service will address this gap by** providing a collaborative web platform that processes store prices, inventory updates, transportation costs, and user budget limits to generate the most efficient multi-store shopping route, while offering store managers a simple tool to announce local discounts.  
-> **Our initial focus will be** budget-conscious shoppers (students and young adults in Lima) and branch managers of proximity/convenience retail stores.  
-> **We’ll know we are successful when we see** budget-conscious shoppers regularly completing multi-store purchases using our generated routes and store managers actively updating local discount offers.
+> **The current state of** retail shopping and local store management in Lima Metropolitan Area **has focused mainly on** individual supermarket discounts, traditional physical price browsing, and isolated delivery platforms that prioritize home delivery fees over local retail foot traffic and budget optimization.  
+> **What existing products/services fail to address is** the lack of a unified, multi-establishment system that calculates the true consolidated cost of an in-person shopping trip—integrating real-time verified prices, multi-stop routing efficiency, and urban transit expenses—while providing proximity merchants with an accessible channel to publish promotions and liquidate slow-moving inventory.  
+> **Our product/service will address this gap by** developing **Preciazo**, an instant-access responsive web platform that optimizes shopping lists against verified retail prices, transit costs, and user budget thresholds to generate dynamic multi-store routes, while equipping proximity retail managers with a centralized dashboard to broadcast local discounts and attract nearby store foot traffic.  
+> **Our initial focus will be** budget-conscious independent buyers (university students and young adults living in Lima) and retail merchants (independent store managers and local market vendors).  
+> **We’ll know we are successful when we see** independent buyers regularly generating and completing multi-store purchases using our optimized routes, and retail merchants actively publishing and updating weekly discount listings on the platform.
 
 #### 1.2.2.2. Lean UX Assumptions
 
-##### Assumptions Worksheet
-*   **¿Quién es el usuario?**
-    El sistema atiende a dos grupos: compradores (Compradores Multitienda y Optimizadores de Desplazamiento) que quieren hacer rendir mejor su dinero, y administradores de tiendas de conveniencia o supermercados que necesitan mover su inventario local más rápido.
-*   **¿Dónde encaja nuestro producto en su trabajo o vida?**
-    Para las personas, entra en su rutina cuando preparan la lista del supermercado y cuando salen a hacer las compras. Para el encargado de tienda, se integra en sus labores diarias para dar salida a productos con alto stock.
-*   **¿Qué problemas resuelve nuestro producto?**
-    Elimina la incertidumbre sobre dónde encontrar los precios más bajos y evita viajes innecesarios. A los comercios les resuelve la falta de llegada digital directa hacia los clientes que caminan por su zona.
-*   **¿Cuándo y cómo es usado el producto?**
-    El cliente lo abre en casa para cotizar su lista y en la calle para guiarse de tienda en tienda. El comercio lo utiliza durante el día para publicar ofertas exprés y revisar la llegada de clientes.
-*   **¿Qué características son importantes?**
-    La comparación instantánea de precios, la sugerencia de rutas que no se pasen del presupuesto tope, la opción de que la comunidad confirme los costos reales y un panel sencillo de control para los comercios.
-*   **¿Cómo debe verse nuestro producto y cómo comportarse?**
-    Debe ser una plataforma limpia, moderna y muy rápida para usar en el teléfono. La vista para tiendas debe mostrar gráficos claros y datos útiles para tomar decisiones de venta sin complicaciones.
-
 ##### Business Assumptions
-1.  **Creemos que nuestros usuarios necesitan** un servicio digital que evalúe si el dinero que se ahorra en una oferta justifica el gasto y tiempo de ir hasta esa tienda.
-2.  **Estas necesidades se pueden satisfacer mediante** una plataforma web que calcule el costo total de la lista de compras y muestre el recorrido más económico según el medio de transporte del usuario.
-3.  **Nuestros usuarios primarios son** personas que administran los gastos de su hogar y encargados de locales comerciales en áreas urbanas concurridas.
-4.  **El valor principal para el usuario es** pagar menos por su compra total y tardar menos tiempo en la calle; para las tiendas, es atraer clientes de su entorno a través de ofertas puntuales.
-5.  **Generaremos ingresos a través de** planes de suscripción para comercios que deseen promocionar sus productos de forma destacada y acceder a reportes de búsqueda en su zona.
-6.  **Nuestra competencia principal incluye** la búsqueda presencial tradicional, los encartes digitales de una sola marca y los servicios de reparto a domicilio que cobran tarifas adicionales.
-7.  **Nuestra ventaja competitiva radica en** calcular el costo real acumulado (precio de productos más costo de viaje) combinando distintas tiendas en un solo itinerario.
-8.  **El mayor riesgo del producto es** que las oficinas centrales de las cadenas limiten la libertad de los administradores locales para ajustar precios en la plataforma.
-9.  **Mitigaremos este riesgo** demostrando con métricas simples cómo las promociones locales aumentan las ventas y reducen la pérdida de productos en el local.
+1. **Creemos que existe una demanda insatisfecha en el mercado** de compradores independientes que requieren una solución tecnológica que determine si el diferencial de ahorro de una oferta justifica el tiempo y costo de traslado urbano.
+2. **Creemos que estas necesidades se satisfacen eficazmente mediante** la plataforma web responsive **Preciazo**, la cual calcula el costo consolidado de la canasta y optimiza itinerarios multiestablecimiento según el medio de locomoción del comprador independiente.
+3. **Creemos que nuestros segmentos primarios son** los compradores independientes (estudiantes universitarios, jóvenes profesionales y jefes de hogar) y los comerciantes minoristas (administradores de bodegas, minimarkets y abastos locales) en zonas de alta densidad comercial de Lima Metropolitana.
+4. **Creemos que la propuesta de valor diferenciada para el comprador independiente es** maximizar su presupuesto y optimizar tiempos de traslado; mientras que para el comerciante minorista es dinamizar la rotación de stock crítico y captar afluencia presencial en tienda física.
+5. **Creemos que el modelo de monetización se sustentará en** planes de suscripción mensual/trimestral para comerciantes minoristas interesados en posicionamiento destacado en el catálogo local y en analítica predictiva de demanda barrial.
+6. **Creemos que los principales competidores del servicio son** la cotización manual presencial, los catálogos estáticos de grandes cadenas y las aplicaciones de delivery que imponen sobrecostos tarifarios de envío.
+7. **Creemos que la ventaja competitiva esencial de Preciazo reside en** consolidar el costo real total de abastecimiento (costo agregado de productos más costo de transporte georreferenciado) a través de una ruta optimizada entre múltiples comercios.
+8. **Creemos que el riesgo operativo crítico es** la posible resistencia o demora inicial de los comerciantes minoristas en la actualización continua y oportuna de sus listas de precios.
+9. **Creemos que mitigaremos dicho riesgo operativo** proveyendo un mecanismo colaborativo de verificación ciudadana de precios y demostrando a los comerciantes el incremento directo en el flujo de visitas y ventas locales.
 
 ##### Business Outcome Assumptions
-1.  Conseguir que el 70% de los usuarios registrados realice al menos una compra siguiendo la ruta recomendada durante su primer mes.
-2.  Lograr que más del 40% de los usuarios activos sigan utilizando la plataforma de manera continua mes a mes.
-3.  Demostrar un ahorro efectivo promedio de al menos 15% en el gasto de la canasta de compras de los usuarios.
-4.  Lograr que 6 de cada 10 tiendas participantes confirmen un aumento en la visita de clientes atraídos por las ofertas publicadas.
+1. **Creemos que lograremos una tasa de adopción activa donde** al menos el 65% de los compradores independientes registrados complete un recorrido de abastecimiento basado en las rutas sugeridas durante su primer mes de uso.
+2. **Creemos que alcanzaremos una retención mensual (*churn rate* reducido) donde** más del 40% de los compradores independientes activos retorne a la plataforma web de forma recurrente semana a semana.
+3. **Creemos que demostraremos la efectividad de la propuesta de valor cuando** el ahorro económico promedio comprobado por los compradores independientes sea de al menos un 15% sobre el valor convencional de su canasta básica.
+4. **Creemos que validaremos la viabilidad de tracción comercial cuando** al menos el 60% de los comerciantes minoristas afiliados reporte un incremento verificable en la afluencia presencial a sus establecimientos derivado de sus publicaciones.
 
 ##### User Assumptions
-1.  **¿Quién es el usuario?** Hombres y mujeres de 18 a 50 años que realizan compras periódicas, y gestores de tiendas minoristas.
-2.  **¿Dónde encaja el producto?** Antes de salir a comprar y durante el recorrido por las tiendas.
-3.  **¿Qué problema resuelve?** Ayuda a elegir la mejor combinación de tiendas sin salirse del presupuesto disponible.
-4.  **¿Cuándo y cómo se usa?** Se consulta 1 o 2 veces por semana al momento de planificar las compras habituales.
+1. **Creemos que los compradores independientes son** individuos de entre 18 y 50 años que gestionan presupuestos definidos, poseen smartphones con conectividad a internet y buscan optimizar sus trayectos cotidianos de aprovisionamiento.
+2. **Creemos que los comerciantes minoristas son** propietarios o encargados de micro y pequeños negocios de abasto que buscan canales digitales accesibles y de bajo costo para dar salida oportuna a su inventario.
+3. **Creemos que la solución encaja en el flujo de vida del comprador independiente** tanto en la fase previa de formulación del presupuesto en el hogar como en la fase operativa durante el recorrido entre comercios.
+4. **Creemos que la solución encaja en la rutina operativa del comerciante minorista** durante las horas matutinas y jornadas de cierre de inventario para difundir promociones sobre productos de alta rotación o fecha de caducidad próxima.
 
 ##### User Outcome and Benefit Assumptions
-1.  El comprador sabrá exactamente cuánto va a gastar antes de salir de su casa.
-2.  El usuario caminará o viajará solo lo necesario, evitando vueltas innecesarias en la ciudad.
-3.  La tienda logrará vender más rápido los productos con fecha próxima de vencimiento o sobrestock.
+1. **Creemos que los compradores independientes obtendrán como beneficio** visibilidad total y anticipada del costo exacto de su lista de abastecimiento antes de iniciar el trayecto físico.
+2. **Creemos que los compradores independientes optimizarán su tiempo de desplazamiento urbano**, minimizando tiempos muertos y gastos innecesarios de movilidad entre tiendas zonales.
+3. **Creemos que los comerciantes minoristas lograrán como resultado** acelerar la rotación de artículos de menor salida y reducir significativamente las pérdidas económicas por merma de bienes perecibles.
+4. **Creemos que los comerciantes minoristas ampliarán su alcance de mercado local**, captando consumidores que habitualmente no frecuentaban su establecimiento.
 
 ##### Feature Assumptions
-1.  **Comparador de Canasta Integral:** Creemos que permitir al usuario armar su lista completa y cruzarla entre varias tiendas mostrará claramente dónde conviene comprar.
-2.  **Calculador de Ruta con Límite de Gasto:** Creemos que sugerir itinerarios respetando el presupuesto máximo fijado evitará sorpresas al momento de pagar.
-3.  **Validación de Precios por Usuarios:** Creemos que permitir que los mismos compradores confirmen si el precio del estante es correcto mantendrá la información confiable.
-4.  **Panel de Ofertas para Comercio:** Creemos que dar una herramienta rápida a los comercios para publicar promociones temporales aumentará el ingreso de personas a sus locales.
+1. **Feature Assumption 1 (Comparador de Canasta Multi-establecimiento):** Creemos que proveer un módulo de armado de listas de compras con cotejo automático multi-establecimiento permitirá a los compradores independientes visualizar y elegir la combinación comercial más económica.
+2. **Feature Assumption 2 (Optimizador de Rutas según Presupuesto Límite):** Creemos que implementar un motor de cálculo de rutas con restricciones presupuestarias y modos de transporte asegurará que los compradores completen sus adquisiciones sin exceder su límite de gasto.
+3. **Feature Assumption 3 (Módulo de Verificación Colaborativa de Precios):** Creemos que habilitar un componente de validación ciudadana donde los compradores confirmen la exactitud de los precios en góndola garantizará la fiabilidad e integridad continua de los datos.
+4. **Feature Assumption 4 (Consola de Gestión y Promociones para Comerciantes):** Creemos que desarrollar una consola simplificada para el registro rápido de catálogos y promociones georreferenciadas incrementará la afluencia de clientes de proximidad hacia los comercios minoristas.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 *   **Hypothesis Statement 1 (basado en Feature Assumption 1: Comparador de Canasta Integral):**
