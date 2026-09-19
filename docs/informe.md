@@ -958,6 +958,10 @@ A continuación se presentan los wireframes de baja fidelidad representando la e
 
 ### 4.3.2. Landing Page Mock-up
 
+En esta sección se presenta el mockup de alta fidelidad con la identidad de la marca plasmada.
+
+![mockup-landing](/assets/designs/landing/mockup-landing.png)
+
 ## 4.4. Web Applications UX/UI Design
 
 [Contenido]
