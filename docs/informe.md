@@ -282,6 +282,17 @@ Estudiante de pregrado de la carrera de Ingeniería de Software en la Universida
   <img src="../assets/Sergio Luis Miranda Romero.jpeg" width="200">
 </div>
 
+#### Miguel André Casós Torre
+
+Miguel André Casós Torre es estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Sus principales intereses se orientan al desarrollo de software, inteligencia artificial, automatización, arquitectura de software y MLOps.
+
+Dentro del proyecto PeruTech participa en actividades relacionadas con el análisis del dominio, diseño de arquitectura y elaboración de documentación técnica.
+
+<div align="left">
+  <img src="../assets/fotomc.jpg" width="200">
+</div>
+
+
 
 ## 1.2. Solution Profile
 
