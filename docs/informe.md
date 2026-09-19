@@ -976,7 +976,75 @@ En esta sección se presenta el mockup de alta fidelidad con la identidad de la 
 
 ### 4.4.3. Web Applications Mock-ups
 
-[Contenido]
+A continuación, se presentan las pantallas que componen el prototipo de alta fidelidad de la aplicación **PeruTech**. El diseño contempla tanto la experiencia del usuario final (comprador) como el panel de gestión orientado a comercios afiliados.
+
+#### 1. Pantalla de Inicio (Home)
+Pantalla principal de la aplicación que integra el buscador global por productos o tiendas, accesos rápidos a la creación de listas, ofertas destacadas en la zona del usuario y el listado de tiendas cercanas con sus respectivas distancias.
+
+![Pantalla de Inicio](/assets/mockups-app/portada.png)
+
+---
+
+#### 2. Vista de Lista Activa - Modo Normal
+Permite visualizar la lista de compras actual con el control de presupuesto. Incluye sugerencias inteligentes de sustitutos más económicos para maximizar el ahorro y la opción de agregar o eliminar productos.
+
+![Lista Activa - Modo Normal](/assets/mockups-app/lista-modo-normal.png)
+
+---
+
+#### 3. Vista de Lista Activa - Modo Compra
+Optimizada para usarse dentro del establecimiento físico, permitiendo al usuario marcar los productos mediante *checkboxes* a medida que los coloca en el carrito y calcular el subtotal en tiempo real.
+
+![Lista Activa - Modo Compra](/assets/mockups-app/lista-modo-compra.png)
+
+---
+
+#### 4. Gestión de Listas Guardadas
+Sección destinada a la administración de plantillas personalizadas y listas reutilizables para compras recurrentes (p. ej., Desayuno Semanal o Limpieza del Hogar).
+
+![Listas Guardadas](/assets/mockups-app/lista-guardado.png)
+
+---
+
+#### 5. Módulo de Comparativa de Precios
+Cuadro comparativo interactivo que permite analizar el costo total de la lista activa en distintos supermercados según el radio de distancia seleccionado. Destaca la mejor opción económica y permite reportar inconsistencias en tiendas.
+
+![Comparativa de Precios](/assets/mockups-app/comparar.png)
+
+---
+
+#### 6. Generador de Ruta de Compra Optimizada
+Mapeo iterativo y sugerencia de itinerario para compras en múltiples establecimientos. Desglosa los tiempos de traslado, el ahorro estimado y el detalle de ítems a adquirir en cada parada.
+
+![Ruta Optimizada](/assets/mockups-app/ruta.png)
+
+---
+
+#### 7. Panel de Analítica para Comercios
+Dashboard principal orientado al comerciante o tienda aliada. Presenta métricas relevantes sobre impresiones en rutas, vistas de productos, consultas de ofertas y un gráfico de tendencias de tráfico mensual.
+
+![Panel de Analítica para Comercios](/assets/mockups-app/tienda-panel.png)
+
+---
+
+#### 8. Gestión de Catálogo de Precios (Comercios)
+Interfaz de administración donde el comercio puede activar, desactivar y actualizar el listado de precios de sus productos e importar inventarios.
+
+![Catálogo de Precios](/assets/mockups-app/tienda-catalogo.png)
+
+---
+
+#### 9. Módulo de Ofertas y Promociones (Comercios)
+Sección diseñada para que los establecimientos publiquen promociones temporales, establezcan precios de oferta con contador de vigencia y gestionen sus campañas activas.
+
+![Módulo de Ofertas](/assets/mockups-app/tienda-oferta.png)
+
+---
+
+#### 10. Perfil e Información de la Tienda
+Pantalla que muestra la información institucional del establecimiento afiliado, incluyendo RUC, dirección fiscal, teléfono de contacto y la configuración de sus horarios de atención al público.
+
+![Información del Establecimiento](/assets/mockups-app/tienda-mi-tienda.png)
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
