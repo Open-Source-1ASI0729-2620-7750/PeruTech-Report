@@ -473,22 +473,6 @@ Laura prefiere realizar sus compras durante días laborables y aproximadamente e
 ![Screenshot Entrevista 4](/assets/entrevista-4.png)
 > *Figura 2.4: Registro audiovisual de la entrevista cualitativa 4.*
 
-* **Entrevista 5:**
-  * **Nombre y Apellidos:** `[Pendiente: Colocar Nombres y Apellidos del Entrevistado 5]`
-  * **Edad:** `[Pendiente: Edad]`
-  * **Distrito de residencia:** `[Pendiente: Distrito]`
-  * **Ocupación:** `[Pendiente: Ocupación]`
-  * **Plataforma de video:** Microsoft Stream
-  * **Enlace de Video:** `[Pendiente: URL de Microsoft Stream]`
-  * **Marca de tiempo (Timing de inicio):** `[00:00]`
-  * **Duración:** `[hh:mm]`
-  * **Perfil técnico y entorno digital:** `[Pendiente: Dispositivos, Navegador, Canales y Personalidad]`
-  * **Resumen descriptivo:** `[Pendiente: Redactar resumen de respuestas del entrevistado 5]`
-
-![Screenshot Entrevista 5](assets/entrevista-5.png)
-> *Figura 2.5: Registro audiovisual de la entrevista cualitativa 5.*
-
-
 
 ### 2.2.3. Análisis de entrevistas
 
@@ -624,14 +608,12 @@ El recorrido documenta la experiencia de Fernando al realizar sus compras de aba
 
 ---
 
-#### User Journey Map 2: Manuel Quispe Torres (Segmento 2 - Comerciante Minorista y Administrador de Tienda Local)
+#### User Journey Map 2: Daniel Stalin Palomino Murga (Segmento 2 - Comerciante Minorista y Administrador de Tienda Local)
 
-El recorrido documenta la jornada típica de Manuel en la administración de su negocio. La experiencia inicia con la recepción matutina de mercadería y el ajuste de precios del día; continúa con la colocación manual de ofertas en carteles o pizarras externas; prosigue con la baja afluencia de compradores presenciales que optan por cadenas de conveniencia cercanas o desconocen sus promociones; y concluye al final de la tarde con el cuadre de caja y la incertidumbre por el estancamiento de productos de rotación media en sus anaqueles.
+El recorrido documenta la jornada típica de Daniel en la administración de su bodega en Santa Anita. La experiencia inicia con el ajuste de precios según el incremento fijado por los proveedores y el registro manual de inventario en un cuadernillo físico; continúa con la colocación de carteles en la entrada de su local y el envío de estados por WhatsApp para difundir ofertas; prosigue con la pérdida de ventas ocasionada por desabastecimiento de productos clave o clientes que encuentran mejores precios en la competencia zonal; y concluye con la necesidad de digitalizar sus precios de forma ágil desde el celular para comunicar quiebres de stock a tiempo, atraer nuevos compradores del barrio y evitar la merma de mercadería.
 
-![User Journey Map 2](../assets/artifacts/Mapping-2.png)
-> *Figura 2.9: Diagrama de User Journey Map (As-Is) correspondiente al Segmento 2, elaborado en UXPressia.*
-
-> *(Espacio reservado para la incorporación del diagrama y la descripción detallada del recorrido del Segmento 2 a cargo del equipo una vez concluidas sus entrevistas).*
+![User Journey Map 2 - Daniel Stalin Palomino Murga](../assets/artifacts/Mapping2.png)
+> *Figura 2.9: Diagrama de User Journey Map correspondiente al Segmento 2, elaborado en UXPressia.*
 
 ### 2.3.4. Empathy Mapping
 
@@ -648,14 +630,12 @@ El mapa de empatía de Fernando refleja la tensión constante entre la necesidad
 
 ---
 
-#### Empathy Map 2: Manuel Quispe Torres (Segmento 2 - Comerciante Minorista y Administrador de Tienda Local)
+#### Empathy Map 2: Daniel Stalin Palomino Murga (Segmento 2 - Comerciante Minorista y Administrador de Tienda Local)
 
-El mapa de empatía de Manuel documenta las presiones comerciales y operativas vinculadas a la gestión diaria de un comercio minorista. Refleja la preocupación constante por la pérdida de clientes frente al avance de tiendas de conveniencia y cadenas de descuento en su zona (*Pains*), el descontento hacia las altas comisiones de plataformas de delivery y la necesidad de un canal digital accesible que conecte sus ofertas y precios competitivos con los vecinos de su entorno para dinamizar sus ventas presenciales (*Gains*).
+El mapa de empatía de Daniel documenta las presiones comerciales y operativas vinculadas a la administración de su bodega en el distrito de Santa Anita. Refleja la preocupación constante por la pérdida recurrente de ventas debido a quiebres de stock no detectados a tiempo, la desventaja frente a comercios con mejores precios y la dependencia de métodos manuales como cuadernos físicos (*Pains*). Asimismo, consolida la necesidad de contar con una plataforma intuitiva y económica que le permita actualizar precios al instante desde su smartphone, publicar ofertas locales para atraer nuevos vecinos y emitir alertas tempranas de mercadería agotada para optimizar la rentabilidad de su negocio (*Gains*).
 
-![Empathy Map 2](../assets/artifacts/Empathy-2.png)
+![Empathy Map 2](../assets/artifacts/Empathy2.png)
 > *Figura 2.11: Mapa de empatía correspondiente al Segmento 2, elaborado en UXPressia.*
-
-> *(Espacio reservado para la incorporación del diagrama gráfico y el análisis del mapa de empatía del Segmento 2 a cargo del equipo una vez concluidas sus entrevistas).*
 
 
 ## 2.4. Big Picture Event Storming
