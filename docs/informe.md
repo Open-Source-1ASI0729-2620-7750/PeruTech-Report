@@ -55,8 +55,8 @@ Proyecto
 <td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Becerra Durand, Sebastian Uriel</td>
 </tr>
 <tr style="background: none !important; border: none !important;">
-<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">[Código]</td>
-<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">[Apellidos y Nombres]</td>
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U20231B331</td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Miranda Romero, Sergio Luis</td>
 </tr>
 <tr style="background: none !important; border: none !important;">
 <td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">[Código]</td>
@@ -87,7 +87,7 @@ Proyecto
 |---------|------------|---------------------------------|-----------------------------|
 | 1.0     | 06/09/2026 | Capillo Lema, Mía Valentina     | Creación inicial del informe |
 | 1.1     | 18/09/2026 | Becerra Durand, Sebastian Uriel | Incorporación del registro de entrevista al segmento de comerciantes minoristas en la sección 2.2.2. |
-|         |            |                                 | |
+|1.0|18/09/2026|Miranda Romero Sergio Luis|Realización del capitulo 3|
 
 ---
 
@@ -267,8 +267,15 @@ Estudiante de pregrado de la carrera de Ingeniería de Software en la Universida
 * **Carrera:** Ingeniería de Software
 
 Estudiante de Ingeniería de Software en la UPC enfocado en el ciclo de vida del desarrollo de software, desde la conceptualización técnica hasta el despliegue de componentes backend y frontend. Aplica principios de modelado de datos, consumo de APIs y estandarización de código bajo flujos de trabajo en Git y marcos de trabajo ágiles (Scrum/Kanban). Se orienta al aprendizaje continuo de nuevos stacks tecnológicos y a la optimización de procesos dentro de equipos de desarrollo.
+
+
+**Miranda Romero Sergio Luis**
+* **Código de estudiante:** U20231B331
+* **Carrera:** Ingeniería de Software
+
+Estudiante de pregrado de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Posee conocimientos en desarrollo de software utilizando lenguajes de programación como C++, C# y JavaScript, así como en la gestión de bases de datos relacionales y no relacionales mediante MySQL y MongoDB. Cuento con la certificación Scrum Fundamentals Certified, lo que le permite aplicar marcos de trabajo ágiles y gestionar el flujo de tareas del equipo. Aporta en el desarrollo de la solución, la estructuración de la base de datos y la organización del trabajo bajo metodologías ágiles.
 <div align="left">
-  <img src="../assets/sebastian.png" alt="Sebastian Uriel Becerra Durand" width="200">
+  <img src="../assets/Sergio Luis Miranda Romero.jpeg" width="200">
 </div>
 
 
