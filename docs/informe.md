@@ -51,8 +51,8 @@ Proyecto
 <td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Pardo Chumpitazi, Kevin Patrick</td>
 </tr>
 <tr style="background: none !important; border: none !important;">
-<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">[Código]</td>
-<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">[Apellidos y Nombres]</td>
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U20221B756</td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Becerra Durand, Sebastian Uriel</td>
 </tr>
 <tr style="background: none !important; border: none !important;">
 <td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">[Código]</td>
@@ -262,6 +262,14 @@ Mi nombre es Mía Valentina. Poseo experiencia en en el lenguaje C++ y Python, l
 Estudiante de pregrado de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Posee conocimientos en desarrollo de soluciones de software mediante lenguajes de programación como C#, Java, Python y TypeScript, así como en la estructuración de componentes web en Angular y servicios en Spring Boot. Cuenta con experiencia en administración de bases de datos relacionales, aplicación de flujos de trabajo colaborativos bajo GitFlow y Conventional Commits, y gestión ágil mediante tableros Kanban y marcos Scrum. En el equipo aporta liderazgo técnico en la configuración de entornos, estandarización de repositorios, control de versiones y trazabilidad en la arquitectura de software.
 
 
+**Becerra Durand, Sebastian Uriel**
+* **Código de estudiante:** U20221B756
+* **Carrera:** Ingeniería de Software
+
+Estudiante de Ingeniería de Software en la UPC enfocado en el ciclo de vida del desarrollo de software, desde la conceptualización técnica hasta el despliegue de componentes backend y frontend. Aplica principios de modelado de datos, consumo de APIs y estandarización de código bajo flujos de trabajo en Git y marcos de trabajo ágiles (Scrum/Kanban). Se orienta al aprendizaje continuo de nuevos stacks tecnológicos y a la optimización de procesos dentro de equipos de desarrollo.
+<div align="left">
+  <img src="../assets/sebastian.png" alt="Sebastian Uriel Becerra Durand" width="200">
+</div>
 
 
 ## 1.2. Solution Profile
