@@ -942,9 +942,7 @@ A continuación, se definen los Epics identificados que agrupan funcionalmente l
 | **TS07** | API de registro de eventos de reporte | Como Developer, deseo implementar un endpoint para almacenar las confirmaciones y discrepancias emitidas por los usuarios sobre los precios. | **Escenario 1: Registro de reporte comunitario.**<br>Dado un requerimiento POST a `/api/v1/reports/prices` con el ID del producto, ID de tienda y nuevo precio, cuando el servicio procesa la solicitud, entonces persiste el reporte y responde con un código HTTP 201 Created.<br><br>**Escenario 2: Reporte duplicado en ventana temporal.**<br>Dado un usuario que intenta emitir múltiples reportes sobre el mismo artículo en menos de 60 segundos, cuando el filtro de seguridad lo detecta, entonces responde con un código HTTP 429 Too Many Requests. | EP07 |
 | **TS08** | API de gestión de promociones de tienda | Como Developer, deseo implementar endpoints CRUD para la administración del ciclo de vida de ofertas emitidas por comerciantes. | **Escenario 1: Creación de promoción.**<br>Dado un requerimiento POST a `/api/v1/promotions` con artículo, precio y vigencia, cuando el servicio confirma la titularidad del local, entonces crea la oferta y responde con un código HTTP 201 Created.<br><br>**Escenario 2: Vigencia incoherente.**<br>Dado un requerimiento cuya fecha de fin es anterior a la fecha de inicio, cuando el modelo valida los datos, entonces responde con un código HTTP 422 Unprocessable Entity. | EP07 |
 
-
 ## 3.2. Impact Mapping
-
 
 En esta sección se presenta el *Impact Mapping* desarrollado para alinear los objetivos estratégicos de negocio con las capacidades funcionales de la plataforma **Preciazo** de **PeruTech**. Mediante este artefacto visual se establece la trazabilidad formal entre los objetivos medibles de la organización (*Business Goals* formulados bajo el estándar SMART), los actores clave (*Actors/Personas*), los cambios esperados de comportamiento (*Impacts*), las entregas o soluciones de software (*Deliverables*) y las historias de usuario asociadas en formato canónico (*User Stories*).
 
@@ -1035,8 +1033,8 @@ Este mapa articula cómo el actor **Daniel Palomino** contribuye a alcanzar las 
   * *Deliverable: EP05 - Catálogo y Gestión Comercial.*
     * **US27:** Como comerciante minorista, deseo consultar métricas de visualización de mis promociones para evaluar el impacto de mis precios publicados.
 
-## 3.3. Product Backlog
 
+## 3.3. Product Backlog
 
 En esta sección se presenta el *Product Backlog* priorizado y estimado para la plataforma **Preciazo**, desarrollado por **PeruTech**. La priorización de los requisitos responde estrictamente al valor entregado al negocio y a los usuarios (*Business Value First*). Cumpliendo con los lineamientos del marco de trabajo Scrum y las directivas académicas, las historias vinculadas a la Landing Page se sitúan al inicio para viabilizar la captación temprana de usuarios en el primer sprint. Posteriormente, se integran las funcionalidades nucleares de cálculo comparativo de canasta, optimización de trayectos y gestión comercial para bodegas y minimarkets, relegando las tareas de autenticación y parametrización avanzada a etapas posteriores.
 
@@ -1084,7 +1082,6 @@ La estimación del esfuerzo de cada ítem fue establecida mediante la dinámica 
 ![Product Backlog en Herramienta](../assets/Trello.png)
 > *Figura 3.3: Captura del Product Backlog configurado, estimado y priorizado en la herramienta de gestión ágil.*
 
----
 
 # Capítulo IV: Product Design
 
