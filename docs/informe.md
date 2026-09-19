@@ -89,6 +89,8 @@ Proyecto
 | 1.1     | 18/09/2026 | Becerra Durand, Sebastian Uriel | Incorporación del registro de entrevista al segmento de comerciantes minoristas en la sección 2.2.2. |
 |1.0|18/09/2026|Miranda Romero Sergio Luis|Realización del capitulo 3|
 |1.2|18/09/2026|Casos Torre Miguel Andre|Realización de entrevista, DDD diagramas, correciones al Cap. 1|
+|         |            |                                 | |
+
 ---
 
 # Project Report Collaboration Insights
