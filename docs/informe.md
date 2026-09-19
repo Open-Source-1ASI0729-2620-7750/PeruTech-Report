@@ -1010,7 +1010,27 @@ Estos contextos se comunican mediante contratos explícitos, evitando que un mó
 
 ### 4.6.1. Design-Level Event Storming
 
-[Contenido]
+### 4.6.1. Design-Level Event Storming
+
+Para profundizar el modelo obtenido durante el Big Picture Event Storming se realizó un Design-Level Event Storming orientado a analizar con mayor detalle los principales flujos de negocio de PeruTech.
+
+El proceso de refinamiento comenzó identificando las acciones realizadas por los actores Buyer y Merchant. Cada acción relevante fue representada mediante Commands y posteriormente relacionada con los Aggregates responsables de mantener las reglas y consistencia del dominio. A partir de estas acciones se identificaron los Domain Events producidos por el sistema, así como Policies que reaccionan ante dichos eventos, Queries requeridas para consultar el estado del dominio, sistemas externos y Hotspots que representan decisiones o reglas pendientes de precisar.
+
+Para facilitar la lectura del modelo se utilizó la siguiente convención visual:
+
+- **Actor:** amarillo.
+- **Command:** azul.
+- **Aggregate:** amarillo claro.
+- **Domain Event:** naranja.
+- **Policy:** violeta.
+- **Query / Read Model:** verde.
+- **External System:** rosa.
+- **Hotspot:** rojo.
+
+El resultado del proceso permitió organizar el dominio en siete Bounded Contexts: Identity and Access, Shopping Planning, Catalog and Pricing, Route Planning, Merchant Management, Community Price Verification y Analytics and Engagement.
+
+![PeruTech Design-Level Event Storming](../assets/architecture/design-level-event-storming.png)
+
 
 ### 4.6.2. Software Architecture Context Diagram
 
