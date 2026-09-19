@@ -573,7 +573,7 @@ Laura prefiere realizar sus compras durante días laborables y aproximadamente e
 
 ---
 
-#### Segmento 2: Administradores del Hogar y Gestores de Despensa Familiar
+#### Segmento 2: Comerciantes Minoristas y Administradores de Tiendas Locales
 
 * **Entrevista 4:**
   * **Nombre y Apellidos:** `[Pendiente: Colocar Nombres y Apellidos del Entrevistado 4]`
