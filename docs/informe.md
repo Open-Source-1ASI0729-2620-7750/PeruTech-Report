@@ -1177,7 +1177,11 @@ A continuación, se presentan los diagramas de User Flow para la aplicación web
 
 ## 4.5. Web Applications Prototyping
 
-[Contenido]
+El vídeo de evidencia del prototipo plasma las interacciones que ejecutan los usuarios y las respuestas esperadas por el sistema.
+
+![captura de video-prototipo](/assets/prototipo.png)
+
+[Prototipo evidencia](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241c101_upc_edu_pe/IQCEOW9isi3LT7sIUmtoPLwAAQMF1OJDthoTqwwWszE9QvQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=cP37RQ)
 
 ## 4.6. Domain-Driven Software Architecture
 
