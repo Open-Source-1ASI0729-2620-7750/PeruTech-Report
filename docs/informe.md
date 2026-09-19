@@ -446,35 +446,41 @@ El ecosistema retail en el Perú ha experimentado un avance hacia la digitalizac
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-A partir del diagnóstico FODA cruzado y el mapeo del entorno competitivo, se establecen las siguientes estrategias y tácticas preliminares para consolidar la propuesta de valor de PeruTech en el mercado:
+A partir del diagnóstico FODA cruzado y el mapeo del entorno competitivo, la startup **PeruTech** define las siguientes estrategias y tácticas preliminares para consolidar la propuesta de valor de **Preciazo** frente a las fortalezas y debilidades de los competidores, capitalizando las oportunidades del mercado y mitigando amenazas del entorno:
 
-* **Frente a Rappi / Fazil (Ecosistemas de Delivery On-Demand):**
-  * **Estrategia (Aprovechamiento de debilidades y mitigación de amenazas):** Posicionar a PeruTech como la solución idónea frente a la sobretasa logística y comisiones excesivas, orientada al consumidor que prioriza el ahorro neto sobre la inmediatez delegada y al comerciante local que busca visibilidad sin pagar tarifas abusivas de intermediación.
+* **Frente a Rappi / Fazil (Ecosistemas de Delivery On-Demand y Quick-Commerce):**
+  * **Estrategia (Aprovechamiento de debilidades y mitigación de amenazas):** Contrarrestar la fortaleza logística del delivery posicionando a Preciazo como la alternativa enfocada en el ahorro neto real. Se aprovecha la debilidad de sus sobrecostos por comisiones (15% a 25%) y tarifas de servicio, captando la oportunidad que representa la sensibilidad del consumidor frente a la inflación en la canasta básica.
   * **Tácticas:**
-    * Implementar un comparador en tiempo real que contraste el costo del ticket presencial proyectado frente al costo promedio en aplicaciones de delivery, visibilizando el ahorro monetario directo.
-    * Incorporar la funcionalidad de optimización de rutas geográficas entre establecimientos cercanos para que la compra física demande el menor tiempo y gasto de traslado posible.
+    * Desarrollar un comparador dinámico en tiempo real que contraste el ticket presencial acumulado versus el costo estimado en aplicaciones de entrega, transparentando el ahorro directo para el hogar.
+    * Implementar un algoritmo de geolocalización que calcule itinerarios y rutas comerciales óptimas (a pie o transporte público), minimizando el gasto de pasajes y el tiempo de desplazamiento.
+    * Ofrecer a bodegas y minimarkets una consola accesible de bajo costo que no recorte sus márgenes operativos como lo hacen las apps de delivery.
 
-* **Frente a Tiendeo / Ofertia (Agregadores de Catálogos Estáticos):**
-  * **Estrategia (Explotación de limitaciones técnicas y oportunidades de mercado):** Reemplazar la consulta pasiva de folletos publicitarios estáticos mediante una arquitectura basada en datos estructurados y dinámicos, captando a usuarios que desestiman la navegación en catálogos no interactivos o en formato PDF.
+* **Frente a Tiendeo / Ofertia (Agregadores de Catálogos y Folletos Digitales):**
+  * **Estrategia (Explotación de limitaciones técnicas y captura de oportunidades):** Neutralizar su posicionamiento en folletos promocionales reemplazando la lectura pasiva de archivos estáticos (PDF o imágenes) por datos estructurados y actualizados en tiempo real, captando a los usuarios que demandan inmediatez y exactitud en góndola.
   * **Tácticas:**
-    * Desarrollar un motor de búsqueda indexada por categoría de producto y marca que desglose el precio unitario y permita la comparativa inmediata entre distintos establecimientos.
-    * Integrar un módulo de presupuesto en vivo que consolide la suma automática de los ítems seleccionados antes de acudir al punto de venta.
+    * Desarrollar un motor de búsqueda indexada por producto, presentación y marca que calcule automáticamente el precio unitario en cada tienda física registrada.
+    * Incorporar una calculadora presupuestaria en vivo que compute el costo consolidado de la canasta antes de que el usuario acuda a comprar.
+    * Habilitar un sistema colaborativo de validación comunitaria donde los usuarios verifiquen y reporten discordancias entre precios anunciados y precios en caja.
 
-* **Frente a Out of Milk (Gestores Móviles de Despensa y Listas):**
-  * **Estrategia (Superación tecnológica y experiencia de usuario):** Diseñar una solución integral que conecte la gestión de listas de compra con la disponibilidad y precios reales de los locales en una plataforma moderna, eliminando la fricción de interfaces obsoletas saturadas de publicidad invasiva.
+* **Frente a Out of Milk (Gestores de Listas de Compras y Alacena):**
+  * **Estrategia (Superación tecnológica y mejora de experiencia de usuario):** Superar su fortaleza en organización doméstica enlazando la planificación de despensa con la realidad del mercado (precios reales en tienda), solucionando su debilidad de interfaces saturadas de publicidad invasiva y carentes de sincronización con comercios.
   * **Tácticas:**
-    * Proporcionar una plataforma web responsiva con enfoque *mobile-first*, accesible de forma fluida desde cualquier navegador sin obligar a la instalación de aplicativos locales pesados.
-    * Habilitar listas de compra dinámicas que sincronicen los productos seleccionados directamente con las ofertas vigentes publicadas por los comercios afiliados.
+    * Diseñar una plataforma web responsiva con arquitectura *Mobile-First*, liviana y accesible desde cualquier navegador moderno, evitando descargas obligatorias de apps pesadas.
+    * Integrar listas de compra interactivas que vinculen automáticamente cada ítem con las ofertas y liquidaciones geolocalizadas más cercanas.
+    * Implementar un entorno limpio y libre de anuncios display obstructivos, priorizando la agilidad de consulta y la claridad visual en la interfaz.
+
 
 ## 2.2. Entrevistas
 
-Con el objetivo de validar las hipótesis iniciales del modelo de solución, comprender a profundidad los puntos de dolor y modelar con precisión los requerimientos funcionales del sistema, se desarrolló un proceso de investigación cualitativa sustentado en entrevistas en profundidad. Esta recolección de información se orientó de manera directa a representantes reales de los segmentos objetivo definidos para PeruTech: compradores individuales independientes (consumidores finales) y comerciantes minoristas o administradores de tiendas locales. A través de este acercamiento empírico, se exploraron tanto los hábitos de abastecimiento, métodos de ahorro y dificultades en recorridos presenciales por parte de los compradores, como los mecanismos de publicación de ofertas, gestión de precios y retos de visibilidad comercial que enfrentan los administradores de los establecimientos comerciales.
+Con el propósito de validar las hipótesis planteadas en la etapa de Lean UX, identificar los puntos de fricción (*pain points*) y definir los requerimientos funcionales de la plataforma web **Preciazo**, el equipo de **PeruTech** implementó un proceso de investigación cualitativa mediante entrevistas en profundidad semiestructuradas. Este levantamiento de información se aplicó a representantes reales de los dos segmentos objetivo del proyecto: **Compradores Independientes** (estudiantes universitarios, profesionales independientes y responsables del abastecimiento del hogar) y **Comerciantes Minoristas** (dueños o administradores de bodegas, minimarkets y tiendas de conveniencia).
+
+A través de estas sesiones se exploraron patrones de consumo, hábitos de planificación presupuestaria, mecanismos de comparación de precios, rutas de traslado presencial, así como los canales de visibilidad comercial y dificultades de rotación de inventario que enfrentan los pequeños negocios de barrio.
 
 ### 2.2.1. Diseño de entrevistas
 
-El diseño del instrumento cualitativo se basa en el enfoque de Diseño Centrado en el Usuario (UCD) para recopilar evidencia empírica directa. Esta información sustenta la construcción rigurosa de los arquetipos (User Personas), mapas de empatía y recorridos de usuario (User Journey Maps).
+El diseño del instrumento cualitativo desarrollado por **PeruTech** se fundamenta en el enfoque de Diseño Centrado en el Usuario (UCD) para recopilar evidencia empírica directa y validar los requerimientos de la plataforma **Preciazo**. Esta información sustenta la construcción técnica de los arquetipos (*User Personas*), mapas de empatía (*Empathy Maps*) y recorridos de usuario (*User Journey Maps*).
 
-El instrumento integra variables demográficas, competencias digitales y dinámicas operativas adaptadas a cada perfil objetivo. Para el segmento del consumidor final, las preguntas indagan en los hábitos de abastecimiento, sensibilidad al precio, planificación de rutas y control de gastos; mientras que, para el segmento del comerciante o administrador de tienda, el cuestionario se orienta a comprender los mecanismos de fijación de precios, la difusión de promociones y las barreras de visibilidad frente a las grandes cadenas minoristas. En ambos casos, las preguntas se estructuran en principales (orientadas a validar los problemas clave y la viabilidad de la solución) y complementarias (enfocadas en profundizar en fricciones operativas y hábitos cotidianos).
+El instrumento integra variables demográficas, competencias digitales y dinámicas operativas adaptadas a cada perfil objetivo. Para el segmento del consumidor final, las preguntas indagan en los hábitos de abastecimiento, sensibilidad al precio, planificación de rutas y control de gastos; mientras que, para el segmento del comerciante minorista o administrador de tienda, el cuestionario se orienta a comprender los mecanismos de fijación de precios, la difusión de promociones y las barreras de visibilidad frente a las grandes cadenas minoristas. Las preguntas se estructuran rigurosamente en principales (orientadas a validar los problemas clave y la viabilidad de la solución) y complementarias (enfocadas en profundizar en variables de personalidad, hábitos cotidianos y fricciones operativas).
 
 ---
 
@@ -490,7 +496,7 @@ El instrumento integra variables demográficas, competencias digitales y dinámi
 
 ---
 
-#### B. Segmento Objetivo 1: Compradores Multitienda y Optimizadores de Desplazamiento
+#### B. Segmento Objetivo 1: Compradores Independientes (Compradores Multitienda y Optimizadores de Desplazamiento)
 *Perfil: Individuos que recorren diversos establecimientos buscando optimizar presupuesto frente a las distancias urbanas.*
 
 * **Preguntas Principales:**
@@ -524,7 +530,7 @@ El instrumento integra variables demográficas, competencias digitales y dinámi
   2. ¿Qué opina sobre las comisiones y condiciones de las aplicaciones de delivery tradicionales (como Rappi o PedidosYa)? ¿Considera que benefician o perjudican el margen de ganancia de un comercio local?
   3. ¿Utiliza actualmente algún software de punto de venta (POS), hojas de cálculo en Excel o registros manuales (cuadernos) para administrar las ventas y el flujo de caja de su negocio?
 
-
+  
 ### 2.2.2. Registro de entrevistas
 
 A continuación, se presenta la bitácora de las entrevistas cualitativas realizadas a los representantes de los segmentos objetivo. Los datos recopilados documentan las características demográficas, hábitos tecnológicos, canales de interacción, dispositivos y factores psicográficos requeridos para la formulación formal de los arquetipos de usuario.
@@ -534,22 +540,25 @@ A continuación, se presenta la bitácora de las entrevistas cualitativas realiz
 #### Segmento 1: Compradores Multitienda y Optimizadores de Desplazamiento
 
 * **Entrevista 1:**
+  * **Segmento Objetivo:** Compradores Independientes
   * **Nombre y Apellidos:** Fernando Mauricio Justiniano Vega
   * **Edad:** 24 años
   * **Distrito de residencia:** San Miguel, Lima
   * **Ocupación:** Desarrollador de Software / Profesional Independiente
-  * **Plataforma de video:** Microsoft Stream
-  * **Enlace de Video:** [Ver Registro en Microsoft Stream](https://web.microsoftstream.com/)
+  * **Plataforma de video:** YouTube
+  * **Enlace de Video:** [Ver Registro de Entrevista en YouTube](https://www.youtube.com/watch?v=YNkyKD2sAro)
   * **Marca de tiempo (Timing de inicio):** `[00:00]`
-  * **Duración:** `[04:30 min]`
+  * **Duración total:** `06:05 min`
   * **Perfil técnico y entorno digital:**
     * *Dispositivos habituales:* Smartphone Android (gama media-alta) y Laptop personal.
     * *Navegador de preferencia:* Google Chrome.
     * *Canales digitales e influencias:* Billeteras digitales (Yape, Plin), aplicaciones bancarias (BCP), Google Maps y foros tecnológicos.
     * *Rasgos de personalidad:* Analítico, pragmático, enfocado en la eficiencia de tiempos y reservado en gastos innecesarios.
-  * **Resumen descriptivo:** Fernando reside de manera independiente y realiza compras de aprovisionamiento de forma quincenal. Suele dividir sus compras entre el mercado zonal para alimentos frescos y un supermercado de cadena para abarrotes y artículos de aseo, con el fin de abaratar costos. Manifiesta alta frustración por el tráfico vehicular y los tiempos muertos de traslado entre locales, lo cual en ocasiones diluye el ahorro económico obtenido. No utiliza folletos físicos ni catálogos web tradicionales por considerarlos ineficientes; en su lugar, se traslada directamente asumiendo los precios del momento. Administra un presupuesto estimado mediante notas en su celular y pagos móviles, pero pierde la cuenta precisa de sus consumos al añadir artículos de último minuto. Señaló que utilizaría cotidianamente una solución web que compare precios de locales cercanos y trace la ruta más eficiente de traslado antes de salir de casa.
+ * **Resumen descriptivo:** Fernando reside de manera independiente y realiza compras de aprovisionamiento de forma quincenal. Suele dividir sus compras entre el mercado zonal para alimentos frescos y un supermercado de cadena para abarrotes y artículos de aseo, con el fin de abaratar costos. Manifiesta alta frustración por el tráfico vehicular y los tiempos muertos de traslado entre locales, lo cual en ocasiones diluye el ahorro económico obtenido. No utiliza folletos físicos ni catálogos web tradicionales por considerarlos ineficientes; en su lugar, se traslada directamente asumiendo los precios del momento. Administra un presupuesto estimado mediante notas en su celular y pagos móviles, pero pierde la cuenta precisa de sus consumos al añadir artículos de último minuto. Señaló que utilizaría cotidianamente una solución web como Preciazo que compare precios de locales cercanos y trace la ruta más eficiente de traslado antes de salir de casa.
+ 
+  * **Nota sobre el registro audiovisual:** Durante la sesión, el participante solicitó mantener la cámara desactivada por motivos personales y de privacidad visual, autorizando únicamente el registro de audio para fines académicos de investigación cualitativa.
 
-![Screenshot Entrevista 1 - Fernando Justiniano](assets/entrevista-fernando.png)
+![Screenshot Entrevista 1 - Fernando Justiniano](../assets/Entrevista1.png)
 > *Figura 2.1: Registro audiovisual de la entrevista cualitativa a Fernando Justiniano Vega.*
 
 - **Entrevista 2:**
@@ -643,60 +652,72 @@ Laura prefiere realizar sus compras durante días laborables y aproximadamente e
 
 ### 2.2.3. Análisis de entrevistas
 
-A partir de la triangulación de la información cualitativa y la cuantificación de las respuestas de las entrevistas registradas, se sintetizan las variables objetivas y subjetivas más recurrentes por cada segmento objetivo, sirviendo de base estadística directa para la construcción de los arquetipos de usuario.
+A partir de la triangulación cualitativa y la cuantificación de las respuestas de las 4 entrevistas realizadas, se sintetizan las variables objetivas y subjetivas más representativas de cada segmento objetivo. Este análisis constituye el sustento empírico y estadístico directo para la modelación de los arquetipos (*User Personas*), mapas de empatía y matrices de tareas de la plataforma **Preciazo**.
 
 ---
 
-#### Segmento 1: Compradores Multitienda y Optimizadores de Desplazamiento
-*(Análisis sustentado en la muestra de 3 entrevistados del Segmento 1)*
+#### Segmento 1: Compradores Independientes
+*(Análisis cuantitativo sustentado en la muestra de 3 entrevistados: Fernando Justiniano, Laura Gamarra y Danella Palacios)*
 
-* **Variables Objetivas (Demográficas y Tecnológicas):**
-  * **Comportamiento multitienda (100%):** El 100% (3 de 3) divide sus compras entre mercados zonales (alimentos frescos) y supermercados tradicionales (artículos de aseo o abarrotes empaquetados) con el fin deliberado de economizar.
-  * **Desplazamiento urbano y fricción de transporte (100%):** El 100% combina traslados a pie con transporte público o taxi al retornar cargado, manifestando que el tráfico vehicular y los tiempos muertos restan el beneficio del ahorro económico.
-  * **Dispositivos y herramientas digitales (100%):** La totalidad utiliza smartphones Android como dispositivo primario, recurriendo de forma continua a Google Chrome como navegador, Google Maps para movilidad y billeteras móviles (Yape/Plin) para transacciones rápidas.
-  * **Gestión de listas no estructuradas (66.7%):** 2 de los 3 entrevistados anotan sus pendientes de forma desordenada en el bloc de notas del móvil, sin jerarquía por pasillo ni orden de prioridad.
+* **Variables Objetivas (Demográficas, Técnicas y Hábitos de Compra):**
+  * **Digitalización financiera y medios de pago (100%):** El 100% (3 de 3) utiliza intensivamente billeteras digitales (Yape/Plin) y canales de banca móvil para sus transacciones cotidianas.
+  * **Multidispositivo con predominancia móvil (100%):** Los 3 entrevistados operan tanto desde su smartphone como desde laptops para coordinar sus actividades y consultar información web.
+  * **Búsqueda previa de precios y ofertas (100%):** El 100% de la muestra busca activamente información de precios o promociones antes o durante sus compras (mediante redes sociales como Instagram, aplicaciones bancarias, catálogos web o consulta directa en tienda).
+  * **Sensibilidad al impacto del transporte en el gasto final (100%):** El 100% identifica el desplazamiento como un factor crítico en sus decisiones de aprovisionamiento, ya sea evaluando el costo de movilidad versus el descuento (Uber en Laura, pasajes en Fernando) o el tiempo perdido en el tráfico de Lima (Danella y Fernando).
+  * **Estrategias de control presupuestario formal o semiestructurado (66.7%):** 2 de los 3 entrevistados (Laura y Danella) manejan rangos presupuestarios definidos (presupuesto tope de S/600 a S/700 o matrices en hojas de cálculo como Excel), mientras que 1 entrevistado (Fernando, 33.3%) utiliza registros no estructurados en bloc de notas.
+  * **Segmentación de compras multitienda (66.7%):** 2 de 3 usuarios distribuyen sus compras entre distintos puntos (mercados zonales y cadenas de autoservicio o visitas escalonadas por días de oferta), mientras que el 33.3% (Danella) prefiere centralizar en un solo lugar para optimizar tiempo.
 
-* **Variables Subjetivas (Psicográficas, Hábitos y Frustraciones):**
-  * **Frustración por información asimétrica de precios (100%):** La totalidad declara comprar "a ciegas" respecto a ofertas reales, rechazando los catálogos en PDF o folletos impresos por considerarlos obsoletos e ineficientes.
-  * **Descontrol del gasto final en caja (66.7%):** 2 de cada 3 entrevistados afirman que los artículos de impulso o las variaciones imprevistas de precio provocan que el monto total en caja supere su estimación mental inicial.
-  * **Receptividad a plataformas web ligeras (100%):** El 100% expresó plena disposición a utilizar una solución web responsiva orientada a la comparativa de precios y cálculo de rutas eficientes sin requerir descargas de aplicaciones nativas pesadas.
+* **Variables Subjetivas (Psicográficas, Motivaciones y Frustraciones):**
+  * **Frustración por la congestión vehicular y tiempo de traslado (100%):** La totalidad de los entrevistados identifica el tráfico caótico y las demoras en el transporte urbano como el punto de dolor más severo de su experiencia de compra presencial.
+  * **Interés condicionado por interfaces intuitivas y de bajo esfuerzo (100%):** El 100% expresó disposición para adoptar una plataforma como Preciazo, enfatizando como requisito indispensable que la interfaz sea minimalista, ágil y de rápida consulta.
+  * **Rechazo a la asimetría de precios y al gasto imprevisto (66.7%):** El 66.7% (Fernando y Laura) manifiesta frustración ante compras no planificadas o la falta de transparencia de ofertas reales al llegar al establecimiento físico.
+  * **Aprovechamiento de beneficios financieros externos (33.3%):** Se identificó una conducta orientada al beneficio de tarjetas de crédito/débito y promociones por días específicos de la semana (Laura), lo que representa una oportunidad para el motor de recomendaciones de la plataforma.
 
 ---
 
 #### Segmento 2: Comerciantes Minoristas y Administradores de Tiendas Locales
-*(Análisis sustentado en la muestra de 2 entrevistados del Segmento 2)*
+*(Análisis cuantitativo sustentado en la muestra de 1 entrevistado: Daniel Stalin Palomino Murga, propietario de bodega en Santa Anita)*
 
-* **Variables Objetivas (Demográficas y Tecnológicas):**
-  * **Digitalización básica del punto de venta (100%):** El 100% (2 de 2) administra su negocio utilizando principalmente smartphones y herramientas cotidianas como WhatsApp Business y billeteras digitales (Yape/Plin), careciendo de sistemas de gestión empresarial (ERP) formales.
-  * **Canales tradicionales de comunicación de precios (100%):** Ambos entrevistados comunican sus precios y ofertas mediante letreros en góndola o pizarras físicas en el frontis del local, lo que restringe su alcance únicamente al peatón que pasa frente a la tienda.
-  * **Preferencia por soluciones web de baja complejidad (100%):** Manifiestan preferencia por plataformas web accesibles desde navegadores móviles o de escritorio que no requieran configuraciones técnicas avanzadas ni descargas complejas.
+* **Variables Objetivas (Demográficas, Operativas y Técnicas):**
+  * **Gestión analógica y rudimentaria del negocio (100%):** El 100% (1 de 1) administra su inventario, pedidos críticos y control de flujo de caja de manera física mediante un **cuaderno o libreta de notas**, careciendo de sistemas POS o software de gestión comercial.
+  * **Comunicación de ofertas restringida al ámbito inmediato (100%):** Utiliza únicamente canales básicos y locales (carteles físicos en la entrada del local y mensajes por WhatsApp a su círculo de contactos), lo que limita la atracción a los vecinos que ya transitan por la cuadra.
+  * **Adopción de herramientas digitales cotidianas (100%):** El comerciante opera activamente con smartphone y laptop, utilizando redes sociales (Facebook, TikTok) y billeteras móviles (Yape) para transacciones comerciales básicas.
+  * **Mecanismo reactivo de fijación de precios (100%):** La actualización de precios se efectúa exclusivamente cuando los proveedores mayoristas incrementan el costo de la mercancía, sin un monitoreo sistemático de las tarifas del entorno.
 
-* **Variables Subjetivas (Psicográficas, Hábitos y Frustraciones):**
-  * **Pérdida de competitividad frente a cadenas de descuento (100%):** El 100% reconoce sentir desventaja operativa y de visibilidad frente a la agresiva expansión de minimarkets y tiendas de conveniencia de grandes corporaciones en su misma zona.
-  * **Rechazo a las comisiones de aplicativos de delivery (100%):** La totalidad descarta o califica de insostenibles las tarifas y comisiones de intermediación (entre 15% y 25%) que imponen las plataformas tradicionales de entrega a domicilio.
-  * **Disposición a la digitalización comunitaria (100%):** Ambos mostraron una disposición favorable hacia un portal de afiliación que les permita visibilizar sus productos y promociones en los mapas de compras de los vecinos cercanos, siempre que el registro y la actualización de precios sean ágiles y sencillos.
+* **Variables Subjetivas (Psicográficas, Percepciones y Expectativas):**
+  * **Presión competitiva y dependencia de clientela fija (100%):** Reconoce como principal amenaza la alta densidad de negocios competidores en su zona y la fuga de clientes hacia locales que ofrecen precios más bajos, sufriendo por la falta de canales para captar nuevos transeúntes.
+  * **Fricción por quiebre de stock y pérdida de ventas (100%):** Identifica el agotamiento no advertido de productos y la discrepancia de precios como los dos factores determinantes en la pérdida de clientes habituales.
+  * **Disposición a la digitalización ágil y económica (100%):** Expresó total apertura a registrar su catálogo y ofertas en Preciazo, siempre y cuando la consola web sea rápida de utilizar desde el celular, no requiera una curva técnica compleja, ofrezca alertas de existencias agotadas y mantenga un esquema de costos accesible sin comisiones desproporcionadas.
+
 
 ## 2.3. Needfinding
 
-A partir de la triangulación de la información cualitativa recolectada en las entrevistas, el análisis competitivo previo y las hipótesis formuladas en el Lean UX Canvas, se identifican las necesidades, frustraciones y motivaciones críticas de los segmentos objetivo de PeruTech. Los hallazgos confirman la problemática central: la pérdida de poder adquisitivo por asimetría de precios e ineficiencia logística en los desplazamientos del consumidor, sumada a la falta de canales accesibles y económicos de visibilidad digital para el comercio minorista local.
+A partir de la triangulación de la información cualitativa recolectada en las entrevistas, el análisis del entorno competitivo y las hipótesis formuladas en el Lean UX Canvas, el equipo de **PeruTech** ejecutó el proceso de *Needfinding* para la plataforma **Preciazo**. Este procedimiento permitió identificar y categorizar las necesidades esenciales, frustraciones (*pain points*) y motivaciones críticas de cada segmento objetivo. 
 
-A continuación, se sintetizan las necesidades esenciales por segmento que fundamentan el modelado de los artefactos de diseño centrado en el usuario (User Personas, User Task Matrix, User Journey Maps, Empathy Mapping y As-Is Scenario Mapping):
+Los hallazgos empíricos confirman la problemática central abordada: la reducción del poder adquisitivo del comprador debido a la asimetría de precios en el mercado y a la ineficiencia logística de los traslados urbanos (costo y congestión vehicular), sumada a la brecha de visibilidad y desventaja comercial que sufren los comerciantes minoristas tradicionales frente a grandes cadenas corporativas.
 
-* **Segmento 1: Compradores Multitienda y Optimizadores de Desplazamiento**
-  * **Comparación multiestablecimiento ágil:** Necesidad de consultar precios actualizados entre mercados zonales, minimarkets y cadenas comerciales antes de salir de casa para evitar recorridos a ciegas.
-  * **Optimización de trayectos y transporte:** Requerimiento de planificar rutas de compra eficientes que minimicen el tiempo en tráfico y el gasto en pasajes o combustible, asegurando que el costo logístico no anule el ahorro obtenido en góndola.
-  * **Proyección de gasto previo:** Demanda de calcular el importe total estimado de la canasta antes de acudir a la tienda para no sobrepasar el presupuesto personal disponible.
-  * **Plataforma web ligera:** Necesidad de acceder a la herramienta desde el navegador de su dispositivo móvil sin verse forzados a descargar aplicativos nativos de gran peso.
+### Síntesis de necesidades identificadas por segmento objetivo
 
-* **Segmento 2: Comerciantes Minoristas y Administradores de Tiendas Locales**
-  * **Visibilidad digital hiperlocal:** Necesidad de exponer sus productos, promociones y ofertas destacadas a los consumidores que transitan o residen en su misma zona de influencia.
-  * **Competitividad comercial sin intermediación abusiva:** Requerimiento de un canal de difusión accesible que no comprometa sus márgenes de ganancia con las altas comisiones de los servicios de delivery tradicionales.
-  * **Gestión ágil y simplificada de ofertas:** Demanda de una interfaz web intuitiva que permita registrar el comercio y actualizar precios clave de manera rápida, sin requerir capacitaciones técnicas ni sistemas ERP complejos.
-  * **Atracción de clientes al punto físico:** Necesidad de que su negocio aparezca geolocalizado en las rutas de compra recomendadas a los usuarios, incrementando la afluencia directa a su local.
-  
+* **Segmento 1: Compradores Independientes (Compradores Multitienda y Optimizadores de Desplazamiento):**
+  * **Comparación multiestablecimiento ágil y centralizada:** Necesidad de cotejar precios actualizados entre mercados zonales, cadenas de supermercados y minimarkets de proximidad antes de salir del domicilio, evitando desplazamientos ineficientes a ciegas.
+  * **Optimización de trayectos y cálculo de ahorro neto:** Requerimiento de trazar itinerarios que minimicen el tiempo de exposición al tráfico vehicular de Lima y reduzcan el gasto en transporte (pasajes, combustible o taxis de aplicativo), asegurando que el costo de movilidad no supere el descuento obtenido en el ticket de compra.
+  * **Cálculo presupuestario anticipado:** Necesidad de computar el costo total consolidado de la lista de compras antes del pago en caja para respetar los techos presupuestarios familiares o mensuales.
+  * **Acceso web liviano y multiplataforma:** Demanda de una herramienta accesible de forma inmediata desde navegadores móviles (*Mobile-First*) y de escritorio, sin requerir descargas de aplicaciones nativas pesadas ni registros invasivos.
+
+* **Segmento 2: Comerciantes Minoristas y Administradores de Tiendas Locales:**
+  * **Visibilidad digital hiperlocal de bajo costo:** Necesidad de posicionar sus productos, ofertas del día y liquidaciones de inventario directamente en el radar de los consumidores que circulan o viven en su misma zona urbana.
+  * **Competitividad comercial sin intermediación onerosa:** Demanda de un canal de promoción directo que no merme sus márgenes de ganancia con las comisiones abusivas (15% a 25%) de las aplicaciones de delivery convencionales.
+  * **Consola de gestión ágil y amigable:** Requerimiento de un panel administrativo simplificado que permita actualizar precios y registrar artículos agotados en pocos segundos desde un teléfono móvil o laptop, adaptado a comercios que gestionan su negocio mediante libretas o cuadernos manuales.
+  * **Tracción y atracción al local físico:** Necesidad de que el establecimiento se integre en los mapas de compras y rutas de optimización de los vecinos, incrementando el tráfico peatonal presencial hacia el punto de venta.
+
+---
+
+
 ### 2.3.1. User Personas
 
-La elaboración de los arquetipos de usuario sintetiza los patrones empíricos recolectados durante las entrevistas cualitativas y el diagnóstico del ecosistema competitivo. Las fichas integran variables demográficas, competencias digitales, motivaciones y fricciones reales para guiar el diseño centrado en el usuario de PeruTech, asegurando que las decisiones arquitectónicas y funcionales respondan a necesidades operativas validadas.
+La elaboración de los arquetipos de usuario sintetiza los patrones empíricos recolectados durante las entrevistas cualitativas y el diagnóstico del ecosistema competitivo. Las fichas integran variables demográficas, competencias digitales, motivaciones y fricciones reales para guiar el diseño centrado en el usuario de **PeruTech**, asegurando que las decisiones arquitectónicas y funcionales de la plataforma **Preciazo** respondan a necesidades operativas validadas.
+
+En particular, para el primer segmento se modelaron el hábito de fragmentar compras o planificar presupuestos quincenales, el uso diario de pagos móviles (Yape/Plin), la sensibilidad al sobrecosto del transporte urbano y la frustración por el tráfico de Lima evidenciados por los entrevistados. Para el segundo segmento, se tomó en cuenta la gestión manual de existencias en cuadernos físicos, la actualización reactiva de precios sujeta al costo mayorista, la amenaza de la competencia cercana y la búsqueda de canales digitales livianos y sin comisiones abusivas para atraer transeúntes al local.
 
 ---
 
@@ -714,34 +735,38 @@ La elaboración de los arquetipos de usuario sintetiza los patrones empíricos r
 
 ### 2.3.2. User Task Matrix
 
-En esta sección se presenta la matriz de tareas de usuario (*User Task Matrix*), estructurada a partir de los dos segmentos objetivo del proyecto: el **Segmento 1**, representado por Fernando Justiniano Vega (Comprador Multitienda y Optimizador de Desplazamiento), y el **Segmento 2**, representado por Manuel Quispe Torres (Comerciante Minorista y Administrador de Tienda Local). 
+En esta sección se presenta la matriz de tareas de usuario (*User Task Matrix*), diseñada para mapear y contrastar las actividades esenciales que ejecutan los representantes arquetípicos de cada segmento objetivo en su contexto cotidiano: el **Segmento 1: Compradores Independientes**, representado por Fernando Justiniano Vega (comprador metódico que busca optimizar su gasto y tiempo de traslado), y el **Segmento 2: Comerciantes Minoristas y Administradores de Tiendas Locales**, representado por Daniel Palomino Murga (bodeguero y administrador enfocado en la rentabilidad y visibilidad de su negocio).
 
-Las actividades identificadas corresponden estrictamente a tareas del mundo real que cada actor ejecuta de manera habitual en su día a día —el consumidor para optimizar su abastecimiento y el comerciante para gestionar la venta y visibilidad de sus productos— independientemente del uso de una solución tecnológica o software específico.
+Las actividades identificadas corresponden estrictamente a tareas del mundo real que cada actor realiza de manera habitual en su día a día para alcanzar sus metas de abastecimiento o gestión comercial, con total independencia de la existencia o uso de una solución tecnológica o software específico.
 
-| Tarea (Task) | Fernando Justiniano (Frecuencia) | Fernando Justiniano (Importancia) | Manuel Quispe (Frecuencia) | Manuel Quispe (Importancia) |
+| Tarea del Mundo Real (*Task*) | Fernando Justiniano (Frecuencia) | Fernando Justiniano (Importancia) | Daniel Palomino (Frecuencia) | Daniel Palomino (Importancia) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Monitorear precios de la competencia en la zona** | Quincenal | Alta | Semanal | Alta |
-| **Publicar y actualizar precios u ofertas del día** | N/A | N/A | Diaria | Alta |
-| **Comparar costos de productos entre establecimientos** | Quincenal | Alta | Semanal | Media |
-| **Definir rutas físicas de desplazamiento entre locales** | Quincenal | Alta | Rara vez | Baja |
-| **Controlar stock de góndola y productos por vencer** | Ocasional | Baja | Diaria | Alta |
 | **Calcular presupuesto estimado antes de pagar / cobrar** | Quincenal | Alta | Diaria | Alta |
-| **Comunicar promociones mediante carteles o pizarras** | N/A | N/A | Semanal | Media |
-| **Buscar nuevos canales para atraer compradores del barrio** | N/A | N/A | Mensual | Alta |
+| **Comparar costos de productos entre establecimientos** | Quincenal | Alta | Semanal | Media |
+| **Monitorear precios del mercado y competencia en la zona** | Quincenal | Media | Diaria | Alta |
+| **Planificar trayectos y transporte físico de compras** | Quincenal | Alta | Rara vez | Baja |
+| **Verificar existencias y estado físico de productos (stock)** | Quincenal | Media | Diaria | Alta |
+| **Actualizar y exhibir precios u ofertas vigentes** | N/A | N/A | Diaria | Alta |
+| **Elaborar listas de artículos prioritarios a adquirir** | Quincenal | Alta | Semanal | Alta |
+| **Comunicar promociones mediante carteles, pizarras o avisos** | N/A | N/A | Semanal | Media |
+| **Buscar alternativas para atraer clientes o rotar mercancía** | N/A | N/A | Semanal | Alta |
+| **Evaluar impacto de métodos de pago y promociones bancarias** | Quincenal | Media | Diaria | Media |
 
 ---
 
-#### Análisis comparativo de tareas
+#### Análisis y hallazgos del User Task Matrix
 
-* **Tareas con mayor frecuencia e importancia:**  
-  Para el comprador (Fernando), **comparar precios entre establecimientos** y **calcular el presupuesto estimado antes de acudir a caja** son actividades quincenales críticas para proteger su capacidad adquisitiva. Para el comerciante (Manuel), **publicar y actualizar precios u ofertas del día** junto con el **control de stock y vencimientos** constituyen tareas diarias indispensables para rotar su mercadería y mantenerse competitivo frente a las cadenas minoristas.
+A partir de la matriz de tareas consolidada, se identifican patrones clave de comportamiento, contrastes operativos e intersecciones estratégicas entre ambos perfiles:
 
-* **Principales coincidencias:**  
-  Ambos actores monitorean constantemente las variaciones de precios en el mercado zonal: mientras el consumidor busca la tarifa más baja para no exceder su presupuesto, el comerciante revisa los costos del entorno para fijar precios competitivos sin liquidar su margen de utilidad.
-
-* **Principales diferencias:**  
-  * **Demanda vs. Oferta:** Fernando prioriza la **definición de rutas físicas de transporte** para optimizar tiempos de traslado y costos de movilidad urbana. Por su parte, Manuel concentra sus esfuerzos en **atraer clientes a su establecimiento físico** y **gestionar el abastecimiento comercial**, tareas operativas propias del funcionamiento de un punto de venta minorista.
-  * **Ciclo operativo:** Fernando ejecuta sus actividades de abastecimiento personal en ciclos **quincenales**, mientras que el comerciante opera con una periodicidad **diaria** para ajustar pizarras de ofertas, reponer mercadería y cuadrar la caja del negocio.
+* **Tareas con mayor frecuencia e importancia:**
+  * Para **Daniel Palomino (Comerciante):** Las tareas más críticas y de periodicidad **diaria** son el *cálculo presupuestario y cuadre de caja*, la *actualización y exhibición de precios* y el *control de existencias y productos próximos a agotarse*. La supervivencia de su minimarket exige una supervisión continua del inventario y la rápida rotación de mercadería.
+  * Para **Fernando Justiniano (Comprador):** Las tareas con mayor peso ocurren de forma **quincenal** (alineadas con su ciclo de aprovisionamiento salarial y reposición de alacena), destacando la *estimación anticipada del presupuesto*, la *planificación de los trayectos físicos* y la *comparación de precios multitienda*.
+* **Principales coincidencias:**
+  * Ambos actores le otorgan **alta importancia al control del dinero**: Fernando lo hace para no superar su límite de gasto familiar en caja y Daniel para resguardar el margen neto de ganancia de su negocio frente a aumentos de distribuidores.
+  * Tanto el comprador como el comerciante necesitan **monitorear los precios de la zona**, confirmando que la transparencia del mercado y la asimetría de costos impactan a los dos extremos de la cadena comercial.
+* **Principales diferencias operativas:**
+  * **Movilidad vs. Localidad:** Mientras la *planificación de trayectos físicos de desplazamiento* es una tarea de alta importancia para Fernando (debido al impacto de los pasajes y el tráfico de Lima), para Daniel es prácticamente irrelevante en su día a día comercial al estar fijo en su local de atención.
+  * **Visibilidad y Difusión:** Tareas como la *comunicación de promociones en carteles* y la *búsqueda de alternativas para atraer compradores* son exclusivas del comerciante minorista, quien asume el rol activo de captar el flujo peatonal frente a la competencia de grandes cadenas.
 
 
 ### 2.3.3. User Journey Mapping
@@ -795,31 +820,41 @@ El mapa de empatía de Manuel documenta las presiones comerciales y operativas v
 
 ## 2.4. Big Picture Event Storming
 
-Para modelar la complejidad del dominio de negocio de PeruTech, el equipo llevó a cabo un taller colaborativo de *Big Picture Event Storming*. Esta metodología de exploración de alto nivel permitió alinear el entendimiento del problema entre el equipo técnico y el análisis de negocio, identificando los procesos clave, oportunidades y eventos significativos que rigen tanto el abastecimiento inteligente del consumidor como la visibilidad comercial de los establecimientos minoristas afiliados.
+Para modelar la complejidad del dominio de negocio y asegurar un entendimiento compartido entre la visión de negocio y la arquitectura de software, el equipo de **PeruTech** llevó a cabo un taller colaborativo de *Big Picture Event Storming*. La sesión se desarrolló utilizando un lienzo virtual en Miro/Mural, donde intervinieron los integrantes del equipo asumiendo roles de análisis de dominio, diseño de experiencia de usuario e ingeniería de software.
+
+El objetivo central consistió en plasmar de forma visual y de alto nivel todos los eventos significativos, dependencias temporales, puntos de fricción (*Hotspots*) y disparadores que rigen los procesos de la plataforma **Preciazo**: desde la detección de necesidad y planificación de la canasta por parte del **Comprador Independiente**, hasta la administración, publicación de promociones y rotación de inventario por parte del **Comerciante Minorista**.
+
+A lo largo del taller se aplicó la codificación estándar por colores de la técnica:
+* **Eventos de dominio (*Domain Events* - Post-it Naranja):** Hechos inmutables que ocurren en el negocio, formulados estrictamente en tiempo pasado verbal.
+* **Puntos críticos o dudas (*Hotspots* - Post-it Rojo/Fucsia):** Cuellos de botella, riesgos operativos, fricciones de usuario o incertidumbres de negocio.
+* **Comandos (*Commands* - Post-it Azul):** Acciones e intenciones detonadas por los usuarios o sistemas externos.
+* **Actores / Usuarios (*Users* - Post-it Amarillo pequeño):** Roles humanos que ejecutan los comandos (Comprador o Comerciante).
+* **Políticas reactivas (*Policies* - Post-it Lila):** Reglas del tipo *"Siempre que ocurra el evento X, ejecutar el comando Y"*.
+* **Sistemas externos (*External Systems* - Post-it Rosa):** Servicios de mapas, pasarelas de pago y proveedores externos.
 
 ---
 
 ### 2.4.1. Fase 1: Generación Abierta de Eventos (Open Space)
 
-En esta etapa inicial, los participantes realizaron una lluvia de ideas sin restricciones temporales ni de orden secuencial para registrar todos los eventos de dominio (*Domain Events*) posibles, redactados en tiempo pasado (post-it naranjas). Se levantaron eventos desde la detección de necesidad y registro del usuario hasta la optimización de rutas, control presupuestario, publicación de ofertas y validación de precios en los locales comerciales.
+En esta etapa inicial, los integrantes del equipo realizaron una lluvia de ideas abierta y divergente, registrando todos los eventos de dominio posibles sin imponer restricciones de orden cronológico. Los eventos se redactaron en tiempo pasado y cubrieron todo el ciclo operativo: identificación de faltantes en la alacena, registro del comercio, actualización de precios en mostrador, cálculo de rutas, comparación de tickets y verificación presencial de góndola.
 
 ![Big Picture - Open Space](../assets/ddd/big-picture/big-picture-open.png)
-> *Figura 2.12: Fase Open Space del Big Picture Event Storming, registro inicial de eventos de dominio.*
+> *Figura 2.12: Fase Open Space del Big Picture Event Storming, registro inicial y divergente de eventos de dominio.*
 
 ---
 
 ### 2.4.2. Fase 2: Exploración y Línea de Tiempo (Explore)
 
-Durante la fase de exploración, el equipo ordenó cronológicamente los eventos identificados de izquierda a derecha para estructurar la línea de tiempo del negocio. Asimismo, se identificaron puntos de fricción, cuellos de botella y dudas del dominio mediante marcas de riesgo o problemas (*Hotspots* / post-it rojos/rosados), tales como la dispersión de precios no verificados, el tráfico vehicular, el estancamiento de stock en locales y los desvíos presupuestarios imprevistos en caja.
+En la fase de exploración se procedió a ordenar los eventos cronológicamente sobre una línea temporal orientada de izquierda a derecha. Durante este ordenamiento se identificaron ramificaciones, caminos alternativos y puntos de fricción severos mediante *Hotspots*. Entre los principales problemas detectados destacan la discordancia entre precios de góndola y precios en caja, el impacto de la congestión vehicular limeña en el gasto de transporte, la falta de tiempo del bodeguero para actualizar inventarios complejos y el riesgo de abandono del carrito por desvíos presupuestarios imprevistos.
 
 ![Big Picture - Explore](../assets/ddd/big-picture/big-picture-explore.png)
-> *Figura 2.13: Fase Explore del Big Picture Event Storming, ordenamiento cronológico y detección de puntos críticos.*
+> *Figura 2.13: Fase Explore del Big Picture Event Storming, ordenamiento cronológico e identificación de Hotspots.*
 
 ---
 
 ### 2.4.3. Fase 3: Consolidación y Definición de Triggers (Close Space)
 
-En el cierre del espacio de exploración, se refinó la línea de tiempo eliminando redundancias y se incorporaron los comandos o acciones desencadenantes (*Commands* / post-it azules) ejecutados por los actores del sistema (el comprador independiente o el comerciante minorista), así como las políticas o reglas de negocio automáticas (*Policies* / post-it lilas) que reaccionan a determinados eventos, por ejemplo, alertas por superación de presupuesto, notificaciones de nuevas promociones zonales o recálculo de rutas por congestión.
+En el cierre del espacio de exploración, se refinó la línea temporal eliminando redundancias y asociando a cada evento su comando desencadenante (*Command*), el actor responsable y las reglas de negocio automáticas (*Policies*). Se estructuraron reacciones clave del sistema como: alertas automáticas ante sobrecostos presupuestarios, sugerencias de rutas alternativas en caso de alta congestión y notificaciones de artículos agotados enviadas a la consola del bodeguero.
 
 ![Big Picture - Close Space](../assets/ddd/big-picture/big-picture-close.png)
 > *Figura 2.14: Fase Close Space del Big Picture Event Storming, integración de comandos, actores y políticas de negocio.*
@@ -828,35 +863,42 @@ En el cierre del espacio de exploración, se refinó la línea de tiempo elimina
 
 ### 2.4.4. Fase 4: Modelo Final del Dominio (Final Landscape)
 
-Como resultado consolidado del proceso, se estructuró el mapa integral del paisaje del negocio (*Business Landscape*). Este diagrama agrupa los eventos, comandos y políticas en torno a los flujos operativos fundamentales de PeruTech: gestión de perfiles e identidad (consumidores y comercios), catálogo y actualización de precios/ofertas, planificación de listas de compra, y optimización de rutas de traslado con control presupuestario previo a la compra física.
+Como consolidación final del taller, se organizó el mapa integral del paisaje del negocio (*Business Landscape*). En este artefacto se estructuraron con claridad los límites y flujos centrales que componen Preciazo:
+1. **Gestión de Identidad y Perfiles:** Registro y autenticación segura de compradores y comercios barriales.
+2. **Catálogo y Precios:** Publicación y actualización ágil de precios de góndola y liquidaciones del día.
+3. **Planificación Presupuestaria:** Armado interactivo de listas de compras y cálculo anticipado del ticket total.
+4. **Optimización de Rutas y Movilidad:** Algoritmo de trazado de itinerarios multitienda que pondera distancias, pasajes y tiempo invertido.
+5. **Validación Comunitaria:** Retroalimentación colaborativa en tiempo real sobre la exactitud de precios y existencias físicas.
 
 ![Big Picture - Modelo Final](../assets/ddd/big-picture/big-picture-final.png)
-> *Figura 2.15: Modelo consolidado del Big Picture Event Storming de PeruTech.*
+> *Figura 2.15: Modelo consolidado del Big Picture Event Storming de la plataforma Preciazo.*
 
 ### 2.4.5. Ubiquitous Language
 
-En esta sección se define el *Ubiquitous Language* (Lenguaje Ubicuo) para el dominio de PeruTech, siguiendo los principios de modelado estratégico de *Domain-Driven Design* (DDD) formulados por Eric Evans. Este glosario formal unifica el vocabulario compartido entre los desarrolladores, los expertos del dominio y los usuarios finales (consumidores y comerciantes), eliminando ambigüedades operativas. Se enfoca estrictamente en términos de la dinámica comercial minorista, abastecimiento presencial y movilidad urbana:
+En esta sección se define el *Ubiquitous Language* (Lenguaje Ubicuo) para el dominio de negocio de **PeruTech** y su producto **Preciazo**, siguiendo los principios de modelado estratégico de *Domain-Driven Design* (DDD) formulados por Eric Evans. Este glosario formal unifica el vocabulario compartido entre los desarrolladores, los expertos del dominio y los usuarios finales (compradores independientes y comerciantes minoristas), eliminando ambigüedades operativas y asegurando que las reglas del negocio se reflejen sin distorsión en el sistema. 
 
-* **Affiliated Store (Tienda Afiliada):** Establecimiento comercial físico (bodega, minimarket o puesto de abastos) cuyos datos registrales han sido formalmente validados para exhibir su catálogo y ofertas en la plataforma.
-* **Affiliation Request (Solicitud de Afiliación):** Trámite inicial mediante el cual un comerciante minorista registra los datos de su negocio y su identificación fiscal para integrarse a la red del sistema.
-* **Basic Basket (Canasta Básica):** Conjunto estructurado de bienes y alimentos de primera necesidad requeridos para el consumo periódico de una persona o grupo familiar.
-* **Crowdsourced Verification (Verificación Colaborativa):** Mecanismo mediante el cual la comunidad de compradores confirma, actualiza o reporta la vigencia de los precios y el stock físico observado en góndola.
-* **Multi-stop Route (Ruta Multiparada):** Itinerario secuencial de desplazamiento físico que conecta el punto de origen del comprador con múltiples locales comerciales optimizados geográficamente.
-* **Net Savings (Ahorro Neto):** Diferencia económica positiva resultante de deducir el gasto logístico de transporte (pasajes o combustible) del ahorro monetario bruto obtenido por la dispersión de precios en góndola.
-* **Optimal Purchase Stop (Punto Óptimo de Compra):** Establecimiento comercial sugerido por el sistema al ofrecer el mejor balance entre proximidad geográfica, disponibilidad de artículos y menor precio de canasta.
-* **Price Discrepancy (Discrepancia de Precio):** Desfase identificado entre el precio de venta publicado digitalmente o exhibido en anaquel y el importe real cobrado en la caja registradora.
+El glosario contiene exclusivamente términos del dominio comercial minorista, abastecimiento presencial y movilidad urbana:
+
+* **Affiliated Store (Tienda Afiliada):** Establecimiento comercial físico (bodega, minimarket o puesto de abastos) cuyos datos registrales han sido formalmente validados para exhibir su catálogo y promociones vigentes en la plataforma.
+* **Affiliation Request (Solicitud de Afiliación):** Trámite inicial mediante el cual un comerciante minorista registra los datos de su negocio e identificación fiscal para integrarse a la red comercial del sistema.
+* **Basic Basket (Canasta Básica):** Conjunto estructurado de bienes y alimentos de primera necesidad requeridos para el aprovisionamiento periódico de una persona o grupo familiar.
+* **Crowdsourced Verification (Verificación Colaborativa):** Mecanismo mediante el cual la comunidad de compradores confirma, actualiza o reporta la vigencia de los precios y el stock físico observado directamente en góndola.
+* **Multi-stop Route (Ruta Multiparada):** Itinerario secuencial de desplazamiento físico que conecta el punto de partida del comprador con múltiples locales comerciales seleccionados por conveniencia geográfica y presupuestaria.
+* **Net Savings (Ahorro Neto):** Diferencia económica positiva resultante de deducir el gasto logístico de transporte (pasajes, combustible o taxis de aplicativo) del ahorro monetario bruto obtenido por la dispersión de precios de los productos.
+* **Optimal Purchase Stop (Punto Óptimo de Compra):** Establecimiento comercial sugerido por el sistema al ofrecer el mejor balance entre proximidad geográfica, disponibilidad de artículos y menor costo acumulado de la canasta.
+* **Price Discrepancy (Discrepancia de Precio):** Desfase identificado entre el precio de venta publicado digitalmente o exhibido en anaquel y el importe real exigido en la caja registradora del establecimiento.
 * **Price Dispersion (Dispersión de Precios):** Variación del precio de venta de un mismo producto idéntico entre distintos establecimientos comerciales de una misma zona o distrito.
-* **Product Catalog (Catálogo de Productos):** Conjunto indexado de artículos y bienes de consumo masivo clasificados por marca, categoría y presentación estándar.
-* **Purchase Budget (Presupuesto de Compra):** Techo financiero monetario definido por el consumidor antes de salir a comprar para controlar su nivel de gasto.
-* **Purchase Item (Artículo de Compra):** Bien individual definido por nombre, marca, formato y unidad de medida que integra la lista de compras del usuario.
-* **Retail Store (Comercio Minorista):** Punto de venta físico dedicado a la comercialización directa de bienes de consumo al comprador presencial.
-* **Shopping List (Lista de Compras):** Registro organizado de los artículos que el consumidor planifica adquirir durante su jornada de compra.
-* **Store Administrator (Administrador de Tienda):** Propietario o encargado formal del establecimiento comercial responsable de la publicación de precios, control de promociones y gestión del perfil del local.
-* **Store Offer (Oferta de Tienda):** Reducción temporal de precio o promoción especial publicada por un comercio afiliado para incentivar la afluencia de compradores locales.
-* **Substituted Good (Bien Sustituto):** Producto de características o valor nutricional equivalente que el comprador selecciona como alternativa cuando el artículo preferente no tiene stock o excede su presupuesto.
-* **SUNAT Verification (Validación SUNAT):** Verificación del estado del Registro Único de Contribuyentes (RUC) y la condición fiscal activa del comercio antes de habilitar su visibilidad pública.
-* **Transit Overhead (Sobrecosto de Desplazamiento):** Demora temporal y gasto adicional de movilidad en los que incurre un comprador debido al tráfico urbano o a la lejanía entre tiendas.
-* **Unit Price (Precio Unitario):** Costo por unidad estándar de medida (kilogramo, litro, paquete) que permite comparar con equidad el valor real de productos con diferentes tamaños de empaque.
+* **Product Catalog (Catálogo de Productos):** Conjunto indexado de artículos y bienes de consumo masivo clasificados por marca, categoría comercial y presentación estándar.
+* **Purchase Budget (Presupuesto de Compra):** Techo financiero monetario definido por el consumidor antes de iniciar su jornada de aprovisionamiento para controlar su nivel de gasto.
+* **Purchase Item (Artículo de Compra):** Bien individual especificado por nombre, marca, formato y unidad de medida que integra la lista de compras del usuario.
+* **Retail Store (Comercio Minorista):** Punto de venta físico dedicado a la comercialización directa de bienes de consumo masivo al comprador presencial de barrio.
+* **Shopping List (Lista de Compras):** Registro organizado de los artículos y cantidades que el consumidor planifica adquirir durante su jornada de aprovisionamiento.
+* **Store Administrator (Administrador de Tienda):** Propietario o encargado formal del establecimiento comercial responsable de la publicación de precios, control de promociones y administración del local.
+* **Store Offer (Oferta de Tienda):** Reducción temporal de precio o promoción especial publicada por un comercio para acelerar la rotación de inventario e incentivar la afluencia de compradores locales.
+* **Substituted Good (Bien Sustituto):** Producto de características o valor funcional equivalente que el comprador selecciona como reemplazo cuando el artículo preferente no tiene existencias o excede su presupuesto.
+* **SUNAT Verification (Validación SUNAT):** Verificación del estado del Registro Único de Contribuyentes (RUC) y la condición fiscal activa del comercio antes de habilitar su visibilidad pública en la red.
+* **Transit Overhead (Sobrecosto de Desplazamiento):** Demora temporal y gasto adicional de movilidad en los que incurre un comprador debido a la congestión vehicular urbana o a la lejanía física entre establecimientos.
+* **Unit Price (Precio Unitario):** Costo por unidad estándar de medida (kilogramo, litro, gramo, unidad) que permite comparar con equidad el valor real de productos con diferentes tamaños de empaque.
 
 
 # Capítulo III: Requirements Specification
