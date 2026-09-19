@@ -611,10 +611,11 @@ El recorrido documenta la experiencia de Fernando al realizar sus compras de aba
 #### User Journey Map 2: Daniel Stalin Palomino Murga (Segmento 2 - Comerciante Minorista y Administrador de Tienda Local)
 
 El recorrido documenta la jornada típica de Daniel en la administración de su bodega en Santa Anita. La experiencia inicia con el ajuste de precios según el incremento fijado por los proveedores y el registro manual de inventario en un cuadernillo físico; continúa con la colocación de carteles en la entrada de su local y el envío de estados por WhatsApp para difundir ofertas; prosigue con la pérdida de ventas ocasionada por desabastecimiento de productos clave o clientes que encuentran mejores precios en la competencia zonal; y concluye con la necesidad de digitalizar sus precios de forma ágil desde el celular para comunicar quiebres de stock a tiempo, atraer nuevos compradores del barrio y evitar la merma de mercadería.
+ 
+![User Journey Map 2](../assets/artifacts/Mapping2.png)
+> *Figura 2.9: Diagrama de User Journey Map (As-Is) correspondiente al Segmento 2, elaborado en UXPressia.*
 
-![User Journey Map 2 - Daniel Stalin Palomino Murga](../assets/artifacts/Mapping2.png)
-> *Figura 2.9: Diagrama de User Journey Map correspondiente al Segmento 2, elaborado en UXPressia.*
-
+ 
 ### 2.3.4. Empathy Mapping
 
 En esta sección se sintetiza el proceso de empatización desarrollado para comprender a profundidad el entorno emocional, cognitivo y conductual de los arquetipos de usuario. La construcción de cada *Empathy Map* se estructuró situando a cada arquetipo en el centro del análisis para desglosar sus percepciones en torno a las dimensiones clave: qué piensa y siente, qué ve, qué oye, qué dice y hace, así como sus principales esfuerzos (*Pains*) y resultados esperados (*Gains*).
