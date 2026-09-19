@@ -296,7 +296,6 @@ El ecosistema retail en el Perú ha experimentado un avance hacia la digitalizac
 | **Oportunidades** | | Sensibilidad al precio en compras presenciales ante variaciones de inflación; crecimiento de cadenas de descuento y necesidad de digitalización de bodegas de barrio. | Expansión hacia servicios financieros digitales (billeteras electrónicas) y programas corporativos de abastecimiento de oficinas. | Alianzas con pequeños comerciantes y bodegas de barrio para digitalizar sus promociones y volantes impresos. | Modernización visual del sistema orientada al consumo responsable y prevención del desperdicio de insumos perecibles. |
 | **Amenazas** | | Restricciones de acceso a datos públicos por parte de grandes cadenas de retail; incorporación de módulos de listas en plataformas bancarias o billeteras móviles. | Modificaciones en regulaciones laborales sobre repartidores que eleven los costos operativos; saturación y deserción de usuarios por cobros excesivos de servicio. | Desplazamiento por parte de usuarios jóvenes que demandan datos estructurados en tiempo real en lugar de lectura de folletos extensos. | Abandono de usuarios hacia aplicaciones genéricas de notas compartidas integradas en los sistemas operativos móviles. |
 
-
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
 A partir del diagnóstico FODA cruzado y el mapeo del entorno competitivo, la startup **PeruTech** define las siguientes estrategias y tácticas preliminares para consolidar la propuesta de valor de **Preciazo** frente a las fortalezas y debilidades de los competidores, capitalizando las oportunidades del mercado y mitigando amenazas del entorno:
@@ -322,6 +321,8 @@ A partir del diagnóstico FODA cruzado y el mapeo del entorno competitivo, la st
     * Integrar listas de compra interactivas que vinculen automáticamente cada ítem con las ofertas y liquidaciones geolocalizadas más cercanas.
     * Implementar un entorno limpio y libre de anuncios display obstructivos, priorizando la agilidad de consulta y la claridad visual en la interfaz.
 
+
+## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
 
 El diseño del instrumento cualitativo desarrollado por **PeruTech** se fundamenta en el enfoque de Diseño Centrado en el Usuario (UCD) para recopilar evidencia empírica directa y validar los requerimientos de la plataforma **Preciazo**. Esta información sustenta la construcción técnica de los arquetipos (*User Personas*), mapas de empatía (*Empathy Maps*) y recorridos de usuario (*User Journey Maps*).
@@ -382,6 +383,8 @@ El instrumento integra variables demográficas, competencias digitales y dinámi
 A continuación, se presenta la bitácora de las entrevistas cualitativas realizadas a los representantes de los segmentos objetivo. Los datos recopilados documentan las características demográficas, hábitos tecnológicos, canales de interacción, dispositivos y factores psicográficos requeridos para la formulación formal de los arquetipos de usuario.
 
 ---
+
+
 
 #### Segmento 1: Compradores Multitienda y Optimizadores de Desplazamiento
 
@@ -450,7 +453,7 @@ Laura prefiere realizar sus compras durante días laborables y aproximadamente e
   * **Resumen descriptivo:** 
   Prefiere concentrar todas sus compras en un solo establecimiento en una misma salida para optimizar su tiempo. Antes de salir de casa, busca ofertas y promociones activas mediante redes sociales (Instagram) y aplicaciones financieras como Yape. Realiza sus traslados en vehículo propio; por ello, el tiempo de viaje o la distancia no representan una limitante crítica, aunque identifica la congestión vehicular (tráfico nocturno en Lima) como su principal punto de dolor. Demuestra un alto nivel de organización financiera al gestionar el presupuesto familiar a través de un formulario integrado con Excel. Respecto a la adopción de una plataforma de comparación de precios y diseño de rutas, expresa interés condicionado a que la herramienta cuente con una interfaz intuitiva, sencilla y de fácil uso para su rutina diaria.
 
-![Screenshot Entrevista 3](/assets/entrevista-3.png)
+![Screenshot Entrevista 3](../assets/entrevista-3.png)
 > *Figura 2.3: Registro audiovisual de la entrevista cualitativa 3.*
 
 ---
@@ -472,9 +475,8 @@ Laura prefiere realizar sus compras durante días laborables y aproximadamente e
    - *Hábitos digitales relacionados con compras:* Consulta precios y disponibilidad de productos mediante Internet antes de desplazarse a los establecimientos.
    - *Rasgos inferidos a partir de la entrevista:* Enfocado en optimizar y mejorar su negocio, precavido al realizar compras y abastecimiento de mercancía.
 - **Resumen descriptivo:** El entrevistado es propietario o administrador de un establecimiento comercial ubicado en Santa Anita. Para comunicar sus promociones utiliza principalmente WhatsApp y carteles en la entrada de su tienda. Actualiza los precios de sus productos según el aumento de precios de los proveedores de mercancía y administra su inventario mediante el uso de un cuadernillo donde anota datos importantes. Señala que sus principales dificultades para atraer clientes son la competencia eleveada en la zona, los escasos medios para promocionar su negocio y que depende de clientes fijos. Respecto a la plataforma propuesta, manifestó que le gustaria actualizar sus precios rapidamente desde cualquier dispositivo, publicar ofertas y recibir avisos cuando los productos se agoten, destacando la importancia de que la herramienta sea intuitiva y no tenga costos elevados. Finalmente, explicó que los principales motivos por los que pierde ventas son falta de inventario y que sus clientes encuentrar un precio más bajo en otras tiendas, además actualmente administra su negocio utilizando unicamente un cuadernillo fisico.
-  `
-
-![Screenshot Entrevista 4](/assets/entrevista-4.png)
+  
+![Screenshot Entrevista 4](../assets/entrevista-4.png)
 > *Figura 2.4: Registro audiovisual de la entrevista cualitativa 4.*
 
 
@@ -642,45 +644,47 @@ El mapa de empatía de Daniel documenta las presiones comerciales y operativas v
 
 ## 2.4. Big Picture Event Storming
 
-Para modelar la complejidad del dominio de negocio de PeruTech, el equipo llevó a cabo un taller colaborativo de *Big Picture Event Storming*. Esta metodología de exploración de alto nivel permitió alinear el entendimiento del problema entre el equipo técnico y el análisis de negocio, identificando los procesos clave, oportunidades y eventos significativos que rigen tanto el abastecimiento inteligente del consumidor como la visibilidad comercial de los establecimientos minoristas afiliados.
+Para modelar la complejidad del dominio de negocio y comprender integralmente los flujos operativos de la plataforma **Preciazo**, el equipo de la startup **PeruTech** llevó a cabo un taller colaborativo de *Big Picture Event Storming* siguiendo la guía metodológica de Domain-Driven Design (DDD). Esta dinámica visual de alto nivel facilitó un entendimiento compartido entre los desarrolladores de software y los requerimientos del negocio, permitiendo explorar exhaustivamente el *landscape* comercial, mapear los procesos fundamentales de aprovisionamiento y comercialización, y evidenciar de forma temprana los puntos críticos, riesgos y oportunidades de innovación tecnológica para ambos segmentos objetivo.
+
+A continuación, se detalla el desarrollo secuencial del taller a través de sus fases progresivas:
 
 ---
 
 ### 2.4.1. Fase 1: Generación Abierta de Eventos (Open Space)
 
-En esta etapa inicial, los participantes realizaron una lluvia de ideas sin restricciones temporales ni de orden secuencial para registrar todos los eventos de dominio (*Domain Events*) posibles, redactados en tiempo pasado (post-it naranjas). Se levantaron eventos desde la detección de necesidad y registro del usuario hasta la optimización de rutas, control presupuestario, publicación de ofertas y validación de precios en los locales comerciales.
+En esta fase inicial divergente, los integrantes del equipo registraron de manera abierta y sin restricciones de orden cronológico todos los eventos significativos ocurridos dentro del dominio de negocio (*Domain Events*), redactados estrictamente en tiempo verbal pasado sobre notas adhesivas de color naranja. El levantamiento abarcó todo el ciclo de vida de la interacción comercial y operativa: desde el registro e inicio de sesión de los usuarios, la afiliación de bodegas, la publicación y actualización de ofertas, el armado de canastas básicas y listas de compras, hasta la proyección presupuestaria, el cálculo de trayectos óptimos y la confirmación final de compra en el establecimiento físico.
 
 ![Big Picture - Open Space](../assets/ddd/big-picture/big-picture-open.png)
-> *Figura 2.12: Fase Open Space del Big Picture Event Storming, registro inicial de eventos de dominio.*
+> *Figura 2.12: Fase Open Space del Big Picture Event Storming, lluvia de ideas y registro no estructurado de eventos de dominio para Preciazo.*
 
 ---
 
 ### 2.4.2. Fase 2: Exploración y Línea de Tiempo (Explore)
 
-Durante la fase de exploración, el equipo ordenó cronológicamente los eventos identificados de izquierda a derecha para estructurar la línea de tiempo del negocio. Asimismo, se identificaron puntos de fricción, cuellos de botella y dudas del dominio mediante marcas de riesgo o problemas (*Hotspots* / post-it rojos/rosados), tales como la dispersión de precios no verificados, el tráfico vehicular, el estancamiento de stock en locales y los desvíos presupuestarios imprevistos en caja.
+Durante la fase de exploración y convergencia, el equipo estructuró una línea temporal secuencial orientando los eventos de dominio de izquierda a derecha según el flujo natural de las operaciones. En este análisis se incorporaron notas de color rojo/rosado para identificar puntos de dolor, cuellos de botella e incertidumbres críticas del dominio (*Hotspots*). Entre las fricciones expuestas destacaron la discrepancia entre precios exhibidos digitalmente y los cobrados en caja registradora, la saturación del tráfico limeño que encarece los traslados físicos, los quiebres imprevistos de stock en comercios minoristas y el riesgo de abandono de la plataforma ante interfaces complejas.
 
 ![Big Picture - Explore](../assets/ddd/big-picture/big-picture-explore.png)
-> *Figura 2.13: Fase Explore del Big Picture Event Storming, ordenamiento cronológico y detección de puntos críticos.*
+> *Figura 2.13: Fase Explore del Big Picture Event Storming, ordenamiento cronológico sobre la línea de tiempo y detección de Hotspots.*
 
 ---
 
 ### 2.4.3. Fase 3: Consolidación y Definición de Triggers (Close Space)
 
-En el cierre del espacio de exploración, se refinó la línea de tiempo eliminando redundancias y se incorporaron los comandos o acciones desencadenantes (*Commands* / post-it azules) ejecutados por los actores del sistema (el comprador independiente o el comerciante minorista), así como las políticas o reglas de negocio automáticas (*Policies* / post-it lilas) que reaccionan a determinados eventos, por ejemplo, alertas por superación de presupuesto, notificaciones de nuevas promociones zonales o recálculo de rutas por congestión.
+En el cierre del espacio de exploración, se refinó la línea temporal eliminando duplicidades y clarificando las transiciones del sistema. Se integraron los comandos desencadenantes (*Commands* / post-it azules) que representan las intenciones y acciones operadas por los actores primarios (el comprador independiente y el comerciante minorista), así como las políticas y reglas de negocio reactivas (*Policies* / post-it lilas). Estas políticas modelan la lógica automática del sistema, tales como la emisión de alertas preventivas cuando el costo acumulado de la canasta supera el presupuesto límite, la sugerencia de artículos sustitutos ante falta de existencias y la reconfiguración dinámica de rutas ante alertas de congestión vehicular.
 
 ![Big Picture - Close Space](../assets/ddd/big-picture/big-picture-close.png)
-> *Figura 2.14: Fase Close Space del Big Picture Event Storming, integración de comandos, actores y políticas de negocio.*
+> *Figura 2.14: Fase Close Space del Big Picture Event Storming, articulación de actores, comandos ejecutores y políticas de dominio.*
 
 ---
 
 ### 2.4.4. Fase 4: Modelo Final del Dominio (Final Landscape)
 
-Como resultado consolidado del proceso, se estructuró el mapa integral del paisaje del negocio (*Business Landscape*). Este diagrama agrupa los eventos, comandos y políticas en torno a los flujos operativos fundamentales de PeruTech: gestión de perfiles e identidad (consumidores y comercios), catálogo y actualización de precios/ofertas, planificación de listas de compra, y optimización de rutas de traslado con control presupuestario previo a la compra física.
+Como resultado definitivo del taller colaborativo, se consolidó el mapa general del dominio (*Business Landscape*) para la plataforma **Preciazo**, estructurado por el equipo de **PeruTech**. Este artefacto articula de forma holística los eventos, comandos, reglas y sistemas externos en torno a los subdominios clave del negocio: gestión de perfiles e identidad (consumidores y comercios afiliados), catálogo estructurado de productos y tarifas en góndola, planificación colaborativa de presupuestos familiares, y motor de geolocalización para optimización de rutas comerciales.
 
 ![Big Picture - Modelo Final](../assets/ddd/big-picture/big-picture-final.png)
-> *Figura 2.15: Modelo consolidado del Big Picture Event Storming de PeruTech.*
+> *Figura 2.15: Modelo consolidado del Big Picture Event Storming para Preciazo, desarrollado por el equipo de PeruTech.*
 
-### 2.4.5. Ubiquitous Language
+### 2.5. Ubiquitous Language
 
 En esta sección se define el *Ubiquitous Language* (Lenguaje Ubicuo) para el dominio de PeruTech, siguiendo los principios de modelado estratégico de *Domain-Driven Design* (DDD) formulados por Eric Evans. Este glosario formal unifica el vocabulario compartido entre los desarrolladores, los expertos del dominio y los usuarios finales (consumidores y comerciantes), eliminando ambigüedades operativas. Se enfoca estrictamente en términos de la dinámica comercial minorista, abastecimiento presencial y movilidad urbana:
 
