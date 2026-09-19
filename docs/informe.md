@@ -89,6 +89,7 @@ Proyecto
 | 1.0     | 18/09/2026 | Becerra Durand, Sebastian Uriel | Incorporación del registro de entrevista al segmento de comerciantes minoristas en la sección 2.2.2. |
 |1.0|18/09/2026|Miranda Romero Sergio Luis|Realización del capitulo 3|
 |1.2|18/09/2026|Casos Torre Miguel Andre|Realización de entrevista, DDD diagramas, correciones al Cap. 1|
+|1.3|18/09/2026|Capillo Lema, Mía Valentina|Realización del capitulo 1, style guidelines, arquitectura|
 |         |            |                                 | |
 
 ---
@@ -219,8 +220,8 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |---------------------|---------------------|--------------|
-| **Comunica oralmente con efectividad a diferentes rangos de audiencia.** | [Descripción de acciones realizadas] <br> **AV1** <br> [Evidencia] | [Conclusiones] |
-| **Comunica por escrito con efectividad a diferentes rangos de audiencia.** | [Descripción de acciones realizadas] <br> **AV1** <br> [Evidencia] | [Conclusiones] |
+| **Comunica oralmente con efectividad a diferentes rangos de audiencia.** | Capillo Lema, Mía Valentina <br> **AV1** <br> Entrevisté a los usuarios del Segmento 1 adaptando mis preguntas a un lenguaje sencillo, y presenté las ideas clave de mi trabajo de forma clara y directa. | [Conclusiones] |
+| **Comunica por escrito con efectividad a diferentes rangos de audiencia.** | Capillo Lema, Mía Valentina <br> **AV1** <br> Redacté el resumen de las entrevistas, estructuré la documentación técnica con diagramas de Wireflow y User Flow, y usé mensajes de Git claros para coordinar el avance del repositorio. | [Conclusiones] |
 
 ---
 
