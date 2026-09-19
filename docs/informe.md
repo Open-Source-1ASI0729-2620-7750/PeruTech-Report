@@ -950,15 +950,13 @@ Estructura de desplazamiento y recorrido del usuario en las diferentes plataform
 
 ## 4.3. Landing Page UI Design
 
-[Contenido]
-
 ### 4.3.1. Landing Page Wireframe
 
-[Contenido]
+A continuación se presentan los wireframes de baja fidelidad representando la estructura y jerarquía visual.
+
+![wireframe-landing](/assets/designs/landing/wireframe-landing.png)
 
 ### 4.3.2. Landing Page Mock-up
-
-[Contenido]
 
 ## 4.4. Web Applications UX/UI Design
 
