@@ -78,10 +78,11 @@ Proyecto
 
 # Registro de Versiones del Informe
 
-| Versión | Fecha | Autor | Descripción de modificación |
-|--------|------|------|-----------------------------|
-| 1.0 | 06/09/2026 | Capillo Lema, Mía Valentina   | Creación inicial del informe |
-| | | | |
+| Versión | Fecha      | Autor                           | Descripción de modificación |
+|---------|------------|---------------------------------|-----------------------------|
+| 1.0     | 06/09/2026 | Capillo Lema, Mía Valentina     | Creación inicial del informe |
+| 1.1     | 18/09/2026 | Becerra Durand, Sebastian Uriel | Incorporación del registro de entrevista al segmento de comerciantes minoristas en la sección 2.2.2. |
+|         |            |                                 | |
 
 ---
 
@@ -536,16 +537,21 @@ Laura prefiere realizar sus compras durante días laborables y aproximadamente e
 #### Segmento 2: Comerciantes Minoristas y Administradores de Tiendas Locales
 
 * **Entrevista 4:**
-  * **Nombre y Apellidos:** `[Pendiente: Colocar Nombres y Apellidos del Entrevistado 4]`
-  * **Edad:** `[Pendiente: Edad]`
-  * **Distrito de residencia:** `[Pendiente: Distrito]`
-  * **Ocupación:** `[Pendiente: Ocupación]`
-  * **Plataforma de video:** Microsoft Stream
-  * **Enlace de Video:** `[Pendiente: URL de Microsoft Stream]`
-  * **Marca de tiempo (Timing de inicio):** `[00:00]`
-  * **Duración:** `[hh:mm]`
-  * **Perfil técnico y entorno digital:** `[Pendiente: Dispositivos, Navegador, Canales y Personalidad]`
-  * **Resumen descriptivo:** `[Pendiente: Redactar resumen de respuestas sobre presupuesto familiar y control de despensa]`
+  - **Nombre y Apellidos:** `Daniel Stalin Palomino Murga`
+  - **Edad:** `29`
+  - **Distrito de residencia:** `Santa Anita`
+  - **Ocupación:** `Propietario o administrador de bodega`
+  - **Plataforma de video:** Microsoft Stream
+  - **Enlace de Video:** `[Ver video.](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b756_upc_edu_pe/IQCGCWoyG5FVQbEdtq6CSFwOAYcuD4-mK4BqWpmAxF6fwL8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=6KWDyr)`
+  - **Marca de tiempo (Timing de inicio):** `[00:28]`
+  - **Duración:** `[00:03:53]`
+  - **Perfil técnico y entorno digital:**
+   - *Dispositivos habituales:* Laptop y teléfono.
+   - *Canales digitales e influencias:* Facebook, TikTok, Yape, PedidosYa, Rappi, Diddi y webs de supermercados.
+   - *Hábitos digitales relacionados con compras:* Consulta precios y disponibilidad de productos mediante Internet antes de desplazarse a los establecimientos.
+   - *Rasgos inferidos a partir de la entrevista:* Enfocado en optimizar y mejorar su negocio, precavido al realizar compras y abastecimiento de mercancía.
+- **Resumen descriptivo:** El entrevistado es propietario o administrador de un establecimiento comercial ubicado en Santa Anita. Para comunicar sus promociones utiliza principalmente WhatsApp y carteles en la entrada de su tienda. Actualiza los precios de sus productos según el aumento de precios de los proveedores de mercancía y administra su inventario mediante el uso de un cuadernillo donde anota datos importantes. Señala que sus principales dificultades para atraer clientes son la competencia eleveada en la zona, los escasos medios para promocionar su negocio y que depende de clientes fijos. Respecto a la plataforma propuesta, manifestó que le gustaria actualizar sus precios rapidamente desde cualquier dispositivo, publicar ofertas y recibir avisos cuando los productos se agoten, destacando la importancia de que la herramienta sea intuitiva y no tenga costos elevados. Finalmente, explicó que los principales motivos por los que pierde ventas son falta de inventario y que sus clientes encuentrar un precio más bajo en otras tiendas, además actualmente administra su negocio utilizando unicamente un cuadernillo fisico.
+  `
 
 ![Screenshot Entrevista 4](assets/entrevista-4.png)
 > *Figura 2.4: Registro audiovisual de la entrevista cualitativa 4.*
