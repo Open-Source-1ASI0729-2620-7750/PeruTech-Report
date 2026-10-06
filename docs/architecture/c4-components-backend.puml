@@ -1,31 +1,31 @@
-@startuml PeruTech_C4_Components_Backend
+@startuml Preciazo_C4_Components_Backend
 
 !include <C4/C4_Component>
 
 LAYOUT_LEFT_RIGHT()
 
-title PeruTech - REST API Components
+title Preciazo - REST API Component Diagram
 
-Container(web, "Angular Web Application", "Angular, TypeScript, Angular Material", "Responsive role-based web client.")
-System_Ext(routing, "Mapping & Routing Service", "Provides geolocation and optimized routes.")
+Container(web, "Single-Page Application (SPA)", "Angular, TypeScript, Angular Material", "Responsive Preciazo web application used by Buyers and Merchants.")
+System_Ext(routing, "Mapping & Routing Service", "Provides geolocation, distances, travel times and optimized routes.")
 System_Ext(ruc, "RUC Verification Service", "Validates merchant fiscal information.")
-ContainerDb(database, "Relational Database", "Relational Database", "Persists operational data.")
+ContainerDb(database, "Relational Database", "Relational Database", "Persists operational data required by Preciazo.")
 
-Container_Boundary(api, "PeruTech REST API") {
-    Component(rest, "REST/API Layer", "Spring Web / REST Controllers", "Translates HTTP requests into application use cases and returns API responses.")
-    Component(identity, "Identity and Access", "Application and domain components", "Authenticates users and enforces Buyer and Merchant authorization rules.")
-    Component(shopping, "Shopping Planning", "Application and domain components", "Manages shared shopping lists, purchase items, budgets and purchase progress.")
-    Component(catalog, "Catalog and Pricing", "Application and domain components", "Manages products, unit prices, availability and comparison data.")
-    Component(route, "Route Planning", "Application and domain components", "Builds multi-stop routes and calculates net savings considering transit overhead.")
-    Component(merchant, "Merchant Management", "Application and domain components", "Manages retail stores, catalog, inventory, offers and merchant operations.")
-    Component(verification, "Community Price Verification", "Application and domain components", "Registers price observations, discrepancies and community confirmations.")
-    Component(analytics, "Analytics and Engagement", "Application and domain components", "Consolidates merchant traffic, lost sales and engagement metrics.")
-    Component(persistence, "Persistence Adapter", "Spring Data JPA", "Maps domain objects to relational data and coordinates repository access.")
-    Component(mapping, "Mapping & Routing Adapter", "HTTP client", "Adapts the external mapping and routing contract to Route Planning.")
-    Component(rucAdapter, "RUC Verification Adapter", "HTTP client", "Adapts the external RUC verification contract to Merchant Management.")
+Container_Boundary(api, "Preciazo REST API") {
+    Component(rest, "REST / API Layer", "Java, Spring Web", "Translates HTTP requests into application use cases and returns API responses.")
+    Component(identity, "Identity and Access", "Java, Spring Boot", "Authenticates users and enforces Buyer and Merchant authorization rules.")
+    Component(shopping, "Shopping Planning", "Java, Spring Boot", "Manages shared shopping lists, purchase items, budgets and purchase progress.")
+    Component(catalog, "Catalog and Pricing", "Java, Spring Boot", "Manages products, unit prices, availability and comparison data.")
+    Component(route, "Route Planning", "Java, Spring Boot", "Builds multi-stop routes and calculates net savings considering transit overhead.")
+    Component(merchant, "Merchant Management", "Java, Spring Boot", "Manages retail stores, catalog, inventory, offers and merchant operations.")
+    Component(verification, "Community Price Verification", "Java, Spring Boot", "Registers price observations, discrepancies and community confirmations.")
+    Component(analytics, "Analytics and Engagement", "Java, Spring Boot", "Consolidates merchant traffic, lost sales and engagement metrics.")
+    Component(persistence, "Persistence Adapter", "Spring Data JPA", "Implements repository persistence access while preserving bounded context responsibilities.")
+    Component(mapping, "Mapping & Routing Adapter", "Java HTTP Client", "Adapts the external mapping and routing contract to Route Planning.")
+    Component(rucAdapter, "RUC Verification Adapter", "Java HTTP Client", "Adapts the external RUC verification contract to Merchant Management.")
 }
 
-Rel(web, rest, "Invokes application endpoints", "HTTPS / JSON")
+Rel(web, rest, "Invokes REST endpoints", "HTTPS / JSON")
 Rel(rest, identity, "Dispatches identity use cases")
 Rel(rest, shopping, "Dispatches shopping use cases")
 Rel(rest, catalog, "Dispatches catalog and pricing use cases")

@@ -1,26 +1,26 @@
-@startuml PeruTech_C4_Components_Frontend
+@startuml Preciazo_C4_Components_Frontend
 
 !include <C4/C4_Component>
 
 LAYOUT_LEFT_RIGHT()
 
-title PeruTech - Angular Web Application Components
+title Preciazo - Single-Page Application (SPA) Component Diagram
 
 Person(buyer, "Buyer", "Uses shopping, price comparison, route and verification features.")
 Person(merchantPerson, "Merchant", "Uses store, catalog, inventory, offer and analytics features.")
-Container(api, "PeruTech REST API", "Java, Spring Boot, Spring Data JPA", "Backend application boundary consumed by the web application.")
+Container(api, "Preciazo REST API", "Java, Spring Boot, Spring Data JPA", "Provides RESTful application services consumed by the SPA.")
 
-Container_Boundary(web, "Angular Web Application") {
+Container_Boundary(web, "Single-Page Application (SPA)") {
     Component(router, "Router / Guards", "Angular Router", "Resolves routes and protects role-specific navigation.")
-    Component(shared, "Shared UI", "Angular Material and shared Angular components", "Provides reusable layout, forms, tables, validation and feedback components.")
-    Component(identity, "Identity & Access UI", "Angular feature module", "Supports sign-in, session state, role context and access-related flows.")
-    Component(shopping, "Shopping Planning UI", "Angular feature module", "Supports shared shopping lists, budgets and purchase progress.")
-    Component(catalog, "Catalog & Pricing UI", "Angular feature module", "Searches products, compares unit prices and displays availability.")
-    Component(route, "Route Planning UI", "Angular feature module", "Configures multi-stop routes and presents estimated savings and travel information.")
-    Component(merchantManagement, "Merchant Management UI", "Angular feature module", "Manages stores, catalog, inventory and offers.")
-    Component(verification, "Community Price Verification UI", "Angular feature module", "Reports price discrepancies and shows verification status.")
-    Component(analytics, "Analytics & Engagement UI", "Angular feature module", "Presents merchant traffic, lost sales and engagement metrics.")
-    Component(apiServices, "API/Application Services", "Angular services and HTTP client", "Encapsulates API calls, DTO mapping, loading state and error handling for feature modules.")
+    Component(shared, "Shared UI", "Angular, TypeScript, Angular Material", "Provides reusable layout, forms, tables, validation and feedback components.")
+    Component(identity, "Identity and Access UI", "Angular, TypeScript", "Supports sign-in, session state, role context and access-related flows.")
+    Component(shopping, "Shopping Planning UI", "Angular, TypeScript", "Supports shared shopping lists, budgets and purchase progress.")
+    Component(catalog, "Catalog and Pricing UI", "Angular, TypeScript", "Searches products, compares unit prices and displays availability.")
+    Component(route, "Route Planning UI", "Angular, TypeScript", "Configures multi-stop routes and presents estimated savings and travel information.")
+    Component(merchantManagement, "Merchant Management UI", "Angular, TypeScript", "Manages stores, catalog, inventory and offers.")
+    Component(verification, "Community Price Verification UI", "Angular, TypeScript", "Reports price discrepancies and shows verification status.")
+    Component(analytics, "Analytics and Engagement UI", "Angular, TypeScript", "Presents merchant traffic, lost sales and engagement metrics.")
+    Component(apiServices, "API/Application Services", "Angular, TypeScript, HttpClient", "Encapsulates API calls, DTO mapping, loading state and error handling for feature modules.")
 }
 
 Rel(buyer, identity, "Signs in", "HTTPS")
@@ -38,13 +38,13 @@ Rel(router, route, "Routes and guards")
 Rel(router, merchantManagement, "Routes and guards")
 Rel(router, verification, "Routes and guards")
 Rel(router, analytics, "Routes and guards")
-Rel(shared, identity, "Composes")
-Rel(shared, shopping, "Composes")
-Rel(shared, catalog, "Composes")
-Rel(shared, route, "Composes")
-Rel(shared, merchantManagement, "Composes")
-Rel(shared, verification, "Composes")
-Rel(shared, analytics, "Composes")
+Rel(identity, shared, "Uses shared UI components")
+Rel(shopping, shared, "Uses shared UI components")
+Rel(catalog, shared, "Uses shared UI components")
+Rel(route, shared, "Uses shared UI components")
+Rel(merchantManagement, shared, "Uses shared UI components")
+Rel(verification, shared, "Uses shared UI components")
+Rel(analytics, shared, "Uses shared UI components")
 Rel(identity, apiServices, "Calls")
 Rel(shopping, apiServices, "Calls")
 Rel(catalog, apiServices, "Calls")

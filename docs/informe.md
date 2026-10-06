@@ -1526,19 +1526,25 @@ El resultado del proceso permitió organizar el dominio en siete Bounded Context
 
 ### 4.6.2. Software Architecture Context Diagram
 
-![PeruTech Software Architecture Context Diagram](../assets/architecture/c4-context.png)
+![Preciazo Software Architecture Context Diagram](../assets/architecture/c4-context.png)
 
 ### 4.6.3. Software Architecture Container Diagrams
 
-El diagrama de contenedores describe la arquitectura física y lógica de la solución. Se evidencia explícitamente la adopción de una **Single Page Application (SPA)** desarrollada en Angular para la experiencia interactiva tanto de compradores como comerciantes, interactuando asíncronamente con el API Gateway y microservicios RESTful en Java / Spring Boot, persistidos en una base de datos relacional:
+El diagrama de contenedores describe la arquitectura lógica de **Preciazo**. La Landing Page presenta el producto y proporciona acceso a la **Single-Page Application (SPA)** desarrollada con Angular, TypeScript y Angular Material para compradores y comerciantes. La SPA consume mediante HTTPS / JSON los endpoints de **Preciazo REST API**, una aplicación modular en Java / Spring Boot que persiste los datos operacionales en una base de datos relacional y se integra con Mapping & Routing Service y RUC Verification Service.
 
-![PeruTech Software Architecture Container Diagram](../assets/architecture/c4-container.png)
+![Preciazo Software Architecture Container Diagram](../assets/architecture/c4-container.png)
 
 ### 4.6.4. Software Architecture Components Diagrams
 
-El diagrama de componentes detalla la estructuración interna de los módulos alineados a Domain-Driven Design, evidenciando la arquitectura modular de la SPA Frontend y su conexión con los controladores RESTful del Backend:
+Los diagramas de componentes detallan por separado la estructura interna de la **Single-Page Application (SPA)** y de **Preciazo REST API**, manteniendo los siete Bounded Contexts definidos mediante Domain-Driven Design.
 
-![PeruTech Frontend Component Diagram](../assets/architecture/c4-components-frontend.png)
+En la SPA, las funcionalidades de cada contexto utilizan componentes de UI compartidos y servicios de aplicación que encapsulan las llamadas HTTP a la REST API. Router / Guards organiza la navegación según el rol del usuario.
+
+![Preciazo Frontend Component Diagram](../assets/architecture/c4-components-frontend.png)
+
+En el backend, la capa REST delega los casos de uso a los componentes de aplicación y dominio de los siete contextos. El Persistence Adapter implementa el acceso a repositorios mediante Spring Data JPA. Route Planning utiliza Mapping & Routing Adapter para las consultas de rutas, mientras que Merchant Management utiliza RUC Verification Adapter para la validación fiscal. Ambos adaptadores se comunican con sus respectivos servicios externos mediante HTTPS / REST API.
+
+![Preciazo Backend Component Diagram](../assets/architecture/c4-components-backend.png)
 
 ## 4.7. Software Object-Oriented Design
 
