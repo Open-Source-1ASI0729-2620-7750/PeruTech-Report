@@ -12,7 +12,7 @@ System_Ext(ruc, "RUC Verification Service", "Validates merchant fiscal informati
 ContainerDb(database, "Relational Database", "Relational Database", "Persists operational data required by Preciazo.")
 
 Container_Boundary(api, "Preciazo REST API") {
-    Component(rest, "REST / API Layer", "Java, Spring Web", "Translates HTTP requests into application use cases and returns API responses.")
+    Component(rest, "REST / API Layer", "Java, Spring Web, OpenAPI", "Translates HTTP requests into application use cases and returns API responses.")
     Component(identity, "Identity and Access", "Java, Spring Boot", "Authenticates users and enforces Buyer and Merchant authorization rules.")
     Component(shopping, "Shopping Planning", "Java, Spring Boot", "Manages shared shopping lists, purchase items, budgets and purchase progress.")
     Component(catalog, "Catalog and Pricing", "Java, Spring Boot", "Manages products, unit prices, availability and comparison data.")
@@ -42,7 +42,7 @@ Rel(route, mapping, "Requests optimized routes")
 Rel(route, persistence, "Uses repositories")
 Rel(merchant, rucAdapter, "Validates fiscal information")
 Rel(merchant, persistence, "Uses repositories")
-Rel(verification, catalog, "Updates trusted price information")
+Rel(verification, catalog, "Provides validated price confidence")
 Rel(verification, persistence, "Uses repositories")
 Rel(analytics, persistence, "Reads metrics and events")
 Rel(persistence, database, "Reads and writes", "SQL")

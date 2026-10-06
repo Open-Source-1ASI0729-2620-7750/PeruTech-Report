@@ -23,14 +23,8 @@ Container_Boundary(web, "Single-Page Application (SPA)") {
     Component(apiServices, "API/Application Services", "Angular, TypeScript, HttpClient", "Encapsulates API calls, DTO mapping, loading state and error handling for feature modules.")
 }
 
-Rel(buyer, identity, "Signs in", "HTTPS")
-Rel(buyer, shopping, "Plans purchases", "HTTPS")
-Rel(buyer, catalog, "Compares prices", "HTTPS")
-Rel(buyer, route, "Plans routes", "HTTPS")
-Rel(buyer, verification, "Reports prices", "HTTPS")
-Rel(merchantPerson, identity, "Signs in", "HTTPS")
-Rel(merchantPerson, merchantManagement, "Manages stores and offers", "HTTPS")
-Rel(merchantPerson, analytics, "Reviews metrics", "HTTPS")
+Rel(buyer, router, "Accesses shopping features", "Web browser")
+Rel(merchantPerson, router, "Accesses merchant features", "Web browser")
 Rel(router, identity, "Routes and guards")
 Rel(router, shopping, "Routes and guards")
 Rel(router, catalog, "Routes and guards")

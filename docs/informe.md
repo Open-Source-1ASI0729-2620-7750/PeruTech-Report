@@ -1538,7 +1538,7 @@ El diagrama de contenedores describe la arquitectura lógica de **Preciazo**. La
 
 Los diagramas de componentes detallan por separado la estructura interna de la **Single-Page Application (SPA)** y de **Preciazo REST API**, manteniendo los siete Bounded Contexts definidos mediante Domain-Driven Design.
 
-En la SPA, las funcionalidades de cada contexto utilizan componentes de UI compartidos y servicios de aplicación que encapsulan las llamadas HTTP a la REST API. Router / Guards organiza la navegación según el rol del usuario.
+En la SPA, compradores y comerciantes acceden a las funcionalidades mediante Router / Guards, que organiza la navegación según el rol del usuario. Las funcionalidades de cada contexto utilizan componentes de UI compartidos y servicios de aplicación que encapsulan las llamadas HTTP a la REST API.
 
 ![Preciazo Frontend Component Diagram](../assets/architecture/c4-components-frontend.png)
 
