@@ -1,257 +1,48 @@
 @startuml Preciazo_C4_Container
 
-
-
 !include <C4/C4_Container>
-
-
 
 LAYOUT_LEFT_RIGHT()
 
-
-
 title Preciazo - Software Architecture Container Diagram
 
+Person(buyer, "Buyer", "Plans purchases, compares prices, manages shopping lists and budgets, generates routes and reports price discrepancies.")
 
+Person(merchant, "Merchant", "Manages store information, products, prices, availability, inventory, promotions and business metrics.")
 
-Person(
+System_Ext(routing, "Mapping & Routing Service", "Provides geolocation, distances, travel times and optimized route information.")
 
-  buyer,
-
-  "Buyer",
-
-  "Plans purchases, compares prices, manages shopping lists and budgets, generates routes and reports price discrepancies."
-
-)
-
-
-
-Person(
-
-  merchant,
-
-  "Merchant",
-
-  "Manages store information, products, prices, availability, inventory, promotions and business metrics."
-
-)
-
-
-
-System_Ext(
-
-  routing,
-
-  "Mapping & Routing Service",
-
-  "Provides geolocation, distances, travel times and optimized route information."
-
-)
-
-
-
-System_Ext(
-
-  ruc,
-
-  "RUC Verification Service",
-
-  "Validates merchant fiscal information during store affiliation."
-
-)
-
-
+System_Ext(ruc, "RUC Verification Service", "Validates merchant fiscal information during store affiliation.")
 
 System_Boundary(preciazo, "Preciazo") {
 
+    Container(landing, "Landing Page", "HTML5, CSS3, JavaScript", "Presents the Preciazo value proposition and provides access to the web application.")
 
+    Container(web, "Single-Page Application (SPA)", "Angular, TypeScript, Angular Material", "Responsive Preciazo web application that provides Buyer and Merchant functionality according to the authenticated user's role.")
 
-  Container(
+    Container(api, "Preciazo REST API", "Java, Spring Boot, Spring Data JPA", "Provides RESTful application services for identity, shopping planning, catalog and pricing, route planning, merchant management, community price verification and analytics.")
 
-    landing,
-
-    "Landing Page",
-
-    "HTML5, CSS3, JavaScript",
-
-    "Presents the Preciazo value proposition and provides access to the web application."
-
-  )
-
-
-
-  Container(
-
-    web,
-
-    "Single-Page Application (SPA)",
-
-    "Angular, TypeScript, Angular Material",
-
-    "Responsive Preciazo web application that provides Buyer and Merchant functionality according to the authenticated user's role."
-
-  )
-
-
-
-  Container(
-
-    api,
-
-    "Preciazo REST API",
-
-    "Java, Spring Boot, Spring Data JPA",
-
-    "Provides RESTful application services for identity, shopping planning, catalog and pricing, route planning, merchant management, community price verification and analytics."
-
-  )
-
-
-
-  ContainerDb(
-
-    database,
-
-    "Relational Database",
-
-    "Relational Database",
-
-    "Persists operational data required by Preciazo."
-
-  )
-
+    ContainerDb(database, "Relational Database", "Relational Database", "Persists operational data required by Preciazo.")
 }
 
+Rel(buyer, landing, "Discovers Preciazo", "HTTPS")
 
+Rel(merchant, landing, "Discovers Preciazo", "HTTPS")
 
-Rel(
+Rel(buyer, web, "Uses shopping, comparison and route planning features", "HTTPS")
 
-  buyer,
+Rel(merchant, web, "Uses store and business management features", "HTTPS")
 
-  landing,
+Rel(landing, web, "Provides access to the application", "HTTPS")
 
-  "Discovers Preciazo",
+Rel(web, api, "Invokes REST endpoints", "HTTPS / JSON")
 
-  "HTTPS"
+Rel(api, database, "Reads and writes operational data", "SQL")
 
-)
+Rel(api, routing, "Requests geolocation, travel times and optimized routes", "HTTPS / REST API")
 
-
-
-Rel(
-
-  merchant,
-
-  landing,
-
-  "Discovers Preciazo",
-
-  "HTTPS"
-
-)
-
-
-
-Rel(
-
-  buyer,
-
-  web,
-
-  "Uses shopping, comparison and route planning features",
-
-  "HTTPS"
-
-)
-
-
-
-Rel(
-
-  merchant,
-
-  web,
-
-  "Uses store and business management features",
-
-  "HTTPS"
-
-)
-
-
-
-Rel(
-
-  landing,
-
-  web,
-
-  "Provides access to the application",
-
-  "HTTPS"
-
-)
-
-
-
-Rel(
-
-  web,
-
-  api,
-
-  "Invokes REST endpoints",
-
-  "HTTPS / JSON"
-
-)
-
-
-
-Rel(
-
-  api,
-
-  database,
-
-  "Reads and writes operational data",
-
-  "SQL"
-
-)
-
-
-
-Rel(
-
-  api,
-
-  routing,
-
-  "Requests geolocation, travel times and optimized routes",
-
-  "HTTPS / REST API"
-
-)
-
-
-
-Rel(
-
-  api,
-
-  ruc,
-
-  "Requests merchant fiscal validation",
-
-  "HTTPS / REST API"
-
-)
-
-
+Rel(api, ruc, "Requests merchant fiscal validation", "HTTPS / REST API")
 
 SHOW_LEGEND()
-
-
 
 @enduml
