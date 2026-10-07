@@ -1,0 +1,71 @@
+@startuml Preciazo_Event_Storming_shopping_planning
+left to right direction
+title Preciazo - Design-Level Event Storming: Shopping Planning
+skinparam shadowing false
+skinparam defaultFontSize 15
+skinparam defaultTextAlignment center
+skinparam nodesep 35
+skinparam ranksep 35
+skinparam rectanglePadding 12
+
+rectangle "Buyer" as n0_0 <<Actor>> #FFE08A
+rectangle "Create Shopping List" as n0_1 <<Command>> #ACDAFA
+rectangle "Shopping List" as n0_2 <<Aggregate>> #FFF1AE
+rectangle "Shopping List Created" as n0_3 <<Domain Event>> #FFD0A1
+rectangle "Get Shopping List Total /\nGet Active Shopping List" as n0_4 <<Query>> #B3EDBE
+n0_0 --> n0_1
+n0_1 --> n0_2
+n0_2 --> n0_3
+n0_3 --> n0_4
+
+rectangle "Buyer" as n1_0 <<Actor>> #FFE08A
+rectangle "Add Shopping Item /\nRemove Shopping Item" as n1_1 <<Command>> #ACDAFA
+rectangle "Shopping List" as n1_2 <<Aggregate>> #FFF1AE
+rectangle "Shopping Item Added /\nShopping Item Removed" as n1_3 <<Domain Event>> #FFD0A1
+rectangle "Evaluate Projected Cost\nAgainst Budget" as n1_4 <<Policy>> #D4BFFA
+n1_0 --> n1_1
+n1_1 --> n1_2
+n1_2 --> n1_3
+n1_3 --> n1_4
+
+rectangle "Buyer" as n2_0 <<Actor>> #FFE08A
+rectangle "Define Purchase Budget" as n2_1 <<Command>> #ACDAFA
+rectangle "Purchase Budget" as n2_2 <<Aggregate>> #FFF1AE
+rectangle "Purchase Budget Defined" as n2_3 <<Domain Event>> #FFD0A1
+rectangle "Evaluate Projected Cost\nAgainst Budget" as n2_4 <<Policy>> #D4BFFA
+rectangle "Generate Budget Warning" as n2_5 <<Command>> #ACDAFA
+rectangle "Budget Limit Exceeded" as n2_6 <<Domain Event>> #FFD0A1
+n2_0 --> n2_1
+n2_1 --> n2_2
+n2_2 --> n2_3
+n2_3 --> n2_4
+n2_4 --> n2_5
+n2_5 --> n2_6
+
+rectangle "Buyer" as n3_0 <<Actor>> #FFE08A
+rectangle "Mark Item Purchased" as n3_1 <<Command>> #ACDAFA
+rectangle "Shopping List" as n3_2 <<Aggregate>> #FFF1AE
+rectangle "Item Purchased" as n3_3 <<Domain Event>> #FFD0A1
+n3_0 --> n3_1
+n3_1 --> n3_2
+n3_2 --> n3_3
+
+rectangle "Get Budget Status" as n4_0 <<Query>> #B3EDBE
+
+n0_0 -[hidden,norank]down-> n1_0
+n1_0 -[hidden,norank]down-> n2_0
+n2_0 -[hidden,norank]down-> n3_0
+n3_0 -[hidden,norank]down-> n4_0
+
+legend bottom
+|= Color |= Element |
+|<back:#FFE08A>    </back>| Actor |
+|<back:#ACDAFA>    </back>| Command |
+|<back:#FFF1AE>    </back>| Aggregate |
+|<back:#FFD0A1>    </back>| Domain Event |
+|<back:#D4BFFA>    </back>| Policy |
+|<back:#B3EDBE>    </back>| Query |
+|<back:#FFB2DF>    </back>| External System |
+|<back:#FFB7AB>    </back>| Hotspot |
+endlegend
+@enduml

@@ -1522,7 +1522,35 @@ Para facilitar la lectura del modelo se utilizó la siguiente convención visual
 
 El resultado del proceso permitió organizar el dominio en siete Bounded Contexts: Identity and Access, Shopping Planning, Catalog and Pricing, Route Planning, Merchant Management, Community Price Verification y Analytics and Engagement.
 
-![PeruTech Design-Level Event Storming](../assets/architecture/design-level-event-storming.png)
+El modelo se presenta en siete vistas independientes. Cada fila se lee de izquierda a derecha: Actor → Command → Aggregate → Domain Event y, cuando corresponde, Policy y acciones posteriores. Las consultas se distinguen de los comandos; Analytics también muestra flujos iniciados por eventos. Se conservan los Hotspots del modelo como decisiones pendientes, sin inventar respuestas.
+
+#### Identity and Access
+
+![Preciazo Identity and Access Design-Level Event Storming](../assets/architecture/event-storming/identity-access.png)
+
+#### Shopping Planning
+
+![Preciazo Shopping Planning Design-Level Event Storming](../assets/architecture/event-storming/shopping-planning.png)
+
+#### Catalog and Pricing
+
+![Preciazo Catalog and Pricing Design-Level Event Storming](../assets/architecture/event-storming/catalog-pricing.png)
+
+#### Route Planning
+
+![Preciazo Route Planning Design-Level Event Storming](../assets/architecture/event-storming/route-planning.png)
+
+#### Merchant Management
+
+![Preciazo Merchant Management Design-Level Event Storming](../assets/architecture/event-storming/merchant-management.png)
+
+#### Community Price Verification
+
+![Preciazo Community Price Verification Design-Level Event Storming](../assets/architecture/event-storming/community-price-verification.png)
+
+#### Analytics and Engagement
+
+![Preciazo Analytics and Engagement Design-Level Event Storming](../assets/architecture/event-storming/analytics-engagement.png)
 
 ### 4.6.2. Software Architecture Context Diagram
 

@@ -1,0 +1,53 @@
+@startuml Preciazo_Event_Storming_identity_access
+left to right direction
+title Preciazo - Design-Level Event Storming: Identity and Access
+skinparam shadowing false
+skinparam defaultFontSize 15
+skinparam defaultTextAlignment center
+skinparam nodesep 35
+skinparam ranksep 35
+skinparam rectanglePadding 12
+
+rectangle "Buyer / Merchant" as n0_0 <<Actor>> #FFE08A
+rectangle "Register User" as n0_1 <<Command>> #ACDAFA
+rectangle "User Account" as n0_2 <<Aggregate>> #FFF1AE
+rectangle "User Registered" as n0_3 <<Domain Event>> #FFD0A1
+n0_0 --> n0_1
+n0_1 --> n0_2
+n0_2 --> n0_3
+
+rectangle "Buyer / Merchant" as n1_0 <<Actor>> #FFE08A
+rectangle "Authenticate User" as n1_1 <<Command>> #ACDAFA
+rectangle "User Account" as n1_2 <<Aggregate>> #FFF1AE
+rectangle "User Authenticated" as n1_3 <<Domain Event>> #FFD0A1
+rectangle "Get User Profile" as n1_4 <<Query>> #B3EDBE
+n1_0 --> n1_1
+n1_1 --> n1_2
+n1_2 --> n1_3
+n1_3 --> n1_4
+
+rectangle "Buyer / Merchant" as n2_0 <<Actor>> #FFE08A
+rectangle "Assign Role" as n2_1 <<Command>> #ACDAFA
+rectangle "User Account" as n2_2 <<Aggregate>> #FFF1AE
+rectangle "Role Assigned" as n2_3 <<Domain Event>> #FFD0A1
+rectangle "Get User Roles" as n2_4 <<Query>> #B3EDBE
+n2_0 --> n2_1
+n2_1 --> n2_2
+n2_2 --> n2_3
+n2_3 --> n2_4
+
+n0_0 -[hidden,norank]down-> n1_0
+n1_0 -[hidden,norank]down-> n2_0
+
+legend bottom
+|= Color |= Element |
+|<back:#FFE08A>    </back>| Actor |
+|<back:#ACDAFA>    </back>| Command |
+|<back:#FFF1AE>    </back>| Aggregate |
+|<back:#FFD0A1>    </back>| Domain Event |
+|<back:#D4BFFA>    </back>| Policy |
+|<back:#B3EDBE>    </back>| Query |
+|<back:#FFB2DF>    </back>| External System |
+|<back:#FFB7AB>    </back>| Hotspot |
+endlegend
+@enduml

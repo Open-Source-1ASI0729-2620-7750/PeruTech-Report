@@ -1,0 +1,58 @@
+@startuml Preciazo_Event_Storming_community_price_verification
+left to right direction
+title Preciazo - Design-Level Event Storming: Community Price Verification
+skinparam shadowing false
+skinparam defaultFontSize 15
+skinparam defaultTextAlignment center
+skinparam nodesep 35
+skinparam ranksep 35
+skinparam rectanglePadding 12
+
+rectangle "Buyer" as n0_0 <<Actor>> #FFE08A
+rectangle "Report Price Discrepancy" as n0_1 <<Command>> #ACDAFA
+rectangle "Price Report" as n0_2 <<Aggregate>> #FFF1AE
+rectangle "Price Discrepancy\nReported" as n0_3 <<Domain Event>> #FFD0A1
+rectangle "Get Pending Price Reports" as n0_4 <<Query>> #B3EDBE
+n0_0 --> n0_1
+n0_1 --> n0_2
+n0_2 --> n0_3
+n0_3 --> n0_4
+
+rectangle "Buyer" as n1_0 <<Actor>> #FFE08A
+rectangle "Confirm Reported Price /\nReject Reported Price" as n1_1 <<Command>> #ACDAFA
+rectangle "Price Verification" as n1_2 <<Aggregate>> #FFF1AE
+rectangle "Price Confirmed / Price\nRejected" as n1_3 <<Domain Event>> #FFD0A1
+rectangle "Reevaluate price\nconfidence when\nconfirmations or\nrejections are received" as n1_4 <<Policy>> #D4BFFA
+n1_0 --> n1_1
+n1_1 --> n1_2
+n1_2 --> n1_3
+n1_3 --> n1_4
+
+rectangle "Reevaluate price\nconfidence" as n2_0 <<Policy>> #D4BFFA
+rectangle "Update Price Confidence" as n2_1 <<Command>> #ACDAFA
+rectangle "Price Verification" as n2_2 <<Aggregate>> #FFF1AE
+rectangle "Price Confidence Updated" as n2_3 <<Domain Event>> #FFD0A1
+rectangle "Get Price Confidence" as n2_4 <<Query>> #B3EDBE
+n2_0 --> n2_1
+n2_1 --> n2_2
+n2_2 --> n2_3
+n2_3 --> n2_4
+
+rectangle "How is a crowdsourced\nprice considered\ntrustworthy?" as n3_0 <<Hotspot>> #FFB7AB
+
+n0_0 -[hidden,norank]down-> n1_0
+n1_0 -[hidden,norank]down-> n2_0
+n2_0 -[hidden,norank]down-> n3_0
+
+legend bottom
+|= Color |= Element |
+|<back:#FFE08A>    </back>| Actor |
+|<back:#ACDAFA>    </back>| Command |
+|<back:#FFF1AE>    </back>| Aggregate |
+|<back:#FFD0A1>    </back>| Domain Event |
+|<back:#D4BFFA>    </back>| Policy |
+|<back:#B3EDBE>    </back>| Query |
+|<back:#FFB2DF>    </back>| External System |
+|<back:#FFB7AB>    </back>| Hotspot |
+endlegend
+@enduml

@@ -1,0 +1,49 @@
+@startuml Preciazo_Event_Storming_analytics_engagement
+left to right direction
+title Preciazo - Design-Level Event Storming: Analytics and Engagement
+skinparam shadowing false
+skinparam defaultFontSize 15
+skinparam defaultTextAlignment center
+skinparam nodesep 35
+skinparam ranksep 35
+skinparam rectanglePadding 12
+
+rectangle "Promotion Viewed" as n0_0 <<Domain Event>> #FFD0A1
+rectangle "Record Promotion\nInteraction" as n0_1 <<Policy>> #D4BFFA
+rectangle "Register Promotion\nInteraction" as n0_2 <<Command>> #ACDAFA
+rectangle "Merchant Metrics" as n0_3 <<Aggregate>> #FFF1AE
+rectangle "Merchant Metrics Updated" as n0_4 <<Domain Event>> #FFD0A1
+n0_0 --> n0_1
+n0_1 --> n0_2
+n0_2 --> n0_3
+n0_3 --> n0_4
+
+rectangle "Store Suggested" as n1_0 <<Domain Event>> #FFD0A1
+rectangle "Record Store Suggestion" as n1_1 <<Policy>> #D4BFFA
+rectangle "Register Store Suggestion" as n1_2 <<Command>> #ACDAFA
+rectangle "Merchant Metrics" as n1_3 <<Aggregate>> #FFF1AE
+rectangle "Merchant Metrics Updated" as n1_4 <<Domain Event>> #FFD0A1
+n1_0 --> n1_1
+n1_1 --> n1_2
+n1_2 --> n1_3
+n1_3 --> n1_4
+
+rectangle "Merchant" as n2_0 <<Actor>> #FFE08A
+rectangle "Get Promotion Metrics /\nGet Store Visibility\nMetrics / Get Merchant\nDashboard" as n2_1 <<Query>> #B3EDBE
+n2_0 --> n2_1
+
+n0_0 -[hidden,norank]down-> n1_0
+n1_0 -[hidden,norank]down-> n2_0
+
+legend bottom
+|= Color |= Element |
+|<back:#FFE08A>    </back>| Actor |
+|<back:#ACDAFA>    </back>| Command |
+|<back:#FFF1AE>    </back>| Aggregate |
+|<back:#FFD0A1>    </back>| Domain Event |
+|<back:#D4BFFA>    </back>| Policy |
+|<back:#B3EDBE>    </back>| Query |
+|<back:#FFB2DF>    </back>| External System |
+|<back:#FFB7AB>    </back>| Hotspot |
+endlegend
+@enduml

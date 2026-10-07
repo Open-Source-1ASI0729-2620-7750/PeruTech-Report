@@ -1,0 +1,57 @@
+@startuml Preciazo_Event_Storming_route_planning
+left to right direction
+title Preciazo - Design-Level Event Storming: Route Planning
+skinparam shadowing false
+skinparam defaultFontSize 15
+skinparam defaultTextAlignment center
+skinparam nodesep 35
+skinparam ranksep 35
+skinparam rectanglePadding 12
+
+rectangle "Buyer" as n0_0 <<Actor>> #FFE08A
+rectangle "Generate Route" as n0_1 <<Command>> #ACDAFA
+rectangle "Multi-stop Route" as n0_2 <<Aggregate>> #FFF1AE
+rectangle "Route Generated" as n0_3 <<Domain Event>> #FFD0A1
+rectangle "Get Optimized Route /\nEstimate Travel Time /\nGet Route Summary" as n0_4 <<Query>> #B3EDBE
+n0_0 --> n0_1
+n0_1 --> n0_2
+n0_2 --> n0_3
+n0_3 --> n0_4
+
+rectangle "Buyer" as n1_0 <<Actor>> #FFE08A
+rectangle "Recalculate Route" as n1_1 <<Command>> #ACDAFA
+rectangle "Multi-stop Route" as n1_2 <<Aggregate>> #FFF1AE
+rectangle "Route Recalculated" as n1_3 <<Domain Event>> #FFD0A1
+n1_0 --> n1_1
+n1_1 --> n1_2
+n1_2 --> n1_3
+
+rectangle "Product Availability\nChanged (Catalog and\nPricing)" as n2_0 <<Domain Event>> #FFD0A1
+rectangle "Reevaluate selected stops\nwhen a stop becomes\nunavailable" as n2_1 <<Policy>> #D4BFFA
+rectangle "Recalculate Route" as n2_2 <<Command>> #ACDAFA
+n2_0 --> n2_1
+n2_1 --> n2_2
+
+rectangle "Generate Route /\nRecalculate Route" as n3_0 <<Command>> #ACDAFA
+rectangle "Mapping & Routing Service" as n3_1 <<External System>> #FFB2DF
+n3_0 --> n3_1
+
+rectangle "What happens when the\nexternal routing service\nis unavailable?" as n4_0 <<Hotspot>> #FFB7AB
+
+n0_0 -[hidden,norank]down-> n1_0
+n1_0 -[hidden,norank]down-> n2_0
+n2_0 -[hidden,norank]down-> n3_0
+n3_0 -[hidden,norank]down-> n4_0
+
+legend bottom
+|= Color |= Element |
+|<back:#FFE08A>    </back>| Actor |
+|<back:#ACDAFA>    </back>| Command |
+|<back:#FFF1AE>    </back>| Aggregate |
+|<back:#FFD0A1>    </back>| Domain Event |
+|<back:#D4BFFA>    </back>| Policy |
+|<back:#B3EDBE>    </back>| Query |
+|<back:#FFB2DF>    </back>| External System |
+|<back:#FFB7AB>    </back>| Hotspot |
+endlegend
+@enduml

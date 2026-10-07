@@ -1,0 +1,87 @@
+@startuml Preciazo_Event_Storming_merchant_management
+left to right direction
+title Preciazo - Design-Level Event Storming: Merchant Management
+skinparam shadowing false
+skinparam defaultFontSize 15
+skinparam defaultTextAlignment center
+skinparam nodesep 35
+skinparam ranksep 35
+skinparam rectanglePadding 12
+
+rectangle "Merchant" as n0_0 <<Actor>> #FFE08A
+rectangle "Request Store Affiliation" as n0_1 <<Command>> #ACDAFA
+rectangle "Affiliation Request" as n0_2 <<Aggregate>> #FFF1AE
+rectangle "Affiliation Requested" as n0_3 <<Domain Event>> #FFD0A1
+rectangle "Verify RUC" as n0_4 <<Command>> #ACDAFA
+rectangle "RUC Verification Service" as n0_5 <<External System>> #FFB2DF
+n0_0 --> n0_1
+n0_1 --> n0_2
+n0_2 --> n0_3
+n0_3 --> n0_4
+n0_4 --> n0_5
+
+rectangle "RUC Verified" as n1_0 <<Domain Event>> #FFD0A1
+rectangle "Approve Store Affiliation" as n1_1 <<Command>> #ACDAFA
+rectangle "Affiliated Store" as n1_2 <<Aggregate>> #FFF1AE
+rectangle "Store Affiliated" as n1_3 <<Domain Event>> #FFD0A1
+n1_0 --> n1_1
+n1_1 --> n1_2
+n1_2 --> n1_3
+
+rectangle "Merchant" as n2_0 <<Actor>> #FFE08A
+rectangle "Update Store Profile" as n2_1 <<Command>> #ACDAFA
+rectangle "Affiliated Store" as n2_2 <<Aggregate>> #FFF1AE
+rectangle "Store Profile Updated" as n2_3 <<Domain Event>> #FFD0A1
+rectangle "Get Store Profile" as n2_4 <<Query>> #B3EDBE
+n2_0 --> n2_1
+n2_1 --> n2_2
+n2_2 --> n2_3
+n2_3 --> n2_4
+
+rectangle "Merchant" as n3_0 <<Actor>> #FFE08A
+rectangle "Update Store Inventory" as n3_1 <<Command>> #ACDAFA
+rectangle "Store Inventory" as n3_2 <<Aggregate>> #FFF1AE
+rectangle "Inventory Updated" as n3_3 <<Domain Event>> #FFD0A1
+rectangle "Get Store Inventory" as n3_4 <<Query>> #B3EDBE
+n3_0 --> n3_1
+n3_1 --> n3_2
+n3_2 --> n3_3
+n3_3 --> n3_4
+
+rectangle "Merchant" as n4_0 <<Actor>> #FFE08A
+rectangle "Publish Store Offer" as n4_1 <<Command>> #ACDAFA
+rectangle "Store Offer" as n4_2 <<Aggregate>> #FFF1AE
+rectangle "Store Offer Published" as n4_3 <<Domain Event>> #FFD0A1
+rectangle "Monitor Offer Validity" as n4_4 <<Policy>> #D4BFFA
+rectangle "Expire Store Offer" as n4_5 <<Command>> #ACDAFA
+rectangle "Store Offer Expired" as n4_6 <<Domain Event>> #FFD0A1
+n4_0 --> n4_1
+n4_1 --> n4_2
+n4_2 --> n4_3
+n4_3 --> n4_4
+n4_4 --> n4_5
+n4_5 --> n4_6
+
+rectangle "Get Active Store Offers" as n5_0 <<Query>> #B3EDBE
+
+rectangle "How is store ownership\nverified?" as n6_0 <<Hotspot>> #FFB7AB
+
+n0_0 -[hidden,norank]down-> n1_0
+n1_0 -[hidden,norank]down-> n2_0
+n2_0 -[hidden,norank]down-> n3_0
+n3_0 -[hidden,norank]down-> n4_0
+n4_0 -[hidden,norank]down-> n5_0
+n5_0 -[hidden,norank]down-> n6_0
+
+legend bottom
+|= Color |= Element |
+|<back:#FFE08A>    </back>| Actor |
+|<back:#ACDAFA>    </back>| Command |
+|<back:#FFF1AE>    </back>| Aggregate |
+|<back:#FFD0A1>    </back>| Domain Event |
+|<back:#D4BFFA>    </back>| Policy |
+|<back:#B3EDBE>    </back>| Query |
+|<back:#FFB2DF>    </back>| External System |
+|<back:#FFB7AB>    </back>| Hotspot |
+endlegend
+@enduml
