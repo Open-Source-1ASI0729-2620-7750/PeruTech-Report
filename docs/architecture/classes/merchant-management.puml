@@ -22,7 +22,7 @@ class MerchantManagementService {
 }
 
 class MerchantProfile {
-    -id: UUID
+    -id: Long
     -taxId: Ruc
     -verificationStatus: VerificationStatus
     +submitForVerification(): void
@@ -31,7 +31,7 @@ class MerchantProfile {
 }
 
 class RetailStore {
-    -id: UUID
+    -id: Long
     -name: String
     -address: Address
     +updateInformation(address: Address): void
@@ -40,7 +40,7 @@ class RetailStore {
 }
 
 class InventoryItem {
-    -id: UUID
+    -id: Long
     -stock: Quantity
     -unitPrice: UnitPrice
     +increaseStock(quantity: Quantity): void
@@ -50,13 +50,13 @@ class InventoryItem {
 }
 
 class StoreProduct {
-    -productId: UUID
+    -productId: Long
     -name: String
     +changeCatalogData(name: String): void
 }
 
 class Promotion {
-    -id: UUID
+    -id: Long
     -description: String
     -startsAt: DateTime
     -endsAt: DateTime

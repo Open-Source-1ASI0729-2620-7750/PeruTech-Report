@@ -1552,7 +1552,7 @@ En esta sección se presenta el diseño orientado a objetos de **Preciazo** a pa
 
 Con el objetivo de evitar un único modelo de clases excesivamente acoplado, el diseño se divide de acuerdo con los siete Bounded Contexts definidos previamente. Cada contexto mantiene sus propias entidades, servicios, interfaces, políticas, objetos de valor y enumeraciones, permitiendo representar de manera explícita sus responsabilidades y reglas de negocio.
 
-Asimismo, cuando un contexto necesita información perteneciente a otro dominio, se utilizan referencias locales basadas en identificadores u objetos específicos del contexto, evitando compartir directamente las entidades internas de otros Bounded Contexts. Este criterio permite conservar límites claros entre los modelos y reducir dependencias innecesarias.
+Asimismo, cuando un contexto necesita información perteneciente a otro dominio, se utilizan referencias locales basadas en identificadores u objetos específicos del contexto, evitando compartir directamente las entidades internas de otros Bounded Contexts. Este criterio permite conservar límites claros entre los modelos y reducir dependencias innecesarias. Los identificadores numéricos se representan como `Long` en los diagramas de clases y como `BIGINT` en persistencia.
 
 Los diagramas incluyen atributos y operaciones relevantes del dominio, visibilidad UML, relaciones nombradas y multiplicidades. Los **Value Objects** se identifican con el estereotipo `Value Object` y atributos `readOnly`; sus notas explicitan restricciones y criterios de igualdad por valor. Se utilizan `EmailAddress`, `Ruc`, `Address`, `Quantity`, `UnitPrice`, `Money`, `GeoPoint`, `Distance` y `ReportingPeriod`, además de referencias locales y criterios de consulta inmutables. Las operaciones que cambian un valor devuelven uno nuevo en lugar de modificar el existente.
 
@@ -1648,7 +1648,7 @@ En conjunto, los Class Diagrams permiten representar la estructura interna de ca
 
 El diseño de base de datos de **Preciazo** se organiza siguiendo los límites definidos previamente mediante Domain-Driven Design. En lugar de representar el almacenamiento únicamente como un modelo relacional global, se presentan vistas específicas para cada Bounded Context con el objetivo de evidenciar qué información pertenece a cada parte del dominio.
 
-Cada diagrama identifica las entidades persistentes, sus atributos principales, claves primarias, claves foráneas, restricciones de unicidad y relaciones. En cumplimiento de las buenas prácticas de arquitectura y rendimiento en motores relacionales, **se emplean identificadores numéricos enteros secuenciales (`BIGINT / BIGSERIAL`) como claves primarias (PK), descartando el uso de UUID como PK** para evitar la fragmentación de índices y optimizar las consultas.
+Cada diagrama identifica las entidades persistentes, sus atributos principales, claves primarias, claves foráneas, restricciones de unicidad y relaciones. Para atender la observación del profesor, **las claves primarias (PK) utilizan `BIGINT`** y sus claves foráneas (FK) y referencias externas (REF) mantienen el mismo tipo. Las claves simples se generan en persistencia mediante identidad o secuencia; las claves compuestas de tablas de asociación conservan los identificadores de las entidades relacionadas. La sintaxis de generación se definirá según el motor relacional elegido.
 
 Cuando un contexto necesita referenciar información perteneciente a otro Bounded Context, dicha dependencia se representa mediante identificadores marcados como referencias externas (`REF`), evitando asumir que la entidad referenciada pertenece al mismo modelo.
 
@@ -1662,7 +1662,7 @@ El Database Overview muestra la estructura relacional completa propuesta para **
 
 La vista global también evidencia restricciones importantes del modelo, como la unicidad de correos y roles, la relación entre usuarios y perfiles de comerciantes, la unicidad de un producto por establecimiento dentro del catálogo, la secuencia única de paradas dentro de una ruta y la asociación de métricas y reportes con establecimientos.
 
-![PeruTech Database Overview](../assets/architecture/database/database-overview.png)
+![Preciazo Database Overview](../assets/architecture/database/database-overview.png)
 
 #### Identity and Access
 

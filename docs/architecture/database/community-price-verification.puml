@@ -1,43 +1,43 @@
-@startuml PeruTech_DB_Community_Price_Verification
+@startuml Preciazo_DB_Community_Price_Verification
 
-title PeruTech - Community Price Verification Database Diagram
+title Preciazo - Community Price Verification Database Diagram
 
 hide circle
 skinparam linetype ortho
 
 entity price_observations {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
-    catalog_entry_id : UUID <<REF>>
-    discrepancy_id : UUID <<FK>>
-    observer_id : UUID <<REF>>
+    catalog_entry_id : BIGINT <<REF>>
+    discrepancy_id : BIGINT <<FK>>
+    observer_id : BIGINT <<REF>>
     observed_price : DECIMAL
     observed_at : TIMESTAMP
     source : VARCHAR
 }
 
 entity price_discrepancies {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
-    catalog_entry_id : UUID <<REF>>
-    reporter_id : UUID <<REF>>
+    catalog_entry_id : BIGINT <<REF>>
+    reporter_id : BIGINT <<REF>>
     expected_price : DECIMAL
     observed_price : DECIMAL
     status : VARCHAR
 }
 
 entity verification_confirmations {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
-    discrepancy_id : UUID <<FK>>
-    confirmer_id : UUID <<REF>>
+    discrepancy_id : BIGINT <<FK>>
+    confirmer_id : BIGINT <<REF>>
     created_at : TIMESTAMP
 }
 
 entity trust_profiles {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
-    user_id : UUID <<UQ>>
+    user_id : BIGINT <<REF, UQ>>
     score : DECIMAL
     level : VARCHAR
 }

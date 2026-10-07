@@ -1,14 +1,14 @@
-@startuml PeruTech_DB_Route_Planning
+@startuml Preciazo_DB_Route_Planning
 
-title PeruTech - Route Planning Database Diagram
+title Preciazo - Route Planning Database Diagram
 
 hide circle
 skinparam linetype ortho
 
 entity routes {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
-    shopping_list_id : UUID <<REF>>
+    shopping_list_id : BIGINT <<REF>>
     distance : DECIMAL
     estimated_duration : INTEGER
     transit_cost : DECIMAL
@@ -17,10 +17,10 @@ entity routes {
 }
 
 entity route_stops {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
-    route_id : UUID <<FK>>
-    store_id : UUID <<REF>>
+    route_id : BIGINT <<FK>>
+    store_id : BIGINT <<REF>>
     sequence : INTEGER
     estimated_arrival : TIMESTAMP
 }

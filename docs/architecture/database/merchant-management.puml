@@ -1,42 +1,43 @@
-@startuml PeruTech_DB_Merchant_Management
+@startuml Preciazo_DB_Merchant_Management
 
-title PeruTech - Merchant Management Database Diagram
+title Preciazo - Merchant Management Database Diagram
 
 hide circle
 skinparam linetype ortho
 
 entity merchant_profiles {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
-    user_id : UUID <<REF>>
+    user_id : BIGINT <<REF>>
     tax_id : VARCHAR <<UQ>>
     verification_status : VARCHAR
 }
 
 entity retail_stores {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
-    merchant_profile_id : UUID <<FK>>
+    merchant_profile_id : BIGINT <<FK>>
     name : VARCHAR
     address : VARCHAR
     latitude : DECIMAL
     longitude : DECIMAL
+    trust_score : DECIMAL
 }
 
 entity inventory_items {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
-    store_id : UUID <<FK>>
-    product_id : UUID <<REF>>
+    store_id : BIGINT <<FK>>
+    product_id : BIGINT <<REF>>
     stock : DECIMAL
     unit_price : DECIMAL
     stock_status : VARCHAR
 }
 
 entity promotions {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
-    inventory_item_id : UUID <<FK>>
+    inventory_item_id : BIGINT <<FK>>
     description : VARCHAR
     starts_at : TIMESTAMP
     ends_at : TIMESTAMP
@@ -49,6 +50,11 @@ inventory_items ||--o{ promotions
 note right of inventory_items
   product_id belongs to
   Catalog and Pricing.
+end note
+
+note right of merchant_profiles
+  One merchant profile per user.
+  UNIQUE(user_id)
 end note
 
 @enduml

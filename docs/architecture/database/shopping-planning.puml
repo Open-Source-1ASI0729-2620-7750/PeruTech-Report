@@ -1,40 +1,40 @@
-@startuml PeruTech_DB_Shopping_Planning
+@startuml Preciazo_DB_Shopping_Planning
 
-title PeruTech - Shopping Planning Database Diagram
+title Preciazo - Shopping Planning Database Diagram
 
 hide circle
 skinparam linetype ortho
 
 entity shopping_lists {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
-    owner_id : UUID <<REF>>
+    owner_id : BIGINT <<REF>>
     name : VARCHAR
     status : VARCHAR
     created_at : TIMESTAMP
 }
 
 entity shopping_list_members {
-    * shopping_list_id : UUID <<PK, FK>>
-    * user_id : UUID <<PK, REF>>
+    * shopping_list_id : BIGINT <<PK, FK>>
+    * user_id : BIGINT <<PK, REF>>
     --
     member_role : VARCHAR
 }
 
 entity shopping_list_items {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
-    shopping_list_id : UUID <<FK>>
-    product_id : UUID <<REF>>
+    shopping_list_id : BIGINT <<FK>>
+    product_id : BIGINT <<REF>>
     quantity : DECIMAL
     estimated_unit_price : DECIMAL
     purchased : BOOLEAN
 }
 
 entity purchase_budgets {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
-    shopping_list_id : UUID <<FK>>
+    shopping_list_id : BIGINT <<FK>>
     amount : DECIMAL
     currency : VARCHAR
     status : VARCHAR

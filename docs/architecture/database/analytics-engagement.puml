@@ -1,23 +1,23 @@
-@startuml PeruTech_DB_Analytics_Engagement
+@startuml Preciazo_DB_Analytics_Engagement
 
-title PeruTech - Analytics and Engagement Database Diagram
+title Preciazo - Analytics and Engagement Database Diagram
 
 hide circle
 skinparam linetype ortho
 
 entity analytics_events {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
-    subject_id : UUID <<REF>>
+    subject_id : BIGINT <<REF>>
     event_type : VARCHAR
     occurred_at : TIMESTAMP
     metadata : JSON
 }
 
 entity merchant_metrics {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
-    store_id : UUID <<REF>>
+    store_id : BIGINT <<REF>>
     period_from : TIMESTAMP
     period_to : TIMESTAMP
     monthly_traffic : INTEGER
@@ -26,9 +26,9 @@ entity merchant_metrics {
 }
 
 entity merchant_reports {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
-    store_id : UUID <<REF>>
+    store_id : BIGINT <<REF>>
     report_type : VARCHAR
     period_from : TIMESTAMP
     period_to : TIMESTAMP

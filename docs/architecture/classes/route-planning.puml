@@ -21,14 +21,14 @@ class RoutePlanningService {
 }
 
 class MultiStopRoute {
-    -id: UUID
+    -id: Long
     -status: RouteStatus
     -distance: Distance
     -estimatedDuration: Duration
     -netSavings: Money
     +addStop(store: StoreCandidate): RouteStop
-    +removeStop(stopId: UUID): void
-    +reorderStops(order: List<UUID>): void
+    +removeStop(stopId: Long): void
+    +reorderStops(order: List<Long>): void
     +calculateNetSavings(grossSavings: Money, transitCost: Money): Money
     +confirm(): void
 }
@@ -53,18 +53,18 @@ class RouteEstimate <<Value Object>> {
 }
 
 class ShoppingPlanRef <<Value Object>> {
-    -shoppingListId: UUID {readOnly}
-    +matches(listId: UUID): Boolean
+    -shoppingListId: Long {readOnly}
+    +matches(listId: Long): Boolean
 }
 
 class ProductRequirement <<Value Object>> {
-    -productId: UUID {readOnly}
+    -productId: Long {readOnly}
     -quantity: Quantity {readOnly}
-    +requires(productId: UUID): Boolean
+    +requires(productId: Long): Boolean
 }
 
 class StoreCandidate {
-    -storeId: UUID
+    -storeId: Long
     -location: GeoPoint
     +isWithin(radius: Distance): Boolean
 }

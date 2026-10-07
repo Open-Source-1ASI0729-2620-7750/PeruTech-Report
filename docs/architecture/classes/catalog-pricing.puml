@@ -7,8 +7,8 @@ skinparam shadowing false
 skinparam linetype ortho
 
 interface CatalogRepository {
-    +findProduct(id: UUID): Product
-    +findStoreProduct(storeId: UUID, productId: UUID): StoreProduct
+    +findProduct(id: Long): Product
+    +findStoreProduct(storeId: Long, productId: Long): StoreProduct
 }
 
 interface PriceComparisonPolicy {
@@ -17,12 +17,12 @@ interface PriceComparisonPolicy {
 
 class CatalogPricingService {
     +search(criteria: SearchCriteria): List<Product>
-    +compare(productId: UUID, storeIds: List<UUID>): List<StoreProduct>
+    +compare(productId: Long, storeIds: List<Long>): List<StoreProduct>
     +selectOptimalStop(offers: List<StoreProduct>): StoreProduct
 }
 
 class Product {
-    -id: UUID
+    -id: Long
     -name: String
     -brand: String
     -category: String
@@ -32,12 +32,12 @@ class Product {
 }
 
 class RetailStoreRef <<Value Object>> {
-    -storeId: UUID {readOnly}
-    +identifies(storeId: UUID): Boolean
+    -storeId: Long {readOnly}
+    +identifies(storeId: Long): Boolean
 }
 
 class StoreProduct {
-    -id: UUID
+    -id: Long
     -unitPrice: UnitPrice
     -stockStatus: StockStatus
     -updatedAt: DateTime

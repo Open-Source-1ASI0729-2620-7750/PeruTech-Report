@@ -1,12 +1,12 @@
-@startuml PeruTech_DB_Catalog_Pricing
+@startuml Preciazo_DB_Catalog_Pricing
 
-title PeruTech - Catalog and Pricing Database Diagram
+title Preciazo - Catalog and Pricing Database Diagram
 
 hide circle
 skinparam linetype ortho
 
 entity products {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
     name : VARCHAR
     brand : VARCHAR
@@ -15,19 +15,19 @@ entity products {
 }
 
 entity catalog_entries {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
-    store_id : UUID <<REF>>
-    product_id : UUID <<FK>>
+    store_id : BIGINT <<REF>>
+    product_id : BIGINT <<FK>>
     unit_price : DECIMAL
     stock_status : VARCHAR
     updated_at : TIMESTAMP
 }
 
 entity price_snapshots {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
-    catalog_entry_id : UUID <<FK>>
+    catalog_entry_id : BIGINT <<FK>>
     unit_price : DECIMAL
     captured_at : TIMESTAMP
 }

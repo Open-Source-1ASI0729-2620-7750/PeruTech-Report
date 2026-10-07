@@ -1,44 +1,44 @@
-@startuml PeruTech_DB_Identity_Access
+@startuml Preciazo_DB_Identity_Access
 
-title PeruTech - Identity and Access Database Diagram
+title Preciazo - Identity and Access Database Diagram
 
 hide circle
 skinparam linetype ortho
 
 entity users {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
     email : VARCHAR <<UQ>>
     status : VARCHAR
 }
 
 entity roles {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
     name : VARCHAR <<UQ>>
 }
 
 entity permissions {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
     resource : VARCHAR
     action : VARCHAR
 }
 
 entity user_roles {
-    * user_id : UUID <<PK, FK>>
-    * role_id : UUID <<PK, FK>>
+    * user_id : BIGINT <<PK, FK>>
+    * role_id : BIGINT <<PK, FK>>
 }
 
 entity role_permissions {
-    * role_id : UUID <<PK, FK>>
-    * permission_id : UUID <<PK, FK>>
+    * role_id : BIGINT <<PK, FK>>
+    * permission_id : BIGINT <<PK, FK>>
 }
 
 entity auth_sessions {
-    * id : UUID <<PK>>
+    * id : BIGINT <<PK>>
     --
-    user_id : UUID <<FK>>
+    user_id : BIGINT <<FK>>
     issued_at : TIMESTAMP
     expires_at : TIMESTAMP
     revoked : BOOLEAN

@@ -22,10 +22,10 @@ class AnalyticsService {
 }
 
 class MetricEvent {
-    -id: UUID
+    -id: Long
     -type: MetricEventType
     -occurredAt: DateTime
-    -subjectId: UUID
+    -subjectId: Long
     +isWithin(period: ReportingPeriod): Boolean
 }
 
@@ -40,7 +40,7 @@ class MerchantMetrics {
 }
 
 class MerchantReport {
-    -id: UUID
+    -id: Long
     -type: ReportType
     -generatedAt: DateTime
     +summarize(metrics: MerchantMetrics): String

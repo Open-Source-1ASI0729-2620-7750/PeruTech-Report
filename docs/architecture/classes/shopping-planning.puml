@@ -7,7 +7,7 @@ skinparam shadowing false
 skinparam linetype ortho
 
 interface ShoppingRepository {
-    +findListById(id: UUID): ShoppingList
+    +findListById(id: Long): ShoppingList
     +save(list: ShoppingList): void
 }
 
@@ -16,26 +16,26 @@ interface BudgetPolicy {
 }
 
 class ShoppingPlanningService {
-    +createList(ownerId: UUID, name: String): ShoppingList
-    +addProduct(list: ShoppingList, productId: UUID, quantity: Quantity): ShoppingListItem
+    +createList(ownerId: Long, name: String): ShoppingList
+    +addProduct(list: ShoppingList, productId: Long, quantity: Quantity): ShoppingListItem
     +planBudget(list: ShoppingList, amount: Money): PurchaseBudget
 }
 
 class ShoppingList {
-    -id: UUID
-    -ownerId: UUID
+    -id: Long
+    -ownerId: Long
     -name: String
     -status: ListStatus
     +addItem(requirement: ProductRequirement, quantity: Quantity): ShoppingListItem
-    +removeItem(itemId: UUID): void
-    +markItemPurchased(itemId: UUID): void
+    +removeItem(itemId: Long): void
+    +markItemPurchased(itemId: Long): void
     +calculateEstimatedTotal(): Money
     +assignBudget(budget: PurchaseBudget): void
     +complete(): void
 }
 
 class ShoppingListItem {
-    -id: UUID
+    -id: Long
     -quantity: Quantity
     -estimatedUnitPrice: UnitPrice
     -purchased: Boolean
@@ -45,13 +45,13 @@ class ShoppingListItem {
 }
 
 class ProductRequirement <<Value Object>> {
-    -productId: UUID {readOnly}
+    -productId: Long {readOnly}
     -requestedName: String {readOnly}
-    +matchesProduct(productId: UUID): Boolean
+    +matchesProduct(productId: Long): Boolean
 }
 
 class PurchaseBudget {
-    -id: UUID
+    -id: Long
     -limit: Money
     -reserved: Money
     +reserve(amount: Money): void

@@ -7,7 +7,7 @@ skinparam shadowing false
 skinparam linetype ortho
 
 interface PriceVerificationRepository {
-    +findDiscrepancy(id: UUID): PriceDiscrepancy
+    +findDiscrepancy(id: Long): PriceDiscrepancy
     +save(discrepancy: PriceDiscrepancy): void
 }
 
@@ -23,7 +23,7 @@ class PriceVerificationService {
 }
 
 class PriceObservation {
-    -id: UUID
+    -id: Long
     -observedPrice: Money
     -observedAt: DateTime
     -source: ObservationSource
@@ -32,7 +32,7 @@ class PriceObservation {
 }
 
 class PriceDiscrepancy {
-    -id: UUID
+    -id: Long
     -expectedPrice: Money
     -observedPrice: Money
     -status: DiscrepancyStatus
@@ -43,7 +43,7 @@ class PriceDiscrepancy {
 }
 
 class VerificationConfirmation {
-    -id: UUID
+    -id: Long
     -createdAt: DateTime
     +isValidFor(user: UserRef): Boolean
 }
@@ -57,13 +57,13 @@ class TrustProfile {
 }
 
 class UserRef <<Value Object>> {
-    -userId: UUID {readOnly}
-    +identifies(userId: UUID): Boolean
+    -userId: Long {readOnly}
+    +identifies(userId: Long): Boolean
 }
 
 class StoreProductRef <<Value Object>> {
-    -storeProductId: UUID {readOnly}
-    +identifies(storeProductId: UUID): Boolean
+    -storeProductId: Long {readOnly}
+    +identifies(storeProductId: Long): Boolean
 }
 
 class Money <<Value Object>> {
