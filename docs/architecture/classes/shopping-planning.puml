@@ -1,6 +1,6 @@
-@startuml PeruTech_Shopping_Planning_Classes
+@startuml Preciazo_Shopping_Planning_Classes
 
-title PeruTech - Shopping Planning Class Diagram
+title Preciazo - Shopping Planning Class Diagram
 
 skinparam classAttributeIconSize 0
 skinparam shadowing false
@@ -17,7 +17,7 @@ interface BudgetPolicy {
 
 class ShoppingPlanningService {
     +createList(ownerId: UUID, name: String): ShoppingList
-    +addProduct(list: ShoppingList, productId: UUID, quantity: Decimal): ShoppingListItem
+    +addProduct(list: ShoppingList, productId: UUID, quantity: Quantity): ShoppingListItem
     +planBudget(list: ShoppingList, amount: Money): PurchaseBudget
 }
 
@@ -26,7 +26,7 @@ class ShoppingList {
     -ownerId: UUID
     -name: String
     -status: ListStatus
-    +addItem(requirement: ProductRequirement, quantity: Decimal): ShoppingListItem
+    +addItem(requirement: ProductRequirement, quantity: Quantity): ShoppingListItem
     +removeItem(itemId: UUID): void
     +markItemPurchased(itemId: UUID): void
     +calculateEstimatedTotal(): Money
@@ -36,17 +36,17 @@ class ShoppingList {
 
 class ShoppingListItem {
     -id: UUID
-    -quantity: Decimal
-    -estimatedUnitPrice: Money
+    -quantity: Quantity
+    -estimatedUnitPrice: UnitPrice
     -purchased: Boolean
-    +changeQuantity(quantity: Decimal): void
-    +updateEstimatedPrice(price: Money): void
+    +changeQuantity(quantity: Quantity): void
+    +updateEstimatedPrice(price: UnitPrice): void
     +markPurchased(): void
 }
 
-class ProductRequirement {
-    -productId: UUID
-    -requestedName: String
+class ProductRequirement <<Value Object>> {
+    -productId: UUID {readOnly}
+    -requestedName: String {readOnly}
     +matchesProduct(productId: UUID): Boolean
 }
 
@@ -60,13 +60,23 @@ class PurchaseBudget {
     +remaining(): Money
 }
 
-class Money {
-    -amount: Decimal
-    -currency: String
+class Money <<Value Object>> {
+    -amount: Decimal {readOnly}
+    -currency: String {readOnly}
     +add(other: Money): Money
     +subtract(other: Money): Money
+    +multiply(factor: Decimal): Money
+    +isLessThan(other: Money): Boolean
     +isGreaterThan(other: Money): Boolean
+    +isDifferentFrom(other: Money): Boolean
+    +isPositive(): Boolean
 }
+
+note right of Money
+  Immutable; equality by amount and currency.
+  Arithmetic and comparisons require the same currency.
+  Operations return new values.
+end note
 
 enum ListStatus {
     DRAFT
@@ -79,11 +89,52 @@ ShoppingPlanningService ..> BudgetPolicy : validates
 ShoppingList "1" *-- "0..*" ShoppingListItem : contains
 ShoppingListItem "*" --> "1" ProductRequirement : requests
 ShoppingList "1" --> "0..1" PurchaseBudget : controls
-ShoppingListItem "*" --> "1" Money : prices
+ShoppingListItem "*" --> "1" UnitPrice : estimated price
+ShoppingListItem "*" --> "1" Quantity : requested amount
 
 note right of ShoppingList
   At most one active PurchaseBudget
   may be assigned to a ShoppingList.
 end note
+
+class Quantity <<Value Object>> {
+    -amount: Decimal {readOnly}
+    -unit: String {readOnly}
+    +add(other: Quantity): Quantity
+    +subtract(other: Quantity): Quantity
+    +isPositive(): Boolean
+}
+
+note right of Quantity
+  Immutable; amount >= 0; unit is not blank.
+  Equality by amount and unit; arithmetic requires the same unit.
+  Subtraction cannot produce a negative amount.
+  Requested purchase quantities must be positive.
+end note
+
+class UnitPrice <<Value Object>> {
+    -price: Money {readOnly}
+    -perUnit: Quantity {readOnly}
+    +costFor(quantity: Quantity): Money
+    +isLessThan(other: UnitPrice): Boolean
+}
+
+note right of UnitPrice
+  Immutable; equality by price and perUnit.
+  Price >= 0; perUnit amount > 0.
+  Cost and comparisons require compatible units
+  and the same currency.
+end note
+
+UnitPrice "1" --> "1" Money : monetary value
+UnitPrice "1" --> "1" Quantity : priced quantity
+
+note right of ProductRequirement
+  Immutable local reference to a catalog product.
+  Equality by productId and requestedName.
+end note
+
+PurchaseBudget "1" --> "1" Money : limit
+PurchaseBudget "1" --> "1" Money : reserved amount
 
 @enduml

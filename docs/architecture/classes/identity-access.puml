@@ -1,13 +1,13 @@
-@startuml PeruTech_Identity_Access_Classes
+@startuml Preciazo_Identity_Access_Classes
 
-title PeruTech - Identity and Access Class Diagram
+title Preciazo - Identity and Access Class Diagram
 
 skinparam classAttributeIconSize 0
 skinparam shadowing false
 skinparam linetype ortho
 
 interface IdentityRepository {
-    +findByEmail(email: String): User
+    +findByEmail(email: EmailAddress): User
     +save(user: User): void
 }
 
@@ -16,14 +16,14 @@ interface AccessPolicy {
 }
 
 class IdentityService {
-    +authenticate(email: String, credential: String): AuthSession
+    +authenticate(email: EmailAddress, credential: String): AuthSession
     +revoke(session: AuthSession): void
     +assignRole(user: User, role: Role): void
 }
 
 class User {
     -id: UUID
-    -email: String
+    -email: EmailAddress
     -status: AccountStatus
     +authenticate(credential: String): AuthSession
     +assignRole(role: Role): void
@@ -69,5 +69,19 @@ User "1" *-- "0..*" AuthSession : owns
 User "1" o-- "1..*" Role : has
 Role "1" o-- "1..*" Permission : grants
 IdentityService ..> User : authenticates
+
+class EmailAddress <<Value Object>> {
+    -value: String {readOnly}
+    +equals(other: EmailAddress): Boolean
+}
+
+note right of EmailAddress
+  Immutable; nonblank address with valid email syntax.
+  Equality by stored value.
+end note
+
+User "1" --> "1" EmailAddress : email
+IdentityRepository ..> EmailAddress : looks up by
+IdentityService ..> EmailAddress : identifies account
 
 @enduml

@@ -1,6 +1,6 @@
-@startuml PeruTech_Catalog_Pricing_Classes
+@startuml Preciazo_Catalog_Pricing_Classes
 
-title PeruTech - Catalog and Pricing Class Diagram
+title Preciazo - Catalog and Pricing Class Diagram
 
 skinparam classAttributeIconSize 0
 skinparam shadowing false
@@ -31,34 +31,46 @@ class Product {
     +matches(criteria: SearchCriteria): Boolean
 }
 
-class RetailStoreRef {
-    -storeId: UUID
+class RetailStoreRef <<Value Object>> {
+    -storeId: UUID {readOnly}
     +identifies(storeId: UUID): Boolean
 }
 
 class StoreProduct {
     -id: UUID
-    -unitPrice: Money
+    -unitPrice: UnitPrice
     -stockStatus: StockStatus
     -updatedAt: DateTime
-    +changeUnitPrice(price: Money): void
+    +changeUnitPrice(price: UnitPrice): void
     +updateStock(status: StockStatus): void
     +isAvailable(): Boolean
-    +priceAt(moment: DateTime): Money
+    +priceAt(moment: DateTime): UnitPrice
 }
 
-class SearchCriteria {
-    -text: String
-    -category: String
-    -maximumUnitPrice: Money
+class SearchCriteria <<Value Object>> {
+    -text: String {readOnly}
+    -category: String {readOnly}
+    -maximumUnitPrice: UnitPrice {readOnly}
     +matches(product: Product): Boolean
 }
 
-class Money {
-    -amount: Decimal
-    -currency: String
+class Money <<Value Object>> {
+    -amount: Decimal {readOnly}
+    -currency: String {readOnly}
+    +add(other: Money): Money
+    +subtract(other: Money): Money
+    +multiply(factor: Decimal): Money
     +isLessThan(other: Money): Boolean
+    +isGreaterThan(other: Money): Boolean
+    +isDifferentFrom(other: Money): Boolean
+    +isPositive(): Boolean
 }
+
+note right of Money
+  Immutable; equality by amount and currency.
+  Arithmetic and comparisons require the same currency.
+  Operations return new values.
+end note
 
 enum StockStatus {
     AVAILABLE
@@ -72,6 +84,48 @@ RetailStoreRef "1" ..> "0..*" StoreProduct : identifies offers from
 StoreProduct "*" --> "1" Product : references
 CatalogPricingService ..> Product : searches
 CatalogPricingService ..> StoreProduct : compares
-StoreProduct "1" --> "1" Money : has current price
+StoreProduct "1" --> "1" UnitPrice : current price
+SearchCriteria "1" --> "0..1" UnitPrice : price ceiling
+
+class Quantity <<Value Object>> {
+    -amount: Decimal {readOnly}
+    -unit: String {readOnly}
+    +add(other: Quantity): Quantity
+    +subtract(other: Quantity): Quantity
+    +isPositive(): Boolean
+}
+
+note right of Quantity
+  Immutable; amount >= 0; unit is not blank.
+  Equality by amount and unit; arithmetic requires the same unit.
+  Subtraction cannot produce a negative amount.
+  Requested purchase quantities must be positive.
+end note
+
+class UnitPrice <<Value Object>> {
+    -price: Money {readOnly}
+    -perUnit: Quantity {readOnly}
+    +costFor(quantity: Quantity): Money
+    +isLessThan(other: UnitPrice): Boolean
+}
+
+note right of UnitPrice
+  Immutable; equality by price and perUnit.
+  Price >= 0; perUnit amount > 0.
+  Cost and comparisons require compatible units
+  and the same currency.
+end note
+
+UnitPrice "1" --> "1" Money : monetary value
+UnitPrice "1" --> "1" Quantity : priced quantity
+
+note right of RetailStoreRef
+  Immutable local reference to Merchant Management.
+  Equality by storeId.
+end note
+
+note right of SearchCriteria
+  Immutable search filters; equality by field values.
+end note
 
 @enduml

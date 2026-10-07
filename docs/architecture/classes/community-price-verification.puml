@@ -1,6 +1,6 @@
-@startuml PeruTech_Community_Price_Verification_Classes
+@startuml Preciazo_Community_Price_Verification_Classes
 
-title PeruTech - Community Price Verification Class Diagram
+title Preciazo - Community Price Verification Class Diagram
 
 skinparam classAttributeIconSize 0
 skinparam shadowing false
@@ -56,21 +56,33 @@ class TrustProfile {
     +recalculate(): void
 }
 
-class UserRef {
-    -userId: UUID
+class UserRef <<Value Object>> {
+    -userId: UUID {readOnly}
     +identifies(userId: UUID): Boolean
 }
 
-class StoreProductRef {
-    -storeProductId: UUID
+class StoreProductRef <<Value Object>> {
+    -storeProductId: UUID {readOnly}
     +identifies(storeProductId: UUID): Boolean
 }
 
-class Money {
-    -amount: Decimal
-    -currency: String
+class Money <<Value Object>> {
+    -amount: Decimal {readOnly}
+    -currency: String {readOnly}
+    +add(other: Money): Money
+    +subtract(other: Money): Money
+    +multiply(factor: Decimal): Money
+    +isLessThan(other: Money): Boolean
+    +isGreaterThan(other: Money): Boolean
     +isDifferentFrom(other: Money): Boolean
+    +isPositive(): Boolean
 }
+
+note right of Money
+  Immutable; equality by amount and currency.
+  Arithmetic and comparisons require the same currency.
+  Operations return new values.
+end note
 
 enum ObservationSource {
     MERCHANT
@@ -110,7 +122,19 @@ end note
 
 note right of StoreProductRef
   Reference to Catalog and Pricing
-  or Merchant Management data.
+  using its local catalog offer identifier.
+end note
+
+PriceObservation "1" --> "1" Money : observed price
+PriceDiscrepancy "1" --> "1" Money : expected price
+PriceDiscrepancy "1" --> "1" Money : observed price
+
+note bottom of UserRef
+  Immutable; equality by userId.
+end note
+
+note bottom of StoreProductRef
+  Immutable; equality by storeProductId.
 end note
 
 @enduml

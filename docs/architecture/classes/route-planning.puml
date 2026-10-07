@@ -1,6 +1,6 @@
-@startuml PeruTech_Route_Planning_Classes
+@startuml Preciazo_Route_Planning_Classes
 
-title PeruTech - Route Planning Class Diagram
+title Preciazo - Route Planning Class Diagram
 
 skinparam classAttributeIconSize 0
 skinparam shadowing false
@@ -23,7 +23,7 @@ class RoutePlanningService {
 class MultiStopRoute {
     -id: UUID
     -status: RouteStatus
-    -distance: Decimal
+    -distance: Distance
     -estimatedDuration: Duration
     -netSavings: Money
     +addStop(store: StoreCandidate): RouteStop
@@ -40,40 +40,52 @@ class RouteStop {
     +setEstimatedArrival(moment: DateTime): void
 }
 
-class GeoPoint {
-    -latitude: Decimal
-    -longitude: Decimal
-    +distanceTo(other: GeoPoint): Decimal
+class GeoPoint <<Value Object>> {
+    -latitude: Decimal {readOnly}
+    -longitude: Decimal {readOnly}
+    +distanceTo(other: GeoPoint): Distance
 }
 
-class RouteEstimate {
-    -distance: Decimal
-    -duration: Duration
+class RouteEstimate <<Value Object>> {
+    -distance: Distance {readOnly}
+    -duration: Duration {readOnly}
     +isFeasible(): Boolean
 }
 
-class ShoppingPlanRef {
-    -shoppingListId: UUID
+class ShoppingPlanRef <<Value Object>> {
+    -shoppingListId: UUID {readOnly}
     +matches(listId: UUID): Boolean
 }
 
-class ProductRequirement {
-    -productId: UUID
-    -quantity: Decimal
+class ProductRequirement <<Value Object>> {
+    -productId: UUID {readOnly}
+    -quantity: Quantity {readOnly}
     +requires(productId: UUID): Boolean
 }
 
 class StoreCandidate {
     -storeId: UUID
     -location: GeoPoint
-    +isWithin(radius: Decimal): Boolean
+    +isWithin(radius: Distance): Boolean
 }
 
-class Money {
-    -amount: Decimal
-    -currency: String
+class Money <<Value Object>> {
+    -amount: Decimal {readOnly}
+    -currency: String {readOnly}
+    +add(other: Money): Money
     +subtract(other: Money): Money
+    +multiply(factor: Decimal): Money
+    +isLessThan(other: Money): Boolean
+    +isGreaterThan(other: Money): Boolean
+    +isDifferentFrom(other: Money): Boolean
+    +isPositive(): Boolean
 }
+
+note right of Money
+  Immutable; equality by amount and currency.
+  Arithmetic and comparisons require the same currency.
+  Operations return new values.
+end note
 
 enum RouteStatus {
     DRAFT
@@ -89,5 +101,54 @@ RouteStop "*" --> "1" StoreCandidate : visits
 ShoppingPlanRef "1" --> "1..*" ProductRequirement : requires
 StoreCandidate "1" --> "1" GeoPoint : located at
 MultiStopRoute "1" --> "1" Money : reports net savings
+
+class Quantity <<Value Object>> {
+    -amount: Decimal {readOnly}
+    -unit: String {readOnly}
+    +add(other: Quantity): Quantity
+    +subtract(other: Quantity): Quantity
+    +isPositive(): Boolean
+}
+
+note right of Quantity
+  Immutable; amount >= 0; unit is not blank.
+  Equality by amount and unit; arithmetic requires the same unit.
+  Subtraction cannot produce a negative amount.
+  Requested purchase quantities must be positive.
+end note
+
+class Distance <<Value Object>> {
+    -kilometers: Decimal {readOnly}
+    +add(other: Distance): Distance
+    +isWithin(limit: Distance): Boolean
+}
+
+note right of Distance
+  Immutable; kilometers >= 0.
+  Equality by value in kilometers.
+end note
+
+MultiStopRoute "1" --> "1" Distance : total distance
+RouteEstimate "1" --> "1" Distance : estimated distance
+ProductRequirement "1" --> "1" Quantity : required amount
+
+note right of GeoPoint
+  Immutable; -90 <= latitude <= 90;
+  -180 <= longitude <= 180.
+  Equality by coordinates.
+end note
+
+note right of RouteEstimate
+  Immutable; duration >= 0.
+  Equality by distance and duration.
+end note
+
+note right of ShoppingPlanRef
+  Immutable local reference; equality by shoppingListId.
+end note
+
+note right of ProductRequirement
+  Immutable; equality by productId and quantity.
+end note
 
 @enduml

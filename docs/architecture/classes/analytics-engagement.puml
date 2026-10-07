@@ -1,6 +1,6 @@
-@startuml PeruTech_Analytics_Engagement_Classes
+@startuml Preciazo_Analytics_Engagement_Classes
 
-title PeruTech - Analytics and Engagement Class Diagram
+title Preciazo - Analytics and Engagement Class Diagram
 
 skinparam classAttributeIconSize 0
 skinparam shadowing false
@@ -8,7 +8,7 @@ skinparam linetype ortho
 
 interface AnalyticsEventStore {
     +append(event: MetricEvent): void
-    +findBetween(from: DateTime, to: DateTime): List<MetricEvent>
+    +findBetween(period: ReportingPeriod): List<MetricEvent>
 }
 
 interface MetricsCalculator {
@@ -47,17 +47,29 @@ class MerchantReport {
     +isFor(type: ReportType): Boolean
 }
 
-class ReportingPeriod {
-    -from: DateTime
-    -to: DateTime
+class ReportingPeriod <<Value Object>> {
+    -from: DateTime {readOnly}
+    -to: DateTime {readOnly}
     +contains(moment: DateTime): Boolean
 }
 
-class Money {
-    -amount: Decimal
-    -currency: String
+class Money <<Value Object>> {
+    -amount: Decimal {readOnly}
+    -currency: String {readOnly}
     +add(other: Money): Money
+    +subtract(other: Money): Money
+    +multiply(factor: Decimal): Money
+    +isLessThan(other: Money): Boolean
+    +isGreaterThan(other: Money): Boolean
+    +isDifferentFrom(other: Money): Boolean
+    +isPositive(): Boolean
 }
+
+note right of Money
+  Immutable; equality by amount and currency.
+  Arithmetic and comparisons require the same currency.
+  Operations return new values.
+end note
 
 enum MetricEventType {
     STORE_VISIT
@@ -78,6 +90,11 @@ AnalyticsService ..> MetricsCalculator : calculates metrics
 MerchantMetrics "1" --> "1" ReportingPeriod : covers
 MerchantMetrics "1" --> "1" Money : totals lost sales
 MerchantReport "*" --> "1" MerchantMetrics : summarizes
-MetricEvent "*" --> "1" ReportingPeriod : belongs to
+MetricEvent ..> ReportingPeriod : checks occurrence within
+
+note right of ReportingPeriod
+  Immutable; from <= to.
+  Equality by both endpoints.
+end note
 
 @enduml

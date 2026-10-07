@@ -1,18 +1,18 @@
-@startuml PeruTech_Merchant_Management_Classes
+@startuml Preciazo_Merchant_Management_Classes
 
-title PeruTech - Merchant Management Class Diagram
+title Preciazo - Merchant Management Class Diagram
 
 skinparam classAttributeIconSize 0
 skinparam shadowing false
 skinparam linetype ortho
 
 interface MerchantRepository {
-    +findByTaxId(taxId: String): MerchantProfile
+    +findByTaxId(taxId: Ruc): MerchantProfile
     +save(profile: MerchantProfile): void
 }
 
 interface RucVerificationGateway {
-    +verify(taxId: String): VerificationResult
+    +verify(taxId: Ruc): VerificationResult
 }
 
 class MerchantManagementService {
@@ -23,7 +23,7 @@ class MerchantManagementService {
 
 class MerchantProfile {
     -id: UUID
-    -taxId: String
+    -taxId: Ruc
     -verificationStatus: VerificationStatus
     +submitForVerification(): void
     +confirmVerification(): void
@@ -33,19 +33,19 @@ class MerchantProfile {
 class RetailStore {
     -id: UUID
     -name: String
-    -address: String
-    +updateInformation(address: String): void
+    -address: Address
+    +updateInformation(address: Address): void
     +addInventoryItem(item: InventoryItem): void
     +publish(promotion: Promotion): void
 }
 
 class InventoryItem {
     -id: UUID
-    -stock: Decimal
-    -unitPrice: Money
-    +increaseStock(quantity: Decimal): void
-    +decreaseStock(quantity: Decimal): void
-    +updatePrice(price: Money): void
+    -stock: Quantity
+    -unitPrice: UnitPrice
+    +increaseStock(quantity: Quantity): void
+    +decreaseStock(quantity: Quantity): void
+    +updatePrice(price: UnitPrice): void
     +isAvailable(): Boolean
 }
 
@@ -65,15 +65,27 @@ class Promotion {
     +isActiveAt(moment: DateTime): Boolean
 }
 
-class Money {
-    -amount: Decimal
-    -currency: String
+class Money <<Value Object>> {
+    -amount: Decimal {readOnly}
+    -currency: String {readOnly}
+    +add(other: Money): Money
+    +subtract(other: Money): Money
+    +multiply(factor: Decimal): Money
+    +isLessThan(other: Money): Boolean
+    +isGreaterThan(other: Money): Boolean
+    +isDifferentFrom(other: Money): Boolean
     +isPositive(): Boolean
 }
 
-class VerificationResult {
-    -verified: Boolean
-    -legalName: String
+note right of Money
+  Immutable; equality by amount and currency.
+  Arithmetic and comparisons require the same currency.
+  Operations return new values.
+end note
+
+class VerificationResult <<Value Object>> {
+    -verified: Boolean {readOnly}
+    -legalName: String {readOnly}
     +isSuccessful(): Boolean
 }
 
@@ -89,6 +101,73 @@ MerchantProfile "1" *-- "1..*" RetailStore : manages
 RetailStore "1" *-- "0..*" InventoryItem : holds
 InventoryItem "*" --> "1" StoreProduct : represents
 StoreProduct "1" o-- "0..*" Promotion : has
-InventoryItem "1" --> "1" Money : priced at
+InventoryItem "1" --> "1" UnitPrice : priced at
+InventoryItem "1" --> "1" Quantity : stock
+
+class Quantity <<Value Object>> {
+    -amount: Decimal {readOnly}
+    -unit: String {readOnly}
+    +add(other: Quantity): Quantity
+    +subtract(other: Quantity): Quantity
+    +isPositive(): Boolean
+}
+
+note right of Quantity
+  Immutable; amount >= 0; unit is not blank.
+  Equality by amount and unit; arithmetic requires the same unit.
+  Subtraction cannot produce a negative amount.
+  Requested purchase quantities must be positive.
+end note
+
+class UnitPrice <<Value Object>> {
+    -price: Money {readOnly}
+    -perUnit: Quantity {readOnly}
+    +costFor(quantity: Quantity): Money
+    +isLessThan(other: UnitPrice): Boolean
+}
+
+note right of UnitPrice
+  Immutable; equality by price and perUnit.
+  Price >= 0; perUnit amount > 0.
+  Cost and comparisons require compatible units
+  and the same currency.
+end note
+
+UnitPrice "1" --> "1" Money : monetary value
+UnitPrice "1" --> "1" Quantity : priced quantity
+
+class Ruc <<Value Object>> {
+    -value: String {readOnly}
+    +equals(other: Ruc): Boolean
+}
+
+note right of Ruc
+  Immutable; exactly 11 numeric characters.
+  Format validation does not establish fiscal status;
+  RucVerificationGateway verifies that externally.
+end note
+
+class Address <<Value Object>> {
+    -street: String {readOnly}
+    -district: String {readOnly}
+    -province: String {readOnly}
+    -department: String {readOnly}
+    +equals(other: Address): Boolean
+}
+
+note right of Address
+  Immutable; address fields are not blank.
+  Equality by all address fields.
+  Changes replace the complete value.
+end note
+
+MerchantProfile "1" --> "1" Ruc : fiscal identifier
+RetailStore "1" --> "1" Address : located at
+MerchantRepository ..> Ruc : looks up by
+RucVerificationGateway ..> Ruc : verifies
+
+note right of VerificationResult
+  Immutable response value from fiscal verification.
+end note
 
 @enduml

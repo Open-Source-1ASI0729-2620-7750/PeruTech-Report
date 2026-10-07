@@ -1554,7 +1554,7 @@ Con el objetivo de evitar un único modelo de clases excesivamente acoplado, el 
 
 Asimismo, cuando un contexto necesita información perteneciente a otro dominio, se utilizan referencias locales basadas en identificadores u objetos específicos del contexto, evitando compartir directamente las entidades internas de otros Bounded Contexts. Este criterio permite conservar límites claros entre los modelos y reducir dependencias innecesarias.
 
-Los diagramas incluyen atributos y operaciones relevantes del dominio, utilizando visibilidad UML, relaciones nombradas, multiplicidades y el uso de **Value Objects** (como `Money`, `Coordinates`, `Address`, `UnitPrice`, `BudgetLimit`) para asegurar la inmutabilidad y evitar la obsesión por primitivos.
+Los diagramas incluyen atributos y operaciones relevantes del dominio, visibilidad UML, relaciones nombradas y multiplicidades. Los **Value Objects** se identifican con el estereotipo `Value Object` y atributos `readOnly`; sus notas explicitan restricciones y criterios de igualdad por valor. Se utilizan `EmailAddress`, `Ruc`, `Address`, `Quantity`, `UnitPrice`, `Money`, `GeoPoint`, `Distance` y `ReportingPeriod`, además de referencias locales y criterios de consulta inmutables. Las operaciones que cambian un valor devuelven uno nuevo en lugar de modificar el existente.
 
 ### 4.7.1. Class Diagrams
 
@@ -1566,7 +1566,7 @@ El Bounded Context **Identity and Access** concentra las responsabilidades relac
 
 La clase `User` representa la identidad principal del sistema y permite realizar operaciones como autenticarse, asignar roles, desactivar la cuenta y comprobar permisos. Las sesiones generadas se representan mediante `AuthSession`, mientras que `Role` y `Permission` modelan el esquema de autorización.
 
-Las interfaces `IdentityRepository` y `AccessPolicy` abstraen respectivamente la persistencia de identidades y las reglas utilizadas para determinar si una operación está autorizada.
+Las interfaces `IdentityRepository` y `AccessPolicy` abstraen respectivamente la persistencia de identidades y las reglas utilizadas para determinar si una operación está autorizada. `EmailAddress` encapsula el correo y su validación de formato, y se utiliza tanto en `User` como en las operaciones de búsqueda y autenticación.
 
 ![Identity and Access Class Diagram](../assets/architecture/classes/identity-access.png)
 
@@ -1576,7 +1576,7 @@ El Bounded Context **Shopping Planning** administra la planificación de compras
 
 `ShoppingList` funciona como el elemento central del modelo y agrupa múltiples `ShoppingListItem`. Entre sus responsabilidades se encuentran agregar y eliminar ítems, marcar productos como comprados, calcular el costo estimado y completar una lista.
 
-`PurchaseBudget` representa el presupuesto asociado a la planificación y encapsula operaciones como reservar o liberar importes y comprobar si un determinado gasto puede ser asumido. El Value Object `Money` encapsula cantidades monetarias y sus operaciones.
+`PurchaseBudget` representa el presupuesto asociado a la planificación y encapsula operaciones como reservar o liberar importes y comprobar si un determinado gasto puede ser asumido. El Value Object `Money` encapsula importes y exige una misma moneda para operar. `Quantity` representa cantidades no negativas con su unidad; las cantidades solicitadas deben ser positivas. `UnitPrice` combina un importe y la cantidad de referencia para calcular costos con unidades compatibles.
 
 `ProductRequirement` permite referenciar un producto requerido sin introducir directamente el modelo interno de Catalog and Pricing dentro de este Bounded Context.
 
@@ -1590,7 +1590,7 @@ El Bounded Context **Catalog and Pricing** modela la consulta y comparación de 
 
 La clase `CatalogPricingService` proporciona operaciones de búsqueda, comparación de precios y selección de ofertas. Por otro lado, `PriceComparisonPolicy` encapsula la regla utilizada para determinar la alternativa más conveniente.
 
-`RetailStoreRef` representa únicamente una referencia al establecimiento, preservando la separación respecto del modelo interno de Merchant Management.
+`RetailStoreRef` representa una referencia inmutable al establecimiento, preservando la separación respecto del modelo interno de Merchant Management. `UnitPrice` expresa el precio por cantidad de referencia y `SearchCriteria` agrupa filtros inmutables, incluido un límite opcional de precio unitario.
 
 ![Catalog and Pricing Class Diagram](../assets/architecture/classes/catalog-pricing.png)
 
@@ -1602,7 +1602,7 @@ El aggregate `MultiStopRoute` administra las diferentes paradas mediante objetos
 
 `RoutePlanningService` coordina la generación, recálculo y confirmación de rutas, mientras que `RoutingGateway` abstrae el acceso al servicio externo de mapas y ruteo.
 
-Para mantener el aislamiento del contexto, conceptos pertenecientes a otros dominios se representan mediante elementos locales como `ShoppingPlanRef`, `ProductRequirement` y `StoreCandidate`.
+Para mantener el aislamiento del contexto, conceptos pertenecientes a otros dominios se representan mediante elementos locales como `ShoppingPlanRef`, `ProductRequirement` y `StoreCandidate`. `GeoPoint` valida los rangos de coordenadas, `Distance` expresa kilómetros no negativos y `Quantity` representa la cantidad requerida de un producto. `RouteEstimate` es un resultado inmutable que reúne distancia y duración.
 
 ![Route Planning Class Diagram](../assets/architecture/classes/route-planning.png)
 
@@ -1614,7 +1614,7 @@ El Bounded Context **Merchant Management** concentra las capacidades relacionada
 
 `InventoryItem` encapsula operaciones relacionadas con stock y precio, mientras que `Promotion` representa ofertas con un período de vigencia definido.
 
-La interfaz `RucVerificationGateway` abstrae la comunicación con el servicio externo utilizado para validar la información fiscal del Merchant.
+La interfaz `RucVerificationGateway` abstrae la comunicación con el servicio externo utilizado para validar la información fiscal del Merchant. `Ruc` encapsula el formato del identificador; la verificación fiscal permanece en el gateway. `Address` representa la dirección como un valor completo; `Quantity` y `UnitPrice` expresan el stock y el precio por cantidad de referencia.
 
 ![Merchant Management Class Diagram](../assets/architecture/classes/merchant-management.png)
 
@@ -1626,7 +1626,7 @@ El Bounded Context **Community Price Verification** administra las observaciones
 
 La clase `TrustProfile` mantiene información local relacionada con la confiabilidad de las contribuciones realizadas por un usuario. Por otro lado, `VerificationPolicy` encapsula las reglas necesarias para aceptar, rechazar o solicitar revisión adicional de una discrepancia.
 
-Los objetos `UserRef` y `StoreProductRef` actúan como referencias hacia información perteneciente a otros Bounded Contexts sin introducir sus modelos internos directamente.
+Los Value Objects `UserRef` y `StoreProductRef` actúan como referencias inmutables hacia Identity and Access y Catalog and Pricing sin introducir sus modelos internos directamente. Los precios esperados y observados utilizan `Money`.
 
 ![Community Price Verification Class Diagram](../assets/architecture/classes/community-price-verification.png)
 
@@ -1638,7 +1638,7 @@ El Bounded Context **Analytics and Engagement** se encarga de registrar eventos 
 
 `AnalyticsService` registra dichos eventos y genera posteriormente objetos `MerchantMetrics` y `MerchantReport`. La interfaz `MetricsCalculator` abstrae la lógica utilizada para calcular las métricas correspondientes a un período determinado.
 
-De esta manera, el contexto mantiene separada la recopilación de eventos de la generación de información analítica destinada al Merchant.
+`ReportingPeriod` encapsula un intervalo inmutable cuyo inicio no supera el fin y se utiliza para consultar y evaluar eventos. `Money` expresa el importe de ventas perdidas. De esta manera, el contexto mantiene separada la recopilación de eventos de la generación de información analítica destinada al Merchant.
 
 ![Analytics and Engagement Class Diagram](../assets/architecture/classes/analytics-engagement.png)
 
