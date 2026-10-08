@@ -1,75 +1,74 @@
-<div align="center">
-<br>
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 90vh; text-align: center;">
+  
+  <img src="../assets/upc-logo.png" alt="UPC Logo" width="50" height="50"/>
 
-<img src="../assets/upc-logo.png" alt="UPC Logo" width="50" height="50"/>
+  <br>
 
-<br>
+  Universidad Peruana de Ciencias Aplicadas
 
-Universidad Peruana de Ciencias Aplicadas
+  Carrera de Ingeniería de Software
 
-Carrera de Ingeniería de Software
+  ### **1ASI0729**
+  ### **Desarrollo de Aplicaciones Open Source**
 
-### **1ASI0729**
-### **Desarrollo de Aplicaciones Open Source**
+  NRC
 
-NRC
+  **7750**
 
-**7750**
+  ### **Informe del Trabajo Final**
 
-### **Informe del Trabajo Final**
+  Docente
 
-Docente
+  **Bautista Ubillús, Efrain Ricardo**
 
-**Bautista Ubillús, Efrain Ricardo**
+  Equipo
 
-Equipo
+  **PeruTech** 
 
-**PeruTech** 
+  Proyecto
 
-Proyecto
+  **Preciazo** 
 
-**Preciazo** 
+  #### **Integrantes**
 
-#### **Integrantes**
+  </div>
 
-</div>
+  <div align="center">
+  <table align="center" style="all: unset;">
+  <tr style="background: none !important; border: none !important;">
+  <td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;"><strong>Código</strong></td>
+  <td align="left" style="border: none !important; padding: 0 !important; background: none !important;"><strong>Apellidos y Nombres</strong></td>
+  </tr>
+  <tr style="background: none !important; border: none !important;">
+  <td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">u20241c101</td>
+  <td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Capillo Lema, Mía Valentina</td>
+  </tr>
+  <tr style="background: none !important; border: none !important;">
+  <td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U20221A525</td>
+  <td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Pardo Chumpitazi, Kevin Patrick</td>
+  </tr>
+  <tr style="background: none !important; border: none !important;">
+  <td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U20221B756</td>
+  <td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Becerra Durand, Sebastian Uriel</td>
+  </tr>
+  <tr style="background: none !important; border: none !important;">
+  <td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U20231B331</td>
+  <td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Miranda Romero, Sergio Luis</td>
+  </tr>
+  <tr style="background: none !important; border: none !important;">
+  <td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U202124030</td>
+  <td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Casos Torre, Miguel Andre</td>
+  </tr>
+  </table>
+  </div>
 
-<div align="center">
-<table align="center" style="all: unset;">
-<tr style="background: none !important; border: none !important;">
-<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;"><strong>Código</strong></td>
-<td align="left" style="border: none !important; padding: 0 !important; background: none !important;"><strong>Apellidos y Nombres</strong></td>
-</tr>
-<tr style="background: none !important; border: none !important;">
-<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">u20241c101</td>
-<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Capillo Lema, Mía Valentina</td>
-</tr>
-<tr style="background: none !important; border: none !important;">
-<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U20221A525</td>
-<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Pardo Chumpitazi, Kevin Patrick</td>
-</tr>
-<tr style="background: none !important; border: none !important;">
-<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U20221B756</td>
-<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Becerra Durand, Sebastian Uriel</td>
-</tr>
-<tr style="background: none !important; border: none !important;">
-<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U20231B331</td>
-<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Miranda Romero, Sergio Luis</td>
-</tr>
-<tr style="background: none !important; border: none !important;">
-<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U202124030</td>
-<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Casos Torre, Miguel Andre</td>
-</tr>
-</table>
-</div>
+  <div align="center">
 
-<div align="center">
+  <br>
 
-<br>
+  **Período 202620**
 
-**Período 202620**
-
-**Septiembre 2026**
+  **Septiembre 2026**
 
 </div>
 
@@ -99,9 +98,9 @@ Proyecto
 
 # Project Report Collaboration Insights
 
-Para evidenciar la participación equitativa y la trazabilidad en la redacción de la documentación técnica del proyecto, el desarrollo del presente informe se gestionó de manera colaborativa a través del repositorio oficial de GitHub **PeruTech-Report**, aplicando flujo de ramas GitFlow y registro individual de aportes mediante commits descriptivos.
+Para evidenciar la participación equitativa y la trazabilidad en la redacción de la documentación técnica del proyecto, el desarrollo del presente informe se gestionó de manera colaborativa a través del repositorio oficial de GitHub **preciazo-report**, aplicando flujo de ramas GitFlow y registro individual de aportes mediante commits descriptivos.
 
-* **Repositorio de Documentación:** [https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Report](https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Report)
+* **Repositorio de Documentación:** [https://github.com/Open-Source-1ASI0729-2620-7750/preciazo-report](https://github.com/Open-Source-1ASI0729-2620-7750/preciazo-report)
 
 A continuación, se detalla la distribución de contribuciones y elaboración de artefactos técnicos por cada miembro del equipo durante el desarrollo del entregable:
 
@@ -1269,7 +1268,7 @@ El sistema de etiquetado utiliza términos breves, claros y estrictamente unific
 | **`<meta name="description">`** | `Planifica tu Lista Compartida, respeta tu Presupuesto de Compra y optimiza tus recorridos con Rutas Multiparadas. Compara precios reales con Preciazo.` |
 | **`<meta name="keywords">`** | `Preciazo, PeruTech, canasta basica, presupuesto de compra, ruta multiparada, ahorro neto, punto optimo de compra, comercio minorista, dispersion de precios, Peru` |
 | **`<meta name="author">`** | `PeruTech Team` |
-| **Complementos** | Canonical `<link rel="canonical" href="https://open-source-1asi0729-2620-7750.github.io/PeruTech-Landing-Page/">` y Open Graph (`og:title`, `og:description`, `og:image`). |
+| **Complementos** | Canonical `<link rel="canonical" href="https://open-source-1asi0729-2620-7750.github.io/preciazo-landing-page/">` y Open Graph (`og:title`, `og:description`, `og:image`). |
 
 ##### **Aplicación Web — Portal Merchant (Inicio / Dashboard)**
 
@@ -2073,8 +2072,8 @@ El código fuente del proyecto se administra centralizadamente en la organizaci�
 | Componente / Producto | Nombre del Repositorio | Enlace Remoto |
 | :--- | :--- | :--- |
 | **Organización Oficial** | Open Source - 1ASI0729-2620-7750 | [https://github.com/Open-Source-1ASI0729-2620-7750](https://github.com/Open-Source-1ASI0729-2620-7750) |
-| **Documentación Técnica (Reporte)** | `PeruTech-Report` | [https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Report](https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Report) |
-| **Landing Page** | `PeruTech-Landing-Page` | [https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Landing-Page](https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Landing-Page) |
+| **Documentación Técnica (Reporte)** | `preciazo-report` | [https://github.com/Open-Source-1ASI0729-2620-7750/preciazo-report](https://github.com/Open-Source-1ASI0729-2620-7750/preciazo-report) |
+| **Landing Page** | `preciazo-landing-page` | [https://github.com/Open-Source-1ASI0729-2620-7750/preciazo-landing-page](https://github.com/Open-Source-1ASI0729-2620-7750/preciazo-landing-page) |
 
 #### Modelo de Ramificación (GitFlow)
 
@@ -2112,10 +2111,10 @@ El sitio web de la Landing Page se despliega mediante el servicio **GitHub Pages
 
 | Componente | Plataforma Hosting | Estrategia de Despliegue | URL Oficial |
 | :--- | :--- | :--- | :--- |
-| **Landing Page** | GitHub Pages | Despliegue automatizado desde la rama `main` | `https://open-source-1asi0729-2620-7750.github.io/PeruTech-Landing-Page/` |
+| **Landing Page** | GitHub Pages | Despliegue automatizado desde la rama `main` | `https://open-source-1asi0729-2620-7750.github.io/preciazo-landing-page/` |
 
 #### Flujo de Configuración en GitHub Pages:
-1. **Habilitación del Servicio**: Acceso a la configuración del repositorio (*Settings > Pages*) en `PeruTech-Landing-Page`.
+1. **Habilitación del Servicio**: Acceso a la configuración del repositorio (*Settings > Pages*) en `preciazo-landing-page`.
 2. **Selección de Rama Fuente (Source)**: Definición de la rama `main` y directorio `/root` como origen del despliegue público.
 3. **Automatización del Despliegue**: Integración mediante GitHub Actions para compilar y publicar automáticamente los cambios tras cada merge confirmado.
 4. **Configuración de Seguridad**: Habilitación forzada del protocolo criptográfico seguro HTTPS para proteger la navegación de los visitantes.
@@ -2190,7 +2189,7 @@ Para la administración operativa del ciclo de desarrollo se utilizó Trello com
 | **US05** | Landing: FAQ y soporte | T12 | Acordeón informativo | Estructuración semántica de preguntas frecuentes con elementos nativos HTML5. | 2 | Casós Torre, Miguel André | Done |
 | **US05** | Landing: FAQ y soporte | T13 | Lógica de colapso interactivo | Desarrollo de funciones JavaScript para apertura y cierre accesible de tópicos. | 2 | Pardo Chumpitazi, Kevin Patrick | Done |
 | **US05** | Landing: FAQ y soporte | T14 | Formulario de contacto | Integración del canal de comunicación directa para consultas de soporte. | 2 | Capillo Lema, Mía Valentina | Done |
-| **TS01** | Despliegue en GitHub Pages | T15 | Inicialización GitFlow | Configuración del repositorio `PeruTech-Landing-Page` y esquema de ramas. | 2 | Pardo Chumpitazi, Kevin Patrick | Done |
+| **TS01** | Despliegue en GitHub Pages | T15 | Inicialización GitFlow | Configuración del repositorio `preciazo-landing-page` y esquema de ramas. | 2 | Pardo Chumpitazi, Kevin Patrick | Done |
 | **TS01** | Despliegue en GitHub Pages | T16 | Pipeline de despliegue | Configuración de la acción automática para compilación y hosting en GitHub Pages. | 1 | Casós Torre, Miguel André | Done |
 | **TS01** | Despliegue en GitHub Pages | T17 | Auditoría Lighthouse | Comprobación de métricas de rendimiento y SEO superando el 90% de puntaje. | 2 | Miranda Romero, Sergio Luis | Done |
 
@@ -2201,7 +2200,7 @@ Durante el Sprint 1, el equipo implementó la totalidad de los componentes front
 * `css/styles.css`: Hojas de estilo estructuradas con variables CSS para la paleta institucional (negro azabache `#000000`, turquesa `#00ACAC`), reglas de Flexbox, CSS Grid y media queries adaptativas.
 * `js/main.js`: Lógica del lado del cliente para la validación reactiva del correo mediante expresiones regulares, feedback accesible en el formulario y control dinámico del acordeón de preguntas frecuentes.
 
-* **Repositorio de Código Fuente de la Landing Page:** [https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Landing-Page](https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Landing-Page)
+* **Repositorio de Código Fuente de la Landing Page:** [https://github.com/Open-Source-1ASI0729-2620-7750/preciazo-landing-page](https://github.com/Open-Source-1ASI0729-2620-7750/preciazo-landing-page)
 
 A continuación, se documenta la trazabilidad de los commits realizados durante el ciclo de desarrollo por cada uno de los integrantes del equipo bajo la convención de Conventional Commits:
 
@@ -2234,7 +2233,7 @@ Al tratarse del ciclo inicial (Sprint 1) enfocado exclusivamente en el despliegu
 
 El sitio web de la Landing Page se encuentra completamente operativo y publicado en el entorno público de **GitHub Pages**, respaldado por certificados de seguridad SSL/TLS activos:
 
-* **URL Pública de Despliegue:** [https://open-source-1asi0729-2620-7750.github.io/PeruTech-Landing-Page/](https://open-source-1asi0729-2620-7750.github.io/PeruTech-Landing-Page/)
+* **URL Pública de Despliegue:** [https://open-source-1asi0729-2620-7750.github.io/preciazo-landing-page/](https://open-source-1asi0729-2620-7750.github.io/preciazo-landing-page/)
 
 Para garantizar la calidad técnica del producto liberado, se ejecutó una auditoría exhaustiva mediante la herramienta **Google Lighthouse**, evaluando rendimiento, accesibilidad, mejores prácticas y optimización para motores de búsqueda (SEO):
 
@@ -2253,6 +2252,119 @@ Durante el desarrollo del Sprint 1, el equipo aplicó ceremonias ágiles Scrum (
 ### 5.2.2. Sprint 2
 
 El Sprint 2 corresponde a la siguiente fase del cronograma de desarrollo del proyecto. Durante este ciclo se abordará la construcción del núcleo de la **Single Page Application (SPA)** en Angular y la implementación de los servicios RESTful en Java con Spring Boot, priorizando las historias de usuario de mayor valor de negocio: comparativa de canasta (`US13`), cálculo de rutas eficientes (`US14`) y administración de precios para comerciantes (`US23`).
+
+#### 5.2.2.1. Sprint Planning 2
+
+| Campo | Descripción |
+| :--- | :--- |
+| **Sprint #** | Sprint 2 |
+| **Sprint Planning Background** | Sesión de planificación orientada a revisar los hallazgos del entregable previo, desarrollar las primeras vistas del frontend para el primer y segundo segmento objetivo, refinar la Landing Page de **Preciazo** con soporte multiidioma (i18n), subsanar las observaciones del informe técnico y consolidar el flujo de despliegue. |
+| **Date** | 2026-09-23 |
+| **Time** | 07:00 PM (GMT -5) |
+| **Location** | Modalidad remota síncrona vía Google Meet |
+| **Prepared By** | Equipo de Desarrollo PeruTech |
+| **Attendees (to planning meeting)** | Becerra Durand, Sebastian Uriel; Capillo Lema, Mía Valentina; Casós Torre, Miguel André; Miranda Romero, Sergio Luis; Pardo Chumpitazi, Kevin Patrick. |
+| **Sprint 1 Review Summary** | Se revisó el primer despliegue de la Landing Page y las observaciones del informe técnico. Se identificó la necesidad de iniciar la maquetación de las vistas principales de la aplicación para ambos segmentos objetivo, mejorar elementos visuales de la Landing Page e incorporar internacionalización. |
+| **Sprint 1 Retrospective Summary** | El equipo mantuvo una buena comunicación mediante GitFlow y Trello. Como oportunidad de mejora, se acordó realizar revisiones cruzadas más minuciosas antes de integrar cambios al informe y al código fuente para evitar inconsistencias en el entregable. |
+| **Sprint Goal & User Stories** | **Sprint 2 Goal:** Desarrollar e integrar las vistas iniciales del frontend para el primer y segundo segmento de usuarios, publicar la versión actualizada de la Landing Page de **Preciazo** en GitHub Pages con soporte i18n (Español / Inglés) y subsanar las observaciones documentales del informe técnico.<br><br>**User Stories y Technical Stories Seleccionadas:**<br>• **US01:** Landing: Propuesta de valor (Optimización) (1 SP)<br>• **US04:** Landing: Registro de interés y feedback (2 SP)<br>• **US05:** Landing: Preguntas frecuentes y soporte (2 SP)<br>• **US06:** Vistas Frontend: Primer Segmento Objetivo (3 SP)<br>• **US07:** Vistas Frontend: Segundo Segmento Objetivo (3 SP)<br>• **TS02:** Actualización y corrección del informe técnico (2 SP)<br>• **TS03:** Redespliegue y auditoría de calidad (1 SP)<br>• **TS04:** Implementación de soporte i18n (Español / Inglés) (2 SP) |
+| **Sprint 2 Velocity** | 16 Story Points |
+| **Sum of Story Points** | 16 Story Points |
+
+#### 5.2.2.2. Aspect Leaders and Collaborators
+
+En la siguiente tabla se mantienen las áreas de trabajo organizadas formalmente entre los integrantes del equipo para el Sprint 2:
+
+| Aspecto / Área de Trabajo | Líder (Aspect Leader) | Colaboradores |
+| :--- | :--- | :--- |
+| **Software Configuration Management & GitFlow** | Pardo Chumpitazi, Kevin Patrick | Miranda Romero, Sergio Luis; Casós Torre, Miguel André |
+| **UI/UX Design & Semantic Prototyping** | Capillo Lema, Mía Valentina | Pardo Chumpitazi, Kevin Patrick; Becerra Durand, Sebastian Uriel |
+| **Frontend Web Development (Structure & Style)** | Miranda Romero, Sergio Luis | Becerra Durand, Sebastian Uriel; Casós Torre, Miguel André |
+| **Responsive Design & Accessibility (a11y)** | Becerra Durand, Sebastian Uriel | Capillo Lema, Mía Valentina; Pardo Chumpitazi, Kevin Patrick |
+| **Hosting, Continuous Deployment (CI/CD) & QA Review** | Casós Torre, Miguel André | Pardo Chumpitazi, Kevin Patrick; Miranda Romero, Sergio Luis |
+
+#### 5.2.2.3. Sprint Backlog 2
+
+El Sprint Backlog 2 organiza las tareas de maquetación del frontend para ambos segmentos, actualización de la Landing Page, integración técnica de i18n y subsanación de observaciones del informe.
+
+<div align="center">
+  <img src="../assets/sprint-2/Trello.png" alt="Sprint Backlog 2 en Trello" width="850">
+  <p><em>Figura 5.3: Estado de las tareas del Sprint 2 en el tablero Kanban de Trello.</em></p>
+</div>
+
+<br>
+
+**Desglose Detallado del Sprint Backlog 2:**
+
+| User Story Id | Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
+| :---: | :--- | :---: | :--- | :--- | :---: | :--- | :---: |
+| **US01** | Landing: Propuesta de valor | T01 | Ajuste visual del Hero | Refinamiento de estilos CSS y jerarquía de textos en la cabecera principal. | 2 | Pardo Chumpitazi, Kevin Patrick | Done |
+| **US01** | Landing: Propuesta de valor | T02 | Corrección de Layout Mobile | Corrección de desbordamientos en resoluciones pequeñas y dispositivos móviles. | 2 | Pardo Chumpitazi, Kevin Patrick | Done |
+| **US04** | Landing: Registro de interés | T03 | Mejora en validación JS | Optimización de mensajes de error y respuesta accesible en el formulario. | 2 | Miranda Romero, Sergio Luis | Done |
+| **US05** | Landing: FAQ y soporte | T04 | Actualización de contenidos | Refinamiento de preguntas frecuentes según las dudas identificadas de usuarios. | 2 | Capillo Lema, Mía Valentina | Done |
+| **US06** | Frontend: Primer Segmento | T05 | Maquetación de vistas | Desarrollo de componentes e interfaz principal para el primer segmento objetivo. | 4 | Miranda Romero, Sergio Luis | Done |
+| **US07** | Frontend: Segundo Segmento | T06 | Maquetación de vistas | Desarrollo de componentes e interfaz principal para el segundo segmento objetivo. | 4 | Becerra Durand, Sebastian Uriel | Done |
+| **TS02** | Correcciones del Informe | T07 | Revisión de Secciones | Subsanación de observaciones en la documentación del informe técnico. | 3 | Casós Torre, Miguel André | Done |
+| **TS02** | Correcciones del Informe | T08 | Actualización de Artefactos | Inserción de imágenes, diagramas y tablas corregidas en el informe. | 2 | Capillo Lema, Mía Valentina | Done |
+| **TS03** | Redespliegue GitHub Pages | T09 | Verificación del Pipeline | Confirmación de la ejecución automática de despliegue tras merges en `main`. | 1 | Casós Torre, Miguel André | Done |
+| **TS04** | Soporte i18n | T10 | Estructura de diccionarios | Creación de archivos JSON de traducción para Español (es) e Inglés (en). | 3 | Becerra Durand, Sebastian Uriel | Done |
+| **TS04** | Soporte i18n | T11 | Lógica de cambio de idioma | Implementación de selector de idioma interactivo en JavaScript. | 3 | Miranda Romero, Sergio Luis | Done |
+
+#### 5.2.2.4. Development Evidence for Sprint Review
+
+Durante el Sprint 2, los avances en el informe y el código fuente se registraron formalmente en el repositorio. A continuación se presenta la trazabilidad exacta de los commits realizados durante la iteración[cite: 7]:
+
+* **Repositorio de Reporte e Informe:** [https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Report](https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Report)[cite: 7]
+
+| Integrante (Usuario Git) | Hash de Commit | Mensaje de Confirmación | Descripción del Aporte Técnico |
+| :--- | :---: | :--- | :--- |
+| **Casós Torre, Miguel André** (`dym4njiroo`) | `7f27572` | `feat(chapter-2): add interview` | Registro e integración del contenido de las entrevistas del Capítulo 2[cite: 7]. |
+| **Pardo Chumpitazi, Kevin Patrick** (`Kevinyin11`) | `a7ba686` | `Merge branch 'develop' of https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Report into develop` | Integración y sincronización de cambios desde la rama `develop` remota[cite: 7]. |
+| **Pardo Chumpitazi, Kevin Patrick** (`Kevinyin11`) | `87b3543` | `docs: standardize UX artifacts to archetypes (Carlos Mendoza and Alberto Ramos) and update user stories` | Estandarización de artefactos UX con los arquetipos de usuario y actualización de historias[cite: 7]. |
+| **Capillo Lema, Mía Valentina** (`MiaCL-5`) | `c55b160` | `Merge pull request #11 from Open-Source-1ASI0729-2620-7750/feature/content-fix` | Fusión del Pull Request #11 con correcciones de contenido a la rama de desarrollo[cite: 7]. |
+| **Capillo Lema, Mía Valentina** (`MiaCL-5`) | `a8aebf4` | `docs(report): update report structure and section organization` | Reestructuración de secciones y organización documental del informe[cite: 7]. |
+| **Capillo Lema, Mía Valentina** (`MiaCL-5`) | `1e0f65c` | `Merge pull request #10 from Open-Source-1ASI0729-2620-7750/feature/content-fix` | Fusión del Pull Request #10 para la integración de ajustes documentales[cite: 7]. |
+| **Capillo Lema, Mía Valentina** (`MiaCL-5`) | `347a0ed` | `docs(report): update wireflows and userflows` | Actualización de los diagramas de wireflows y userflows en el documento[cite: 7]. |
+
+#### 5.2.2.5. Execution Evidence for Sprint Review
+
+La versión actualizada de la Landing Page de **Preciazo** y las vistas preliminares de la plataforma para ambos segmentos objetivo se probaron en distintos entornos, verificando:
+
+1. **Vistas del Frontend por Segmento:** Maquetación funcional e interactiva adaptada a las necesidades operativas del primer y segundo segmento objetivo.
+2. **Soporte Multiidioma (i18n):** El usuario puede alternar entre Español e Inglés mediante el selector interactivo.
+3. **Adaptabilidad Responsiva:** Correcta visualización y maquetación en pantallas de escritorio y móviles.
+
+<div align="center">
+  <img src="../assets/designs/landing/mockup-landing.png" alt="Ejecución de la Landing Page y Vistas Frontend" width="850">
+  <p><em>Figura 5.4: Vista de las interfaces actualizadas de la plataforma en producción.</em></p>
+</div>
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+Al tratarse de un sprint enfocado en la maquetación frontend de las vistas para ambos segmentos, la actualización del sitio web estático y la subsanación de observaciones del informe técnico, en esta iteración no se desarrollaron ni expusieron servicios backend transaccionales (APIs REST/Swagger). La documentación de servicios se abordará en los sprints posteriores conforme se inicie la integración del backend.
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+La versión actualizada del proyecto se encuentra desplegada y funcionando en **GitHub Pages**:
+
+* **URL Pública de Despliegue:** [https://open-source-1asi0729-2620-7750.github.io/PeruTech-Landing-Page/](https://open-source-1asi0729-2620-7750.github.io/PeruTech-Landing-Page/)
+
+Se ejecutó una nueva auditoría en **Google Lighthouse** para verificar la calidad tras incorporar i18n y las nuevas vistas:
+
+| Categoría Auditada | Puntaje Obtenido | Criterio Cumplido |
+| :--- | :---: | :--- |
+| **Performance (Rendimiento)** | **97 / 100** | Carga eficiente de componentes, diccionarios JSON y recursos visuales. |
+| **Accessibility (Accesibilidad)** | **100 / 100** | Cumplimiento estricto de contraste, etiquetas ARIA y navegación por teclado. |
+| **Best Practices (Buenas Prácticas)** | **100 / 100** | Protocolo HTTPS forzado y código sin advertencias en consola. |
+| **SEO (Optimización en Buscadores)** | **100 / 100** | Metadatos y estructura semántica optimizados para indexación bilingüe. |
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 2, el equipo **PeruTech** continuó aplicando el flujo de trabajo en GitFlow, utilizando Pull Requests para la revisión de pares antes de fusionar las vistas del frontend y las actualizaciones de la Landing Page a la rama principal. Se mantuvieron reuniones breves de sincronización para coordinar la maquetación de ambos segmentos y asegurar que las correcciones del informe estuvieran alineadas.
+
+<div align="center">
+  <img src="../assets/team-collaboration.png" alt="Team Collaboration Insights" width="850">
+  <p><em>Figura 5.5: Evidencia del trabajo colaborativo y estadísticas del equipo durante el Sprint 2.</em></p>
+</div>
 
 ## 5.3. Validation Interviews
 
