@@ -1,80 +1,67 @@
-<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 90vh; text-align: center;">
-  
-  <img src="../assets/upc-logo.png" alt="UPC Logo" width="50" height="50"/>
+<div align="center">
+
+  <img src="../assets/upc-logo.png" alt="UPC Logo" width="80"/>
+
+  <br><br>
+
+  <h3><strong>Universidad Peruana de Ciencias Aplicadas</strong></h3>
+  <p><strong>Carrera de Ingeniería de Software</strong></p>
 
   <br>
 
-  Universidad Peruana de Ciencias Aplicadas
+  <p><strong>NRC:</strong> 7750</p>
 
-  Carrera de Ingeniería de Software
+  <h2><strong>Informe del Trabajo Final</strong></h2>
 
-  ### **1ASI0729**
-  ### **Desarrollo de Aplicaciones Open Source**
+  <p><strong>Docente:</strong><br>Bautista Ubillús, Efrain Ricardo</p>
 
-  NRC
+  <p><strong>Equipo:</strong><br>PeruTech</p>
 
-  **7750**
+  <p><strong>Proyecto:</strong><br>Preciazo</p>
 
-  ### **Informe del Trabajo Final**
+  <br>
 
-  Docente
+  <h4><strong>Integrantes</strong></h4>
 
-  **Bautista Ubillús, Efrain Ricardo**
-
-  Equipo
-
-  **PeruTech** 
-
-  Proyecto
-
-  **Preciazo** 
-
-  #### **Integrantes**
-
-  </div>
-
-  <div align="center">
-  <table align="center" style="all: unset;">
-  <tr style="background: none !important; border: none !important;">
-  <td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;"><strong>Código</strong></td>
-  <td align="left" style="border: none !important; padding: 0 !important; background: none !important;"><strong>Apellidos y Nombres</strong></td>
-  </tr>
-  <tr style="background: none !important; border: none !important;">
-  <td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">u20241c101</td>
-  <td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Capillo Lema, Mía Valentina</td>
-  </tr>
-  <tr style="background: none !important; border: none !important;">
-  <td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U20221A525</td>
-  <td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Pardo Chumpitazi, Kevin Patrick</td>
-  </tr>
-  <tr style="background: none !important; border: none !important;">
-  <td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U20221B756</td>
-  <td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Becerra Durand, Sebastian Uriel</td>
-  </tr>
-  <tr style="background: none !important; border: none !important;">
-  <td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U20231B331</td>
-  <td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Miranda Romero, Sergio Luis</td>
-  </tr>
-  <tr style="background: none !important; border: none !important;">
-  <td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U202124030</td>
-  <td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Casos Torre, Miguel Andre</td>
-  </tr>
+  <table align="center" style="margin: 0 auto; border: none !important; border-collapse: collapse !important; background: transparent !important;">
+    <thead>
+      <tr style="border: none !important; background: transparent !important;">
+        <th style="text-align: left; padding: 4px 30px 4px 0; border: none !important; background: transparent !important;">Código</th>
+        <th style="text-align: left; padding: 4px 0; border: none !important; background: transparent !important;">Apellidos y Nombres</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border: none !important; background: transparent !important;">
+        <td style="text-align: left; padding: 4px 30px 4px 0; border: none !important; background: transparent !important;">u20241c101</td>
+        <td style="text-align: left; padding: 4px 0; border: none !important; background: transparent !important;">Capillo Lema, Mía Valentina</td>
+      </tr>
+      <tr style="border: none !important; background: transparent !important;">
+        <td style="text-align: left; padding: 4px 30px 4px 0; border: none !important; background: transparent !important;">U20221A525</td>
+        <td style="text-align: left; padding: 4px 0; border: none !important; background: transparent !important;">Pardo Chumpitazi, Kevin Patrick</td>
+      </tr>
+      <tr style="border: none !important; background: transparent !important;">
+        <td style="text-align: left; padding: 4px 30px 4px 0; border: none !important; background: transparent !important;">U20221B756</td>
+        <td style="text-align: left; padding: 4px 0; border: none !important; background: transparent !important;">Becerra Durand, Sebastian Uriel</td>
+      </tr>
+      <tr style="border: none !important; background: transparent !important;">
+        <td style="text-align: left; padding: 4px 30px 4px 0; border: none !important; background: transparent !important;">U20231B331</td>
+        <td style="text-align: left; padding: 4px 0; border: none !important; background: transparent !important;">Miranda Romero, Sergio Luis</td>
+      </tr>
+      <tr style="border: none !important; background: transparent !important;">
+        <td style="text-align: left; padding: 4px 30px 4px 0; border: none !important; background: transparent !important;">U202124030</td>
+        <td style="text-align: left; padding: 4px 0; border: none !important; background: transparent !important;">Casos Torre, Miguel Andre</td>
+      </tr>
+    </tbody>
   </table>
-  </div>
 
-  <div align="center">
+  <br><br>
 
-  <br>
-
-  **Período 202620**
-
-  **Septiembre 2026**
+  <p><strong>Período 202620</strong></p>
+  <p><strong>Septiembre 2026</strong></p>
 
 </div>
 
-
 <div style="page-break-after: always;"></div>
-
 ---
 
 # Registro de Versiones del Informe
@@ -2311,19 +2298,19 @@ El Sprint Backlog 2 organiza las tareas de maquetación del frontend para ambos 
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
-Durante el Sprint 2, los avances en el informe y el código fuente se registraron formalmente en el repositorio. A continuación se presenta la trazabilidad exacta de los commits realizados durante la iteración[cite: 7]:
+Durante el Sprint 2, los avances en el informe y el código fuente se registraron formalmente en el repositorio. A continuación se presenta la trazabilidad exacta de los commits realizados durante la iteración:
 
-* **Repositorio de Reporte e Informe:** [https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Report](https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Report)[cite: 7]
+* **Repositorio de Reporte e Informe:** [https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Report](https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Report) 
 
 | Integrante (Usuario Git) | Hash de Commit | Mensaje de Confirmación | Descripción del Aporte Técnico |
 | :--- | :---: | :--- | :--- |
-| **Casós Torre, Miguel André** (`dym4njiroo`) | `7f27572` | `feat(chapter-2): add interview` | Registro e integración del contenido de las entrevistas del Capítulo 2[cite: 7]. |
-| **Pardo Chumpitazi, Kevin Patrick** (`Kevinyin11`) | `a7ba686` | `Merge branch 'develop' of https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Report into develop` | Integración y sincronización de cambios desde la rama `develop` remota[cite: 7]. |
-| **Pardo Chumpitazi, Kevin Patrick** (`Kevinyin11`) | `87b3543` | `docs: standardize UX artifacts to archetypes (Carlos Mendoza and Alberto Ramos) and update user stories` | Estandarización de artefactos UX con los arquetipos de usuario y actualización de historias[cite: 7]. |
-| **Capillo Lema, Mía Valentina** (`MiaCL-5`) | `c55b160` | `Merge pull request #11 from Open-Source-1ASI0729-2620-7750/feature/content-fix` | Fusión del Pull Request #11 con correcciones de contenido a la rama de desarrollo[cite: 7]. |
-| **Capillo Lema, Mía Valentina** (`MiaCL-5`) | `a8aebf4` | `docs(report): update report structure and section organization` | Reestructuración de secciones y organización documental del informe[cite: 7]. |
-| **Capillo Lema, Mía Valentina** (`MiaCL-5`) | `1e0f65c` | `Merge pull request #10 from Open-Source-1ASI0729-2620-7750/feature/content-fix` | Fusión del Pull Request #10 para la integración de ajustes documentales[cite: 7]. |
-| **Capillo Lema, Mía Valentina** (`MiaCL-5`) | `347a0ed` | `docs(report): update wireflows and userflows` | Actualización de los diagramas de wireflows y userflows en el documento[cite: 7]. |
+| **Casós Torre, Miguel André** (`dym4njiroo`) | `7f27572` | `feat(chapter-2): add interview` | Registro e integración del contenido de las entrevistas del Capítulo 2 . |
+| **Pardo Chumpitazi, Kevin Patrick** (`Kevinyin11`) | `a7ba686` | `Merge branch 'develop' of https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Report into develop` | Integración y sincronización de cambios desde la rama `develop` remota . |
+| **Pardo Chumpitazi, Kevin Patrick** (`Kevinyin11`) | `87b3543` | `docs: standardize UX artifacts to archetypes (Carlos Mendoza and Alberto Ramos) and update user stories` | Estandarización de artefactos UX con los arquetipos de usuario y actualización de historias . |
+| **Capillo Lema, Mía Valentina** (`MiaCL-5`) | `c55b160` | `Merge pull request #11 from Open-Source-1ASI0729-2620-7750/feature/content-fix` | Fusión del Pull Request #11 con correcciones de contenido a la rama de desarrollo . |
+| **Capillo Lema, Mía Valentina** (`MiaCL-5`) | `a8aebf4` | `docs(report): update report structure and section organization` | Reestructuración de secciones y organización documental del informe . |
+| **Capillo Lema, Mía Valentina** (`MiaCL-5`) | `1e0f65c` | `Merge pull request #10 from Open-Source-1ASI0729-2620-7750/feature/content-fix` | Fusión del Pull Request #10 para la integración de ajustes documentales . |
+| **Capillo Lema, Mía Valentina** (`MiaCL-5`) | `347a0ed` | `docs(report): update wireflows and userflows` | Actualización de los diagramas de wireflows y userflows en el documento . |
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
@@ -2346,7 +2333,7 @@ Al tratarse de un sprint enfocado en la maquetación frontend de las vistas para
 
 La versión actualizada del proyecto se encuentra desplegada y funcionando en **GitHub Pages**:
 
-* **URL Pública de Despliegue:** [https://open-source-1asi0729-2620-7750.github.io/PeruTech-Landing-Page/](https://open-source-1asi0729-2620-7750.github.io/PeruTech-Landing-Page/)
+* **URL Pública de Despliegue:** [https://open-source-1asi0729-2620-7750.github.io/preciazo-landing-page/](https://open-source-1asi0729-2620-7750.github.io/preciazo-landing-page/)
 
 Se ejecutó una nueva auditoría en **Google Lighthouse** para verificar la calidad tras incorporar i18n y las nuevas vistas:
 
