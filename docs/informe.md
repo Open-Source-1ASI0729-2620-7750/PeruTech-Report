@@ -1292,59 +1292,56 @@ En esta sección se presenta el mockup de alta fidelidad con la identidad de la 
 
 A continuación, se presentan las pantallas de wireframe de baja fidelidad de la aplicación **Preciazo**. El diseño contempla tanto la experiencia del usuario final (comprador) como el panel de gestión orientado a comercios afiliados.
 
-#### 1. Pantalla de Inicio (Home)
-Pantalla principal de la aplicación que integra el buscador global por productos o tiendas, accesos rápidos a la creación de listas, ofertas destacadas en la zona del usuario y el listado de tiendas cercanas con sus respectivas distancias.
+### 1. Segmento: Portal del Comprador (Buyer UI)
 
-![Pantalla de Inicio](../assets/wireframe-app/portada.png)
+#### 1.1. Pantalla Principal y Catálogo
+Esquema estructural de la vista principal que integra el buscador central, categorías de productos, carrusel de ofertas destacadas y la navegación inferior persistente.
 
----
+![Wireframe - Inicio Comprador](../assets/wireframe-app/INICIO.png)
 
-#### 2. Vista de Lista Activa - Modo Normal
-Permite visualizar la lista de compras actual con el control de presupuesto. Incluye sugerencias inteligentes de sustitutos más económicos para maximizar el ahorro y la opción de agregar o eliminar productos.
+#### 1.2. Módulo de Gestión de Listas de Compra
+Estructura para la creación y gestión de listas personalizadas, permitiendo al usuario consolidar productos antes de proceder a la comparación o cálculo de rutas.
 
-![Lista Activa - Modo Normal](../assets/wireframe-app/lista-modo-normal.png)
+![Wireframe - Mis Listas](../assets/wireframe-app/LISTAS.png)
 
----
+#### 1.3. Módulo de Comparación Multitienda
+Diseño de la matriz comparativa que distribuye productos y precios en columnas para evaluar de forma explícita las diferencias de costo entre comercios.
 
-#### 3. Módulo de Comparativa de Precios
-Cuadro comparativo interactivo que permite analizar el costo total de la lista activa en distintos supermercados según el radio de distancia seleccionado. Destaca la mejor opción económica y permite reportar inconsistencias en tiendas.
+![Wireframe - Comparar Precios](../assets/wireframe-app/COMPARAR.png)
 
-![Comparativa de Precios](../assets/wireframe-app/comparar.png)
+#### 1.4. Módulo de Optimización de Ruta de Compra
+Interfaz que combina la representación del trayecto óptimo sobre un plano/mapa en la parte superior con el desglose secuencial de paradas y productos en la parte inferior.
 
----
+![Wireframe - Ruta de Compra](../assets/wireframe-app/RUTA.png)
 
-#### 4. Generador de Ruta de Compra Optimizada
-Mapeo iterativo y sugerencia de itinerario para compras en múltiples establecimientos. Desglosa los tiempos de traslado, el ahorro estimado y el detalle de ítems a adquirir en cada parada.
+#### 1.5. Módulo de Verificación Comunitaria
+Esquema de la sección interactiva donde los usuarios reportan variaciones de precios, confirman stock en tienda y participan en la validación colaborativa de ofertas.
 
-![Ruta Optimizada](../assets/wireframe-app/ruta.png)
-
----
-
-#### 5. Panel de Analítica para Comercios
-Dashboard principal orientado al comerciante o tienda aliada. Presenta métricas relevantes sobre impresiones en rutas, vistas de productos, consultas de ofertas y un gráfico de tendencias de tráfico mensual.
-
-![Panel de Analítica para Comercios](../assets/wireframe-app/tienda-panel.png)
+![Wireframe - Sección Comunitaria](../assets/wireframe-app/COMUNITARIA.png)
 
 ---
 
-#### 6. Gestión de Catálogo de Precios (Comercios)
-Interfaz de administración donde el comercio puede activar, desactivar y actualizar el listado de precios de sus productos e importar inventarios.
+### 2. Segmento: Portal del Comerciante (Merchant UI)
 
-![Catálogo de Precios](../assets/wireframe-app/tienda-catalogo.png)
+#### 2.1. Panel de Métricas y Rendimiento (Dashboard)
+Distribución estructural de las tarjetas de indicadores (KPIs), gráfico de tendencia temporal e informes resumidos de interacción de clientes.
 
----
+![Wireframe - Métricas y Dashboard](../assets/wireframe-app/METRICAS.png)
 
-#### 7. Módulo de Ofertas y Promociones (Comercios)
-Sección diseñada para que los establecimientos publiquen promociones temporales, establezcan precios de oferta con contador de vigencia y gestionen sus campañas activas.
+#### 2.2. Módulo de Gestión de Inventario y Precios
+Vista esquemática del catálogo donde el comerciante gestiona el estado de stock (switches de disponibilidad) y la edición rápida de precios de lista.
 
-![Módulo de Ofertas](../assets/wireframe-app/tienda-oferta.png)
+![Wireframe - Inventario y Precios](../assets/wireframe-app/INVENTARIO.png)
 
----
+#### 2.3. Módulo de Ofertas y Promociones
+Estructura para visualizar las promociones activas, métricas de rendimiento por campaña y el formulario para programar nuevos descuentos.
 
-#### 8. Perfil e Información de la Tienda
-Pantalla que muestra la información institucional del establecimiento afiliado, incluyendo RUC, dirección fiscal, teléfono de contacto y la configuración de sus horarios de atención al público.
+![Wireframe - Promociones](../assets/wireframe-app/PROMOCIONES.png)
 
-![Información del Establecimiento](../assets/wireframe-app/tienda-mi-tienda.png)
+#### 2.4. Módulo de Datos del Establecimiento
+Esquema de la sección de información fiscal, RUC verificado, dirección física y configuración de los horarios de atención de la tienda.
+
+![Wireframe - Datos del Establecimiento](../assets/wireframe-app/RUC.png)
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
