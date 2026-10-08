@@ -70,6 +70,9 @@ Proyecto
 
 </div>
 
+
+<div style="page-break-after: always;"></div>
+
 ---
 
 # Registro de Versiones del Informe
@@ -1640,12 +1643,6 @@ A continuación, se presentan los diagramas de User Flow para la aplicación web
   ![Datos del Establecimiento](../assets/mockups-app/DATOS.png)
 
 ---
-
-##### Diagrama 4: Flujo de Publicación de Promociones Temporales
-* **Goal:** 4. Crear y gestionar ofertas con tiempo de vigencia determinado.
-* **Descripción:** El comerciante evalúa los productos desde su catálogo de precios e ingresa al módulo de ofertas para configurar promociones especiales, definir descuentos y establecer la vigencia temporal de la campaña.
-
-![Diagrama 4 - Publicación de Promociones Temporales](../assets/userflow/diagrama4.png)
 
 ## 4.5. Web Applications Prototyping
 
