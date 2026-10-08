@@ -2300,7 +2300,9 @@ El Sprint Backlog 2 organiza las tareas de maquetación del frontend para ambos 
 
 Durante el Sprint 2, los avances en el informe y el código fuente se registraron formalmente en el repositorio. A continuación se presenta la trazabilidad exacta de los commits realizados durante la iteración:
 
-* **Repositorio de Reporte e Informe:** [https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Report](https://github.com/Open-Source-1ASI0729-2620-7750/PeruTech-Report) 
+* **Repositorio de Reporte e Informe:** [https://github.com/Open-Source-1ASI0729-2620-7750/preciazo-report](https://github.com/Open-Source-1ASI0729-2620-7750/preciazo-report)
+* **Repositorio de la Plataforma Web / Frontend (Preciazo-platform):** [https://github.com/Open-Source-1ASI0729-2620-7750/Preciazo-platform](https://github.com/Open-Source-1ASI0729-2620-7750/Preciazo-platform) 
+* **Repositorio de la Landing Page (PeruTech-Landing-Page):** [https://github.com/Open-Source-1ASI0729-2620-7750/preciazo-landing-page](https://github.com/Open-Source-1ASI0729-2620-7750/preciazo-landing-page)
 
 | Integrante (Usuario Git) | Hash de Commit | Mensaje de Confirmación | Descripción del Aporte Técnico |
 | :--- | :---: | :--- | :--- |
@@ -2331,18 +2333,19 @@ Al tratarse de un sprint enfocado en la maquetación frontend de las vistas para
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
-La versión actualizada del proyecto se encuentra desplegada y funcionando en **GitHub Pages**:
+Los artefactos del proyecto se encuentran desplegados y funcionando correctamente en sus respectivos entornos de producción:
 
-* **URL Pública de Despliegue:** [https://open-source-1asi0729-2620-7750.github.io/preciazo-landing-page/](https://open-source-1asi0729-2620-7750.github.io/preciazo-landing-page/)
+* **Landing Page (Azure Static Web Apps):** [https://preciazo-landing-btabfbeqbrg3cjbc.westus-01.azurewebsites.net/](https://preciazo-landing-btabfbeqbrg3cjbc.westus-01.azurewebsites.net/)
+* **Plataforma Web / Frontend (Azure Static Web Apps):** [https://purple-sand-0df2c4410.6.azurestaticapps.net](https://purple-sand-0df2c4410.6.azurestaticapps.net)
 
-Se ejecutó una nueva auditoría en **Google Lighthouse** para verificar la calidad tras incorporar i18n y las nuevas vistas:
+Se realizó una auditoría con la herramienta **Google Lighthouse** sobre la plataforma desplegada en Azure Static Web Apps para verificar el cumplimiento de los estándares de rendimiento y calidad:
 
 | Categoría Auditada | Puntaje Obtenido | Criterio Cumplido |
 | :--- | :---: | :--- |
-| **Performance (Rendimiento)** | **97 / 100** | Carga eficiente de componentes, diccionarios JSON y recursos visuales. |
-| **Accessibility (Accesibilidad)** | **100 / 100** | Cumplimiento estricto de contraste, etiquetas ARIA y navegación por teclado. |
-| **Best Practices (Buenas Prácticas)** | **100 / 100** | Protocolo HTTPS forzado y código sin advertencias en consola. |
-| **SEO (Optimización en Buscadores)** | **100 / 100** | Metadatos y estructura semántica optimizados para indexación bilingüe. |
+| **Performance (Rendimiento)** | **95 / 100** | Carga rápida de componentes de interfaz y renderizado optimizado en Azure Static Web Apps. |
+| **Accessibility (Accesibilidad)** | **100 / 100** | Cumplimiento de contraste, navegación por teclado y etiquetas accesibles. |
+| **Best Practices (Buenas Prácticas)** | **100 / 100** | Protocolo HTTPS forzado, encabezados de seguridad y ausencia de errores en consola. |
+| **SEO (Optimización en Buscadores)** | **100 / 100** | Estructura semántica HTML y metadatos configurados adecuadamente. |
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
