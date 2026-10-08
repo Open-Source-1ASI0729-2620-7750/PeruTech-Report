@@ -1390,73 +1390,123 @@ A continuación, se presentan los diagramas de Wireflow estructurados por segmen
 
 A continuación, se presentan las pantallas que componen el prototipo de alta fidelidad de la aplicación **Preciazo**. El diseño contempla tanto la experiencia del usuario final (comprador) como el panel de gestión orientado a comercios afiliados.
 
-#### 1. Pantalla de Inicio (Home)
-Pantalla principal de la aplicación que integra el buscador global por productos o tiendas, accesos rápidos a la creación de listas, ofertas destacadas en la zona del usuario y el listado de tiendas cercanas con sus respectivas distancias.
+### 1. Segmento: Autenticación e Inicio de Sesión
 
-![Pantalla de Inicio](../assets/mockups-app/portada.png)
+#### 1.1. Pantalla de Inicio de Sesión
+Formulario de autenticación general para el acceso a la plataforma, con campos interactivos requeridos para el correo electrónico y la contraseña, junto al botón principal de inicio de sesión.
 
----
+![Pantalla de Inicio de Sesión](../assets/mockups-app/LOGIN.png)
 
-#### 2. Vista de Lista Activa - Modo Normal
-Permite visualizar la lista de compras actual con el control de presupuesto. Incluye sugerencias inteligentes de sustitutos más económicos para maximizar el ahorro y la opción de agregar o eliminar productos.
+#### 1.2. Inicio de Sesión - Vista de Comprador
+Pantalla de autenticación con los campos de correo electrónico y contraseña completados para proceder con el ingreso a la vista del usuario comprador.
 
-![Lista Activa - Modo Normal](../assets/mockups-app/lista-modo-normal.png)
-
----
-
-#### 3. Vista de Lista Activa - Modo Compra
-Optimizada para usarse dentro del establecimiento físico, permitiendo al usuario marcar los productos mediante *checkboxes* a medida que los coloca en el carrito y calcular el subtotal en tiempo real.
-
-![Lista Activa - Modo Compra](../assets/mockups-app/lista-modo-compra.png)
+![Inicio de Sesión - Comprador](../assets/mockups-app/LOGIN-COMPRADOR.png)
 
 ---
 
-#### 4. Gestión de Listas Guardadas
-Sección destinada a la administración de plantillas personalizadas y listas reutilizables para compras recurrentes (p. ej., Desayuno Semanal o Limpieza del Hogar).
+### 2. Segmento: Portal del Comprador (Buyer UI)
 
-![Listas Guardadas](../assets/mockups-app/lista-guardado.png)
+#### 2.1. Pantalla Principal de Inicio (Home)
+Pantalla principal de la aplicación que integra el buscador global por productos o establecimientos, accesos rápidos (Nueva Lista, Comparar, Mi Ruta), filtros por categorías de productos, sección de ofertas destacadas, acceso a la verificación comunitaria y listado de tiendas cercanas con sus respectivas distancias y estado (Abierto/Cerrado).
 
----
+![Pantalla de Inicio](../assets/mockups-app/INICIO.png)
 
-#### 5. Módulo de Comparativa de Precios
-Cuadro comparativo interactivo que permite analizar el costo total de la lista activa en distintos supermercados según el radio de distancia seleccionado. Destaca la mejor opción económica y permite reportar inconsistencias en tiendas.
+#### 2.2. Vista de Lista Activa ("Canasta Quincenal")
+Pantalla de gestión de la lista de compras actual que incluye la barra de control de presupuesto (Límite máximo, Monto reservado/gastado y progreso), sugerencias inteligentes de ahorro con productos sustitutos y el desglose detallado de ítems con sus precios unitarios y unidades de medida.
 
-![Comparativa de Precios](../assets/mockups-app/comparar.png)
+![Lista Activa](../assets/mockups-app/LISTAS-ACTIVA.png)
 
----
+#### 2.3. Formulario para Agregar Producto
+Despliegue del módulo interactivo dentro de la lista activa que permite ingresar manualmente el nombre del nuevo producto, la cantidad deseada y el precio estimado para incorporarlo al cálculo del presupuesto.
 
-#### 6. Generador de Ruta de Compra Optimizada
-Mapeo iterativo y sugerencia de itinerario para compras en múltiples establecimientos. Desglosa los tiempos de traslado, el ahorro estimado y el detalle de ítems a adquirir en cada parada.
+![Agregar Producto a la Lista](../assets/mockups-app/LISTAS-AGREGAR.png)
 
-![Ruta Optimizada](../assets/mockups-app/ruta.png)
+#### 2.4. Edición de Presupuesto Límite
+Interfaz con el campo de entrada activo para ajustar el "Límite Máximo" del presupuesto asignado a la lista de compras activa en tiempo real.
 
----
+![Editar Presupuesto de la Lista](../assets/mockups-app/LISTAS-EDITAR-PRESUPUESTO.png)
 
-#### 7. Panel de Analítica para Comercios
-Dashboard principal orientado al comerciante o tienda aliada. Presenta métricas relevantes sobre impresiones en rutas, vistas de productos, consultas de ofertas y un gráfico de tendencias de tráfico mensual.
+#### 2.5. Gestión de Listas Guardadas y Plantillas
+Sección que almacena las listas creadas anteriormente, clasificadas mediante badges visuales que diferencian entre "Plantillas clonables" (disponibles para reutilizar) y "Borradores" pendientes de ejecución, junto con el botón para crear una nueva lista.
 
-![Panel de Analítica para Comercios](../assets/mockups-app/tienda-panel.png)
+![Listas Guardadas y Plantillas](../assets/mockups-app/LISTAS-GUARDADOS.png)
 
----
+#### 2.6. Modo Compra Interactivo
+Vista optimizada de la lista activa durante el recorrido en tienda, que añade casillas de verificación (checkboxes) en cada ítem para tachar los productos añadidos al carrito y calcular dinámicamente el total gastado en tiempo real.
 
-#### 8. Gestión de Catálogo de Precios (Comercios)
-Interfaz de administración donde el comercio puede activar, desactivar y actualizar el listado de precios de sus productos e importar inventarios.
+![Modo Compra Interactivo](../assets/mockups-app/LISTAS-MODO-COMPRA.png)
 
-![Catálogo de Precios](../assets/mockups-app/tienda-catalogo.png)
+#### 2.7. Módulo de Comparativa de Precios por Tienda
+Tabla comparativa multi-tienda que consolida la lista de compras completa ("Canasta Quincenal"), evaluando en tiempo real disponibilidad de stock, precios por producto, la tienda con el costo total más bajo y la opción de reportar inconsistencias en góndola.
 
----
+![Comparativa de Precios](../assets/mockups-app/COMPARAR.png)
 
-#### 9. Módulo de Ofertas y Promociones (Comercios)
-Sección diseñada para que los establecimientos publiquen promociones temporales, establezcan precios de oferta con contador de vigencia y gestionen sus campañas activas.
+#### 2.8. Filtros de la Tabla Comparativa
+Opciones de filtrado avanzado dentro del comparador que permiten ajustar el radio máximo de distancia (en km), seleccionar o desestimar establecimientos específicos y alternar la visualización entre precio por empaque o precio por unidad de medida.
 
-![Módulo de Ofertas](../assets/mockups-app/tienda-oferta.png)
+![Filtros de Comparativa](../assets/mockups-app/COMPRAS-FILTROS.png)
 
----
+#### 2.9. Modal para Reportar Precio Observado
+Ventana emergente que permite al comprador registrar una discrepancia entre el precio publicado en la app y el precio real encontrado en la góndola de un establecimiento específico.
 
-#### 10. Perfil e Información de la Tienda
-Pantalla que muestra la información institucional del establecimiento afiliado, incluyendo RUC, dirección fiscal, teléfono de contacto y la configuración de sus horarios de atención al público.
+![Reportar Precio en Góndola](../assets/mockups-app/COMPRAS-REPORTE.png)
 
-![Información del Establecimiento](../assets/mockups-app/tienda-mi-tienda.png)
+#### 2.10. Optimización de Ruta de Compras
+Mapa interactivo e itinerario paso a paso que calcula la ruta más eficiente entre múltiples supermercados, mostrando tiempo estimado de traslado, modo de transporte y ahorro total acumulado.
+
+![Ruta de Compras Optimizada](../assets/mockups-app/RUTA.png)
+
+#### 2.11. Detalle de Parada en Ruta Seleccionada
+Vista desplegada de un punto específico del itinerario que muestra el desglose de productos a adquirir en dicho establecimiento, con opciones para confirmar o saltar la parada.
+
+![Detalle de Parada Seleccionada](../assets/mockups-app/RUTA-SELECCIONADA.png)
+
+#### 2.12. Módulo de Verificación Comunitaria
+Sección colaborativa donde los usuarios validan reportes de precios enviados por otros compradores cercanos, apoyando el control de calidad de la información mediante votación abierta.
+
+![Verificación Comunitaria](../assets/mockups-app/VERIFICACION.png)
+
+#### 2.13. Confirmación de Reporte Comunitario
+Estado de la interfaz tras validar positivamente un reporte de precio, actualizando el estado a "Reporte confirmado" y agradeciendo el aporte al sistema de confianza colectiva.
+
+![Confirmación de Reporte](../assets/mockups-app/VERIFICACION-CONFIRMADO.png)
+
+#### 2.14. Rechazo o Envío a Revisión de Reporte Comunitario
+Estado del módulo cuando se marca una discrepancia de precio, notificando que la actualización ha sido enviada a revisión técnica antes de impactar el catálogo general.
+
+![Reporte Denegado o Enviado a Revisión](../assets/mockups-app/VERIFICACION-DENEGADO.png)
+
+### 3. Segmento: Portal del Comerciante (Merchant UI)
+
+#### 3.1. Pantalla de Inicio de Sesión
+Formulario de autenticación para comerciantes e instituciones registradas, que permite el acceso seguro al panel de gestión del establecimiento mediante correo corporativo y contraseña.
+
+![Iniciar Sesión - Comerciante](../assets/mockups-app/LOGIN-COMERCIANTE.png)
+
+#### 3.2. Panel de Métricas y Rendimiento del Establecimiento
+Dashboard analítico que presenta los indicadores clave de desempeño (KPIs) del comercio en los últimos 30 días, incluyendo visitas a tienda, vistas de productos, comparaciones realizadas por usuarios, ventas perdidas por falta de stock y la tendencia mensual de interacciones.
+
+![Métricas y Dashboard](../assets/mockups-app/METRICAS.png)
+
+#### 3.3. Módulo de Gestión de Inventario y Precios
+Catálogo digital del establecimiento donde el comerciante gestiona el estado de disponibilidad (Disponible/Agotado) y los precios de lista de sus productos en tiempo real, con opciones para edición rápida e importación masiva.
+
+![Inventario y Precios](../assets/mockups-app/INVENTARIO.png)
+
+#### 3.4. Módulo de Ofertas y Promociones Activas
+Listado de campañas promocionales vigentes y expiradas asociadas al establecimiento, mostrando los descuentos aplicados, el total de consultas generadas por los usuarios y la opción para retirar ofertas del catálogo.
+
+![Promociones Activas](../assets/mockups-app/PROMOCIONES.png)
+
+#### 3.5. Formulario de Creación de Nueva Promoción
+Desplegable interactivo dentro del módulo de promociones que permite seleccionar un producto del inventario, definir un precio de oferta especial y programar la fecha de inicio y fin de la campaña.
+
+![Crear Promoción](../assets/mockups-app/PROMOCIONES-NUEVO.png)
+
+#### 3.6. Módulo de Datos del Establecimiento
+Sección de configuración donde se visualiza la información fiscal y de contacto del comercio (Razón Social, RUC verificado, dirección y teléfono), así como la gestión y edición de los horarios de atención al público.
+
+![Datos del Establecimiento](../assets/mockups-app/DATOS.png)
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
@@ -1504,7 +1554,7 @@ El vídeo de evidencia del prototipo plasma las interacciones que ejecutan los u
 
 ![captura de video-prototipo](../assets/prototipo.png)
 
-[Prototipo evidencia](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241c101_upc_edu_pe/IQCEOW9isi3LT7sIUmtoPLwAAQMF1OJDthoTqwwWszE9QvQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=cP37RQ)
+[Prototipo evidencia](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241c101_upc_edu_pe/IQCEOW9isi3LT7sIUmtoPLwAASmuwYzj-IDSyuesd5m1h3s?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=0Pq9Zi)
 
 ## 4.6. Domain-Driven Software Architecture
 
