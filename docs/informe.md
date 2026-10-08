@@ -1,49 +1,74 @@
 <div align="center">
 
-<img src="../assets/upc-logo.png" alt="UPC Logo" width="160"/>
+<img src="../assets/upc-logo.png" alt="UPC Logo" width="50" height="50"/>
 
-# UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
+Universidad Peruana de Ciencias Aplicadas
 
-## FACULTAD DE INGENIERÍA
-### CARRERA DE INGENIERÍA DE SOFTWARE
+Carrera de Ingeniería de Software
 
-<br>
+### **1ASI0729**
+### **Desarrollo de Aplicaciones Open Source**
 
-**DESARROLLO DE APLICACIONES OPEN SOURCE**  
-**CURSO:** 1ASI0729 | **NRC:** 7750
+NRC
 
-<br><br>
+**7750**
 
-# INFORME DE TRABAJO FINAL (TB1)
+### **Informe del Trabajo Final**
 
-**STARTUP:** PeruTech  
-**PRODUCTO:** Preciazo  
+Docente
 
-<br>
+**Bautista Ubillús, Efrain Ricardo**
 
-**DOCENTE:**  
-Bautista Ubillús, Efrain Ricardo
+Equipo
 
-<br><br>
+**PeruTech** 
 
-### RELACIÓN DE INTEGRANTES
+Proyecto
 
-| Código | Apellidos y Nombres |
-| :---: | :--- |
-| **U20221B756** | Becerra Durand, Sebastian Uriel |
-| **u20241c101** | Capillo Lema, Mía Valentina |
-| **U202124030** | Casós Torre, Miguel André |
-| **U20231B331** | Miranda Romero, Sergio Luis |
-| **U20221A525** | Pardo Chumpitazi, Kevin Patrick |
+**Preciazo** 
 
-<br><br>
-
-**Ciclo Académico 2026-02**  
-**Lima, Septiembre de 2026**
+#### **Integrantes**
 
 </div>
 
-<div style="page-break-before: always;"></div>
+<div align="center">
+<table align="center" style="all: unset;">
+<tr style="background: none !important; border: none !important;">
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;"><strong>Código</strong></td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;"><strong>Apellidos y Nombres</strong></td>
+</tr>
+<tr style="background: none !important; border: none !important;">
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">u20241c101</td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Capillo Lema, Mía Valentina</td>
+</tr>
+<tr style="background: none !important; border: none !important;">
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U20221A525</td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Pardo Chumpitazi, Kevin Patrick</td>
+</tr>
+<tr style="background: none !important; border: none !important;">
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U20221B756</td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Becerra Durand, Sebastian Uriel</td>
+</tr>
+<tr style="background: none !important; border: none !important;">
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U20231B331</td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Miranda Romero, Sergio Luis</td>
+</tr>
+<tr style="background: none !important; border: none !important;">
+<td align="left" style="border: none !important; padding: 0 40px 0 0 !important; background: none !important;">U202124030</td>
+<td align="left" style="border: none !important; padding: 0 !important; background: none !important;">Casos Torre, Miguel Andre</td>
+</tr>
+</table>
+</div>
+
+<div align="center">
+
+<br>
+
+**Período 202620**
+
+**Septiembre 2026**
+
+</div>
 
 ---
 
