@@ -696,7 +696,29 @@ Laura prefiere realizar sus compras durante días laborables y aproximadamente e
   * **Nota sobre el registro audiovisual:** La sesión se desarrolló mediante videollamada síncrona, registrando el consentimiento del participante para el uso del material audiovisual con fines académicos de investigación y diseño UX.
 
 ![Screenshot Entrevista 5 - Joan Smit](../assets/entrevista%202.png)
-> *Figura 2.5: Registro audiovisual de la entrevista cualitativa a Joan Smit Rodríguez Rodríguez.*
+
+> *Figura 2.5: Registro audiovisual de la entrevista cualitativa a Joan Smit.*
+
+* **Entrevista 5:**
+  * **Nombre y Apellidos:** Nicolas Alejandro Quinto Rosales
+  * **Edad:** 29 años
+  * **Distrito de residencia:** San Juan De Miraflores, Lima
+  * **Ocupación:** Propietario y administrador de una bodega 
+  * **Plataforma de video:** One Drive
+  * **Enlace de Video:** [Ver Registro en One Drive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231b331_upc_edu_pe/IQBGQTv_Sn14S7IsyEcKvJ5FAS-LxKTV7r_8nbi29KaD_7I?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=XMJsDK)
+  * **Marca de tiempo (Timing de inicio):** `[00:00]`
+  * **Duración:** `[06:16 min]`
+  * **Perfil técnico y entorno digital:**
+    * *Dispositivos habituales:* Smartphone Android y Laptop.
+    * *Canales digitales e influencias:*  Yape, redes sociales (WhatsApp, TikTok, Facebook) y Didi o Rappi.
+    * *Rasgos de personalidad:* Proactivo, enfocado en la prosperidad del negocio y abierto al uso de nuevas aplicaciones web.
+  * **Resumen descriptivo:**
+    Nicolas administra y gestiona las operaciones de una bodega la cual lleva 5 años en servicio. Se considera alguien que se adapta con suma facilidad a las nuevas tecnologías. Usa las redes sociales para promocionar su bodega y suele hacer uso de aplicaciones de delivery como Didi o Rappi. Para comunicar promociones, exhibe carteles a las afueras de su tienda  y hace uso de los estados de WhatsApp para notificar a sus clientes recurrentes. Ajusta los precios de sus productos de acuerdo a los cambios tarifarios de los distribuidores mayoristas para no perder su margen de ganancia. Expresó disposición a hacer uso de Preciazo para alzar la imagen su bodega y obtener mas clientes frecuentes, requiriendo una interfaz intuitiva para no tener que disponer de mucho tiempo para estar actualizando el stock de sus productos y sus precios.
+  * **Nota sobre el registro audiovisual:** La sesión se desarrolló mediante videollamada síncrona, registrando el consentimiento del participante para el uso del material audiovisual con fines académicos de investigación y diseño UX.
+
+![Screenshot Entrevista 5 - Nicolas Alejandro Quinto Rosales](../assets/entrevista-203.png)
+
+> *Figura 2.6: Registro audiovisual de la entrevista cualitativa a Nicolas Alejandro Quinto Rosales.*
 
 ### 2.2.3. Análisis de entrevistas
 
@@ -774,7 +796,7 @@ La formulación de las fichas de User Persona se fundamenta en la consolidación
 Representa el arquetipo del comprador urbano independiente que planifica sus compras quincenales, coteja ofertas entre distintos locales y evalúa el tiempo de traslado y costo de transporte para maximizar su presupuesto familiar.
 
 ![User Persona 1 - Carlos Mendoza](../assets/artifacts/Segmento.png)
-> *Figura 2.6: Ficha de User Persona correspondiente al Segmento 1 (Compradores Independientes), elaborada en UXPressia.*
+> *Figura 2.7: Ficha de User Persona correspondiente al Segmento 1 (Compradores Independientes), elaborada en UXPressia.*
 
 ---
 
@@ -783,7 +805,7 @@ Representa el arquetipo del comprador urbano independiente que planifica sus com
 Representa el arquetipo del comerciante minorista y bodeguero local que administra un minimarket de barrio, buscando canales digitales ligeros para comunicar precios reales, rotar mercadería en riesgo de caducidad y competir con cadenas comerciales cercanas.
 
 ![Ficha User Persona 2 - Alberto Ramos](../assets/artifacts/Segmento2.png)
-> *Figura 2.7: Ficha de User Persona correspondiente al Segmento 2 (Comerciantes Minoristas), elaborada en UXPressia.*
+> *Figura 2.8: Ficha de User Persona correspondiente al Segmento 2 (Comerciantes Minoristas), elaborada en UXPressia.*
 
 
 ### 2.3.2. User Task Matrix
@@ -832,7 +854,7 @@ En esta sección se modelan los *User Journey Maps* en su versión actual (*As-I
 El recorrido documenta la experiencia arquetípica de Carlos al realizar sus compras de abastecimiento quincenal. La travesía inicia con la identificación de faltantes y la fijación de un presupuesto mental, continúa con el traslado físico a ciegas hacia los comercios de su zona (enfrentando tráfico y dispersión de precios), prosigue con la búsqueda de productos y la incertidumbre en caja, y concluye con el balance final entre el tiempo invertido en el transporte y el ahorro monetario obtenido.
 
 ![User Journey Map 1 - Carlos Mendoza](../assets/artifacts/Mapping.png)
-> *Figura 2.8: Diagrama de User Journey Map (As-Is) correspondiente al Segmento 1, elaborado en UXPressia.*
+> *Figura 2.9: Diagrama de User Journey Map (As-Is) correspondiente al Segmento 1, elaborado en UXPressia.*
 
 ---
 
@@ -841,7 +863,7 @@ El recorrido documenta la experiencia arquetípica de Carlos al realizar sus com
 El recorrido documenta la jornada típica de Alberto en la administración de su minimarket o bodega barrial. La experiencia inicia con el ajuste de tarifas según los cambios comunicados por los distribuidores mayoristas y el control manual de existencias en libretas físicas; continúa con la colocación de pizarras de tiza en la fachada y la difusión de ofertas en estados de WhatsApp; prosigue con la pérdida de ventas ocasionada por quiebres imprevistos de stock o la percepción de precios elevados frente a cadenas cercanas; y concluye con la necesidad de digitalizar sus precios de forma ágil desde el celular para comunicar quiebres de inventario a tiempo, atraer nuevos compradores presenciales de la zona y evitar la merma de mercadería en riesgo de caducidad.
 
 ![User Journey Map 2 - Alberto Ramos](../assets/artifacts/Mapping2.png)
-> *Figura 2.9: Diagrama de User Journey Map (As-Is) correspondiente al Segmento 2, elaborado en UXPressia.*
+> *Figura 2.10: Diagrama de User Journey Map (As-Is) correspondiente al Segmento 2, elaborado en UXPressia.*
  
 ### 2.3.4. Empathy Mapping
 
@@ -854,7 +876,7 @@ En esta sección se sintetiza el proceso de empatización desarrollado para comp
 El mapa de empatía de Carlos refleja la tensión constante entre la necesidad de ahorrar en la canasta básica y el desgaste generado por la ineficiencia del transporte urbano de Lima. Sus dolores se concentran en la asimetría de información de precios y las pérdidas de tiempo en el tráfico y colas, mientras que sus ganancias se orientan al ahorro neto medible y al uso de una solución web ligera que agilice su toma de decisiones antes de salir de casa.
 
 ![Empathy Map 1 - Carlos Mendoza](../assets/artifacts/Empathy.png)
-> *Figura 2.10: Mapa de empatía correspondiente al Segmento 1 (Compradores Independientes), elaborado en UXPressia.*
+> *Figura 2.11: Mapa de empatía correspondiente al Segmento 1 (Compradores Independientes), elaborado en UXPressia.*
 
 ---
 
@@ -863,7 +885,7 @@ El mapa de empatía de Carlos refleja la tensión constante entre la necesidad d
 El mapa de empatía de Alberto documenta las presiones comerciales y operativas vinculadas a la administración de un minimarket o bodega barrial. Refleja la preocupación constante por la pérdida recurrente de ventas debido a quiebres de stock no detectados a tiempo, la desventaja frente a comercios y cadenas con mejores ofertas y la dependencia de métodos manuales como cuadernos físicos o pizarras (*Pains*). Asimismo, consolida la necesidad de contar con una plataforma intuitiva y económica que le permita actualizar precios al instante desde su smartphone, publicar ofertas locales para atraer nuevos vecinos y emitir alertas tempranas de mercadería agotada para optimizar la rentabilidad de su negocio (*Gains*).
 
 ![Empathy Map 2 - Alberto Ramos](../assets/artifacts/Empathy2.png)
-> *Figura 2.11: Mapa de empatía correspondiente al Segmento 2 (Comerciantes Minoristas), elaborado en UXPressia.*
+> *Figura 2.12: Mapa de empatía correspondiente al Segmento 2 (Comerciantes Minoristas), elaborado en UXPressia.*
 
 
 ## 2.4. Big Picture Event Storming
@@ -879,7 +901,7 @@ A continuación, se detalla el desarrollo secuencial del taller a través de sus
 En esta fase inicial divergente, los integrantes del equipo registraron de manera abierta y sin restricciones de orden cronológico todos los eventos significativos ocurridos dentro del dominio de negocio (*Domain Events*), redactados estrictamente en tiempo verbal pasado sobre notas adhesivas de color naranja. El levantamiento abarcó todo el ciclo de vida de la interacción comercial y operativa: desde el registro e inicio de sesión de los usuarios, la afiliación de bodegas, la publicación y actualización de ofertas, el armado de canastas básicas y listas de compras, hasta la proyección presupuestaria, el cálculo de trayectos óptimos y la confirmación final de compra en el establecimiento físico.
 
 ![Big Picture - Open Space](../assets/ddd/big-picture/big-picture-open.png)
-> *Figura 2.11: Fase Open Space del Big Picture Event Storming, lluvia de ideas y registro no estructurado de eventos de dominio para Preciazo.*
+> *Figura 2.13: Fase Open Space del Big Picture Event Storming, lluvia de ideas y registro no estructurado de eventos de dominio para Preciazo.*
 
 ---
 
@@ -888,7 +910,7 @@ En esta fase inicial divergente, los integrantes del equipo registraron de maner
 Durante la fase de exploración y convergencia, el equipo estructuró una línea temporal secuencial orientando los eventos de dominio de izquierda a derecha según el flujo natural de las operaciones. En este análisis se incorporaron notas de color rojo/rosado para identificar puntos de dolor, cuellos de botella e incertidumbres críticas del dominio (*Hotspots*). Entre las fricciones expuestas destacaron la discrepancia entre precios exhibidos digitalmente y los cobrados en caja registradora, la saturación del tráfico limeño que encarece los traslados físicos, los quiebres imprevistos de stock en comercios minoristas y el riesgo de abandono de la plataforma ante interfaces complejas.
 
 ![Big Picture - Explore](../assets/ddd/big-picture/big-picture-explore.png)
-> *Figura 2.12: Fase Explore del Big Picture Event Storming, ordenamiento cronológico sobre la línea de tiempo y detección de Hotspots.*
+> *Figura 2.14: Fase Explore del Big Picture Event Storming, ordenamiento cronológico sobre la línea de tiempo y detección de Hotspots.*
 
 ---
 
@@ -897,7 +919,7 @@ Durante la fase de exploración y convergencia, el equipo estructuró una línea
 En el cierre del espacio de exploración, se refinó la línea temporal eliminando duplicidades y clarificando las transiciones del sistema. Se integraron los comandos desencadenantes (*Commands* / post-it azules) que representan las intenciones y acciones operadas por los actores primarios (el comprador independiente y el comerciante minorista), así como las políticas y reglas de negocio reactivas (*Policies* / post-it lilas). Estas políticas modelan la lógica automática del sistema, tales como la emisión de alertas preventivas cuando el costo acumulado de la canasta supera el presupuesto límite, la sugerencia de artículos sustitutos ante falta de existencias y la reconfiguración dinámica de rutas ante alertas de congestión vehicular.
 
 ![Big Picture - Close Space](../assets/ddd/big-picture/big-picture-close.png)
-> *Figura 2.13: Fase Close Space del Big Picture Event Storming, articulación de actores, comandos ejecutores y políticas de dominio.*
+> *Figura 2.15: Fase Close Space del Big Picture Event Storming, articulación de actores, comandos ejecutores y políticas de dominio.*
 
 ---
 
@@ -906,7 +928,7 @@ En el cierre del espacio de exploración, se refinó la línea temporal eliminan
 Como resultado definitivo del taller colaborativo, se consolidó el mapa general del dominio (*Business Landscape*) para la plataforma **Preciazo**, estructurado por el equipo de **PeruTech**. Este artefacto articula de forma holística los eventos, comandos, reglas y sistemas externos en torno a los subdominios clave del negocio: gestión de perfiles e identidad (consumidores y comercios afiliados), catálogo estructurado de productos y tarifas en góndola, planificación colaborativa de presupuestos familiares, y motor de geolocalización para optimización de rutas comerciales.
 
 ![Big Picture - Modelo Final](../assets/ddd/big-picture/big-picture-final.png)
-> *Figura 2.14: Modelo consolidado del Big Picture Event Storming para Preciazo, desarrollado por el equipo de PeruTech.*
+> *Figura 2.16: Modelo consolidado del Big Picture Event Storming para Preciazo, desarrollado por el equipo de PeruTech.*
 
 ### 2.5. Ubiquitous Language
 
