@@ -73,6 +73,9 @@ Proyecto
 
 </div>
 
+
+<div style="page-break-after: always;"></div>
+
 ---
 
 # Registro de Versiones del Informe
@@ -1379,39 +1382,91 @@ A continuación, se presentan los diagramas de Wireflow estructurados por segmen
 
 ---
 
-#### Segmento 1: Comprador
+### 1. Segmento: Portal del Comprador (Buyer UI)
 
-##### Diagrama 1: Búsqueda y Comparativa de Precios
-* **Goal:** 1. Comparar precios de la canasta entre supermercados cercanos.
-* **Descripción:** El usuario busca productos, revisa su lista de compras activa en Modo Normal para ajustar sugerencias de ahorro y accede al módulo comparativo para evaluar los costos totales por tienda.
+#### User Goal 1: Buscar productos, comparar precios entre tiendas y consolidar la lista de compras
 
-![Diagrama 1 - Búsqueda y Comparativa de Precios](../assets/wireflow/diagrama1.png)
+##### Explicación del Wireflow
+1. **Estado Inicial (Búsqueda):** El usuario interactúa con la barra de búsqueda en la pantalla principal.
+2. **Transición a Gestión de Listas:** Al agregar un artículo, la interfaz se desplaza al módulo **Mis Listas**, donde se revisan y editan los ítems acumulados.
+3. **Cambio de Estado a Comparación:** Tras presionar el botón de acción principal "Comparar Precios", el sistema procesa los datos y transiciona a la pantalla **Comparar Precios**, donde se renderiza la matriz de precios por establecimiento.
 
----
-
-##### Diagrama 2: Ejecución de Compra y Ruta Optimizada
-* **Goal:** 2. Guiar el recorrido de compra físico y optimizar el itinerario.
-* **Descripción:** El usuario selecciona una lista guardada, genera la ruta de compra optimizada entre tiendas e inicia el Modo Compra al llegar al establecimiento para marcar los productos en tiempo real.
-
-![Diagrama 2 - Ejecución de Compra y Ruta Optimizada](../assets/wireflow/diagrama2.png)
-
----
-
-#### Segmento 2: Comerciante
-
-##### Diagrama 3: Gestión Comercial y Monitoreo
-* **Goal:** 3. Analizar métricas de rendimiento y administrar el catálogo.
-* **Descripción:** El comerciante ingresa a su panel principal para analizar impresiones y tendencias, navega al catálogo para actualizar inventario o precios y gestiona la información fiscal del local.
-
-![Diagrama 3 - Gestión Comercial y Monitoreo](../assets/wireflow/diagrama3.png)
+##### Secuencia:
+- **Task Flow (Diagrama de Tareas):**  
+  ![Task Flow - Comprar y Comparar](../assets/taskflows/taskflow_comprador_goal1.png)
+- **Paso 1 (Inicio y Búsqueda):**  
+  ![Paso 1 - Inicio](../assets/wireframe-app/INICIO.png)
+- **Paso 2 (Consolidación en Mis Listas):**  
+  ![Paso 2 - Mis Listas](../assets/wireframe-app/LISTAS.png)
+- **Paso 3 (Resultado de Comparación):**  
+  ![Paso 3 - Comparar Precios](../assets/wireframe-app/COMPARAR.png)
 
 ---
 
-##### Diagrama 4: Publicación de Promociones Temporales
-* **Goal:** 4. Crear y gestionar ofertas con tiempo limitado.
-* **Descripción:** El comerciante selecciona productos desde su catálogo e ingresa al módulo de ofertas para configurar descuentos especiales y establecer la vigencia de la promoción.
+#### User Goal 2: Generar y visualizar la ruta física optimizada de compra entre tiendas
 
-![Diagrama 4 - Publicación de Promociones Temporales](../assets/wireflow/diagrama4.png)
+##### Explicación del Wireflow
+1. **Estado Inicial (Matriz Comparativa):** El usuario parte de la vista **Comparar Precios** tras seleccionar los comercios deseados.
+2. **Transición de Estado por Interacción:** Al accionar el botón "Generar Ruta de Compra", el sistema procesa las coordenadas geográficas de las tiendas y la disponibilidad de stock.
+3. **Nuevo Estado (Vista de Ruta):** La interfaz pasa al estado **Ruta de Compra**, la cual muestra el mapa interactivo con paradas secuenciales en el panel superior y el desglose de productos por tienda en el panel inferior.
+
+##### Secuencia de Imágenes del Task Flow y Wireflow
+- **Task Flow (Diagrama de Tareas):**  
+  ![Task Flow - Ruta Óptima](../assets/taskflows/taskflow_comprador_goal2.png)
+- **Paso 1 (Selección en Comparador):**  
+  ![Paso 1 - Comparar Precios](../assets/wireframe-app/COMPARAR.png)
+- **Paso 2 (Ruta Optimizada Renderizada):**  
+  ![Paso 2 - Ruta de Compra](../assets/wireframe-app/RUTA.png)
+
+---
+
+#### User Goal 3: Validar y reportar precios/stock de productos en la comunidad
+
+##### Explicación del Wireflow
+1. **Estado Inicial (Catálogo/Navegación):** El usuario inicia en la pantalla **Inicio** y navega hacia la sección interactiva.
+2. **Transición al Módulo Comunitario:** Al presionar la pestaña de la comunidad, la pantalla cambia al estado **Sección Comunitaria**, desplegando el feed de reportes y las opciones para confirmar stock o notificar variaciones de precios.
+
+##### Secuencia:
+- **Task Flow (Diagrama de Tareas):**  
+  ![Task Flow - Reporte Comunitario](../assets/taskflows/taskflow_comprador_goal3.png)
+- **Paso 1 (Inicio):**  
+  ![Paso 1 - Inicio](../assets/wireframe-app/INICIO.png)
+- **Paso 2 (Módulo Comunitario):**  
+  ![Paso 2 - Sección Comunitaria](../assets/wireframe-app/COMUNITARIA.png)
+
+---
+
+### 2. Segmento: Portal del Comerciante (Merchant UI)
+
+#### User Goal 4: Actualizar la disponibilidad de stock y precios de inventario
+
+##### Explicación del Wireflow
+1. **Estado Inicial (Dashboard General):** El comerciante inicia en el panel principal **Métricas y Dashboard**.
+2. **Transición a Gestión de Catálogo:** Selecciona el módulo **Inventario y Precios**, donde modifica los *switches* de disponibilidad de producto y actualiza los precios de lista en tiempo real.
+
+##### Secuencia:
+- **Task Flow (Diagrama de Tareas):**  
+  ![Task Flow - Actualización Inventario](../assets/taskflows/taskflow_comerciante_goal4.png)
+- **Paso 1 (Dashboard General):**  
+  ![Paso 1 - Métricas](../assets/wireframe-app/METRICAS.png)
+- **Paso 2 (Inventario y Precios):**  
+  ![Paso 2 - Inventario](../assets/wireframe-app/INVENTARIO.png)
+
+---
+
+#### User Goal 5: Publicar promociones temporales y validar datos del negocio
+
+##### Explicación del Wireflow
+1. **Estado Inicial (Panel de Promociones):** El usuario ingresa al módulo **Promociones**  y activa el formulario para programar un nuevo descuento.
+2. **Transición a Verificación de Negocio:** Una vez configurada la oferta, navega al módulo **Datos del Establecimiento (RUC)** para confirmar que la información fiscal, dirección y horarios de atención estén alineados con la promoción.
+
+##### Secuencia:
+- **Task Flow (Diagrama de Tareas):**  
+  ![Task Flow - Promociones y Datos](../assets/taskflows/taskflow_comerciante_goal5.png)
+- **Paso 1 (Gestión de Promociones):**  
+  ![Paso 1 - Promociones](../assets/wireframe-app/PROMOCIONES.png)
+- **Paso 2 (Datos del Establecimiento RUC):**  
+  ![Paso 2 - Datos RUC](../assets/wireframe-app/RUC.png)
 
 ### 4.4.3. Web Applications Mock-ups
 
@@ -1541,39 +1596,83 @@ A continuación, se presentan los diagramas de User Flow para la aplicación web
 
 ---
 
-#### Segmento 1: Comprador
+### 1. Segmento: Portal del Comprador (Buyer UI)
 
-##### Diagrama 1: Flujo de Búsqueda y Comparativa de Precios por Supermercado
-* **Goal:** 1. Comparar precios de la canasta entre supermercados cercanos.
-* **Descripción:** El usuario inicia en la pantalla de portada navegando por el buscador o categorías, gestiona su lista de compras activa en Modo Normal para evaluar sugerencias de ahorro y accede al cuadro comparativo para analizar los costos totales y productos disponibles por establecimiento.
+#### User Goal 1: Consultar precios, evaluar la comunidad y completar la comparación multitienda
 
-![Diagrama 1 - Búsqueda y Comparativa de Precios](../assets/userflow/diagrama1.png)
+##### Flujos y Condiciones
+* **Happy Path:** El usuario busca productos en el catálogo principal → agrega los artículos a su lista de compras → accede al comparador para evaluar el costo multitienda → consulta la sección comunitaria para verificar stock → confirma la opción de compra más económica.
+* **Unhappy Path:** El producto buscado no posee registros de precio ni stock en tiendas cercanas → el sistema muestra la alerta "Stock no verificado" → el usuario redirige la consulta hacia el módulo comunitario para solicitar verificación a otros usuarios.
 
----
-
-##### Diagrama 2: Flujo de Ejecución de Compra y Ruta Optimizada
-* **Goal:** 2. Guiar el recorrido de compra físico y optimizar el itinerario inter-tiendas.
-* **Descripción:** El usuario selecciona una lista guardada o plantilla, activa el generador de rutas para visualizar el itinerario con paradas y tiempos de traslado, e inicia el Modo Compra en el establecimiento para marcar los ítems en su carrito en tiempo real.
-
-![Diagrama 2 - Ejecución de Compra y Ruta Optimizada](../assets/userflow/diagrama2.png)
-
----
-
-#### Segmento 2: Comerciante
-
-##### Diagrama 3: Flujo de Gestión Comercial y Monitoreo Analítico
-* **Goal:** 3. Analizar métricas de rendimiento y administrar el catálogo del establecimiento.
-* **Descripción:** El comerciante ingresa a su panel de analítica para evaluar tendencias e impresiones de su local, navega al catálogo para actualizar precios e inventarios y gestiona la información fiscal y los horarios de atención de la tienda.
-
-![Diagrama 3 - Gestión Comercial y Monitoreo Analítico](../assets/userflow/diagrama3.png)
+##### Secuencia de Mockups del User Flow
+- **Paso 1 (Catálogo General):**  
+  ![Mockup - Catálogo Principal](../assets/mockups-app/INICIO.png)
+- **Paso 2 (Matriz Comparativa):**  
+  ![Mockup - Comparador Precios](../assets/mockups-app/COMPARAR.png)
+- **Paso 3 (Módulo Comunitario):**  
+  ![Mockup - Reportes Comunitarios](../assets/mockups-app/VERIFICACION.png)
 
 ---
 
-##### Diagrama 4: Flujo de Publicación de Promociones Temporales
-* **Goal:** 4. Crear y gestionar ofertas con tiempo de vigencia determinado.
-* **Descripción:** El comerciante evalúa los productos desde su catálogo de precios e ingresa al módulo de ofertas para configurar promociones especiales, definir descuentos y establecer la vigencia temporal de la campaña.
+#### User Goal 2: Calcular la ruta física óptima de compra según inventario disponible
 
-![Diagrama 4 - Publicación de Promociones Temporales](../assets/userflow/diagrama4.png)
+##### Flujos y Condiciones
+* **Happy Path:** El usuario selecciona la lista de compras consolidada → activa la geolocalización GPS → el sistema calcula el trayecto óptimo entre tiendas → se despliega el mapa interactivo con la secuencia de paradas y desglose de ítems.
+* **Unhappy Path:** El GPS del dispositivo está desactivado o sin permisos → el sistema despliega un diálogo emergente solicitando la ubicación manual → el usuario ingresa su dirección/distrito → el sistema recalcula la ruta exitosamente.
+
+##### Secuencia de Mockups del User Flow
+- **Paso 1 (Matriz Comparativa de Selección):**  
+  ![Mockup - Comparar Precios](../assets/mockups-app/COMPARAR.png)
+- **Paso 2 (Mapa y Ruta de Compra):**  
+  ![Mockup - Ruta Optimizada](../assets/mockups-app/RUTA.png)
+
+---
+
+#### User Goal 3: Publicar reportes y confirmaciones de precios/stock en la comunidad
+
+##### Flujos y Condiciones
+* **Happy Path:** El usuario ingresa a la vista comunitaria → selecciona el producto que desea reportar → ingresa el precio/stock verificado en tienda física → el sistema registra la actualización y otorga puntos de reputación al usuario.
+* **Unhappy Path:** El usuario envía un reporte con datos fuera de rango (ej. precio S/ 0.00 o impreciso) → el sistema detecta la inconsistencia y muestra mensaje de validación de campo → el usuario corrige la cifra y reintenta la publicación.
+
+##### Secuencia de Mockups del User Flow
+- **Paso 1 (Feed Comunitario):**  
+  ![Mockup - Sección Comunitaria](../assets/mockups-app/VERIFICACION.png)
+
+---
+
+### 2. Segmento: Portal del Comerciante (Merchant UI)
+
+#### User Goal 4: Autenticarse, analizar el rendimiento del negocio y gestionar inventario
+
+##### Flujos y Condiciones
+* **Happy Path:** El comerciante ingresa sus credenciales válidas en el login → el sistema concede acceso y redirige al dashboard de métricas → el usuario evalúa las estadísticas de interacción → se traslada al módulo de inventario → modifica el estado de stock/precio de sus productos correctamente.
+* **Unhappy Path:** El usuario ingresa un correo o contraseña incorrectos → el sistema mantiene la pantalla de login, resalta los campos en rojo y muestra el mensaje "Credenciales inválidas" → el usuario reingresa los datos correctos.
+
+##### Secuencia de Mockups del User Flow
+- **Paso 1 (Autenticación):**  
+  ![Login Comerciante](../assets/mockups-app/LOGIN-COMERCIANTE.png)
+- **Paso 2 (Panel de Métricas):**  
+  ![Métricas Dashboard](../assets/mockups-app/METRICAS.png)
+- **Paso 3 (Inventario y Catálogo):**  
+  ![Gestión de Inventario](../assets/mockups-app/INVENTARIO.png)
+
+---
+
+#### User Goal 5: Publicar promociones especiales y validar la ficha del establecimiento
+
+##### Flujos y Condiciones
+* **Happy Path:** El comerciante ingresa al módulo de promociones → hace clic en "Nueva Promoción" → completa el formulario con el precio promocional y fechas válidas → el sistema publica la oferta en el catálogo general → el comerciante verifica la ficha de su local.
+* **Unhappy Path:** El comerciante ingresa un precio de oferta superior o igual al precio de lista regular → el sistema deshabilita el botón de confirmación y muestra la alerta "El precio promocional debe ser menor al precio de lista actual" → el usuario corrige el monto y publica la campaña.
+
+##### Secuencia de Mockups del User Flow
+- **Paso 1 (Listado de Promociones):**  
+  ![Promociones Activas](../assets/mockups-app/PROMOCIONES.png)
+- **Paso 2 (Formulario de Nueva Promoción):**  
+  ![Formulario Nueva Promoción](../assets/mockups-app/PROMOCIONES-NUEVO.png)
+- **Paso 3 (Ficha del Comercio):**  
+  ![Datos del Establecimiento](../assets/mockups-app/DATOS.png)
+
+---
 
 ## 4.5. Web Applications Prototyping
 
