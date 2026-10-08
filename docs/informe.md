@@ -1,6 +1,9 @@
 <div align="center">
+<br>
 
 <img src="../assets/upc-logo.png" alt="UPC Logo" width="50" height="50"/>
+
+<br>
 
 Universidad Peruana de Ciencias Aplicadas
 
@@ -652,24 +655,45 @@ Laura prefiere realizar sus compras durante días laborables y aproximadamente e
 #### Segmento 2: Comerciantes Minoristas y Administradores de Tiendas Locales
 
 * **Entrevista 4:**
-  - **Nombre y Apellidos:** `Daniel Stalin Palomino Murga`
-  - **Edad:** `29`
-  - **Distrito de residencia:** `Santa Anita`
-  - **Ocupación:** `Propietario o administrador de bodega`
-  - **Plataforma de video:** Microsoft Stream
-  - **Enlace de Video:** `[Ver video.](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b756_upc_edu_pe/IQCGCWoyG5FVQbEdtq6CSFwOAYcuD4-mK4BqWpmAxF6fwL8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=6KWDyr)`
-  - **Marca de tiempo (Timing de inicio):** `[00:28]`
-  - **Duración:** `[00:03:53]`
-  - **Perfil técnico y entorno digital:**
-   - *Dispositivos habituales:* Laptop y teléfono.
-   - *Canales digitales e influencias:* Facebook, TikTok, Yape, PedidosYa, Rappi, Diddi y webs de supermercados.
-   - *Hábitos digitales relacionados con compras:* Consulta precios y disponibilidad de productos mediante Internet antes de desplazarse a los establecimientos.
-   - *Rasgos inferidos a partir de la entrevista:* Enfocado en optimizar y mejorar su negocio, precavido al realizar compras y abastecimiento de mercancía.
-- **Resumen descriptivo:** El entrevistado es propietario o administrador de un establecimiento comercial ubicado en Santa Anita. Para comunicar sus promociones utiliza principalmente WhatsApp y carteles en la entrada de su tienda. Actualiza los precios de sus productos según el aumento de precios de los proveedores de mercancía y administra su inventario mediante el uso de un cuadernillo donde anota datos importantes. Señala que sus principales dificultades para atraer clientes son la competencia eleveada en la zona, los escasos medios para promocionar su negocio y que depende de clientes fijos. Respecto a la plataforma propuesta, manifestó que le gustaria actualizar sus precios rapidamente desde cualquier dispositivo, publicar ofertas y recibir avisos cuando los productos se agoten, destacando la importancia de que la herramienta sea intuitiva y no tenga costos elevados. Finalmente, explicó que los principales motivos por los que pierde ventas son falta de inventario y que sus clientes encuentrar un precio más bajo en otras tiendas, además actualmente administra su negocio utilizando unicamente un cuadernillo fisico.
-  
-![Screenshot Entrevista 4](../assets/entrevista-4.png)
-> *Figura 2.4: Registro audiovisual de la entrevista cualitativa 4.*
+  * **Nombre y Apellidos:** Daniel Stalin Palomino Murga
+  * **Edad:** 29 años
+  * **Distrito de residencia:** Santa Anita, Lima
+  * **Ocupación:** Propietario y Administrador de Bodega
+  * **Plataforma de video:** Microsoft Stream
+  * **Enlace de Video:** [Ver Registro en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b756_upc_edu_pe/IQCGCWoyG5FVQbEdtq6CSFwOAYcuD4-mK4BqWpmAxF6fwL8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=6KWDyr)
+  * **Marca de tiempo (Timing de inicio):** `[00:28]`
+  * **Duración:** `[03:53 min]`
+  * **Perfil técnico y entorno digital:**
+    * *Dispositivos habituales:* Smartphone y Laptop personal.
+    * *Navegador de preferencia:* Google Chrome.
+    * *Canales digitales e influencias:* WhatsApp, Facebook, TikTok, Yape, PedidosYa, Rappi y portales web de retail.
+    * *Rasgos de personalidad:* Analítico, precavido en adquisiciones de mercadería y enfocado en la rentabilidad de su establecimiento.
+  * **Resumen descriptivo:** Daniel es propietario y administra una bodega comercial en Santa Anita. Difunde promociones principalmente mediante carteles en la fachada y mensajes por WhatsApp, dependiendo fuertemente de la clientela recurrente del barrio debido a la alta competencia zonal. Actualiza tarifas de forma reactiva ante variaciones comunicadas por los distribuidores mayoristas y gestiona el inventario manualmente mediante un cuaderno de apuntes. Señaló que sus pérdidas de ventas se deben principalmente a quiebres imprevistos de stock y a la asimetría de precios frente a otros negocios. Expresó amplio interés en adoptar Preciazo para publicar ofertas y recibir avisos de productos agotados, señalando como indispensable una interfaz intuitiva, accesible desde cualquier dispositivo y sin comisiones abusivas de intermediación.
+  * **Nota sobre el registro audiovisual:** La sesión se realizó de manera virtual mediante videollamada síncrona, contando con la autorización del participante para fines académicos de investigación y diseño UX.
 
+![Screenshot Entrevista 4 - Daniel Palomino](../assets/entrevista-4.png)
+> *Figura 2.4: Registro audiovisual de la entrevista cualitativa a Daniel Stalin Palomino Murga.*
+
+
+* **Entrevista 5:**
+  * **Nombre y Apellidos:** Joan Smit Rodríguez Rodríguez
+  * **Edad:** 25 años
+  * **Distrito de residencia:** Santiago de Surco, Lima
+  * **Ocupación:** Administrador y Encargado Comercial de Minimarket
+  * **Plataforma de video:** Microsoft Stream
+  * **Enlace de Video:** [Ver Registro en Microsoft Stream](https://upcedupe-my.sharepoint.com/personal/u20221a525_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20221a525%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%20%2D%20Segmento%202%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eab7529d8%2D396c%2D4efe%2Dabb8%2D3e7ccfced5d5)
+  * **Marca de tiempo (Timing de inicio):** `[00:00]`
+  * **Duración:** `[05:45 min]`
+  * **Perfil técnico y entorno digital:**
+    * *Dispositivos habituales:* Smartphone Android y Laptop en punto de venta.
+    * *Navegador de preferencia:* Google Chrome.
+    * *Canales digitales e influencias:* WhatsApp Business, Yape, Plin, banca móvil BCP, redes sociales (Instagram, TikTok).
+    * *Rasgos de personalidad:* Proactivo, dinámico, enfocado en la rentabilidad del negocio y abierto a la digitalización comercial.
+  * **Resumen descriptivo:** Joan administra y gestiona las operaciones de un minimarket familiar con 3 años de antigüedad en Surco. Para comunicar ofertas y promociones utiliza pizarras de tiza en la fachada del local y estados de WhatsApp dirigidos a clientes recurrentes, reconociendo que carece de alcance hacia nuevos transeúntes del sector. Ajusta precios de productos de alta rotación una o dos veces por semana según los cambios tarifarios de los distribuidores mayoristas, buscando competir frente a cadenas de conveniencia. Realiza el control de inventario de forma visual cada dos días, ubicando artículos próximos a caducar en zonas de remate para prevenir mermas. Manifiesta que los compradores de la zona asumen erróneamente que las bodegas son más costosas que los supermercados por falta de transparencia digital. Expresó alta disposición a afiliar su negocio a Preciazo para ganar visibilidad barrial, requiriendo una interfaz ágil desde el teléfono móvil para actualizar precios y reportar quiebres de stock sin incurrir en altas comisiones de intermediación.
+  * **Nota sobre el registro audiovisual:** La sesión se desarrolló mediante videollamada síncrona, registrando el consentimiento del participante para el uso del material audiovisual con fines académicos de investigación y diseño UX.
+
+![Screenshot Entrevista 5 - Joan Smit](../assets/entrevista%202.png)
+> *Figura 2.5: Registro audiovisual de la entrevista cualitativa a Joan Smit Rodríguez Rodríguez.*
 
 ### 2.2.3. Análisis de entrevistas
 
@@ -735,31 +759,37 @@ Los hallazgos empíricos confirman la problemática central abordada: la reducci
   
 ### 2.3.1. User Personas
 
-La elaboración de los arquetipos de usuario sintetiza los patrones empíricos recolectados durante las entrevistas cualitativas y el diagnóstico del ecosistema competitivo. Las fichas integran variables demográficas, competencias digitales, motivaciones y fricciones reales para guiar el diseño centrado en el usuario de **PeruTech**, asegurando que las decisiones arquitectónicas y funcionales de la plataforma **Preciazo** respondan a necesidades operativas validadas.
+La formulación de las fichas de User Persona se fundamenta en la consolidación analítica de los datos empíricos obtenidos en las entrevistas cualitativas y el estudio competitivo. Siguiendo las mejores prácticas del Diseño Centrado en el Usuario (UCD), cada ficha representa un **arquetipo semi-ficticio** que sintetiza los patrones de comportamiento, objetivos, competencias tecnológicas y fricciones operativas comunes identificadas en el análisis estadístico de cada segmento objetivo.
 
-En particular, para el primer segmento se modelaron el hábito de fragmentar compras o planificar presupuestos quincenales, el uso diario de pagos móviles (Yape/Plin), la sensibilidad al sobrecosto del transporte urbano y la frustración por el tráfico de Lima evidenciados por los entrevistados. Para el segundo segmento, se tomó en cuenta la gestión manual de existencias en cuadernos físicos, la actualización reactiva de precios sujeta al costo mayorista, la amenaza de la competencia cercana y la búsqueda de canales digitales livianos y sin comisiones abusivas para atraer transeúntes al local.
-
----
-
-#### User Persona 1: Fernando Justiniano Vega (Comprador Multitienda y Optimizador de Desplazamiento)
-
-![User Persona 1 - Fernando Justiniano Vega](../assets/artifacts/Segmento.png)
-> *Figura 2.5: Ficha de User Persona correspondiente al Segmento 1, elaborada en UXPressia.*
+* **Para el Segmento 1 (Compradores Independientes):** El arquetipo integra de manera representativa los patrones encontrados en la muestra (100% de uso de billeteras móviles y sensibilidad al transporte, 66.7% de fragmentación de compras entre mercados y supermercados, y la constante fricción por la congestión vehicular de Lima Metropolitana).
+* **Para el Segmento 2 (Comerciantes Minoristas):** El arquetipo condensa la dinámica del comercio barrial tradicional (100% de gestión de stock en cuadernos manuales, actualización de precios dependiente del costo mayorista, comunicación mediante carteles físicos y la necesidad de herramientas móviles ágiles para atraer transeúntes y evitar mermas sin comisiones abusivas).
 
 ---
 
-#### User Persona 2: Daniel Stalin Palomino Murga (Comerciante Minorista y Administrador de Tienda Local)
+#### User Persona 1: Carlos Mendoza - El Comprador Previsor y Multitienda (Segmento 1)
 
-![Ficha User Persona 2](../assets/artifacts/Segmento2.png)
-> *Figura 2.6: Ficha de User Persona correspondiente al Segmento 2, elaborada en UXPressia.*
+Representa el arquetipo del comprador urbano independiente que planifica sus compras quincenales, coteja ofertas entre distintos locales y evalúa el tiempo de traslado y costo de transporte para maximizar su presupuesto familiar.
+
+![User Persona 1 - Carlos Mendoza](../assets/artifacts/Segmento.png)
+> *Figura 2.6: Ficha de User Persona correspondiente al Segmento 1 (Compradores Independientes), elaborada en UXPressia.*
+
+---
+
+#### User Persona 2: Alberto Ramos - El Comerciante de Proximidad (Segmento 2)
+
+Representa el arquetipo del comerciante minorista y bodeguero local que administra un minimarket de barrio, buscando canales digitales ligeros para comunicar precios reales, rotar mercadería en riesgo de caducidad y competir con cadenas comerciales cercanas.
+
+![Ficha User Persona 2 - Alberto Ramos](../assets/artifacts/Segmento2.png)
+> *Figura 2.7: Ficha de User Persona correspondiente al Segmento 2 (Comerciantes Minoristas), elaborada en UXPressia.*
+
 
 ### 2.3.2. User Task Matrix
 
-En esta sección se presenta la matriz de tareas de usuario (*User Task Matrix*), diseñada para mapear y contrastar las actividades esenciales que ejecutan los representantes arquetípicos de cada segmento objetivo en su contexto cotidiano: el **Segmento 1: Compradores Independientes**, representado por Fernando Justiniano Vega (comprador metódico que busca optimizar su gasto y tiempo de traslado), y el **Segmento 2: Comerciantes Minoristas y Administradores de Tiendas Locales**, representado por Daniel Palomino Murga (bodeguero y administrador enfocado en la rentabilidad y visibilidad de su negocio).
+En esta sección se presenta la matriz de tareas de usuario (*User Task Matrix*), diseñada para mapear y contrastar las actividades esenciales que ejecutan los representantes arquetípicos de cada segmento objetivo en su contexto cotidiano: el **Segmento 1: Compradores Independientes**, representado por **Carlos Mendoza** (arquetipo del comprador metódico que busca optimizar su gasto y tiempo de traslado), y el **Segmento 2: Comerciantes Minoristas y Administradores de Tiendas Locales**, representado por **Alberto Ramos** (arquetipo del bodeguero y administrador enfocado en la rentabilidad y visibilidad de su negocio).
 
 Las actividades identificadas corresponden estrictamente a tareas del mundo real que cada actor realiza de manera habitual en su día a día para alcanzar sus metas de abastecimiento o gestión comercial, con total independencia de la existencia o uso de una solución tecnológica o software específico.
 
-| Tarea del Mundo Real (*Task*) | Fernando Justiniano (Frecuencia) | Fernando Justiniano (Importancia) | Daniel Palomino (Frecuencia) | Daniel Palomino (Importancia) |
+| Tarea del Mundo Real (*Task*) | Carlos Mendoza (Frecuencia) | Carlos Mendoza (Importancia) | Alberto Ramos (Frecuencia) | Alberto Ramos (Importancia) |
 | :--- | :--- | :--- | :--- | :--- |
 | **Calcular presupuesto estimado antes de pagar / cobrar** | Quincenal | Alta | Diaria | Alta |
 | **Comparar costos de productos entre establecimientos** | Quincenal | Alta | Semanal | Media |
@@ -776,17 +806,17 @@ Las actividades identificadas corresponden estrictamente a tareas del mundo real
 
 #### Análisis y hallazgos del User Task Matrix
 
-A partir de la matriz de tareas consolidada, se identifican patrones clave de comportamiento, contrastes operativos e intersecciones estratégicas entre ambos perfiles:
+A partir de la matriz de tareas consolidada, se identifican patrones clave de comportamiento, contrastes operativos e intersecciones estratégicas entre ambos perfiles arquetípicos:
 
 * **Tareas con mayor frecuencia e importancia:**
-  * Para **Daniel Palomino (Comerciante):** Las tareas más críticas y de periodicidad **diaria** son el *cálculo presupuestario y cuadre de caja*, la *actualización y exhibición de precios* y el *control de existencias y productos próximos a agotarse*. La supervivencia de su minimarket exige una supervisión continua del inventario y la rápida rotación de mercadería.
-  * Para **Fernando Justiniano (Comprador):** Las tareas con mayor peso ocurren de forma **quincenal** (alineadas con su ciclo de aprovisionamiento salarial y reposición de alacena), destacando la *estimación anticipada del presupuesto*, la *planificación de los trayectos físicos* y la *comparación de precios multitienda*.
+  * Para **Alberto Ramos (Comerciante Minorista):** Las tareas más críticas y de periodicidad **diaria** son el *cálculo presupuestario y cuadre de caja*, la *actualización y exhibición de precios* y el *control de existencias y productos próximos a agotarse*. La sostenibilidad de su establecimiento exige una supervisión continua del inventario y la rápida rotación de mercadería perecible.
+  * Para **Carlos Mendoza (Comprador Independiente):** Las tareas con mayor peso ocurren de forma **quincenal** (alineadas con su ciclo de aprovisionamiento salarial y reposición de alacena), destacando la *estimación anticipada del presupuesto*, la *planificación de los trayectos físicos* y la *comparación de precios multitienda*.
 * **Principales coincidencias:**
-  * Ambos actores le otorgan **alta importancia al control del dinero**: Fernando lo hace para no superar su límite de gasto familiar en caja y Daniel para resguardar el margen neto de ganancia de su negocio frente a aumentos de distribuidores.
-  * Tanto el comprador como el comerciante necesitan **monitorear los precios de la zona**, confirmando que la transparencia del mercado y la asimetría de costos impactan a los dos extremos de la cadena comercial.
+  * Ambos actores le otorgan **alta importancia al control del dinero**: Carlos lo hace para no superar su límite de gasto presupuestado en caja y Alberto para resguardar el margen neto de ganancia de su negocio frente a aumentos de distribuidores mayoristas.
+  * Tanto el comprador como el comerciante necesitan **monitorear los precios de la zona**, confirmando que la transparencia del mercado y la asimetría tarifaria impactan a los dos extremos de la cadena comercial local.
 * **Principales diferencias operativas:**
-  * **Movilidad vs. Localidad:** Mientras la *planificación de trayectos físicos de desplazamiento* es una tarea de alta importancia para Fernando (debido al impacto de los pasajes y el tráfico de Lima), para Daniel es prácticamente irrelevante en su día a día comercial al estar fijo en su local de atención.
-  * **Visibilidad y Difusión:** Tareas como la *comunicación de promociones en carteles* y la *búsqueda de alternativas para atraer compradores* son exclusivas del comerciante minorista, quien asume el rol activo de captar el flujo peatonal frente a la competencia de grandes cadenas.
+  * **Movilidad vs. Localidad:** Mientras la *planificación de trayectos físicos de desplazamiento* es una tarea de alta importancia para Carlos (debido al impacto de los pasajes y el tráfico urbano de Lima), para Alberto es prácticamente irrelevante en su día a día comercial al encontrarse de forma fija en su punto de venta.
+  * **Visibilidad y Difusión:** Tareas como la *comunicación de promociones en carteles* y la *búsqueda de alternativas para atraer compradores* son exclusivas del comerciante minorista, quien asume el rol activo de captar el flujo peatonal frente a la competencia de grandes cadenas comerciales.
 
 ### 2.3.3. User Journey Mapping
 
@@ -794,21 +824,21 @@ En esta sección se modelan los *User Journey Maps* en su versión actual (*As-I
 
 ---
 
-#### User Journey Map 1: Fernando Justiniano Vega (Segmento 1 - Comprador Multitienda)
+#### User Journey Map 1: Carlos Mendoza (Segmento 1 - Comprador Multitienda)
 
-El recorrido documenta la experiencia de Fernando al realizar sus compras de abastecimiento quincenal. La travesía inicia con la identificación de faltantes y la fijación de un presupuesto mental, continúa con el traslado físico a ciegas hacia los comercios de su zona (enfrentando tráfico y dispersión de precios), prosigue con la búsqueda de productos y la incertidumbre en caja, y concluye con el balance final entre el tiempo invertido en el transporte y el ahorro monetario obtenido.
+El recorrido documenta la experiencia arquetípica de Carlos al realizar sus compras de abastecimiento quincenal. La travesía inicia con la identificación de faltantes y la fijación de un presupuesto mental, continúa con el traslado físico a ciegas hacia los comercios de su zona (enfrentando tráfico y dispersión de precios), prosigue con la búsqueda de productos y la incertidumbre en caja, y concluye con el balance final entre el tiempo invertido en el transporte y el ahorro monetario obtenido.
 
-![User Journey Map 1 - Fernando Justiniano Vega](../assets/artifacts/Mapping.png)
-> *Figura 2.7: Diagrama de User Journey Map (As-Is) correspondiente al Segmento 1, elaborado en UXPressia.*
+![User Journey Map 1 - Carlos Mendoza](../assets/artifacts/Mapping.png)
+> *Figura 2.8: Diagrama de User Journey Map (As-Is) correspondiente al Segmento 1, elaborado en UXPressia.*
 
 ---
 
-#### User Journey Map 2: Daniel Stalin Palomino Murga (Segmento 2 - Comerciante Minorista y Administrador de Tienda Local)
+#### User Journey Map 2: Alberto Ramos (Segmento 2 - Comerciante Minorista y Administrador de Tienda Local)
 
-El recorrido documenta la jornada típica de Daniel en la administración de su bodega en Santa Anita. La experiencia inicia con el ajuste de precios según el incremento fijado por los proveedores y el registro manual de inventario en un cuadernillo físico; continúa con la colocación de carteles en la entrada de su local y el envío de estados por WhatsApp para difundir ofertas; prosigue con la pérdida de ventas ocasionada por desabastecimiento de productos clave o clientes que encuentran mejores precios en la competencia zonal; y concluye con la necesidad de digitalizar sus precios de forma ágil desde el celular para comunicar quiebres de stock a tiempo, atraer nuevos compradores del barrio y evitar la merma de mercadería.
+El recorrido documenta la jornada típica de Alberto en la administración de su minimarket o bodega barrial. La experiencia inicia con el ajuste de tarifas según los cambios comunicados por los distribuidores mayoristas y el control manual de existencias en libretas físicas; continúa con la colocación de pizarras de tiza en la fachada y la difusión de ofertas en estados de WhatsApp; prosigue con la pérdida de ventas ocasionada por quiebres imprevistos de stock o la percepción de precios elevados frente a cadenas cercanas; y concluye con la necesidad de digitalizar sus precios de forma ágil desde el celular para comunicar quiebres de inventario a tiempo, atraer nuevos compradores presenciales de la zona y evitar la merma de mercadería en riesgo de caducidad.
 
-![User Journey Map 2 - Daniel Stalin Palomino Murga](../assets/artifacts/Mapping2.png)
-> *Figura 2.8: Diagrama de User Journey Map correspondiente al Segmento 2, elaborado en UXPressia.*
+![User Journey Map 2 - Alberto Ramos](../assets/artifacts/Mapping2.png)
+> *Figura 2.9: Diagrama de User Journey Map (As-Is) correspondiente al Segmento 2, elaborado en UXPressia.*
  
 ### 2.3.4. Empathy Mapping
 
@@ -816,21 +846,21 @@ En esta sección se sintetiza el proceso de empatización desarrollado para comp
 
 ---
 
-#### Empathy Map 1: Fernando Justiniano Vega (Segmento 1 - Comprador Multitienda)
+#### Empathy Map 1: Carlos Mendoza (Segmento 1 - Comprador Multitienda)
 
-El mapa de empatía de Fernando refleja la tensión constante entre la necesidad de ahorrar en la canasta básica y el desgaste generado por la ineficiencia del transporte urbano. Sus dolores se concentran en la asimetría de información de precios y las pérdidas de tiempo en el tráfico, mientras que sus ganancias se orientan al ahorro neto medible y al uso de una solución web ligera que agilice su toma de decisiones antes de salir de casa.
+El mapa de empatía de Carlos refleja la tensión constante entre la necesidad de ahorrar en la canasta básica y el desgaste generado por la ineficiencia del transporte urbano de Lima. Sus dolores se concentran en la asimetría de información de precios y las pérdidas de tiempo en el tráfico y colas, mientras que sus ganancias se orientan al ahorro neto medible y al uso de una solución web ligera que agilice su toma de decisiones antes de salir de casa.
 
-![Empathy Map 1 - Fernando Justiniano Vega](../assets/artifacts/Empathy.png)
-> *Figura 2.9: Mapa de empatía correspondiente al Segmento 1, elaborado en UXPressia.*
+![Empathy Map 1 - Carlos Mendoza](../assets/artifacts/Empathy.png)
+> *Figura 2.10: Mapa de empatía correspondiente al Segmento 1 (Compradores Independientes), elaborado en UXPressia.*
 
 ---
 
-#### Empathy Map 2: Daniel Stalin Palomino Murga (Segmento 2 - Comerciante Minorista y Administrador de Tienda Local)
+#### Empathy Map 2: Alberto Ramos (Segmento 2 - Comerciante Minorista y Administrador de Tienda Local)
 
-El mapa de empatía de Daniel documenta las presiones comerciales y operativas vinculadas a la administración de su bodega en el distrito de Santa Anita. Refleja la preocupación constante por la pérdida recurrente de ventas debido a quiebres de stock no detectados a tiempo, la desventaja frente a comercios con mejores precios y la dependencia de métodos manuales como cuadernos físicos (*Pains*). Asimismo, consolida la necesidad de contar con una plataforma intuitiva y económica que le permita actualizar precios al instante desde su smartphone, publicar ofertas locales para atraer nuevos vecinos y emitir alertas tempranas de mercadería agotada para optimizar la rentabilidad de su negocio (*Gains*).
+El mapa de empatía de Alberto documenta las presiones comerciales y operativas vinculadas a la administración de un minimarket o bodega barrial. Refleja la preocupación constante por la pérdida recurrente de ventas debido a quiebres de stock no detectados a tiempo, la desventaja frente a comercios y cadenas con mejores ofertas y la dependencia de métodos manuales como cuadernos físicos o pizarras (*Pains*). Asimismo, consolida la necesidad de contar con una plataforma intuitiva y económica que le permita actualizar precios al instante desde su smartphone, publicar ofertas locales para atraer nuevos vecinos y emitir alertas tempranas de mercadería agotada para optimizar la rentabilidad de su negocio (*Gains*).
 
-![Empathy Map 2](../assets/artifacts/Empathy2.png)
-> *Figura 2.10: Mapa de empatía correspondiente al Segmento 2, elaborado en UXPressia.*
+![Empathy Map 2 - Alberto Ramos](../assets/artifacts/Empathy2.png)
+> *Figura 2.11: Mapa de empatía correspondiente al Segmento 2 (Comerciantes Minoristas), elaborado en UXPressia.*
 
 
 ## 2.4. Big Picture Event Storming
@@ -960,7 +990,7 @@ A continuación, se definen los Epics identificados que agrupan funcionalmente l
 
 ## 3.2. Impact Mapping
 
-En esta sección se presenta el *Impact Mapping* desarrollado para alinear los objetivos estratégicos de negocio con las capacidades funcionales de la plataforma **Preciazo** de **PeruTech**. Mediante este artefacto visual se establece la trazabilidad formal entre los objetivos medibles de la organización (*Business Goals* formulados bajo el estándar SMART), los actores clave (*Actors/Personas*), los cambios esperados de comportamiento (*Impacts*), las entregas o soluciones de software (*Deliverables*) y las historias de usuario asociadas en formato canónico (*User Stories*).
+En esta sección se presenta el *Impact Mapping* desarrollado para alinear los objetivos estratégicos de negocio con las capacidades funcionales de la plataforma **Preciazo** de **PeruTech**. Mediante este artefacto visual se establece la trazabilidad formal entre los objetivos medibles de la organización (*Business Goals* formulados bajo el estándar SMART), los actores clave (*Actors/Personas* representados por nuestros arquetipos), los cambios esperados de comportamiento (*Impacts*), las entregas o soluciones de software (*Deliverables*) y las historias de usuario asociadas en formato canónico (*User Stories*).
 
 ### Business Goals del Proyecto (Criterios SMART)
 * **BG01:** Reducir en un 15% el gasto promedio quincenal de canasta básica y en un 20% el tiempo invertido en desplazamientos para 10,000 compradores urbanos independientes en Lima Metropolitana durante los primeros 6 meses de operación.
@@ -972,11 +1002,11 @@ En esta sección se presenta el *Impact Mapping* desarrollado para alinear los o
 
 ### 3.2.1. Impact Mapping - Segmento #1: Comprador Independiente
 
-Este mapa articula cómo el actor **Fernando Justiniano** colabora en la consecución de las metas de ahorro, reducción de tiempos y fidelización del comprador.
+Este mapa articula cómo el actor arquetípico **Carlos Mendoza (Comprador Independiente)** colabora en la consecución de las metas de ahorro, reducción de tiempos de traslado y fidelización en la plataforma.
 
 <div align="center">
   <img src="../assets/Impact-Map Fernando-Justiniano-(Comprador-multitienda).png" alt="Impact Mapping - Comprador Independiente" width="850"/>
-  <p><em>Figura 3.1: Impact Mapping para el Segmento Comprador Independiente.</em></p>
+  <p><em>Figura 3.1: Impact Mapping para el Segmento 1: Comprador Independiente (Carlos Mendoza).</em></p>
 </div>
 
 #### Desglose de Relaciones y User Stories Asociadas:
@@ -1018,11 +1048,11 @@ Este mapa articula cómo el actor **Fernando Justiniano** colabora en la consecu
 
 ### 3.2.2. Impact Mapping - Segmento #2: Comerciante Minorista
 
-Este mapa articula cómo el actor **Daniel Palomino** contribuye a alcanzar las metas de digitalización barrial, captación de clientela y rotación de stock.
+Este mapa articula cómo el actor arquetípico **Alberto Ramos (Comerciante Minorista)** contribuye a alcanzar las metas de digitalización barrial, captación de clientela y rotación oportuna de stock.
 
 <div align="center">
-  <img src="../assets/Impact-Map-Daniel-Palomino-(Comerciante-minorista).jpeg" alt="Impact Mapping - Comerciante Minorista" width="850"/>
-  <p><em>Figura 3.2: Impact Mapping para el Segmento Comerciante Minorista.</em></p>
+  <img src="../assets/Impact-Map-Daniel-Palomino-(Comerciante-minorista).png" alt="Impact Mapping - Comerciante Minorista" width="850"/>
+  <p><em>Figura 3.2: Impact Mapping para el Segmento 2: Comerciante Minorista (Alberto Ramos).</em></p>
 </div>
 
 #### Desglose de Relaciones y User Stories Asociadas:
