@@ -85,7 +85,7 @@
 
 # Project Report Collaboration Insights
 
-Para evidenciar la participación equitativa y la trazabilidad en la redacción de la documentación técnica del proyecto, el desarrollo del presente informe se gestionó de manera colaborativa a través del repositorio oficial de GitHub **preciazo-report**, aplicando flujo de ramas GitFlow y registro individual de aportes mediante commits descriptivos.
+Para evidenciar la participación equitativa y la trazabilidad en la redacción de la documentación técnica del proyecto, el desarrollo del presente informe se gestionó de manera colaborativa a través del repositorio oficial de GitHub **preciazo-report**, aplicando el flujo de ramas GitFlow y el registro individual de aportes mediante commits descriptivos.
 
 * **Repositorio de Documentación:** [https://github.com/Open-Source-1ASI0729-2620-7750/preciazo-report](https://github.com/Open-Source-1ASI0729-2620-7750/preciazo-report)
 
@@ -98,6 +98,34 @@ A continuación, se detalla la distribución de contribuciones y elaboración de
 | **Becerra Durand, Sebastian Uriel** | Capítulo II (Registro y análisis de entrevistas al sector minorista), Capítulo V (Soporte en maquetación de artefactos). | Elicitación de requerimientos empíricos y documentación de campo. |
 | **Miranda Romero, Sergio Luis** | Capítulo III (Especificación de requisitos: User Stories Gherkin, Impact Mapping y Product Backlog). | Modelado de requisitos funcionales y gestión ágil Scrum. |
 | **Casós Torre, Miguel André** | Capítulo II (Event Storming Big Picture), Capítulo IV (Domain-Driven Design, C4 Model y Class Diagrams). | Modelado estratégico de dominio y arquitectura de software. |
+
+---
+
+### Métricas de Contribución por Integrante
+
+A partir del historial analítico de GitHub en la rama principal, se consolidan las métricas cuantitativas de desarrollo documental registradas en el repositorio:
+
+| Integrante | Usuario GitHub | Commits | Líneas Agregadas (++) | Líneas Eliminadas (--) |
+| :--- | :--- | :---: | :---: | :---: |
+| **Capillo Lema, Mía Valentina** | MiaCL-5 | 46 | +2,458 | -651 |
+| **Casós Torre, Miguel André** | mcasos | 45 | +3,182 | -641 |
+| **Pardo Chumpitazi, Kevin Patrick** | Kevinyin11 | 39 | +3,651 | -3,364 |
+| **Becerra Durand, Sebastian Uriel** | sebasdev28 | 16 | +337 | -235 |
+| **Miranda Romero, Sergio Luis** | dym4njiroo | 10 | +994 | -145 |
+
+---
+
+### Evidencias de Trabajo Colaborativo en Repositorio (Entrega TB1)
+
+![Métricas de contribuciones por colaborador](../assets/git%201.png)
+
+*Figura 5.1. Métricas de contribución global y distribución cuantitativa de commits, adiciones y eliminaciones por colaborador en preciazo-report durante la entrega TB1.*
+
+---
+
+![Grafo de red GitFlow](../assets/git%202.png)
+
+*Figura 5.2. Network Graph del repositorio preciazo-report evidenciando la integración de ramas feature, develop y main bajo el modelo GitFlow durante la entrega TB1.*
 
 ---
 
